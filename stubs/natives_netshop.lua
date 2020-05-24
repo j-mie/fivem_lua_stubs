@@ -6,7 +6,7 @@
 --- _GET_ONLINE_VERSION() will return "1.33"  
 --- Belongs in NETWORK  
 --- 
---- @returns string
+--- @return string
 function GetOnlineVersion() end
 
 --- 
@@ -14,11 +14,11 @@ function GetOnlineVersion() end
 --- 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetGameserverBasketApplyServerData(p0, p1) end
 
 
---- @returns boolean
+--- @return boolean
 function NetGameserverBasketEnd() end
 
 --- 
@@ -26,7 +26,7 @@ function NetGameserverBasketEnd() end
 --- 
 --- @param itemData any
 --- @param quantity number
---- @returns boolean
+--- @return boolean
 function NetGameserverBasketAddItem(itemData, quantity) end
 
 --- 
@@ -38,7 +38,7 @@ function NetGameserverBasketAddItem(itemData, quantity) end
 --- @param categoryHash number
 --- @param actionHash number
 --- @param flags number
---- @returns boolean
+--- @return boolean
 function NetGameserverBasketStart(transactionId, categoryHash, actionHash, flags) end
 
 --- 
@@ -60,19 +60,19 @@ function NetGameserverBasketStart(transactionId, categoryHash, actionHash, flags
 --- @param actionTypeHash number
 --- @param value number
 --- @param flags number
---- @returns boolean
+--- @return boolean
 function NetGameserverBeginService(transactionId, categoryHash, itemHash, actionTypeHash, value, flags) end
 
 --- 
 --- NativeDB Introduced: v372
 --- 
---- @returns boolean
+--- @return boolean
 function NetGameserverBasketDelete() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetGameserverBasketIsFull() end
 
 --- 
@@ -81,40 +81,40 @@ function NetGameserverBasketIsFull() end
 --- @param slot number
 --- @param transfer boolean
 --- @param reason any
---- @returns boolean
+--- @return boolean
 function NetGameserverDeleteCharacterSlot(slot, transfer, reason) end
 
 
---- @returns number
+--- @return number
 function NetGameserverDeleteCharacterSlotGetStatus() end
 
 
---- @returns boolean
+--- @return boolean
 function NetGameserverCatalogIsReady() end
 
 --- 
 --- Will cancel the transaction  
 --- 
 --- @param transactionId number
---- @returns boolean
+--- @return boolean
 function NetGameserverEndService(transactionId) end
 
 
 --- @param transactionId number
---- @returns boolean
+--- @return boolean
 function NetGameserverCheckoutStart(transactionId) end
 
 --- 
 --- NativeDB Parameter 0: int* state
 --- 
 --- @param state any
---- @returns boolean
+--- @return boolean
 function NetGameserverGetCatalogState(state) end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetGameserverDeleteSetTelemetryNonceSeed() end
 
 --- 
@@ -122,7 +122,7 @@ function NetGameserverDeleteSetTelemetryNonceSeed() end
 --- 
 --- @param p0 any
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function NetGameserverGetTransactionManagerData(p0, p1) end
 
 --- 
@@ -130,16 +130,16 @@ function NetGameserverGetTransactionManagerData(p0, p1) end
 --- 
 --- @param inventory boolean
 --- @param playerbalance boolean
---- @returns boolean
+--- @return boolean
 function NetGameserverGetBalance(inventory, playerbalance) end
 
 
---- @returns boolean
+--- @return boolean
 function NetGameserverIsSessionRefreshPending() end
 
 
 --- @param charSlot number
---- @returns boolean
+--- @return boolean
 function NetGameserverSessionApplyReceivedData(charSlot) end
 
 --- 
@@ -148,16 +148,16 @@ function NetGameserverSessionApplyReceivedData(charSlot) end
 --- @param itemHash Hash
 --- @param categoryHash Hash
 --- @param p2 boolean
---- @returns number
+--- @return number
 function NetGameserverGetPrice(itemHash, categoryHash, p2) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function NetGameserverSetTelemetryNonceSeed(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function NetGameserverIsCatalogValid() end
 
 --- 
@@ -169,18 +169,18 @@ function NetGameserverIsCatalogValid() end
 --- 
 --- @param charSlot number
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function NetGameserverTransferBankToWallet(charSlot, amount) end
 
 
 --- @param charSlot number
---- @returns boolean
+--- @return boolean
 function NetGameserverIsSessionValid(charSlot) end
 
 --- 
 --- Same as 0x350AA5EBC03D3BD2
 --- 
---- @returns number
+--- @return number
 function NetGameserverTransferCashGetStatus() end
 
 --- 
@@ -192,29 +192,29 @@ function NetGameserverTransferCashGetStatus() end
 --- 
 --- @param charSlot number
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function NetGameserverTransferWalletToBank(charSlot, amount) end
 
 
 --- @param charSlot number
---- @returns boolean
+--- @return boolean
 function NetGameserverStartSession(charSlot) end
 
 --- 
 --- NativeDB Introduced: v1290
 --- 
---- @returns boolean
+--- @return boolean
 function NetGameserverUseServerTransactions() end
 
 --- 
 --- Same as 0x23789E777D14CE44
 --- 
---- @returns number
+--- @return number
 function NetGameserverTransferCashGetStatus2() end
 
 --- 
 --- Used to be NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED
 --- 
---- @returns boolean
+--- @return boolean
 function NetGameserverTransferCashSetTelemetryNonceSeed() end
 

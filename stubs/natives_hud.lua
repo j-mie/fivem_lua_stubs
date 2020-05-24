@@ -116,19 +116,19 @@ function ActivateFrontendMenu(menuhash, togglePause, component) end
 --- @param z number
 --- @param width number
 --- @param height number
---- @returns Blip
+--- @return Blip
 function AddBlipForArea(x, y, z, width, height) end
 
 --- Creates a blip for the specified coordinates. You can use SET_BLIP_ natives to change the blip.
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns Blip
+--- @return Blip
 function AddBlipForCoord(x, y, z) end
 
 
 --- @param pickup Pickup
---- @returns Blip
+--- @return Blip
 function AddBlipForPickup(pickup) end
 
 --- 
@@ -139,7 +139,7 @@ function AddBlipForPickup(pickup) end
 --- UI::SET_BLIP_AS_FRIENDLY(blip, true);  
 --- 
 --- @param entity Entity
---- @returns Blip
+--- @return Blip
 function AddBlipForEntity(entity) end
 
 
@@ -147,7 +147,7 @@ function AddBlipForEntity(entity) end
 --- @param posY number
 --- @param posZ number
 --- @param radius number
---- @returns Blip
+--- @return Blip
 function AddBlipForRadius(posX, posY, posZ, radius) end
 
 
@@ -340,7 +340,7 @@ function BeginTextCommandDisplayText(text) end
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns Pickup
+--- @return Pickup
 function BusyspinnerIsDisplaying() end
 
 --- 
@@ -356,7 +356,7 @@ function BusyspinnerIsDisplaying() end
 function BeginTextCommandIsMessageDisplayed(text) end
 
 
---- @returns boolean
+--- @return boolean
 function BusyspinnerIsOn() end
 
 
@@ -512,7 +512,7 @@ function DisplayCash(toggle) end
 --- @param isRockstarClan boolean
 --- @param clanTag string
 --- @param clanFlag number
---- @returns number
+--- @return number
 function CreateFakeMpGamerTag(ped, username, pointedClanTag, isRockstarClan, clanTag, clanFlag) end
 
 --- 
@@ -529,7 +529,7 @@ function DisplayHud(toggle) end
 --- NativeDB Return Type: void
 --- 
 --- @param toggle boolean
---- @returns any
+--- @return any
 function DisplayRadar(toggle) end
 
 
@@ -546,7 +546,7 @@ function DisplayAmmoThisFrame(display) end
 
 
 --- @param blip Blip
---- @returns boolean
+--- @return boolean
 function DoesBlipHaveGpsRoute(blip) end
 
 --- 
@@ -554,7 +554,7 @@ function DoesBlipHaveGpsRoute(blip) end
 --- It's the default blip you can see on enemies during freeroam in singleplayer (the one that fades out quickly).  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function DoesPedHaveAiBlip(ped) end
 
 --- 
@@ -581,17 +581,17 @@ function DisplayHudWhenPausedThisFrame() end
 --- Checks if the passed gxt name exists in the game files.  
 --- 
 --- @param gxt string
---- @returns boolean
+--- @return boolean
 function DoesTextLabelExist(gxt) end
 
 
 --- @param blip Blip
---- @returns boolean
+--- @return boolean
 function DoesBlipExist(blip) end
 
 
 --- @param gxt string
---- @returns boolean
+--- @return boolean
 function DoesTextBlockExist(gxt) end
 
 --- 
@@ -709,7 +709,7 @@ function EndTextCommandDisplayHelp(p0, loop, beep, shape) end
 --- @param p9 string
 --- @param background boolean
 --- @param errorCode number
---- @returns any
+--- @return any
 function DrawFrontendAlert(labelTitle, labelMsg, p2, p3, labelMsg2, p5, p6, p7, p8, p9, background, errorCode) end
 
 --- 
@@ -718,11 +718,11 @@ function DrawFrontendAlert(labelTitle, labelMsg, p2, p3, labelMsg2, p5, p6, p7, 
 --- 
 --- @param x number
 --- @param y number
---- @returns number
+--- @return number
 function EndTextCommandGetLineCount(x, y) end
 
 
---- @returns boolean
+--- @return boolean
 function EndTextCommandIsMessageDisplayed() end
 
 --- 
@@ -739,7 +739,7 @@ function EndTextCommandDisplayText(x, y) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function EndTextCommandIsThisHelpMessageBeingDisplayed(p0) end
 
 --- 
@@ -754,7 +754,7 @@ function EndTextCommandOverrideButtonText(p0) end
 --- Returns from range 0 to 1.  
 --- 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function EndTextCommandGetWidth(p0) end
 
 --- Finalizes a text command started with [BEGIN_TEXT_COMMAND_SET_BLIP_NAME](#_0xF9113A30DE5C6670), setting the name
@@ -784,7 +784,7 @@ function EndTextCommandObjective(p0) end
 --- @param rpBonus number
 --- @param colorOverlay number
 --- @param titleLabel string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostAward(textureDict, textureName, rpBonus, colorOverlay, titleLabel) end
 
 --- 
@@ -829,7 +829,7 @@ function EndTextCommandPrint(duration, drawImmediately) end
 --- @param r number
 --- @param g number
 --- @param b number
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostCrewtagWithGameName(crewTypeIsPrivate, crewTagContainsRockstar, crewTag, rank, isLeader, isImportant, clanHandle, gamerStr, r, g, b) end
 
 --- 
@@ -841,7 +841,7 @@ function EndTextCommandThefeedPostCrewtagWithGameName(crewTypeIsPrivate, crewTag
 --- @param clanTxn string
 --- @param isImportant boolean
 --- @param showSubtitle boolean
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostCrewRankup(chTitle, clanTxd, clanTxn, isImportant, showSubtitle) end
 
 --- NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.
@@ -862,7 +862,7 @@ function EndTextCommandThefeedPostCrewRankup(chTitle, clanTxd, clanTxn, isImport
 --- @param nameStr string
 --- @param subtitleStr string
 --- @param duration number
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostMessagetextTu(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, duration) end
 
 --- 
@@ -909,7 +909,7 @@ function EndTextCommandThefeedPostMessagetextTu(picTxd, picTxn, flash, iconType,
 --- @param r number
 --- @param g number
 --- @param b number
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostCrewtag(crewTypeIsPrivate, crewTagContainsRockstar, crewTag, rank, hasFounderStatus, isImportant, clanHandle, r, g, b) end
 
 --- 
@@ -938,7 +938,7 @@ function EndTextCommandThefeedPostCrewtag(crewTypeIsPrivate, crewTagContainsRock
 --- @param subtitleStr string
 --- @param duration number
 --- @param crewPackedStr string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostMessagetextWithCrewTag(picTxd, picTxn, flash, iconType, nameStr, subtitleStr, duration, crewPackedStr) end
 
 --- 
@@ -946,7 +946,7 @@ function EndTextCommandThefeedPostMessagetextWithCrewTag(picTxd, picTxn, flash, 
 --- 
 --- @param isImportant boolean
 --- @param bHasTokens boolean
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostMpticker(isImportant, bHasTokens) end
 
 --- Sets some extra options for a notification. It adds an image (or icon type) and sets a notification title (sender) and subtitle (subject).
@@ -981,7 +981,7 @@ function EndTextCommandThefeedPostMpticker(isImportant, bHasTokens) end
 --- @param iconType number
 --- @param sender string
 --- @param subject string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostMessagetext(textureDict, textureName, flash, iconType, sender, subject) end
 
 --- 
@@ -1000,7 +1000,7 @@ function EndTextCommandThefeedPostMessagetext(textureDict, textureName, flash, i
 --- @param eType number
 --- @param sIcon string
 --- @param sSubtitle string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostReplayInput(eType, sIcon, sSubtitle) end
 
 --- Needs more research.
@@ -1019,7 +1019,7 @@ function EndTextCommandThefeedPostReplayInput(eType, sIcon, sSubtitle) end
 --- @param iconType number
 --- @param entryText string
 --- @param text string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostMessagetextEntry(picTxd, picTxn, flash, iconType, entryText, text) end
 
 --- [List of picture names](https://pastebin.com/XdpJVbHz)
@@ -1034,6 +1034,6 @@ function EndTextCommandThefeedPostMessagetextEntry(picTxd, picTxn, flash, iconTy
 --- @param isImportant boolean
 --- @param picTxd string
 --- @param picTxn string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostStats(statTitle, iconEnum, stepVal, barValue, isImportant, picTxd, picTxn) end
 

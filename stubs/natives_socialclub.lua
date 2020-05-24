@@ -1,14 +1,14 @@
 
---- @returns number
+--- @return number
 function GetTotalScInboxIds() end
 
 
---- @returns boolean
+--- @return boolean
 function IsRockstarMessageReadyForScript() end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function IsScInboxValid(p0) end
 
 
@@ -19,7 +19,7 @@ function ScEmailMessagePushGamerToRecipList(networkHandle) end
 --- Same as HAS_ACHIEVEMENT_BEEN_PASSED
 --- 
 --- @param achievement number
---- @returns boolean
+--- @return boolean
 function ScGetHasAchievementBeenPassed(achievement) end
 
 --- 
@@ -29,11 +29,11 @@ function ScGetHasAchievementBeenPassed(achievement) end
 --- 
 --- NativeDB Return Type: char*
 --- 
---- @returns Entity
+--- @return Entity
 function ScGetNickname() end
 
 
---- @returns string
+--- @return string
 function RockstarMessageGetString() end
 
 
@@ -47,7 +47,7 @@ function ScEmailMessageClearRecipList() end
 
 --- @param index number
 --- @param outData number
---- @returns boolean
+--- @return boolean
 function ScInboxMessageGetBountyData(index, outData) end
 
 --- 
@@ -56,42 +56,42 @@ function ScInboxMessageGetBountyData(index, outData) end
 --- func_719(socialclub::_0x8416FE4E4629D7D7("bIgnoreBadSportOverride"));  
 --- 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function ScGetIsProfileAttributeSet(name) end
 
 
 --- @param p0 number
 --- @param context string
 --- @param out number
---- @returns boolean
+--- @return boolean
 function ScInboxMessageGetDataInt(p0, context, out) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function ScInboxMessageDoApply(p0) end
 
 
 --- @param p0 number
 --- @param context string
 --- @param out string
---- @returns boolean
+--- @return boolean
 function ScInboxMessageGetDataString(p0, context, out) end
 
 
 --- @param p0 number
 --- @param p1 string
---- @returns boolean
+--- @return boolean
 function ScInboxMessageGetDataBool(p0, p1) end
 
 
 --- @param p0 number
---- @returns Hash
+--- @return Hash
 function ScInboxMessageInit(p0) end
 
 
 --- @param p0 number
---- @returns string
+--- @return string
 function ScInboxMessageGetString(p0) end
 
 --- 
@@ -103,19 +103,19 @@ function ScInboxMessagePushGamerToEventRecipList(networkHandle) end
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function ScInboxMessageGetUgcdata(p0, p1) end
 
 --- 
 --- I put the argument as 'playerName' as when it's called in freemode.c TU27 X360 scripts. It's given a var that has GET_PLAYER_NAME stored in it via StringCopy.  
 --- 
 --- @param data string
---- @returns boolean
+--- @return boolean
 function ScInboxMessageSendBountyPresenceEvent(data) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function ScInboxMessagePop(p0) end
 
 --- 
@@ -124,7 +124,7 @@ function ScInboxMessagePop(p0) end
 --- 
 --- @param string string
 --- @param token number
---- @returns boolean
+--- @return boolean
 function ScProfanityCheckString(string, token) end
 
 
@@ -143,25 +143,25 @@ function ScInboxMessageSendUgcStatUpdateEvent(data) end
 --- NativeDB Return Type: BOOL
 --- 
 --- @param token number
---- @returns number
+--- @return number
 function ScProfanityGetCheckIsPending(token) end
 
 
 --- @param string string
 --- @param token number
---- @returns boolean
+--- @return boolean
 function ScProfanityCheckUgcString(string, token) end
 
 --- 
 --- Returns whether or not a task started with _SC_START_CHECK_STRING_TASK has completed.  
 --- 
 --- @param token number
---- @returns boolean
+--- @return boolean
 function ScProfanityGetCheckIsValid(token) end
 
 
 --- @param token number
---- @returns boolean
+--- @return boolean
 function ScProfanityGetStringPassed(token) end
 
 --- 
@@ -169,7 +169,7 @@ function ScProfanityGetStringPassed(token) end
 --- Seems to return either 0, 1, or -1.  
 --- 
 --- @param token number
---- @returns number
+--- @return number
 function ScProfanityGetStringStatus(token) end
 
 

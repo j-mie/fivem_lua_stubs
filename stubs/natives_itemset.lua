@@ -1,7 +1,7 @@
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function AddToItemset(p0, p1) end
 
 
@@ -12,7 +12,7 @@ function CleanItemset(p0) end
 --- NativeDB Parameter 0: BOOL distri
 --- 
 --- @param distri Vehicle
---- @returns Vehicle
+--- @return Vehicle
 function CreateItemset(distri) end
 
 
@@ -22,23 +22,23 @@ function DestroyItemset(p0) end
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function GetIndexedItemInItemset(p0, p1) end
 
 
 --- @param x ScrHandle
---- @returns any
+--- @return any
 function GetItemsetSize(x) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function IsInItemset(p0, p1) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function IsItemsetValid(p0) end
 
 

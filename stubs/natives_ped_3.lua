@@ -387,7 +387,7 @@ function SetPedParachuteTintIndex(ped, tintIndex) end
 --- @param ped Ped
 --- @param pinned boolean
 --- @param p2 number
---- @returns any
+--- @return any
 function SetPedPinnedDown(ped, pinned, p2) end
 
 --- 
@@ -418,7 +418,7 @@ function SetPedPreferredCoverSet(ped, itemSet) end
 --- @param slot number
 --- @param drawableId number
 --- @param textureId number
---- @returns any
+--- @return any
 function SetPedPreloadVariationData(ped, slot, drawableId, textureId) end
 
 
@@ -441,14 +441,14 @@ function SetPedPrimaryLookat(ped, lookAt) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns any
+--- @return any
 function SetPedPanicExitScenario(ped, x, y, z) end
 
 --- 
 --- NativeDB Return Type: void
 --- 
 --- @param ped Ped
---- @returns any
+--- @return any
 function SetPedRagdollForceFall(ped) end
 
 --- **This native does absolutely nothing, just a nullsub**
@@ -482,7 +482,7 @@ function SetPedRandomProps(ped) end
 --- @param componentId number
 --- @param drawableId number
 --- @param TextureId number
---- @returns boolean
+--- @return boolean
 function SetPedPreloadPropData(ped, componentId, drawableId, TextureId) end
 
 
@@ -659,7 +659,7 @@ function SetPedTargetLossResponse(ped, responseType) end
 --- @param p4 boolean
 --- @param p5 boolean
 --- @param p6 boolean
---- @returns boolean
+--- @return boolean
 function SetPedToRagdoll(ped, time1, time2, ragdollType, p4, p5, p6) end
 
 
@@ -699,7 +699,7 @@ function SetPedUsingActionMode(ped, p1, p2, action) end
 --- @param p11 number
 --- @param p12 number
 --- @param p13 number
---- @returns boolean
+--- @return boolean
 function SetPedToRagdollWithFall(ped, time, p2, ragdollType, x, y, z, p7, p8, p9, p10, p11, p12, p13) end
 
 
@@ -883,12 +883,12 @@ function SetSynchronizedSceneRate(sceneID, rate) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function WasPedKilledByTakedown(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function WasPedKnockedOut(ped) end
 
 
@@ -897,13 +897,13 @@ function StopPedWeaponFiringWhenDropped(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function WasPedKilledByStealth(ped) end
 
 --- 
 --- Despite this function's name, it simply returns whether the specified handle is a Ped.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function WasPedSkeletonUpdated(ped) end
 

@@ -88,13 +88,13 @@ function ThefeedHideThisFrame() end
 --- Returns the handle for the notification currently displayed on the screen.
 --- Name may be a hash collision, but describes the function accurately.
 --- 
---- @returns number
+--- @return number
 function ThefeedGetFirstVisibleDeleteRemaining() end
 
 --- 
 --- Getter for 0xFDB423997FA30340
 --- 
---- @returns boolean
+--- @return boolean
 function ThefeedIsPaused() end
 
 --- 

@@ -1,6 +1,6 @@
 
 --- @param vehicleClass number
---- @returns number
+--- @return number
 function GetVehicleClassMaxAcceleration(vehicleClass) end
 
 --- 
@@ -10,22 +10,22 @@ function GetVehicleClassMaxAcceleration(vehicleClass) end
 --- char* className = UI::_GET_LABEL_TEXT(buffer);  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleClassFromName(modelHash) end
 
 
 --- @param vehicleClass number
---- @returns number
+--- @return number
 function GetVehicleClassMaxAgility(vehicleClass) end
 
 
 --- @param vehicleClass number
---- @returns number
+--- @return number
 function GetVehicleClassMaxBraking(vehicleClass) end
 
 
 --- @param vehicleClass number
---- @returns number
+--- @return number
 function GetVehicleClassMaxTraction(vehicleClass) end
 
 --- 
@@ -45,7 +45,7 @@ function GetVehicleColours(vehicle, colorPrimary, colorSecondary) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleColourCombination(vehicle) end
 
 
@@ -59,7 +59,7 @@ function GetVehicleCustomPrimaryColour(vehicle, r, g, b) end
 --- 
 --- Use [_SET_AIRCRAFT_COUNTERMEASURE_COUNT](#_0x9BDA23BF666F0855) to set the current amount.
 --- @param aircraft Vehicle
---- @returns number
+--- @return number
 function GetVehicleCountermeasureCount(aircraft) end
 
 
@@ -85,7 +85,7 @@ function GetVehicleDashboardColour(vehicle, color) end
 --- @param offsetX number
 --- @param offsetY number
 --- @param offsetZ number
---- @returns vector3
+--- @return vector3
 function GetVehicleDeformationAtPos(vehicle, offsetX, offsetY, offsetZ) end
 
 --- 
@@ -97,14 +97,14 @@ function GetVehicleDeformationAtPos(vehicle, offsetX, offsetY, offsetZ) end
 --- 
 --- @param vehicle Vehicle
 --- @param door number
---- @returns number
+--- @return number
 function GetVehicleDoorAngleRatio(vehicle, door) end
 
 --- 
 --- Dirt level 0..15  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDirtLevel(vehicle) end
 
 --- 
@@ -120,13 +120,13 @@ function GetVehicleDirtLevel(vehicle) end
 --- }
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDoorLockStatus(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function GetVehicleDoorsLockedForPlayer(vehicle, player) end
 
 --- 
@@ -139,7 +139,7 @@ function GetVehicleDoorsLockedForPlayer(vehicle, player) end
 --- 1000: Engine is perfect  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleEngineHealth(vehicle) end
 
 --- 
@@ -149,12 +149,12 @@ function GetVehicleEngineHealth(vehicle) end
 --- The actual value isn't stored as a float but as an unsigned char (BYTE).  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleEnveffScale(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleEstimatedMaxSpeed(vehicle) end
 
 
@@ -165,19 +165,19 @@ function GetVehicleExtraColours(vehicle, pearlescentColor, wheelColor) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetVehicleHasKers(vehicle) end
 
 --- 
 --- NativeDB Introduced: v1180
 --- 
 --- @param vehicle Vehicle
---- @returns any
+--- @return any
 function GetVehicleHasLandingGear(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns Hash
+--- @return Hash
 function GetVehicleLayoutHash(vehicle) end
 
 
@@ -189,14 +189,14 @@ function GetVehicleInteriorColour(vehicle, color) end
 --- @param vehicle Vehicle
 --- @param lightsOn boolean
 --- @param highbeamsOn boolean
---- @returns boolean
+--- @return boolean
 function GetVehicleLightsState(vehicle, lightsOn, highbeamsOn) end
 
 --- 
 --- -1 = no livery  
 --- 
 --- @param trailers2 Vehicle
---- @returns number
+--- @return number
 function GetVehicleLivery(trailers2) end
 
 --- 
@@ -206,29 +206,29 @@ function GetVehicleLivery(trailers2) end
 --- 
 --- @param vehicle Vehicle
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function GetVehicleLockOnTarget(vehicle, entity) end
 
 --- 
 --- Returns -1 if the vehicle has no livery  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleLiveryCount(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleMaxNumberOfPassengers(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleMaxBraking(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleMaxTraction(vehicle) end
 
 --- 
@@ -237,7 +237,7 @@ function GetVehicleMaxTraction(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param modType number
---- @returns number
+--- @return number
 function GetVehicleMod(vehicle, modType) end
 
 --- 
@@ -256,14 +256,14 @@ function GetVehicleModColor1(vehicle, paintType, color, pearlescentColor) end
 --- 
 --- @param vehicle Vehicle
 --- @param p1 boolean
---- @returns string
+--- @return string
 function GetVehicleModColor1Name(vehicle, p1) end
 
 --- 
 --- returns a string which is the codename of the vehicle's currently selected secondary color  
 --- 
 --- @param vehicle Vehicle
---- @returns string
+--- @return string
 function GetVehicleModColor2Name(vehicle) end
 
 
@@ -274,7 +274,7 @@ function GetVehicleModColor2(vehicle, paintType, color) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleModKit(vehicle) end
 
 --- 
@@ -287,19 +287,19 @@ function GetVehicleModKit(vehicle) end
 --- @param vehicle Vehicle
 --- @param modType number
 --- @param modIndex number
---- @returns any
+--- @return any
 function GetVehicleModIdentifierHash(vehicle, modType, modIndex) end
 
 
 --- @param vehicle Vehicle
 --- @param modType number
 --- @param modIndex number
---- @returns number
+--- @return number
 function GetVehicleModModifierValue(vehicle, modType, modIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleModKitType(vehicle) end
 
 --- 
@@ -307,7 +307,7 @@ function GetVehicleModKitType(vehicle) end
 --- For a full list, see here: pastebin.com/GaN6vT4R  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelAcceleration(modelHash) end
 
 --- 
@@ -315,7 +315,7 @@ function GetVehicleModelAcceleration(modelHash) end
 --- 
 --- @param vehicle Vehicle
 --- @param modType number
---- @returns boolean
+--- @return boolean
 function GetVehicleModVariation(vehicle, modType) end
 
 --- 
@@ -324,14 +324,14 @@ function GetVehicleModVariation(vehicle, modType) end
 --- For a full list, see here: pastebin.com/bJQeDqNd  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelDownForce(modelHash) end
 
 --- 
 --- Returns max speed (without mods) of the specified vehicle model in m/s.
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelEstimatedMaxSpeed(modelHash) end
 
 --- 
@@ -339,7 +339,7 @@ function GetVehicleModelEstimatedMaxSpeed(modelHash) end
 --- For a full list, see here: pastebin.com/3N8DVbpG  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelMaxBraking(modelHash) end
 
 --- 
@@ -348,7 +348,7 @@ function GetVehicleModelMaxBraking(modelHash) end
 --- For a full list, see here: pastebin.com/Cb9L1Cn0  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelMaxBrakingMaxMods(modelHash) end
 
 --- 
@@ -357,7 +357,7 @@ function GetVehicleModelMaxBrakingMaxMods(modelHash) end
 --- For a full list, see here: pastebin.com/JwuGNp2K  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelMaxKnots(modelHash) end
 
 --- 
@@ -365,7 +365,7 @@ function GetVehicleModelMaxKnots(modelHash) end
 --- For a full list, see here: pastebin.com/ERnntVjK  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelMaxTraction(modelHash) end
 
 --- 
@@ -374,7 +374,7 @@ function GetVehicleModelMaxTraction(modelHash) end
 --- For a full list, see here: pastebin.com/Pyb2RhZ9  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelMoveResistance(modelHash) end
 
 --- 
@@ -382,7 +382,7 @@ function GetVehicleModelMoveResistance(modelHash) end
 --- For a full list, see here: pastebin.com/MdETCS1j  
 --- 
 --- @param modelHash Hash
---- @returns number
+--- @return number
 function GetVehicleModelNumberOfSeats(modelHash) end
 
 --- 
@@ -399,7 +399,7 @@ function GetVehicleNeonLightsColour(vehicle, r, g, b) end
 --- GET_VEHICLE_NUMBER_*
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNumberOfBrokenBones(vehicle) end
 
 --- 
@@ -407,21 +407,21 @@ function GetVehicleNumberOfBrokenBones(vehicle) end
 --- Also includes 'turnOffBones' when vehicle mods are installed.
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNumberOfBrokenOffBones(vehicle) end
 
 --- 
 --- Gets the number of passengers, NOT including the driver. Use IS_VEHICLE_SEAT_FREE(Vehicle, -1) to also check for the driver  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNumberOfPassengers(vehicle) end
 
 --- 
 --- Returns the license plate text from a vehicle.  8 chars maximum.  
 --- 
 --- @param vehicle Vehicle
---- @returns string
+--- @return string
 function GetVehicleNumberPlateText(vehicle) end
 
 --- 
@@ -434,7 +434,7 @@ function GetVehicleNumberPlateText(vehicle) end
 --- North_Yankton = 5,  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNumberPlateTextIndex(vehicle) end
 
 --- 
@@ -442,29 +442,29 @@ function GetVehicleNumberPlateTextIndex(vehicle) end
 --- Begins leaking gas at around 650 health  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehiclePetrolTankHealth(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehiclePlateType(vehicle) end
 
 
 --- @param p0 number
 --- @param p1 string
---- @returns number
+--- @return number
 function GetVehicleRecordingId(p0, p1) end
 
 --- Returns index of the current vehicle's rooftop livery.
 --- A getter for [\_SET_VEHICLE_ROOF_LIVERY](#_0xA6D3A8750DC73270).
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleRoofLivery(vehicle) end
 
 --- Returns a number of available rooftop liveries, or -1 if vehicle has no rooftop liveries available.
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleRoofLiveryCount(vehicle) end
 
 --- 
@@ -484,7 +484,7 @@ function GetVehicleSuspensionBounds(vehicle, out1, out2) end
 --- 0.008 is Ultra Suspension.  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleSuspensionHeight(vehicle) end
 
 --- 
@@ -492,12 +492,12 @@ function GetVehicleSuspensionHeight(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param trailer Vehicle
---- @returns boolean
+--- @return boolean
 function GetVehicleTrailerVehicle(vehicle, trailer) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetVehicleTyresCanBurst(vehicle) end
 
 
@@ -510,12 +510,12 @@ function GetVehicleTyreSmokeColor(vehicle, r, g, b) end
 
 --- @param vehicle Vehicle
 --- @param weaponIndex number
---- @returns number
+--- @return number
 function GetVehicleWeaponCapacity(vehicle, weaponIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWindowTint(vehicle) end
 
 --- 
@@ -532,12 +532,12 @@ function GetVehicleWindowTint(vehicle) end
 --- Tested in Los Santos Customs  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWheelType(vehicle) end
 
 
 --- @param vehicleAsset number
---- @returns boolean
+--- @return boolean
 function HasVehicleAssetLoaded(vehicleAsset) end
 
 --- Returns the headlight color index from the vehicle. Value between 0, 12.
@@ -565,16 +565,16 @@ function HasVehicleAssetLoaded(vehicleAsset) end
 --- }
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleXenonLightsColour(vehicle) end
 
 
---- @returns boolean
+--- @return boolean
 function HasVehiclePhoneExplosiveDevice() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function HasPreloadModsFinished(p0) end
 
 --- 
@@ -587,7 +587,7 @@ function HideVehicleTombstone(vehicle, toggle) end
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function HasVehicleRecordingBeenLoaded(p0, p1) end
 
 
@@ -595,30 +595,30 @@ function HasVehicleRecordingBeenLoaded(p0, p1) end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsAnyVehicleNearPoint(x, y, z, radius) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsAnyPassengerRappelingFromVehicle(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsBigVehicle(vehicle) end
 
 --- 
 --- IS_*
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsBoatAnchoredAndFrozen(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAttachedToHandlerFrame(vehicle, entity) end
 
 --- 
@@ -634,25 +634,25 @@ function IsEntityAttachedToHandlerFrame(vehicle, entity) end
 --- @param y2 number
 --- @param z1 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function IsCopVehicleInArea3d(x1, x2, y1, y2, z1, z2) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsHeliLandingAreaBlocked(vehicle) end
 
 
 --- @param handler Vehicle
 --- @param container Entity
---- @returns boolean
+--- @return boolean
 function IsHandlerFrameAboveContainer(handler, container) end
 
 --- 
 --- Vehicle has landing gear?  
 --- 
 --- @param plane Vehicle
---- @returns boolean
+--- @return boolean
 function IsPlaneLandingGearIntact(plane) end
 
 
@@ -660,17 +660,17 @@ function IsPlaneLandingGearIntact(plane) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 boolean
---- @returns boolean
+--- @return boolean
 function IsHeliPartBroken(vehicle, p1, p2, p3) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsPlaybackUsingAiGoingOnForVehicle(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsPlaybackGoingOnForVehicle(vehicle) end
 
 --- 
@@ -678,41 +678,41 @@ function IsPlaybackGoingOnForVehicle(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param seatIndex boolean
---- @returns boolean
+--- @return boolean
 function IsSeatWarpOnly(vehicle, seatIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsTaxiLightOn(vehicle) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelABicycle(model) end
 
 --- 
 --- Returns true if the model is motorcycle or bycicle.  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelABike(model) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelABoat(model) end
 
 --- 
 --- To check if the model is an amphibious car, see gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/page-33#entry1069317363 (for build 944 and above only!)  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelACar(model) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelAHeli(model) end
 
 --- 
@@ -720,46 +720,46 @@ function IsThisModelAHeli(model) end
 --- @whoever named this _IS_THIS_MODEL_AN_EMERGENCY_BOAT: please do some tests before naming natives, thanks.  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelAJetski(model) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelAPlane(model) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelAQuadbike(model) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelAnAmphibiousCar(model) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsThisModelATrain(model) end
 
 --- 
 --- NativeDB Parameter 0: Hash model
 --- 
 --- @param model any
---- @returns boolean
+--- @return boolean
 function IsThisModelAnAmphibiousQuadbike(model) end
 
 
 --- @param vehicle Vehicle
 --- @param modType number
---- @returns boolean
+--- @return boolean
 function IsToggleModOn(vehicle, modType) end
 
 
 --- @param vehicle Vehicle
 --- @param seatIndex number
---- @returns boolean
+--- @return boolean
 function IsTurretSeat(vehicle, seatIndex) end
 
 --- 
@@ -768,18 +768,18 @@ function IsTurretSeat(vehicle, seatIndex) end
 --- 
 --- @param vehicle Vehicle
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function IsVehicleAConvertible(vehicle, p1) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleAlarmActivated(vehicle) end
 
 
 --- @param cargobob Vehicle
 --- @param vehicleAttached Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleAttachedToCargobob(cargobob, vehicleAttached) end
 
 --- 
@@ -787,7 +787,7 @@ function IsVehicleAttachedToCargobob(cargobob, vehicleAttached) end
 --- 
 --- @param towTruck Vehicle
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleAttachedToTowTruck(towTruck, vehicle) end
 
 --- 
@@ -796,7 +796,7 @@ function IsVehicleAttachedToTowTruck(towTruck, vehicle) end
 --- 		    End Function  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleAttachedToTrailer(vehicle) end
 
 --- 
@@ -805,20 +805,20 @@ function IsVehicleAttachedToTrailer(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param frontBumper boolean
---- @returns boolean
+--- @return boolean
 function IsVehicleBumperBouncing(vehicle, frontBumper) end
 
 
 --- @param vehicle Vehicle
 --- @param front boolean
---- @returns boolean
+--- @return boolean
 function IsVehicleBumperBrokenOff(vehicle, front) end
 
 --- 
 --- Appears to return true if the vehicle has any damage, including cosmetically.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleDamaged(vehicle) end
 
 --- 
@@ -826,7 +826,7 @@ function IsVehicleDamaged(vehicle) end
 --- 
 --- @param veh Vehicle
 --- @param doorID number
---- @returns boolean
+--- @return boolean
 function IsVehicleDoorDamaged(veh, doorID) end
 
 --- doorIndex:
@@ -839,7 +839,7 @@ function IsVehicleDoorDamaged(veh, doorID) end
 --- 6 = Trunk2
 --- @param vehicle Vehicle
 --- @param doorIndex number
---- @returns boolean
+--- @return boolean
 function IsVehicleDoorFullyOpen(vehicle, doorIndex) end
 
 --- 
@@ -848,7 +848,7 @@ function IsVehicleDoorFullyOpen(vehicle, doorIndex) end
 --- 
 --- @param vehicle Vehicle
 --- @param isOnFireCheck boolean
---- @returns boolean
+--- @return boolean
 function IsVehicleDriveable(vehicle, isOnFireCheck) end
 
 --- Only ever used once in decompiled scripts: **am_pi_menu**:
@@ -876,18 +876,18 @@ function IsVehicleDriveable(vehicle, isOnFireCheck) end
 --- }
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleEngineOnFire(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param extraId number
---- @returns boolean
+--- @return boolean
 function IsVehicleExtraTurnedOn(vehicle, extraId) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleHighDetail(vehicle) end
 
 --- 
@@ -898,7 +898,7 @@ function IsVehicleHighDetail(vehicle) end
 ---     End Function  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleInBurnout(vehicle) end
 
 --- 
@@ -907,7 +907,7 @@ function IsVehicleInBurnout(vehicle) end
 --- 
 --- @param garageName string
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleInGarageArea(garageName, vehicle) end
 
 --- 
@@ -915,13 +915,13 @@ function IsVehicleInGarageArea(garageName, vehicle) end
 --- True if it isn't loading mods, false if it is.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleModLoadDone(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsVehicleModel(vehicle, model) end
 
 --- 
@@ -930,7 +930,7 @@ function IsVehicleModel(vehicle, model) end
 --- 		    End Function  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleOnAllWheels(vehicle) end
 
 --- 
@@ -942,19 +942,19 @@ function IsVehicleOnAllWheels(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param index number
---- @returns boolean
+--- @return boolean
 function IsVehicleNeonLightEnabled(vehicle, index) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleRocketBoostActive(vehicle) end
 
 --- 
 --- Possibly: Returns whether the searchlight (found on police vehicles) is toggled on.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleSearchlightOn(vehicle) end
 
 --- 
@@ -969,48 +969,48 @@ function IsVehicleSearchlightOn(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param seatIndex number
---- @returns boolean
+--- @return boolean
 function IsVehicleSeatFree(vehicle, seatIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleSirenAudioOn(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleSirenOn(vehicle) end
 
 --- 
 --- Checks for FLAG_NO_RESPRAY  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleSprayable(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleStolen(vehicle) end
 
 --- 
 --- MulleDK19: Returns true if the vehicle's speed is equal to, or less than 0.02 meters per second, or 0.05 meters per second, if the vehicle's handbrake is engaged.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleStopped(vehicle) end
 
 --- 
 --- is this for red lights only?  more testing required.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleStoppedAtTrafficLights(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleStuckOnRoof(vehicle) end
 
 --- 
@@ -1019,7 +1019,7 @@ function IsVehicleStuckOnRoof(vehicle) end
 --- @param vehicle Vehicle
 --- @param p1 number
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function IsVehicleStuckTimerUp(vehicle, p1, p2) end
 
 --- 
@@ -1037,7 +1037,7 @@ function IsVehicleStuckTimerUp(vehicle, p1, p2) end
 --- @param vehicle Vehicle
 --- @param wheelID number
 --- @param completely boolean
---- @returns boolean
+--- @return boolean
 function IsVehicleTyreBurst(vehicle, wheelID, completely) end
 
 --- 
@@ -1045,7 +1045,7 @@ function IsVehicleTyreBurst(vehicle, wheelID, completely) end
 --- it's not instant so probabilly must pass an 'update' to see correct result.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleVisible(vehicle) end
 
 --- 
@@ -1054,13 +1054,13 @@ function IsVehicleVisible(vehicle) end
 --- @param weaponHash any
 --- @param vehicle Vehicle
 --- @param owner Ped
---- @returns any
+--- @return any
 function IsVehicleWeaponDisabled(weaponHash, vehicle, owner) end
 
 
 --- @param vehicle Vehicle
 --- @param windowIndex number
---- @returns boolean
+--- @return boolean
 function IsVehicleWindowIntact(vehicle, windowIndex) end
 
 
@@ -1123,6 +1123,6 @@ function ReleasePreloadMods(vehicle) end
 --- (Thanks to alexguirre for his help!)  
 --- 
 --- @param speedzone number
---- @returns boolean
+--- @return boolean
 function RemoveSpeedZone(speedzone) end
 

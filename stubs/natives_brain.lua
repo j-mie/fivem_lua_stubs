@@ -20,7 +20,7 @@ function AddCoverBlockingArea(playerX, playerY, playerZ, radiusX, radiusY, radiu
 --- @param p5 any
 --- @param p6 any
 --- @param p7 boolean
---- @returns ScrHandle
+--- @return ScrHandle
 function AddCoverPoint(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 
@@ -75,7 +75,7 @@ function AddScriptToRandomPed(name, model, p2, p3) end
 
 
 --- @param route string
---- @returns boolean
+--- @return boolean
 function AssistedMovementIsRouteLoaded(route) end
 
 
@@ -118,7 +118,7 @@ function ClearPedTasks(ped) end
 --- NativeDB Return Type: void
 --- 
 --- @param taskSequenceId number
---- @returns any
+--- @return any
 function ClearSequenceTask(taskSequenceId) end
 
 --- 
@@ -132,7 +132,7 @@ function ClearPedTasksImmediately(ped) end
 --- Returns false if task is not possible.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function ControlMountedWeapon(ped) end
 
 
@@ -145,7 +145,7 @@ function CreatePatrolRoute() end
 --- NativeDB Return Type: void
 --- 
 --- @param taskSequenceId number
---- @returns any
+--- @return any
 function CloseSequenceTask(taskSequenceId) end
 
 
@@ -197,7 +197,7 @@ function DeletePatrolRoute(patrolRoute) end
 --- else if (AI::IS_SCENARIO_GROUP_ENABLED("BLIMP")) {  
 --- 
 --- @param scenarioGroup string
---- @returns boolean
+--- @return boolean
 function DoesScenarioGroupExist(scenarioGroup) end
 
 
@@ -206,7 +206,7 @@ function DoesScenarioGroupExist(scenarioGroup) end
 --- @param z number
 --- @param radius number
 --- @param b boolean
---- @returns boolean
+--- @return boolean
 function DoesScenarioExistInArea(x, y, z, radius, b) end
 
 --- 
@@ -215,7 +215,7 @@ function DoesScenarioExistInArea(x, y, z, radius, b) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns boolean
+--- @return boolean
 function DoesScriptedCoverPointExistAtCoords(x, y, z) end
 
 
@@ -225,12 +225,12 @@ function DoesScriptedCoverPointExistAtCoords(x, y, z) end
 --- @param p3 any
 --- @param p4 number
 --- @param p5 boolean
---- @returns boolean
+--- @return boolean
 function DoesScenarioOfTypeExistInArea(p0, p1, p2, p3, p4, p5) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetActiveVehicleMissionType(vehicle) end
 
 --- 
@@ -246,19 +246,19 @@ function EnableScriptBrainSet(brainSet) end
 --- 
 --- @param ped Ped
 --- @param taskIndex number
---- @returns boolean
+--- @return boolean
 function GetIsTaskActive(ped, taskIndex) end
 
 
 --- @param p0 number
---- @returns string
+--- @return string
 function GetClipSetForScriptedGunTask(p0) end
 
 --- 
 --- For a full list, see here: pastebin.com/Tp0XpBMN  
 --- 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function GetIsWaypointRecordingLoaded(name) end
 
 --- 
@@ -272,46 +272,46 @@ function GetIsWaypointRecordingLoaded(name) end
 --- @param ped Ped
 --- @param distRemaining number
 --- @param isPathReady boolean
---- @returns number
+--- @return number
 function GetNavmeshRouteDistanceRemaining(ped, distRemaining, isPathReady) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedDesiredMoveBlendRatio(ped) end
 
 --- 
 --- See GET_NAVMESH_ROUTE_DISTANCE_REMAINING for more details.  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetNavmeshRouteResult(ped) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function GetPedWaypointDistance(p0) end
 
 --- 
 --- Returns the progress percent to current waypoint.  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedWaypointProgress(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPhoneGestureAnimTotalTime(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPhoneGestureAnimCurrentTime(ped) end
 
 
 --- @param coverpoint ScrHandle
---- @returns vector3
+--- @return vector3
 function GetScriptedCoverPointCoords(coverpoint) end
 
 --- 
@@ -321,7 +321,7 @@ function GetScriptedCoverPointCoords(coverpoint) end
 --- 
 --- @param targetPed Ped
 --- @param taskHash Hash
---- @returns number
+--- @return number
 function GetScriptTaskStatus(targetPed, taskHash) end
 
 --- 
@@ -329,13 +329,13 @@ function GetScriptTaskStatus(targetPed, taskHash) end
 --- 0 to 7 = task that's currently in progress, 0 meaning the first one.  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetSequenceProgress(ped) end
 
 
 --- @param ped Ped
 --- @param eventName string
---- @returns boolean
+--- @return boolean
 function GetTaskMoveNetworkEvent(ped, eventName) end
 
 --- 
@@ -343,7 +343,7 @@ function GetTaskMoveNetworkEvent(ped, eventName) end
 --- 
 --- @param ped Ped
 --- @param signalName string
---- @returns number
+--- @return number
 function GetTaskMoveNetworkSignalFloat(ped, signalName) end
 
 --- 
@@ -353,7 +353,7 @@ function GetTaskMoveNetworkSignalFloat(ped, signalName) end
 --- 
 --- @param ped Ped
 --- @param signalName string
---- @returns boolean
+--- @return boolean
 function GetTaskMoveNetworkSignalBool(ped, signalName) end
 
 --- 
@@ -361,121 +361,121 @@ function GetTaskMoveNetworkSignalBool(ped, signalName) end
 --- Could be task (sequence) name. Needs more research.  
 --- 
 --- @param ped Ped
---- @returns string
+--- @return string
 function GetTaskMoveNetworkState(ped) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWaypointProgress(vehicle) end
 
 
 --- @param p0 string
 --- @param p1 number
---- @returns number
+--- @return number
 function GetWaypointDistanceAlongRoute(p0, p1) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWaypointTargetPoint(vehicle) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsDrivebyTaskUnderneathDrivingTask(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsMountedWeaponTaskUnderneathDrivingTask(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsMoveBlendRatioRunning(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsMoveBlendRatioSprinting(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsMoveBlendRatioWalking(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsMoveBlendRatioStill(ped) end
 
 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function IsObjectWithinBrainActivationRange(object) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedActiveInScenario(ped) end
 
 --- 
 --- This function is hard-coded to always return 0.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedBeingArrested(ped) end
 
 --- 
 --- l  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedCuffed(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedGettingUp(ped) end
 
 --- 
 --- returns true is the ped is on the ground whining like a little female dog from a gunshot wound  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInWrithe(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRunning(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRunningArrestTask(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedStill(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedSprinting(ped) end
 
 --- 
 --- What's strafing?  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedStrafing(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedWalking(ped) end
 
 --- 
@@ -508,12 +508,12 @@ function IsPedWalking(ped) end
 --- 		else if (AI::IS_SCENARIO_GROUP_ENABLED("BLIMP")) {  
 --- 
 --- @param scenarioGroup string
---- @returns boolean
+--- @return boolean
 function IsScenarioGroupEnabled(scenarioGroup) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPlayingPhoneGestureAnim(ped) end
 
 
@@ -522,7 +522,7 @@ function IsPlayingPhoneGestureAnim(ped) end
 --- @param p2 number
 --- @param p3 number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function IsScenarioOccupied(p0, p1, p2, p3, p4) end
 
 --- 
@@ -537,33 +537,33 @@ function IsScenarioOccupied(p0, p1, p2, p3, p4) end
 --- scenarioType could be the same as scenarioName, used in for example AI::TASK_START_SCENARIO_AT_POSITION.  
 --- 
 --- @param scenarioType string
---- @returns boolean
+--- @return boolean
 function IsScenarioTypeEnabled(scenarioType) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsTaskMoveNetworkReadyForTransition(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsTaskMoveNetworkActive(ped) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsWaypointPlaybackGoingOnForVehicle(vehicle) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function IsWaypointPlaybackGoingOnForPed(p0) end
 
 --- 
 --- Gets whether the world point the calling script is registered to is within desired range of the player.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsWorldPointWithinBrainActivationRange() end
 
 --- 
@@ -596,12 +596,12 @@ function OpenPatrolRoute(patrolRoute) end
 --- NativeDB Return Type: void
 --- 
 --- @param taskSequenceId number
---- @returns any
+--- @return any
 function OpenSequenceTask(taskSequenceId) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function PedHasUseScenarioTask(ped) end
 
 --- [Animations list](https://alexguirre.github.io/animations-list/)
@@ -649,7 +649,7 @@ function RemoveAllCoverBlockingAreas() end
 
 --- @param ped Ped
 --- @param name string
---- @returns boolean
+--- @return boolean
 function RequestTaskMoveNetworkStateTransition(ped, name) end
 
 --- 
@@ -824,7 +824,7 @@ function SetPedPathCanDropFromHeight(ped, Toggle) end
 --- 
 --- @param ped Ped
 --- @param Toggle boolean
---- @returns any
+--- @return any
 function SetPedPathCanUseClimbovers(ped, Toggle) end
 
 --- 
@@ -832,7 +832,7 @@ function SetPedPathCanUseClimbovers(ped, Toggle) end
 --- 
 --- @param ped Ped
 --- @param Toggle boolean
---- @returns any
+--- @return any
 function SetPedPathCanUseLadders(ped, Toggle) end
 
 
@@ -855,7 +855,7 @@ function SetPedPathPreferToAvoidWater(ped, avoidWater) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns any
+--- @return any
 function SetPedWaypointRouteOffset(p0, p1, p2, p3) end
 
 --- 

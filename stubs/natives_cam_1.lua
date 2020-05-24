@@ -104,7 +104,7 @@ function SetGameplayHintAnimOffsetz(zoffset) end
 --- 
 --- @param p0 boolean
 --- @param p1 number
---- @returns any
+--- @return any
 function SetWidescreenBorders(p0, p1) end
 
 

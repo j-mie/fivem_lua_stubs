@@ -63,14 +63,14 @@ function AttachRopeToEntity(ropeId, entity, x, y, z, p5) end
 --- @param p14 number
 --- @param breakWhenShot boolean
 --- @param unkPtr any
---- @returns number
+--- @return number
 function AddRope(x, y, z, rotX, rotY, rotZ, length, ropeType, maxLength, minLength, p10, p11, p12, rigid, p14, breakWhenShot, unkPtr) end
 
 --- 
 --- NativeDB Return Type: void
 --- 
 --- @param ropeId number
---- @returns any
+--- @return any
 function DeleteChildRope(ropeId) end
 
 --- 
@@ -117,44 +117,44 @@ function DetachRopeFromEntity(ropeId, entity) end
 
 
 --- @param ropeId number
---- @returns boolean
+--- @return boolean
 function DoesRopeBelongToThisScript(ropeId) end
 
 --- 
 --- Ptr is correct  
 --- 
 --- @param ropeId number
---- @returns boolean
+--- @return boolean
 function DoesRopeExist(ropeId) end
 
 --- 
 --- GET_*
 --- 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function DoesEntityHaveFragInst(object) end
 
 --- 
 --- NativeDB Return Type: Vector3
 --- 
 --- @param ropeId number
---- @returns any
+--- @return any
 function GetRopeLastVertexCoord(ropeId) end
 
 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetCgoffset(entity) end
 
 
 --- @param ropeId number
 --- @param vertex number
---- @returns vector3
+--- @return vector3
 function GetRopeVertexCoord(ropeId, vertex) end
 
 
 --- @param ropeId number
---- @returns number
+--- @return number
 function GetRopeVertexCount(ropeId) end
 
 --- 
@@ -166,11 +166,11 @@ function GetRopeVertexCount(ropeId) end
 --- 
 --- @param ropeId number
 --- @param rope_preset string
---- @returns any
+--- @return any
 function LoadRopeData(ropeId, rope_preset) end
 
 
---- @returns boolean
+--- @return boolean
 function RopeAreTexturesLoaded() end
 
 
@@ -194,7 +194,7 @@ function RopeConvertToSimple(ropeId) end
 --- 
 --- @param ropeId number
 --- @param length number
---- @returns any
+--- @return any
 function RopeForceLength(ropeId, length) end
 
 --- 
@@ -204,7 +204,7 @@ function RopeForceLength(ropeId, length) end
 --- 
 --- NativeDB Return Type: void
 --- 
---- @returns any
+--- @return any
 function RopeLoadTextures() end
 
 
@@ -223,7 +223,7 @@ function RopeResetLength(ropeId, length) end
 --- Get a rope's length.  Can be modified with ROPE_FORCE_LENGTH  
 --- 
 --- @param ropeId number
---- @returns number
+--- @return number
 function RopeGetDistanceBetweenEnds(ropeId) end
 
 --- 
@@ -233,7 +233,7 @@ function RopeGetDistanceBetweenEnds(ropeId) end
 --- 
 --- NativeDB Return Type: void
 --- 
---- @returns any
+--- @return any
 function RopeUnloadTextures() end
 
 --- 
@@ -259,7 +259,7 @@ function RopeSetUpdatePinverts(ropeId) end
 --- 
 --- @param object Object
 --- @param toggle boolean
---- @returns any
+--- @return any
 function SetDisableBreaking(object, toggle) end
 
 --- 
@@ -305,6 +305,6 @@ function StopRopeUnwindingFront(ropeId) end
 --- 
 --- @param ropeId number
 --- @param vertex number
---- @returns any
+--- @return any
 function UnpinRopeVertex(ropeId, vertex) end
 

@@ -3,7 +3,7 @@
 --- mov al, cs:g_bIsRecordingGameplay // byte_141DD0CD0 in b944  
 --- retn  
 --- 
---- @returns boolean
+--- @return boolean
 function IsRecording() end
 
 --- 
@@ -14,7 +14,7 @@ function IsRecording() end
 function DisableRockstarEditorCameraChanges() end
 
 
---- @returns boolean
+--- @return boolean
 function SaveRecordingClip() end
 
 --- 

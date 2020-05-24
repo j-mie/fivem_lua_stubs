@@ -85,7 +85,7 @@ function EnableControlAction(inputGroup, control, enable) end
 --- 
 --- Returns profile setting 17.
 --- 
---- @returns boolean
+--- @return boolean
 function GetAllowMovementWhileZoomed() end
 
 --- 
@@ -94,7 +94,7 @@ function GetAllowMovementWhileZoomed() end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns number
+--- @return number
 function GetControlNormal(inputGroup, control) end
 
 
@@ -107,7 +107,7 @@ function DisableInputGroup(inputGroup) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns number
+--- @return number
 function GetControlUnboundNormal(inputGroup, control) end
 
 --- 
@@ -116,7 +116,7 @@ function GetControlUnboundNormal(inputGroup, control) end
 --- @param inputGroup number
 --- @param control number
 --- @param p2 boolean
---- @returns string
+--- @return string
 function GetControlGroupInstructionalButton(inputGroup, control, p2) end
 
 --- 
@@ -137,7 +137,7 @@ function GetControlGroupInstructionalButton(inputGroup, control, p2) end
 --- @param inputGroup number
 --- @param control number
 --- @param p2 Player
---- @returns string
+--- @return string
 function GetControlInstructionalButton(inputGroup, control, p2) end
 
 --- 
@@ -146,7 +146,7 @@ function GetControlInstructionalButton(inputGroup, control, p2) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns number
+--- @return number
 function GetDisabledControlNormal(inputGroup, control) end
 
 --- 
@@ -154,7 +154,7 @@ function GetDisabledControlNormal(inputGroup, control) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns number
+--- @return number
 function GetControlValue(inputGroup, control) end
 
 --- 
@@ -163,36 +163,36 @@ function GetControlValue(inputGroup, control) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns number
+--- @return number
 function GetDisabledControlUnboundNormal(inputGroup, control) end
 
 
---- @returns number
+--- @return number
 function GetLocalPlayerAimState() end
 
 --- 
 --- Returns profile setting 225.
 --- 
---- @returns boolean
+--- @return boolean
 function GetIsUsingAlternateDriveby() end
 
 --- 
 --- Same behavior as GET_LOCAL_PLAYER_AIM_STATE but only used on the PC version.  
 --- 
---- @returns number
+--- @return number
 function GetLocalPlayerAimState2() end
 
 --- 
 --- The number of milliseconds since last inputGroup registered pressed
 --- 
 --- @param inputGroup number
---- @returns number
+--- @return number
 function GetTimeSinceLastInput(inputGroup) end
 
 --- Returns whether a [control](https://docs.fivem.net/game-references/controls/) was newly pressed since the last check.
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsControlJustPressed(inputGroup, control) end
 
 --- 
@@ -238,19 +238,19 @@ function IsControlJustPressed(inputGroup, control) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsControlEnabled(inputGroup, control) end
 
 --- Returns whether a [control](https://docs.fivem.net/game-references/controls/) is currently pressed.
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsControlPressed(inputGroup, control) end
 
 --- Returns whether a [control](https://docs.fivem.net/game-references/controls/) was newly released since the last check.
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsControlJustReleased(inputGroup, control) end
 
 --- 
@@ -258,13 +258,13 @@ function IsControlJustReleased(inputGroup, control) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsDisabledControlJustPressed(inputGroup, control) end
 
 --- Returns whether a [control](https://docs.fivem.net/game-references/controls/) is currently _not_ pressed.
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsControlReleased(inputGroup, control) end
 
 --- 
@@ -272,7 +272,7 @@ function IsControlReleased(inputGroup, control) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsDisabledControlPressed(inputGroup, control) end
 
 --- 
@@ -280,7 +280,7 @@ function IsDisabledControlPressed(inputGroup, control) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsDisabledControlJustReleased(inputGroup, control) end
 
 --- 
@@ -291,7 +291,7 @@ function IsDisabledControlJustReleased(inputGroup, control) end
 --- 0, 1 and 2 used in the scripts. 0 is by far the most common of them.  
 --- 
 --- @param inputGroup number
---- @returns boolean
+--- @return boolean
 function IsInputDisabled(inputGroup) end
 
 --- 
@@ -299,11 +299,11 @@ function IsInputDisabled(inputGroup) end
 --- 
 --- @param inputGroup number
 --- @param control number
---- @returns boolean
+--- @return boolean
 function IsDisabledControlReleased(inputGroup, control) end
 
 
---- @returns boolean
+--- @return boolean
 function IsLookInverted() end
 
 --- 
@@ -311,7 +311,7 @@ function IsLookInverted() end
 --- 0, 1 and 2 used in the scripts. 0 is by far the most common of them.  
 --- 
 --- @param inputGroup number
---- @returns boolean
+--- @return boolean
 function IsInputJustDisabled(inputGroup) end
 
 --- 
@@ -328,7 +328,7 @@ function SetControlGroupColor(inputGroup, red, green, blue) end
 --- 
 --- @param x number
 --- @param y number
---- @returns boolean
+--- @return boolean
 function SetCursorLocation(x, y) end
 
 --- 
@@ -356,7 +356,7 @@ function SetPadShake(inputGroup, duration, frequency) end
 --- @param inputGroup number
 --- @param control number
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function SetControlNormal(inputGroup, control, amount) end
 
 
@@ -376,7 +376,7 @@ function SetInputExclusive(inputGroup, control) end
 --- S*
 --- 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function SwitchToInputMappingScheme2(name) end
 
 
@@ -387,6 +387,6 @@ function SetPlayerpadShakesWhenControllerDisabled(toggle) end
 --- Used in carsteal3 script with p0 = "Carsteal4_spycar".  
 --- 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function SwitchToInputMappingScheme(name) end
 

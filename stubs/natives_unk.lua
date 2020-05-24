@@ -10,7 +10,7 @@
 --- spanish = 10  
 --- russian = 25  
 --- 
---- @returns number
+--- @return number
 function GetUserLanguageId() end
 
 --- 
@@ -28,19 +28,19 @@ function GetUserLanguageId() end
 --- mexican = 11  
 --- chinesesimplified = 12
 --- 
---- @returns number
+--- @return number
 function GetCurrentLanguage() end
 
 
---- @returns boolean
+--- @return boolean
 function LoadingscreenGetLoadFreemode() end
 
 
---- @returns boolean
+--- @return boolean
 function LoadingscreenIsLoadingFreemode() end
 
 
---- @returns boolean
+--- @return boolean
 function LoadingscreenGetLoadFreemodeWithEventName() end
 
 

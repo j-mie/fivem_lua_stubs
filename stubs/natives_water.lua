@@ -6,13 +6,13 @@
 --- @param xHigh number
 --- @param yHigh number
 --- @param height number
---- @returns number
+--- @return number
 function AddCurrentRise(xLow, yLow, xHigh, yHigh, height) end
 
 --- 
 --- Gets the aggressiveness factor of the ocean waves.  
 --- 
---- @returns number
+--- @return number
 function GetDeepOceanScaler() end
 
 --- 
@@ -24,7 +24,7 @@ function GetDeepOceanScaler() end
 --- @param y number
 --- @param z number
 --- @param height number
---- @returns boolean
+--- @return boolean
 function GetWaterHeight(x, y, z, height) end
 
 
@@ -32,7 +32,7 @@ function GetWaterHeight(x, y, z, height) end
 --- @param y number
 --- @param z number
 --- @param height number
---- @returns boolean
+--- @return boolean
 function GetWaterHeightNoWaves(x, y, z, height) end
 
 --- 
@@ -71,7 +71,7 @@ function SetDeepOceanScaler(intensity) end
 --- @param p5 any
 --- @param p6 any
 --- @param p7 any
---- @returns boolean
+--- @return boolean
 function TestProbeAgainstAllWater(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 
@@ -82,7 +82,7 @@ function TestProbeAgainstAllWater(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param y2 number
 --- @param z2 number
 --- @param result vector3
---- @returns boolean
+--- @return boolean
 function TestProbeAgainstWater(x1, y1, z1, x2, y2, z2, result) end
 
 --- 
@@ -93,6 +93,6 @@ function TestProbeAgainstWater(x1, y1, z1, x2, y2, z2, result) end
 --- @param z number
 --- @param p3 any
 --- @param height number
---- @returns boolean
+--- @return boolean
 function TestVerticalProbeAgainstAllWater(x, y, z, p3, height) end
 

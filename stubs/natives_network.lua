@@ -12,7 +12,7 @@ function ActivateDamageTrackerOnPlayer(player, toggle) end
 --- @param vehicle_amt number
 --- @param object_amt number
 --- @param pickup_amt number
---- @returns boolean
+--- @return boolean
 function CanRegisterMissionEntities(ped_amt, vehicle_amt, object_amt, pickup_amt) end
 
 
@@ -22,19 +22,19 @@ function ActivateDamageTrackerOnNetworkId(netID, toggle) end
 
 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function CanRegisterMissionPeds(amount) end
 
 
 --- @param networkHandle number
 --- @param event number
 --- @param amountReceived number
---- @returns boolean
+--- @return boolean
 function BadSportPlayerLeftDetected(networkHandle, event, amountReceived) end
 
 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function CanRegisterMissionVehicles(amount) end
 
 --- 
@@ -44,44 +44,44 @@ function CloudCheckAvailability() end
 
 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function CanRegisterMissionObjects(amount) end
 
 
---- @returns number
+--- @return number
 function CloudGetAvailabilityCheckResult() end
 
 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function CanRegisterMissionPickups(amount) end
 
 
---- @returns boolean
+--- @return boolean
 function FacebookDoUnkCheck() end
 
 
---- @returns boolean
+--- @return boolean
 function FacebookIsSendingData() end
 
 
 --- @param p0 string
---- @returns number
+--- @return number
 function CloudDeleteMemberFile(p0) end
 
 
 --- @param handle number
---- @returns boolean
+--- @return boolean
 function CloudHasRequestCompleted(handle) end
 
 --- 
 --- GTA Online character creation  
 --- 
---- @returns boolean
+--- @return boolean
 function FacebookSetCreateCharacterComplete() end
 
 
---- @returns boolean
+--- @return boolean
 function FacebookIsAvailable() end
 
 --- 
@@ -95,27 +95,27 @@ function FacebookIsAvailable() end
 --- 6 = "prologue"  
 --- 
 --- @param milestoneId number
---- @returns boolean
+--- @return boolean
 function FacebookSetMilestoneComplete(milestoneId) end
 
 
 --- @param networkHandle number
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function FilloutPmPlayerList(networkHandle, p1, p2) end
 
 
 --- @param heistName string
 --- @param cashEarned number
 --- @param xpEarned number
---- @returns boolean
+--- @return boolean
 function FacebookSetHeistComplete(heistName, cashEarned, xpEarned) end
 
 --- Returns POSIX timestamp.
 --- 
 --- Renamed from _GET_POSIX_TIME to GET_CLOUD_TIME_AS_INT because of conflicting native names ([0xDA488F299A5B164E](#_0xDA488F299A5B164E))
---- @returns number
+--- @return number
 function GetCloudTimeAsInt() end
 
 --- 
@@ -126,7 +126,7 @@ function FadeOutLocalPlayer(p0) end
 
 
 --- @param index number
---- @returns string
+--- @return string
 function GetCommerceItemId(index) end
 
 
@@ -134,17 +134,17 @@ function GetCommerceItemId(index) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function FilloutPmPlayerListWithNames(p0, p1, p2, p3) end
 
 
 --- @param index number
---- @returns number
+--- @return number
 function GetCommerceItemNumCats(index) end
 
 
 --- @param index number
---- @returns any
+--- @return any
 function GetCommerceProductPrice(index) end
 
 --- 
@@ -152,20 +152,20 @@ function GetCommerceProductPrice(index) end
 --- 
 --- @param index number
 --- @param index2 number
---- @returns string
+--- @return string
 function GetCommerceItemCat(index, index2) end
 
 
---- @returns any
+--- @return any
 function GetMaxNumNetworkObjects() end
 
 
 --- @param index number
---- @returns string
+--- @return string
 function GetCommerceItemName(index) end
 
 
---- @returns any
+--- @return any
 function GetMaxNumNetworkPickups() end
 
 --- 
@@ -185,35 +185,35 @@ function GetMaxNumNetworkPickups() end
 function GetDateAndTimeFromUnixEpoch(unixEpoch, timeStructure) end
 
 
---- @returns any
+--- @return any
 function GetMaxNumNetworkVehicles() end
 
 
---- @returns number
+--- @return number
 function GetNumCommerceItems() end
 
 
---- @returns any
+--- @return any
 function GetMaxNumNetworkPeds() end
 
 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function GetNumCreatedMissionPeds(p0) end
 
 
---- @returns number
+--- @return number
 function GetNetworkTime() end
 
 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function GetNumCreatedMissionVehicles(p0) end
 
 --- Returns the same value as [GetNetworkTime](#_0x7A5487FE9FAA6B48) in freemode, but as opposed to GetNetworkTime it always gets the most recent time, instead of once per tick.
 --- 
 --- Could be used for benchmarking since it can return times in ticks.
---- @returns number
+--- @return number
 function GetNetworkTimeAccurate() end
 
 --- 
@@ -224,24 +224,24 @@ function GetNetworkTimeAccurate() end
 --- NativeDB Added Parameter 2: Any p1
 --- 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function GetNumReservedMissionPeds(p0) end
 
 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function GetNumCreatedMissionObjects(p0) end
 
 
 --- @param p0 number
---- @returns string
+--- @return string
 function GetPlayerAdvancedModifierPrivileges(p0) end
 
 --- 
 --- Previously named, '_FORMAT_TIME' for people who can't find it's uses in decompiled scripts.  
 --- 
 --- @param time number
---- @returns string
+--- @return string
 function GetTimeAsString(time) end
 
 --- 
@@ -252,7 +252,7 @@ function GetTimeAsString(time) end
 --- NativeDB Added Parameter 2: Any p1
 --- 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function GetNumReservedMissionObjects(p0) end
 
 --- 
@@ -260,7 +260,7 @@ function GetNumReservedMissionObjects(p0) end
 --- 
 --- @param timeA number
 --- @param timeB number
---- @returns number
+--- @return number
 function GetTimeDifference(timeA, timeB) end
 
 --- 
@@ -271,11 +271,11 @@ function GetTimeDifference(timeA, timeB) end
 --- NativeDB Added Parameter 2: Any p1
 --- 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function GetNumReservedMissionVehicles(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function HasNetworkTimeStarted() end
 
 --- 
@@ -286,11 +286,11 @@ function HasNetworkTimeStarted() end
 --- GET_ST*
 --- 
 --- @param p0 number
---- @returns number
+--- @return number
 function GetStatusOfTextureDownload(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function IsCommerceStoreOpen() end
 
 --- 
@@ -298,21 +298,21 @@ function IsCommerceStoreOpen() end
 --- 
 --- @param timeA number
 --- @param timeB number
---- @returns number
+--- @return number
 function GetTimeOffset(timeA, timeB) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsDamageTrackerActiveOnPlayer(player) end
 
 
---- @returns boolean
+--- @return boolean
 function IsCommerceDataValid() end
 
 
 --- @param netId number
---- @returns boolean
+--- @return boolean
 function IsNetworkIdOwnedByParticipant(netId) end
 
 
@@ -320,21 +320,21 @@ function IsNetworkIdOwnedByParticipant(netId) end
 --- @param p1 number
 --- @param p2 number
 --- @param p3 number
---- @returns boolean
+--- @return boolean
 function IsSphereVisibleToAnotherMachine(p0, p1, p2, p3) end
 
 
 --- @param netID number
---- @returns boolean
+--- @return boolean
 function IsDamageTrackerActiveOnNetworkId(netID) end
 
 
---- @returns boolean
+--- @return boolean
 function IsStoreAvailableToUser() end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerInCutscene(player) end
 
 --- 
@@ -342,7 +342,7 @@ function IsPlayerInCutscene(player) end
 --- 
 --- @param timeA number
 --- @param timeB number
---- @returns boolean
+--- @return boolean
 function IsTimeLessThan(timeA, timeB) end
 
 
@@ -351,7 +351,7 @@ function IsTimeLessThan(timeA, timeB) end
 --- @param p2 number
 --- @param p3 number
 --- @param p4 number
---- @returns boolean
+--- @return boolean
 function IsSphereVisibleToPlayer(p0, p1, p2, p3, p4) end
 
 --- 
@@ -359,7 +359,7 @@ function IsSphereVisibleToPlayer(p0, p1, p2, p3, p4) end
 --- 
 --- @param timeA number
 --- @param timeB number
---- @returns boolean
+--- @return boolean
 function IsTimeEqualTo(timeA, timeB) end
 
 --- 
@@ -367,7 +367,7 @@ function IsTimeEqualTo(timeA, timeB) end
 --- 
 --- @param timeA number
 --- @param timeB number
---- @returns boolean
+--- @return boolean
 function IsTimeMoreThan(timeA, timeB) end
 
 
@@ -378,19 +378,19 @@ function NetworkBlockInvites2(toggle) end
 --- gets the entity id of a network id  
 --- 
 --- @param netHandle number
---- @returns Entity
+--- @return Entity
 function NetToEnt(netHandle) end
 
 --- 
 --- gets the object id of a network id  
 --- 
 --- @param netHandle number
---- @returns Object
+--- @return Object
 function NetToObj(netHandle) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkAcceptPresenceInvite(p0) end
 
 --- 
@@ -406,32 +406,32 @@ function NetworkAcceptPresenceInvite(p0) end
 --- 
 --- @param tunableContext string
 --- @param tunableName string
---- @returns boolean
+--- @return boolean
 function NetworkAccessTunableBool(tunableContext, tunableName) end
 
 
 --- @param tunableContext Hash
 --- @param tunableName Hash
---- @returns boolean
+--- @return boolean
 function NetworkAccessTunableBoolHash(tunableContext, tunableName) end
 
 --- 
 --- gets the ped id of a network id  
 --- 
 --- @param netHandle number
---- @returns Ped
+--- @return Ped
 function NetToPed(netHandle) end
 
 
 --- @param netHandle number
---- @returns Vehicle
+--- @return Vehicle
 function NetToVeh(netHandle) end
 
 
 --- @param tunableContext Hash
 --- @param tunableName Hash
 --- @param value number
---- @returns boolean
+--- @return boolean
 function NetworkAccessTunableFloatHash(tunableContext, tunableName, value) end
 
 --- 
@@ -465,7 +465,7 @@ function NetworkAccessTunableFloatHash(tunableContext, tunableName, value) end
 --- @param tunableContext string
 --- @param tunableName string
 --- @param value number
---- @returns boolean
+--- @return boolean
 function NetworkAccessTunableInt(tunableContext, tunableName, value) end
 
 --- 
@@ -473,11 +473,11 @@ function NetworkAccessTunableInt(tunableContext, tunableName, value) end
 --- 
 --- Triggers a CEventNetworkInviteConfirmed event
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkAcceptInvite() end
 
 
---- @returns any
+--- @return any
 function NetworkActionFollowInvite() end
 
 
@@ -487,7 +487,7 @@ function NetworkActionFollowInvite() end
 --- @param p3 number
 --- @param p4 number
 --- @param p5 number
---- @returns any
+--- @return any
 function NetworkAddEntityArea(p0, p1, p2, p3, p4, p5) end
 
 --- 
@@ -524,14 +524,14 @@ function NetworkAddEntityArea(p0, p1, p2, p3, p4, p5) end
 --- @param tunableContext string
 --- @param tunableName string
 --- @param value number
---- @returns boolean
+--- @return boolean
 function NetworkAccessTunableFloat(tunableContext, tunableName, value) end
 
 
 --- @param tunableContext Hash
 --- @param tunableName Hash
 --- @param value number
---- @returns boolean
+--- @return boolean
 function NetworkAccessTunableIntHash(tunableContext, tunableName, value) end
 
 
@@ -559,7 +559,7 @@ function NetworkAddFollowers(p0, p1) end
 --- @param p4 number
 --- @param p5 number
 --- @param p6 number
---- @returns any
+--- @return any
 function NetworkAddEntityAngledArea(p0, p1, p2, p3, p4, p5, p6) end
 
 
@@ -582,32 +582,32 @@ function NetworkAddPedToSynchronisedScene(ped, netScene, animDict, animnName, bl
 --- @param p3 number
 --- @param p4 number
 --- @param p5 number
---- @returns any
+--- @return any
 function NetworkAddEntityDisplayedBoundaries(p0, p1, p2, p3, p4, p5) end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkAmIBlockedByGamer(networkHandle) end
 
 
 --- @param networkHandle number
 --- @param message string
---- @returns boolean
+--- @return boolean
 function NetworkAddFriend(networkHandle, message) end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkAmIMutedByGamer(networkHandle) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkAmIMutedByPlayer(player) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkAllocateTunablesRegistrationDataMap() end
 
 
@@ -628,18 +628,18 @@ function NetworkApplyTransitionParameterString(p0, string, p2) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkAmIBlockedByPlayer(player) end
 
 
 --- @param netHandle1 number
 --- @param netHandle2 number
---- @returns boolean
+--- @return boolean
 function NetworkAreHandlesTheSame(netHandle1, netHandle2) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkAreTransitionDetailsValid(p0) end
 
 --- 
@@ -647,7 +647,7 @@ function NetworkAreTransitionDetailsValid(p0) end
 --- 
 --- @param ped Ped
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkApplyCachedPlayerHeadBlendData(ped, player) end
 
 --- 
@@ -676,7 +676,7 @@ function NetworkBlockKickedPlayers(p0) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns boolean
+--- @return boolean
 function NetworkApplyVoiceProximityOverride(x, y, z) end
 
 --- 
@@ -685,12 +685,12 @@ function NetworkApplyVoiceProximityOverride(x, y, z) end
 --- Returns 1 if the multiplayer is loaded, otherwhise 0.  
 --- 
 --- @param loadingState number
---- @returns boolean
+--- @return boolean
 function NetworkCanAccessMultiplayer(loadingState) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkCanCommunicateWithGamer(networkHandle) end
 
 
@@ -705,7 +705,7 @@ function NetworkAttachSynchronisedSceneToEntity(netScene, entity, bone) end
 --- NETWORK_CAN_*
 --- 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkCanCommunicateWithGamer2(networkHandle) end
 
 --- 
@@ -721,21 +721,21 @@ function NetworkBail() end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkCanGamerPlayMultiplayerWithMe(networkHandle) end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkCanPlayMultiplayerWithGamer(networkHandle) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkCanSetWaypoint() end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkCanViewGamerUserContent(networkHandle) end
 
 
@@ -747,7 +747,7 @@ function NetworkCacheLocalPlayerHeadBlendData() end
 function NetworkChangeTransitionSlots(p0, p1) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkCanBail() end
 
 --- 
@@ -755,16 +755,16 @@ function NetworkCanBail() end
 --- 
 --- @param animDict string
 --- @param animName string
---- @returns boolean
+--- @return boolean
 function NetworkClanAnimation(animDict, animName) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkClanDownloadMembership(networkHandle) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkCanEnterMultiplayer() end
 
 --- 
@@ -772,17 +772,17 @@ function NetworkCanEnterMultiplayer() end
 --- 
 --- @param netHandle Player
 --- @param txdName any
---- @returns boolean
+--- @return boolean
 function NetworkClanGetEmblemTxdName(netHandle, txdName) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkCanSessionEnd() end
 
 --- 
 --- NETWORK_CLAN_*
 --- 
---- @returns number
+--- @return number
 function NetworkClanGetLocalMembershipsCount() end
 
 
@@ -790,24 +790,24 @@ function NetworkCancelRespawnSearch() end
 
 
 --- @param p0 number
---- @returns number
+--- @return number
 function NetworkClanGetMembershipCount(p0) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkCheckDataManagerSucceededForHandle(p0, p1) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkClanDownloadMembershipPending(p0) end
 
 
 --- @param p0 number
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkClanGetMembershipValid(p0, p1) end
 
 --- 
@@ -853,7 +853,7 @@ function NetworkClanGetUiFormattedTag(clanDesc, bufferSize, formattedTag) end
 --- @param p0 number
 --- @param clanMembership number
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function NetworkClanGetMembership(p0, clanMembership, p2) end
 
 --- 
@@ -861,7 +861,7 @@ function NetworkClanGetMembership(p0, clanMembership, p2) end
 --- 
 --- @param clanDesc number
 --- @param bufferSize number
---- @returns boolean
+--- @return boolean
 function NetworkClanIsRockstarClan(clanDesc, bufferSize) end
 
 --- 
@@ -874,28 +874,28 @@ function NetworkClanIsRockstarClan(clanDesc, bufferSize) end
 --- 
 --- @param memberDesc number
 --- @param p1 number
---- @returns boolean
+--- @return boolean
 function NetworkClanGetMembershipDesc(memberDesc, p1) end
 
 
 --- @param clanDesc number
---- @returns boolean
+--- @return boolean
 function NetworkClanJoin(clanDesc) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkClanIsEmblemReady(p0, p1) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkClanPlayerIsActive(networkHandle) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function NetworkClanRemoteMembershipsAreInCache(p0) end
 
 --- 
@@ -907,12 +907,12 @@ function NetworkClanRemoteMembershipsAreInCache(p0) end
 --- @param clanDesc number
 --- @param bufferSize number
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkClanPlayerGetDesc(clanDesc, bufferSize, networkHandle) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkClanRequestEmblem(p0) end
 
 
@@ -923,7 +923,7 @@ function NetworkClanReleaseEmblem(p0) end
 function NetworkClearClockTimeOverride() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkClanServiceIsValid() end
 
 
@@ -933,7 +933,7 @@ function NetworkClearFollowers() end
 function NetworkClearGetGamerStatus() end
 
 
---- @returns any
+--- @return any
 function NetworkClearFollowInvite() end
 
 
@@ -957,7 +957,7 @@ function NetworkClearPropertyId() end
 --- netScene to scene  
 --- 
 --- @param netScene number
---- @returns number
+--- @return number
 function NetworkConvertSynchronisedSceneToSynchronizedScene(netScene) end
 
 
@@ -991,7 +991,7 @@ function NetworkDisableProximityMigration(netID) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionQuickmatchAsync(p0, p1, p2, p3) end
 
 
@@ -1012,7 +1012,7 @@ function NetworkConcealPlayer(player, toggle, p2) end
 --- @param p2 boolean
 --- @param players number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionToFreemode(p0, p1, p2, players, p4) end
 
 
@@ -1028,7 +1028,7 @@ function NetworkDoTransitionToFreemode(p0, p1, p2, players, p4) end
 --- @param p9 number
 --- @param animTime number
 --- @param p11 number
---- @returns number
+--- @return number
 function NetworkCreateSynchronisedScene(x, y, z, xRot, yRot, zRot, rotationOrder, useOcclusionPortal, looped, p9, animTime, p11) end
 
 
@@ -1038,14 +1038,14 @@ function NetworkCreateSynchronisedScene(x, y, z, xRot, yRot, zRot, rotationOrder
 --- @param p3 boolean
 --- @param p4 boolean
 --- @param p5 boolean
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionToNewFreemode(p0, p1, players, p3, p4, p5) end
 
 
 --- @param p0 boolean
 --- @param maxPlayers number
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionToNewGame(p0, maxPlayers, p2) end
 
 --- 
@@ -1056,12 +1056,12 @@ function NetworkDoTransitionToNewGame(p0, maxPlayers, p2) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionQuickmatch(p0, p1, p2, p3) end
 
 
 --- @param netID number
---- @returns boolean
+--- @return boolean
 function NetworkDoesNetworkIdExist(netID) end
 
 --- 
@@ -1094,7 +1094,7 @@ function NetworkDoesNetworkIdExist(netID) end
 --- 
 --- @param tunableContext string
 --- @param tunableName string
---- @returns boolean
+--- @return boolean
 function NetworkDoesTunableExist(tunableContext, tunableName) end
 
 --- 
@@ -1107,7 +1107,7 @@ function NetworkDoesTunableExist(tunableContext, tunableName) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionQuickmatchWithGroup(p0, p1, p2, p3, p4, p5) end
 
 
@@ -1116,6 +1116,6 @@ function NetworkEndTutorialSession() end
 
 --- @param p0 boolean
 --- @param maxPlayers number
---- @returns boolean
+--- @return boolean
 function NetworkDoTransitionToGame(p0, maxPlayers) end
 

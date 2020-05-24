@@ -3,12 +3,12 @@
 --- Used when calling SET_PED_HEAD_BLEND_DATA.
 --- 
 --- @param type number
---- @returns number
+--- @return number
 function GetPedHeadBlendFirstIndex(type) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedMaxHealth(ped) end
 
 --- 
@@ -26,7 +26,7 @@ function GetPedMaxHealth(ped) end
 --- @param ped Ped
 --- @param sizeAndPeds number
 --- @param ignore number
---- @returns number
+--- @return number
 function GetPedNearbyPeds(ped, sizeAndPeds, ignore) end
 
 --- 
@@ -34,7 +34,7 @@ function GetPedNearbyPeds(ped, sizeAndPeds, ignore) end
 --- 
 --- @param ped Ped
 --- @param overlayID number
---- @returns number
+--- @return number
 function GetPedHeadOverlayValue(ped, overlayID) end
 
 --- 
@@ -42,7 +42,7 @@ function GetPedHeadOverlayValue(ped, overlayID) end
 --- 
 --- @param ped Ped
 --- @param outBone number
---- @returns boolean
+--- @return boolean
 function GetPedLastDamageBone(ped, outBone) end
 
 --- 
@@ -74,7 +74,7 @@ function GetPedLastDamageBone(ped, outBone) end
 --- 
 --- @param ped Ped
 --- @param sizeAndVehs number
---- @returns number
+--- @return number
 function GetPedNearbyVehicles(ped, sizeAndVehs) end
 
 --- 
@@ -85,12 +85,12 @@ function GetPedNearbyVehicles(ped, sizeAndVehs) end
 --- 3: ragdoll  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedParachuteLandingType(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedMoney(ped) end
 
 
@@ -104,7 +104,7 @@ function GetPedParachuteTintIndex(ped, outTintIndex) end
 --- 
 --- @param ped Ped
 --- @param componentId number
---- @returns number
+--- @return number
 function GetPedPropTextureIndex(ped, componentId) end
 
 --- 
@@ -113,13 +113,13 @@ function GetPedPropTextureIndex(ped, componentId) end
 --- 
 --- @param ped Ped
 --- @param componentId number
---- @returns number
+--- @return number
 function GetPedPaletteVariation(ped, componentId) end
 
 
 --- @param ped Ped
 --- @param bone number
---- @returns number
+--- @return number
 function GetPedRagdollBoneIndex(ped, bone) end
 
 --- 
@@ -132,7 +132,7 @@ function GetPedRagdollBoneIndex(ped, bone) end
 --- Normal means no parachute?  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedParachuteState(ped) end
 
 --- 
@@ -141,18 +141,18 @@ function GetPedParachuteState(ped) end
 --- 
 --- @param ped Ped
 --- @param componentId number
---- @returns number
+--- @return number
 function GetPedPropIndex(ped, componentId) end
 
 
 --- @param ped Ped
 --- @param flagId number
---- @returns boolean
+--- @return boolean
 function GetPedResetFlag(ped, flagId) end
 
 
 --- @param ped Ped
---- @returns Hash
+--- @return Hash
 function GetPedRelationshipGroupDefaultHash(ped) end
 
 --- 
@@ -160,7 +160,7 @@ function GetPedRelationshipGroupDefaultHash(ped) end
 --- Is best to check if the Ped is dead before asking for its killer.  
 --- 
 --- @param ped Ped
---- @returns Entity
+--- @return Entity
 function GetPedSourceOfDeath(ped) end
 
 --- 
@@ -169,12 +169,12 @@ function GetPedSourceOfDeath(ped) end
 --- 
 --- @param ped Ped
 --- @param componentId number
---- @returns number
+--- @return number
 function GetPedTextureVariation(ped, componentId) end
 
 
 --- @param ped Ped
---- @returns Hash
+--- @return Hash
 function GetPedRelationshipGroupHash(ped) end
 
 --- 
@@ -200,21 +200,21 @@ function GetPedRelationshipGroupHash(ped) end
 --- s_m_y_uscg_01 : 6 // US Coast Guard  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedType(ped) end
 
 --- 
 --- Returns whether the entity is in stealth mode  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function GetPedStealthMovement(ped) end
 
 --- 
 --- NativeDB Introduced: v1493
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedVisualFieldCenterAngle(ped) end
 
 --- 
@@ -224,19 +224,19 @@ function GetPedVisualFieldCenterAngle(ped) end
 --- Retreives [CPed + 15CC] (as of 944)  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedTimeOfDeath(ped) end
 
 
 --- @param ped Ped
---- @returns Player
+--- @return Player
 function GetPlayerPedIsFollowing(ped) end
 
 --- 
 --- gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 --- 
 --- @param handle number
---- @returns string
+--- @return string
 function GetPedheadshotTxdString(handle) end
 
 --- 
@@ -259,12 +259,12 @@ function GetPedheadshotTxdString(handle) end
 --- @param yRadius number
 --- @param zRadius number
 --- @param pedType number
---- @returns Ped
+--- @return Ped
 function GetRandomPedAtCoord(x, y, z, xRadius, yRadius, zRadius, pedType) end
 
 
 --- @param ped Ped
---- @returns Ped
+--- @return Ped
 function GetPedsJacker(ped) end
 
 --- 
@@ -284,7 +284,7 @@ function GetPedsJacker(ped) end
 --- 
 --- @param ped1 Ped
 --- @param ped2 Ped
---- @returns number
+--- @return number
 function GetRelationshipBetweenPeds(ped1, ped2) end
 
 --- 
@@ -303,22 +303,22 @@ function GetRelationshipBetweenPeds(ped1, ped2) end
 --- 
 --- @param group1 Hash
 --- @param group2 Hash
---- @returns number
+--- @return number
 function GetRelationshipBetweenGroups(group1, group2) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetSeatPedIsTryingToEnter(ped) end
 
 
 --- @param sceneID number
---- @returns number
+--- @return number
 function GetSynchronizedScenePhase(sceneID) end
 
 
 --- @param sceneID number
---- @returns number
+--- @return number
 function GetSynchronizedSceneRate(sceneID) end
 
 --- 
@@ -330,13 +330,13 @@ function GetSynchronizedSceneRate(sceneID) end
 --- 
 --- @param ped Ped
 --- @param weaponHash any
---- @returns number
+--- @return number
 function GetTimeOfLastPedWeaponDamage(ped, weaponHash) end
 
 --- Gets the vehicle the specified Ped is/was in depending on bool value.
 --- @param ped Ped
 --- @param lastVehicle boolean
---- @returns Vehicle
+--- @return Vehicle
 function GetVehiclePedIsIn(ped, lastVehicle) end
 
 --- 
@@ -347,14 +347,14 @@ function GetVehiclePedIsIn(ped, lastVehicle) end
 --- Proper name is GET_VEHICLE_PED_IS_ENTERING  
 --- 
 --- @param ped Ped
---- @returns Vehicle
+--- @return Vehicle
 function GetVehiclePedIsEntering(ped) end
 
 --- 
 --- Gets ID of vehicle player using. It means it can get ID at any interaction with vehicle. Enter\exit for example. And that means it is faster than GET_VEHICLE_PED_IS_IN but less safe.  
 --- 
 --- @param ped Ped
---- @returns Vehicle
+--- @return Vehicle
 function GetVehiclePedIsUsing(ped) end
 
 --- 
@@ -364,7 +364,7 @@ function GetVehiclePedIsUsing(ped) end
 --- This is what R* named it, deal with it.  
 --- 
 --- @param ped Ped
---- @returns Vehicle
+--- @return Vehicle
 function GetVehiclePedIsTryingToEnter(ped) end
 
 --- 
@@ -405,45 +405,45 @@ function GivePedNmMessage(ped) end
 
 
 --- @param asset string
---- @returns boolean
+--- @return boolean
 function HasActionModeAssetLoaded(asset) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function HasPedHeadBlendFinished(ped) end
 
 --- 
 --- Normally returns true. Returns false briefly whilst putting on a helmet after getting onto a motorbike. Not sure what that's about.
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function HasPedPreloadPropDataFinished(ped) end
 
 --- 
 --- Normally returns true. Returns false briefly whilst getting into a plane. This is probably a check to see if the ped model and all its components/drawables are properly loaded yet.
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function HasPedPreloadVariationDataFinished(ped) end
 
 
 --- @param ped Ped
 --- @param eventId number
---- @returns boolean
+--- @return boolean
 function HasPedReceivedEvent(ped, eventId) end
 
 
---- @returns any
+--- @return any
 function HasPedheadshotImgUploadFailed() end
 
 
---- @returns any
+--- @return any
 function HasPedheadshotImgUploadSucceeded() end
 
 
 --- @param asset string
---- @returns boolean
+--- @return boolean
 function HasStealthModeAssetLoaded(asset) end
 
 --- 
@@ -451,7 +451,7 @@ function HasStealthModeAssetLoaded(asset) end
 --- Functionality also closely related to blending
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function HasStreamedPedAssetsLoaded(ped) end
 
 
@@ -460,7 +460,7 @@ function HasStreamedPedAssetsLoaded(ped) end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsAnyHostilePedNearPoint(ped, x, y, z, radius) end
 
 
@@ -478,7 +478,7 @@ function HidePedBloodDamageByZone(ped, p1, p2) end
 --- @param z2 number
 --- @param p6 boolean
 --- @param p7 boolean
---- @returns boolean
+--- @return boolean
 function IsAnyPedShootingInArea(x1, y1, z1, x2, y2, z2, p6, p7) end
 
 
@@ -486,12 +486,12 @@ function IsAnyPedShootingInArea(x1, y1, z1, x2, y2, z2, p6, p7) end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsAnyPedNearPoint(x, y, z, radius) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsConversationPedDead(ped) end
 
 --- 
@@ -503,39 +503,39 @@ function IsConversationPedDead(ped) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function IsCopPedInArea3d(x1, y1, z1, x2, y2, z2) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedAimingFromCover(ped) end
 
 --- 
 --- Returns true if the given ped has a valid pointer to CPlayerInfo in its CPed class. That's it.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedAPlayer(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedBeingStealthKilled(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedBeingJacked(ped) end
 
 
 --- @param colorID number
---- @returns boolean
+--- @return boolean
 function IsPedBlushColorValid(colorID) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedClimbing(ped) end
 
 --- 
@@ -543,14 +543,14 @@ function IsPedClimbing(ped) end
 --- 
 --- @param ped Ped
 --- @param p1 number
---- @returns boolean
+--- @return boolean
 function IsPedBeingStunned(ped, p1) end
 
 --- 
 --- Used in hairdo_shop*.ysc and maintransition.ysc
 --- 
 --- @param colorID number
---- @returns boolean
+--- @return boolean
 function IsPedBlushColorValid2(colorID) end
 
 --- 
@@ -563,12 +563,12 @@ function IsPedBlushColorValid2(colorID) end
 --- 
 --- @param ped Ped
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function IsPedDeadOrDying(ped, p1) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedDiving(ped) end
 
 --- 
@@ -580,18 +580,18 @@ function IsPedDiving(ped) end
 --- @param componentId number
 --- @param drawableId number
 --- @param textureId number
---- @returns boolean
+--- @return boolean
 function IsPedComponentVariationValid(ped, componentId, drawableId, textureId) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedDucking(ped) end
 
 
 --- @param ped Ped
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function IsPedDefensiveAreaActive(ped, p1) end
 
 --- 
@@ -602,22 +602,22 @@ function IsPedDefensiveAreaActive(ped, p1) end
 --- 
 --- @param ped Ped
 --- @param evadingEntity Entity
---- @returns boolean
+--- @return boolean
 function IsPedEvasiveDiving(ped, evadingEntity) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedDoingDriveby(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedFalling(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedGettingIntoAVehicle(ped) end
 
 --- 
@@ -626,12 +626,12 @@ function IsPedGettingIntoAVehicle(ped) end
 --- @param ped Ped
 --- @param otherPed Ped
 --- @param angle number
---- @returns boolean
+--- @return boolean
 function IsPedFacingPed(ped, otherPed, angle) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedGoingIntoCover(ped) end
 
 --- 
@@ -639,28 +639,28 @@ function IsPedGoingIntoCover(ped) end
 --- If the handle is invalid, the function returns true.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedFatallyInjured(ped) end
 
 
 --- @param colorID number
---- @returns boolean
+--- @return boolean
 function IsPedHairColorValid(colorID) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedFleeing(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedHangingOnToVehicle(ped) end
 
 
 --- @param ped Ped
 --- @param groupId number
---- @returns boolean
+--- @return boolean
 function IsPedGroupMember(ped, groupId) end
 
 
@@ -669,82 +669,82 @@ function IsPedGroupMember(ped, groupId) end
 --- @param y number
 --- @param z number
 --- @param p4 number
---- @returns boolean
+--- @return boolean
 function IsPedHeadingTowardsPosition(ped, x, y, z, p4) end
 
 --- 
 --- Used in hairdo_shop*.ysc and maintransition.ysc
 --- 
 --- @param colorID number
---- @returns boolean
+--- @return boolean
 function IsPedHairColorValid2(colorID) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedHelmetUnk(ped) end
 
 --- 
 --- Returns true/false if the ped is/isn't humanoid.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedHuman(ped) end
 
 
 --- @param ped Ped
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsPedHeadtrackingEntity(ped, entity) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnyBoat(ped) end
 
 
 --- @param ped1 Ped
 --- @param ped2 Ped
---- @returns boolean
+--- @return boolean
 function IsPedHeadtrackingPed(ped1, ped2) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnyPlane(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnySub(ped) end
 
 --- 
 --- Returns whether the specified ped is hurt.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedHurt(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnyHeli(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnyTaxi(ped) end
 
 --- Returns whether the specified ped is in any vehicle. If atGetIn is set to true, also returns true if the ped is
 --- currently in the process of entering a vehicle (a specific stage check for CTaskEnterVehicle).
 --- @param ped Ped
 --- @param atGetIn boolean
---- @returns boolean
+--- @return boolean
 function IsPedInAnyVehicle(ped, atGetIn) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnyPoliceVehicle(ped) end
 
 --- 
@@ -752,17 +752,17 @@ function IsPedInAnyPoliceVehicle(ped) end
 --- 
 --- @param ped Ped
 --- @param exceptUseWeapon boolean
---- @returns boolean
+--- @return boolean
 function IsPedInCover(ped, exceptUseWeapon) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInAnyTrain(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInFlyingVehicle(ped) end
 
 --- 
@@ -773,7 +773,7 @@ function IsPedInFlyingVehicle(ped) end
 --- You don't have to be holding the melee-targetting button to be in this stance; you stay in it by default for a few seconds after swinging at someone. If you do a sprinting punch, it returns true for the duration of the punch animation and then returns false again, even if you've punched and made-angry many peds  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInMeleeCombat(ped) end
 
 --- 
@@ -782,17 +782,17 @@ function IsPedInMeleeCombat(ped) end
 --- 
 --- @param ped Ped
 --- @param target Ped
---- @returns boolean
+--- @return boolean
 function IsPedInCombat(ped, target) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInParachuteFreeFall(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInCoverFacingLeft(ped) end
 
 --- 
@@ -802,33 +802,33 @@ function IsPedInCoverFacingLeft(ped) end
 --- @param ped Ped
 --- @param vehicle Vehicle
 --- @param atGetIn boolean
---- @returns boolean
+--- @return boolean
 function IsPedInVehicle(ped, vehicle, atGetIn) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInGroup(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedJacking(ped) end
 
 
 --- @param ped Ped
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function IsPedInModel(ped, modelHash) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedJumpingOutOfVehicle(ped) end
 
 
 --- @param colorID number
---- @returns boolean
+--- @return boolean
 function IsPedLipstickColorValid(colorID) end
 
 --- 
@@ -836,49 +836,49 @@ function IsPedLipstickColorValid(colorID) end
 --- The default threshold is 100.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInjured(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedJumping(ped) end
 
 
 --- @param ped Ped
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function IsPedModel(ped, modelHash) end
 
 --- 
 --- Used in hairdo_shop*.ysc and maintransition.ysc
 --- 
 --- @param colorID number
---- @returns boolean
+--- @return boolean
 function IsPedLipstickColorValid2(colorID) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedOnAnyBike(ped) end
 
 --- 
 --- Returns true/false if the ped is/isn't male.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedMale(ped) end
 
 --- 
 --- Same function call as PED::GET_MOUNT, aka just returns 0  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedOnMount(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedOnFoot(ped) end
 
 --- 
@@ -887,7 +887,7 @@ function IsPedOnFoot(ped) end
 --- Return 0 when ped is not on a vehicle.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedOnVehicle(ped) end
 
 --- 
@@ -896,85 +896,85 @@ function IsPedOnVehicle(ped) end
 --- Returns true if the ped is currently opening a door (CTaskOpenDoor).
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedOpeningADoor(ped) end
 
 
 --- @param ped Ped
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsPedOnSpecificVehicle(ped, vehicle) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedPerformingDependentComboLimit(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedPerformingMeleeAction(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedPerformingStealthKill(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedPlantingBomb(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedProne(ped) end
 
 --- 
 --- If the ped handle passed through the parenthesis is in a ragdoll state this will return true.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRagdoll(ped) end
 
 --- 
 --- Returns whether the specified ped is reloading.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedReloading(ped) end
 
 
 --- @param ped Ped
 --- @param event any
---- @returns boolean
+--- @return boolean
 function IsPedRespondingToEvent(ped, event) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRunningMeleeTask(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRunningMobilePhoneTask(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRunningRagdollTask(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedShaderEffectValid(ped) end
 
 --- 
 --- Returns whether the specified ped is shooting.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedShooting(ped) end
 
 
@@ -987,7 +987,7 @@ function IsPedShooting(ped) end
 --- @param z2 number
 --- @param p7 boolean
 --- @param p8 boolean
---- @returns boolean
+--- @return boolean
 function IsPedShootingInArea(ped, x1, y1, z1, x2, y2, z2, p7, p8) end
 
 --- 
@@ -995,14 +995,14 @@ function IsPedShootingInArea(ped, x1, y1, z1, x2, y2, z2, p7, p8) end
 --- [True/False]  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedSittingInAnyVehicle(ped) end
 
 --- 
 --- Returns true if the ped doesn't do any movement. If the ped is being pushed forwards by using APPLY_FORCE_TO_ENTITY for example, the function returns false.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedStopped(ped) end
 
 --- 
@@ -1011,101 +1011,101 @@ function IsPedStopped(ped) end
 --- 
 --- @param ped Ped
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsPedSittingInVehicle(ped, vehicle) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedSwimming(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedTracked(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedSwimmingUnderWater(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedTryingToEnterALockedVehicle(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedUsingActionMode(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedUsingAnyScenario(ped) end
 
 
 --- @param ped Ped
 --- @param scenario string
---- @returns boolean
+--- @return boolean
 function IsPedUsingScenario(ped, scenario) end
 
 --- 
 --- Definition of vaulting?  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedVaulting(ped) end
 
 --- 
 --- Returns true if the ped passed through the parenthesis is wearing a helmet.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedWearingHelmet(ped) end
 
 
---- @returns any
+--- @return any
 function IsPedheadshotImgUploadAvailable() end
 
 --- 
 --- gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 --- 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function IsPedheadshotReady(id) end
 
 --- [Animations list](https://alexguirre.github.io/animations-list/)
 --- @param ped Ped
 --- @param animDict string
 --- @param anim string
---- @returns boolean
+--- @return boolean
 function IsScriptedScenarioPedUsingConditionalAnim(ped, animDict, anim) end
 
 --- 
 --- gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 --- 
 --- @param handle number
---- @returns boolean
+--- @return boolean
 function IsPedheadshotValid(handle) end
 
 --- 
 --- NativeDB Introduced: v1493
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsScubaGearLightEnabled(ped) end
 
 
 --- @param sceneID number
---- @returns boolean
+--- @return boolean
 function IsSynchronizedSceneLooped(sceneID) end
 
 --- 
 --- Returns true if a synchronized scene is running  
 --- 
 --- @param sceneId number
---- @returns boolean
+--- @return boolean
 function IsSynchronizedSceneRunning(sceneId) end
 
 --- 
@@ -1113,7 +1113,7 @@ function IsSynchronizedSceneRunning(sceneId) end
 --- Target needs to be tracked.. won't work otherwise.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsTrackedPedVisible(ped) end
 
 --- 
@@ -1133,7 +1133,7 @@ function KnockPedOffVehicle(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInHighCover(ped) end
 
 --- 

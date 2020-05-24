@@ -4,7 +4,7 @@
 --- NativeDB Added Parameter 3: int amount
 --- NativeDB Added Parameter 4: int* p3
 --- 
---- @returns boolean
+--- @return boolean
 function CanPayGoon() end
 
 --- 
@@ -82,7 +82,7 @@ function NetworkSpentBuyTruck(p0, p1, p2, p3) end
 --- NativeDB Added Parameter 2: BOOL p1
 --- NativeDB Added Parameter 3: BOOL p2
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkSpentBoss() end
 
 

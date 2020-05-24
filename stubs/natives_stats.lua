@@ -7,7 +7,7 @@
 --- @param charStat boolean
 --- @param character number
 --- @param section string
---- @returns Hash
+--- @return Hash
 function GetNgstatBoolHash(index, spStat, charStat, character, section) end
 
 --- 
@@ -24,7 +24,7 @@ function GetNgstatBoolHash(index, spStat, charStat, character, section) end
 --- @param charStat boolean
 --- @param character number
 --- @param section string
---- @returns Hash
+--- @return Hash
 function GetNgstatIntHash(index, spStat, charStat, character, section) end
 
 
@@ -32,7 +32,7 @@ function GetNgstatIntHash(index, spStat, charStat, character, section) end
 --- @param spStat boolean
 --- @param charStat boolean
 --- @param character number
---- @returns Hash
+--- @return Hash
 function GetPackedBoolStatKey(index, spStat, charStat, character) end
 
 
@@ -40,7 +40,7 @@ function GetPackedBoolStatKey(index, spStat, charStat, character) end
 --- @param spStat boolean
 --- @param charStat boolean
 --- @param character number
---- @returns Hash
+--- @return Hash
 function GetPackedIntStatKey(index, spStat, charStat, character) end
 
 
@@ -48,7 +48,7 @@ function GetPackedIntStatKey(index, spStat, charStat, character) end
 --- @param spStat boolean
 --- @param charStat boolean
 --- @param character number
---- @returns Hash
+--- @return Hash
 function GetPackedTitleUpdateBoolStatKey(index, spStat, charStat, character) end
 
 
@@ -56,7 +56,7 @@ function GetPackedTitleUpdateBoolStatKey(index, spStat, charStat, character) end
 --- @param spStat boolean
 --- @param charStat boolean
 --- @param character number
---- @returns Hash
+--- @return Hash
 function GetPackedTitleUpdateIntStatKey(index, spStat, charStat, character) end
 
 
@@ -67,7 +67,7 @@ function HiredLimo(p0, p1) end
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByHandle(p0, p1) end
 
 --- 
@@ -76,21 +76,21 @@ function Leaderboards2ReadByHandle(p0, p1) end
 --- @param p0 any
 --- @param gamerHandleCsv string
 --- @param platformName string
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByPlatform(p0, gamerHandleCsv, platformName) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByRadius(p0, p1, p2) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByRank(p0, p1, p2) end
 
 
@@ -101,14 +101,14 @@ function Leaderboards2ReadByRank(p0, p1, p2) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByRow(p0, p1, p2, p3, p4, p5, p6) end
 
 
 --- @param p0 any
 --- @param p1 number
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByScoreFloat(p0, p1, p2) end
 
 
@@ -118,37 +118,37 @@ function Leaderboards2ReadByScoreFloat(p0, p1, p2) end
 --- @param p3 boolean
 --- @param p4 any
 --- @param p5 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadFriendsByRow(p0, p1, p2, p3, p4, p5) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadByScoreInt(p0, p1, p2) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2ReadRankPrediction(p0, p1, p2) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2WriteData(p0) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function Leaderboards2WriteDataForEventType(p0, p1) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function LeaderboardsCacheDataRow(p0) end
 
 
@@ -163,71 +163,71 @@ function LeaderboardsDeaths(statName, value) end
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function LeaderboardsGetCacheDataRow(p0, p1, p2) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function LeaderboardsGetCacheExists(p0) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function LeaderboardsGetCacheNumberOfRows(p0) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function LeaderboardsGetCacheTime(p0) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns any
+--- @return any
 function LeaderboardsGetColumnId(p0, p1, p2) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns any
+--- @return any
 function LeaderboardsGetColumnType(p0, p1, p2) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function LeaderboardsGetNumberOfColumns(p0, p1) end
 
 
---- @returns boolean
+--- @return boolean
 function LeaderboardsReadAnyPending() end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns any
+--- @return any
 function LeaderboardsReadClear(p0, p1, p2) end
 
 
---- @returns any
+--- @return any
 function LeaderboardsReadClearAll() end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function LeaderboardsReadPending(p0, p1, p2) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function LeaderboardsReadSuccessful(p0, p1, p2) end
 
 
@@ -608,7 +608,7 @@ function SetHasContentUnlocksFlags(value) end
 --- }  
 --- 
 --- @param statSlot number
---- @returns any
+--- @return any
 function StatClearSlotForReload(statSlot) end
 
 
@@ -626,16 +626,16 @@ function SetSaveMigrationTransactionId(transactionId) end
 --- @param statHash Hash
 --- @param outValue boolean
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function StatGetBool(statHash, outValue, p2) end
 
 
---- @returns number
+--- @return number
 function StatGetCancelSaveMigrationStatus() end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function StatDeleteSlot(p0) end
 
 
@@ -643,7 +643,7 @@ function StatDeleteSlot(p0) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function StatGetDate(statHash, p1, p2, p3) end
 
 --- 
@@ -652,14 +652,14 @@ function StatGetDate(statHash, p1, p2, p3) end
 --- @param statName Hash
 --- @param mask number
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function StatGetBoolMasked(statName, mask, p2) end
 
 
 --- @param statHash Hash
 --- @param outValue number
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function StatGetFloat(statHash, outValue, p2) end
 
 --- 
@@ -668,7 +668,7 @@ function StatGetFloat(statHash, outValue, p2) end
 --- @param statHash Hash
 --- @param outValue number
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function StatGetInt(statHash, outValue, p2) end
 
 
@@ -677,32 +677,32 @@ function StatGetInt(statHash, outValue, p2) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function StatGetMaskedInt(p0, p1, p2, p3, p4) end
 
 
 --- @param statName Hash
---- @returns string
+--- @return string
 function StatGetLicensePlate(statName) end
 
 
 --- @param statName Hash
---- @returns number
+--- @return number
 function StatGetNumberOfDays(statName) end
 
 
 --- @param statName Hash
---- @returns number
+--- @return number
 function StatGetNumberOfHours(statName) end
 
 
 --- @param statName Hash
---- @returns number
+--- @return number
 function StatGetNumberOfMinutes(statName) end
 
 
 --- @param statName Hash
---- @returns number
+--- @return number
 function StatGetNumberOfSeconds(statName) end
 
 
@@ -711,19 +711,19 @@ function StatGetNumberOfSeconds(statName) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function StatGetPos(p0, p1, p2, p3, p4) end
 
 --- 
 --- NativeDB Parameter 0: int* p0
 --- 
 --- @param p0 any
---- @returns number
+--- @return number
 function StatGetSaveMigrationConsumeContentUnlockStatus(p0) end
 
 
 --- @param data any
---- @returns number
+--- @return number
 function StatGetSaveMigrationStatus(data) end
 
 --- 
@@ -731,14 +731,14 @@ function StatGetSaveMigrationStatus(data) end
 --- 
 --- @param statHash Hash
 --- @param p1 number
---- @returns string
+--- @return string
 function StatGetString(statHash, p1) end
 
 --- 
 --- Needs more research. Seems to return "STAT_UNKNOWN" if no such user id exists.  
 --- 
 --- @param p0 any
---- @returns string
+--- @return string
 function StatGetUserId(p0) end
 
 
@@ -748,30 +748,30 @@ function StatIncrement(statName, value) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function StatLoad(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function StatLoadPending(p0) end
 
 --- 
 --- platformName must be one of the following: ps3, xbox360, ps4, xboxone
 --- 
 --- @param platformName string
---- @returns boolean
+--- @return boolean
 function StatMigrateSave(platformName) end
 
 
 --- @param p0 number
 --- @param p1 boolean
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function StatSave(p0, p1, p2) end
 
 
---- @returns boolean
+--- @return boolean
 function StatSaveMigrationCancel() end
 
 --- 
@@ -780,30 +780,30 @@ function StatSaveMigrationCancel() end
 --- @param contentId any
 --- @param srcPlatform string
 --- @param srcGamerHandle string
---- @returns boolean
+--- @return boolean
 function StatSaveMigrationConsumeContentUnlock(contentId, srcPlatform, srcGamerHandle) end
 
 
---- @returns boolean
+--- @return boolean
 function StatSaveMigrationStatusStart() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function StatSavePending() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function StatSavePendingOrRequested() end
 
 
 --- @param statName Hash
 --- @param value boolean
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetBool(statName, value, save) end
 
 
@@ -811,7 +811,7 @@ function StatSetBool(statName, value, save) end
 --- @param value boolean
 --- @param mask number
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetBoolMasked(statName, value, mask, save) end
 
 --- 
@@ -819,14 +819,14 @@ function StatSetBoolMasked(statName, value, mask, save) end
 --- 
 --- @param statName Hash
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function StatSetCurrentPosixTime(statName, p1) end
 
 
 --- @param statName Hash
 --- @param value number
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetFloat(statName, value, save) end
 
 --- 
@@ -845,7 +845,7 @@ function StatSetFloat(statName, value, save) end
 --- @param value any
 --- @param numFields number
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetDate(statName, value, numFields, save) end
 
 --- 
@@ -917,7 +917,7 @@ function StatSetDate(statName, value, numFields, save) end
 --- @param statName Hash
 --- @param value string
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetGxtLabel(statName, value, save) end
 
 --- 
@@ -936,7 +936,7 @@ function StatSetGxtLabel(statName, value, save) end
 --- @param statName Hash
 --- @param value number
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetInt(statName, value, save) end
 
 
@@ -945,13 +945,13 @@ function StatSetInt(statName, value, save) end
 --- @param p2 any
 --- @param p3 number
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetMaskedInt(statName, p1, p2, p3, save) end
 
 
 --- @param statName Hash
 --- @param str string
---- @returns boolean
+--- @return boolean
 function StatSetLicensePlate(statName, str) end
 
 
@@ -960,7 +960,7 @@ function StatSetLicensePlate(statName, str) end
 --- @param y number
 --- @param z number
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetPos(statName, x, y, z, save) end
 
 --- 
@@ -976,19 +976,19 @@ function StatSetProfileSettingValue(profileSetting, value) end
 --- @param statName Hash
 --- @param value string
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetUserId(statName, value, save) end
 
 
 --- @param statName Hash
 --- @param value string
 --- @param save boolean
---- @returns boolean
+--- @return boolean
 function StatSetString(statName, value, save) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function StatSlotIsLoaded(p0) end
 
 --- 

@@ -141,7 +141,7 @@ function SetTvChannelPlaylistAtHour(tvChannel, playlistName, hour) end
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns number
+--- @return number
 function StartNetworkedParticleFxLoopedOnEntity(effectName, entity, xOffset, yOffset, zOffset, xRot, yRot, zRot, scale, xAxis, yAxis, zAxis) end
 
 --- 
@@ -167,7 +167,7 @@ function StartNetworkedParticleFxLoopedOnEntity(effectName, entity, xOffset, yOf
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns number
+--- @return number
 function StartNetworkedParticleFxLoopedOnEntityBone(effectName, entity, xOffset, yOffset, zOffset, xRot, yRot, zRot, boneIndex, scale, xAxis, yAxis, zAxis) end
 
 --- 
@@ -188,7 +188,7 @@ function StartNetworkedParticleFxLoopedOnEntityBone(effectName, entity, xOffset,
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns boolean
+--- @return boolean
 function StartNetworkedParticleFxNonLoopedAtCoord(effectName, xPos, yPos, zPos, xRot, yRot, zRot, scale, xAxis, yAxis, zAxis) end
 
 --- 
@@ -206,7 +206,7 @@ function StartNetworkedParticleFxNonLoopedAtCoord(effectName, xPos, yPos, zPos, 
 --- @param axisX boolean
 --- @param axisY boolean
 --- @param axisZ boolean
---- @returns boolean
+--- @return boolean
 function StartNetworkedParticleFxNonLoopedOnEntity(effectName, entity, offsetX, offsetY, offsetZ, rotX, rotY, rotZ, scale, axisX, axisY, axisZ) end
 
 --- 
@@ -225,7 +225,7 @@ function StartNetworkedParticleFxNonLoopedOnEntity(effectName, entity, offsetX, 
 --- @param axisX boolean
 --- @param axisY boolean
 --- @param axisZ boolean
---- @returns boolean
+--- @return boolean
 function StartNetworkedParticleFxNonLoopedOnPedBone(effectName, ped, offsetX, offsetY, offsetZ, rotX, rotY, rotZ, boneIndex, scale, axisX, axisY, axisZ) end
 
 --- 
@@ -244,7 +244,7 @@ function StartNetworkedParticleFxNonLoopedOnPedBone(effectName, ped, offsetX, of
 --- @param yAxis boolean
 --- @param zAxis boolean
 --- @param p11 boolean
---- @returns number
+--- @return number
 function StartParticleFxLoopedAtCoord(effectName, x, y, z, xRot, yRot, zRot, scale, xAxis, yAxis, zAxis, p11) end
 
 --- 
@@ -262,7 +262,7 @@ function StartParticleFxLoopedAtCoord(effectName, x, y, z, xRot, yRot, zRot, sca
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns number
+--- @return number
 function StartParticleFxLoopedOnEntity(effectName, entity, xOffset, yOffset, zOffset, xRot, yRot, zRot, scale, xAxis, yAxis, zAxis) end
 
 
@@ -279,7 +279,7 @@ function StartParticleFxLoopedOnEntity(effectName, entity, xOffset, yOffset, zOf
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns number
+--- @return number
 function StartParticleFxLoopedOnEntityBone(effectName, entity, xOffset, yOffset, zOffset, xRot, yRot, zRot, boneIndex, scale, xAxis, yAxis, zAxis) end
 
 --- 
@@ -308,7 +308,7 @@ function StartParticleFxLoopedOnEntityBone(effectName, entity, xOffset, yOffset,
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns number
+--- @return number
 function StartParticleFxNonLoopedAtCoord(effectName, xPos, yPos, zPos, xRot, yRot, zRot, scale, xAxis, yAxis, zAxis) end
 
 
@@ -325,7 +325,7 @@ function StartParticleFxNonLoopedAtCoord(effectName, xPos, yPos, zPos, xRot, yRo
 --- @param xAxis boolean
 --- @param yAxis boolean
 --- @param zAxis boolean
---- @returns number
+--- @return number
 function StartParticleFxLoopedOnPedBone(effectName, ped, xOffset, yOffset, zOffset, xRot, yRot, zRot, boneIndex, scale, xAxis, yAxis, zAxis) end
 
 --- 
@@ -346,7 +346,7 @@ function StartParticleFxLoopedOnPedBone(effectName, ped, xOffset, yOffset, zOffs
 --- @param axisX boolean
 --- @param axisY boolean
 --- @param axisZ boolean
---- @returns boolean
+--- @return boolean
 function StartParticleFxNonLoopedOnPedBone(effectName, ped, offsetX, offsetY, offsetZ, rotX, rotY, rotZ, boneIndex, scale, axisX, axisY, axisZ) end
 
 --- 
@@ -370,7 +370,7 @@ function StartParticleFxNonLoopedOnPedBone(effectName, ped, offsetX, offsetY, of
 --- @param axisX boolean
 --- @param axisY boolean
 --- @param axisZ boolean
---- @returns boolean
+--- @return boolean
 function StartParticleFxNonLoopedOnEntity(effectName, entity, offsetX, offsetY, offsetZ, rotX, rotY, rotZ, scale, axisX, axisY, axisZ) end
 
 --- 
@@ -423,11 +423,11 @@ function TerraingridActivate(toggle) end
 
 
 --- @param transitionTime number
---- @returns boolean
+--- @return boolean
 function TriggerScreenblurFadeIn(transitionTime) end
 
 
---- @returns boolean
+--- @return boolean
 function Ui3dsceneIsAvailable() end
 
 --- This native is used along with these two natives: [0xa356990e161c9e65](https://runtime.fivem.net/doc/reference.html#_0xA356990E161C9E65) and [0x5ce62918f8d703c7](https://runtime.fivem.net/doc/reference.html#_0x5CE62918F8D703C7). 
@@ -459,7 +459,7 @@ function UndoDecalTextureOverride(decalType) end
 
 
 --- @param transitionTime number
---- @returns boolean
+--- @return boolean
 function TriggerScreenblurFadeOut(transitionTime) end
 
 --- 
@@ -479,7 +479,7 @@ function UseParticleFxAsset(name) end
 --- All presets can be found in common\data\ui\uiscenes.meta
 --- 
 --- @param presetName string
---- @returns boolean
+--- @return boolean
 function Ui3dscenePushPreset(presetName) end
 
 

@@ -1,11 +1,11 @@
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleWanted(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleAlarmSet(vehicle) end
 
 --- Sets a global handling override for a specific vehicle class. The name is supposed to match the handlingName field from handling.meta.
@@ -18,7 +18,7 @@ function SetHandlingVector(vehicle, class_, fieldName, value) end
 
 --- Requests whether or not the commerce data for the specified player has loaded.
 --- @param playerSrc string
---- @returns boolean
+--- @return boolean
 function IsPlayerCommerceInfoLoaded(playerSrc) end
 
 --- An internal function which allows the current resource's HLL script runtimes to receive state for the specified event.
@@ -28,12 +28,12 @@ function RegisterResourceAsEventHandler(eventName) end
 
 --- @param requestData string
 --- @param requestDataLength number
---- @returns number
+--- @return number
 function PerformHttpRequestInternal(requestData, requestDataLength) end
 
 --- Registers a specified font name for use with text draw commands.
 --- @param fontName string
---- @returns number
+--- @return number
 function RegisterFontId(fontName) end
 
 --- **Experimental**: This native may be altered or removed in future versions of CitizenFX without warning.
@@ -54,7 +54,7 @@ function MumbleAddVoiceTargetPlayerByServerId(targetId, serverId) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleInteriorLightOn(vehicle) end
 
 --- **Experimental**: This native may be altered or removed in future versions of CitizenFX without warning.
@@ -62,7 +62,7 @@ function IsVehicleInteriorLightOn(vehicle) end
 --- Registers a cached resource asset with the resource system, similar to the automatic scanning of the stream/ folder.
 --- @param resourceName string
 --- @param fileName string
---- @returns string
+--- @return string
 function RegisterResourceAsset(resourceName, fileName) end
 
 --- **Experimental**: This native may be altered or removed in future versions of CitizenFX without warning.
@@ -79,7 +79,7 @@ function RegisterStreamingFileFromUrl(registerAs, url) end
 --- Example: local data = LoadResourceFile("devtools", "data.json")
 --- @param resourceName string
 --- @param fileName string
---- @returns string
+--- @return string
 function LoadResourceFile(resourceName, fileName) end
 
 
@@ -88,29 +88,29 @@ function RegisterNuiCallbackType(callbackType) end
 
 --- Returns the owner ID of the specified entity.
 --- @param entity Entity
---- @returns number
+--- @return number
 function NetworkGetEntityOwner(entity) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function HasEntityBeenMarkedAsNoLongerNeeded(vehicle) end
 
 --- Returns the offset of the specified wheel relative to the wheel's axle center.
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelXOffset(vehicle, wheelIndex) end
 
 --- Returns whether or not a browser is created for a specified DUI browser object.
 --- @param duiObject long
---- @returns boolean
+--- @return boolean
 function IsDuiAvailable(duiObject) end
 
 
 --- @param principal string
 --- @param object string
---- @returns boolean
+--- @return boolean
 function IsPrincipalAceAllowed(principal, object) end
 
 --- Adds the specified channel to the target list for the specified Mumble voice target ID.
@@ -120,18 +120,18 @@ function MumbleAddVoiceTargetChannel(targetId, channel) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehiclePreviouslyOwnedByPlayer(vehicle) end
 
 
 --- @param object string
---- @returns boolean
+--- @return boolean
 function IsAceAllowed(object) end
 
 
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelYRotation(vehicle, wheelIndex) end
 
 --- Scope exit for profiler.
@@ -150,13 +150,13 @@ function MumbleCreateChannel(id) end
 function RegisterStreamingFileFromCache(resourceName, fileName, cacheString) end
 
 --- Gets whether or not this is the CitizenFX server.
---- @returns boolean
+--- @return boolean
 function IsDuplicityVersion() end
 
 --- Returns vehicle's wheels' width (width is the same for all the wheels, cannot get/set specific wheel of vehicle).
 --- Only works on non-default wheels (returns 0 in case of default wheels).
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWheelWidth(vehicle) end
 
 --- Registers a build task factory for resources.
@@ -190,17 +190,17 @@ function RegisterKeyMapping(commandString, description, defaultMapper, defaultPa
 function ResetMapZoomDataLevel(index) end
 
 --- Returns true if the profiler is active.
---- @returns boolean
+--- @return boolean
 function ProfilerIsRecording() end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWindowTint(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleSirenOn(vehicle) end
 
 
@@ -213,12 +213,12 @@ function SetModelHeadlightConfiguration(modelHash, ratePerSecond, headlightRotat
 
 --- @param playerSrc string
 --- @param object string
---- @returns boolean
+--- @return boolean
 function IsPlayerAceAllowed(playerSrc, object) end
 
 --- A getter for [\_SET_WEAPON_DAMAGE_MODIFIER](#_0x4757F00BC6323CFE).
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function GetWeaponDamageModifier(weaponHash) end
 
 
@@ -239,7 +239,7 @@ function SendDuiMouseWheel(duiObject, deltaY, deltaX) end
 
 
 --- @param netId number
---- @returns Entity
+--- @return Entity
 function NetworkGetEntityFromNetworkId(netId) end
 
 --- Requests the commerce data for the specified player, including the owned SKUs. Use IS_PLAYER_COMMERCE_INFO_LOADED to check if it has loaded.
@@ -289,18 +289,18 @@ function SetConvarReplicated(varName, value) end
 --- @param vehicle Vehicle
 --- @param wheelID number
 --- @param completely boolean
---- @returns boolean
+--- @return boolean
 function IsVehicleTyreBurst(vehicle, wheelID, completely) end
 
 --- **Experimental**: This native may be altered or removed in future versions of CitizenFX without warning.
 --- 
 --- Returns whether an asynchronous streaming file registration completed.
 --- @param registerAs string
---- @returns boolean
+--- @return boolean
 function IsStreamingFileReady(registerAs) end
 
 --- Returns whether or not the currently executing event was canceled.
---- @returns boolean
+--- @return boolean
 function WasEventCanceled() end
 
 --- Clears players from the target list for the specified Mumble voice target ID.
@@ -309,7 +309,7 @@ function MumbleClearVoiceTargetPlayers(targetId) end
 
 --- Sends a message to the loadingScreen NUI frame, which contains the HTML page referenced in loadscreen resources.
 --- @param jsonString string
---- @returns boolean
+--- @return boolean
 function SendLoadingScreenMessage(jsonString) end
 
 --- This native sets the hover text of the small image asset for the discord rich presence implementation.
@@ -339,12 +339,12 @@ function SetGameType(gametypeName) end
 --- 
 --- Returns true if the minimap is currently expanded. False if it's the normal minimap state.
 --- Use [IsBigmapFull](#_0x66EE14B2) to check if the full map is currently revealed on the minimap.
---- @returns boolean
+--- @return boolean
 function IsBigmapActive() end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleEngineStarting(vehicle) end
 
 --- **Experimental**: This native may be altered or removed in future versions of CitizenFX without warning.
@@ -362,7 +362,7 @@ function SetVehicleFuelLevel(vehicle, level) end
 --- @param tex long
 --- @param buffer string
 --- @param length number
---- @returns boolean
+--- @return boolean
 function SetRuntimeTextureArgbData(tex, buffer, length) end
 
 --- Sets a handling override for a specific vehicle. Certain handling flags can only be set globally using SET_HANDLING_FIELD, this might require some experimentation.
@@ -380,7 +380,7 @@ function RemoveReplaceTexture(origTxd, origTxn) end
 
 
 --- @param enabled boolean
---- @returns boolean
+--- @return boolean
 function SetTextChatEnabled(enabled) end
 
 --- This native sets the hover text of the image asset for the discord rich presence implementation.
@@ -489,7 +489,7 @@ function SetVehicleAutoRepairDisabled(vehicle, value) end
 --- @param fileName string
 --- @param data string
 --- @param dataLength number
---- @returns boolean
+--- @return boolean
 function SaveResourceFile(resourceName, fileName, data, dataLength) end
 
 
@@ -605,7 +605,7 @@ function SetInteriorPortalRoomFrom(interiorId, portalIndex, roomFrom) end
 --- Returns whether change was successful (can be false if trying to set width for non-default wheels).
 --- @param vehicle Vehicle
 --- @param width number
---- @returns boolean
+--- @return boolean
 function SetVehicleWheelWidth(vehicle, width) end
 
 
@@ -625,7 +625,7 @@ function SetDuiUrl(duiObject, url) end
 
 
 --- @param jsonString string
---- @returns boolean
+--- @return boolean
 function SendNuiMessage(jsonString) end
 
 --- Shuts down the loadingScreen NUI frame, similarly to SHUTDOWN_LOADING_SCREEN.
@@ -638,7 +638,7 @@ function TempBanPlayer(playerSrc, reason) end
 
 
 --- @param prefix string
---- @returns number
+--- @return number
 function StartFindKvp(prefix) end
 
 --- Sets values to the zoom level data by index.
@@ -707,7 +707,7 @@ function SetVehicleCurrentRpm(vehicle, rpm) end
 
 
 --- @param resourceName string
---- @returns boolean
+--- @return boolean
 function StopResource(resourceName) end
 
 
@@ -734,7 +734,7 @@ function SetVehicleSteeringAngle(vehicle, angle) end
 --- Returns whether change was successful (can be false if trying to set size for non-default wheels).
 --- @param vehicle Vehicle
 --- @param size number
---- @returns boolean
+--- @return boolean
 function SetVehicleWheelSize(vehicle, size) end
 
 --- Not sure what this changes, probably determines physical rim size in case the tire is blown.
@@ -758,7 +758,7 @@ function SetVehicleWheelieState(vehicle, state) end
 
 
 --- @param resourceName string
---- @returns boolean
+--- @return boolean
 function StartResource(resourceName) end
 
 --- Use along with SetVehicleWheelSize to resize the wheels (this native sets the collider size affecting physics while SetVehicleWheelSize will change visual size).
@@ -794,6 +794,6 @@ function SetVisualSettingFloat(name, value) end
 
 --- @param password string
 --- @param hash string
---- @returns boolean
+--- @return boolean
 function VerifyPasswordHash(password, hash) end
 

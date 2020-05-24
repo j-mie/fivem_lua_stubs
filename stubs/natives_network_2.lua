@@ -45,7 +45,7 @@ function NetworkOverrideTeamRestrictions(team, toggle) end
 function NetworkOverrideReceiveRestrictionsAll(toggle) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkPlayerGetCheaterReason() end
 
 
@@ -61,7 +61,7 @@ function NetworkOverrideSendRestrictionsAll(toggle) end
 --- 
 --- @param player Player
 --- @param userID string
---- @returns string
+--- @return string
 function NetworkPlayerGetUserid(player, userID) end
 
 
@@ -73,24 +73,24 @@ function NetworkOverrideTransitionChat(p0) end
 --- Does exactly the same as GET_PLAYER_NAME.  
 --- 
 --- @param player Player
---- @returns string
+--- @return string
 function NetworkPlayerGetName(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkPlayerHasHeadset(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkPlayerIndexIsCheater(player) end
 
 --- 
 --- Returns whether the player has been reported too often or not.  
 --- Example : griefing.  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkPlayerIsBadsport() end
 
 --- 
@@ -101,11 +101,11 @@ function NetworkPlayerIsBadsport() end
 --- if that is present it will unlock dev stuff.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkPlayerIsRockstarDev(player) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkPlayerIsCheater() end
 
 
@@ -114,7 +114,7 @@ function NetworkRegisterEntityAsNetworked(entity) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function NetworkQueryRespawnResults(p0) end
 
 --- 
@@ -131,7 +131,7 @@ function NetworkRegisterHostBroadcastVariables(vars, numVars) end
 --- @param contextHash any
 --- @param nameHash any
 --- @param value boolean
---- @returns boolean
+--- @return boolean
 function NetworkRegisterTunableBoolHash(contextHash, nameHash, value) end
 
 --- 
@@ -141,7 +141,7 @@ function NetworkRegisterTunableBoolHash(contextHash, nameHash, value) end
 --- @param contextHash any
 --- @param nameHash any
 --- @param value number
---- @returns boolean
+--- @return boolean
 function NetworkRegisterTunableFloatHash(contextHash, nameHash, value) end
 
 
@@ -156,7 +156,7 @@ function NetworkRegisterPlayerBroadcastVariables(vars, numVars) end
 --- @param contextHash any
 --- @param nameHash any
 --- @param value number
---- @returns boolean
+--- @return boolean
 function NetworkRegisterTunableIntHash(contextHash, nameHash, value) end
 
 
@@ -164,7 +164,7 @@ function NetworkRemoveAllTransitionInvite() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkRemoveEntityArea(p0) end
 
 
@@ -173,7 +173,7 @@ function NetworkRemoveTransitionInvite(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkRemovePresenceInvite(p0) end
 
 --- 
@@ -189,12 +189,12 @@ function NetworkRemovePresenceInvite(p0) end
 --- seg001:00000000003EFF5C                 blr  
 --- seg001:00000000003EFF5C # End of function uunk_0x29532731  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkRequestCloudBackgroundScripts() end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkRequestControlOfEntity(entity) end
 
 
@@ -221,7 +221,7 @@ function NetworkRespawnCoords(player, x, y, z, p4, p5) end
 
 
 --- @param doorID number
---- @returns boolean
+--- @return boolean
 function NetworkRequestControlOfDoor(doorID) end
 
 
@@ -229,12 +229,12 @@ function NetworkRequestControlOfDoor(doorID) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkSendPresenceInvite(networkHandle, p1, p2, p3) end
 
 
 --- @param netId number
---- @returns boolean
+--- @return boolean
 function NetworkRequestControlOfNetworkId(netId) end
 
 --- 
@@ -257,7 +257,7 @@ function NetworkResurrectLocalPlayer(x, y, z, heading, unk, changetime) end
 --- @param p2 number
 --- @param p3 number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function NetworkSendTransitionGamerInstruction(networkHandle, p1, p2, p3, p4) end
 
 
@@ -265,7 +265,7 @@ function NetworkSendTransitionGamerInstruction(networkHandle, p1, p2, p3, p4) en
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkSessionActivityQuickmatch(p0, p1, p2, p3) end
 
 --- 
@@ -275,7 +275,7 @@ function NetworkSessionActivityQuickmatch(p0, p1, p2, p3) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkSendPresenceTransitionInvite(p0, p1, p2, p3) end
 
 
@@ -289,7 +289,7 @@ function NetworkSessionCancelInvite() end
 --- 
 --- @param message string
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkSendTextMessage(message, networkHandle) end
 
 
@@ -298,7 +298,7 @@ function NetworkSendTextMessage(message, networkHandle) end
 --- @param p2 number
 --- @param maxPlayers number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function NetworkSessionCrewMatchmaking(p0, p1, p2, maxPlayers, p4) end
 
 
@@ -318,7 +318,7 @@ function NetworkSessionChangeSlots(p0, p1) end
 --- 
 --- @param p0 boolean
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function NetworkSessionEnd(p0, p1) end
 
 --- 
@@ -338,7 +338,7 @@ function NetworkSessionEnd(p0, p1) end
 --- @param maxPlayers number
 --- @param p4 any
 --- @param p5 any
---- @returns any
+--- @return any
 function NetworkSessionEnter(p0, p1, p2, maxPlayers, p4, p5) end
 
 
@@ -353,12 +353,12 @@ function NetworkSessionGetInviter(networkHandle) end
 --- @param p1 number
 --- @param maxPlayers number
 --- @param p3 boolean
---- @returns boolean
+--- @return boolean
 function NetworkSessionFriendMatchmaking(p0, p1, maxPlayers, p3) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkSessionGetKickVote(player) end
 
 --- 
@@ -367,16 +367,16 @@ function NetworkSessionGetKickVote(player) end
 --- @param p0 number
 --- @param maxPlayers number
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function NetworkSessionHost(p0, maxPlayers, p2) end
 
 
 --- @param p0 number
---- @returns number
+--- @return number
 function NetworkSessionGetMatchmakingGroupFree(p0) end
 
 
---- @returns number
+--- @return number
 function NetworkSessionGetPrivateSlots() end
 
 --- 
@@ -384,13 +384,13 @@ function NetworkSessionGetPrivateSlots() end
 --- 
 --- @param p0 number
 --- @param maxPlayers number
---- @returns boolean
+--- @return boolean
 function NetworkSessionHostFriendsOnly(p0, maxPlayers) end
 
 
 --- @param p0 number
 --- @param maxPlayers number
---- @returns boolean
+--- @return boolean
 function NetworkSessionHostClosed(p0, maxPlayers) end
 
 --- 
@@ -403,7 +403,7 @@ function NetworkSessionHostClosed(p0, maxPlayers) end
 function NetworkSessionHostSinglePlayer(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsClosedFriends() end
 
 
@@ -411,23 +411,23 @@ function NetworkSessionIsClosedFriends() end
 function NetworkSessionHosted(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsPrivate() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsClosedCrew() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsVisible() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsInVoiceSession() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsVoiceSessionBusy() end
 
 --- 
@@ -437,7 +437,7 @@ function NetworkSessionIsVoiceSessionBusy() end
 function NetworkSessionKickPlayer(player) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionIsSolo() end
 
 
@@ -478,7 +478,7 @@ function NetworkSessionVoiceHost() end
 function NetworkSessionSetMatchmakingPropertyId(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkSessionWasInvited() end
 
 
@@ -517,7 +517,7 @@ function NetworkSessionVoiceLeave() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkSetCurrentlySelectedGamerHandleFromInviteMenu(p0) end
 
 
@@ -538,7 +538,7 @@ function NetworkSetEntityInvisibleToNetwork(entity, toggle) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkSetCurrentDataManagerHandle(p0) end
 
 --- 
@@ -689,7 +689,7 @@ function NetworkSetTeamOnlyChat(toggle) end
 --- 
 --- Returns true if the NAT type is Strict (3) and a certain number of connections have failed.
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkShouldShowConnectivityTroubleshooting() end
 
 --- 
@@ -705,7 +705,7 @@ function NetworkShouldShowConnectivityTroubleshooting() end
 --- @param p6 number
 --- @param p7 number
 --- @param flags number
---- @returns boolean
+--- @return boolean
 function NetworkStartRespawnSearchForPlayer(player, p1, p2, p3, p4, p5, p6, p7, flags) end
 
 
@@ -751,7 +751,7 @@ function NetworkSetTransitionCreatorHandle(p0) end
 --- @param p9 number
 --- @param p10 number
 --- @param flags number
---- @returns boolean
+--- @return boolean
 function NetworkStartRespawnSearchInAngledAreaForPlayer(player, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, flags) end
 
 
@@ -781,7 +781,7 @@ function NetworkShowProfileUi(networkHandle) end
 --- @param tunableContext Hash
 --- @param tunableName Hash
 --- @param defaultValue boolean
---- @returns boolean
+--- @return boolean
 function NetworkTryAccessTunableBoolHash(tunableContext, tunableName, defaultValue) end
 
 
@@ -794,7 +794,7 @@ function NetworkStartSoloTutorialSession() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkXAffectsGamers(p0) end
 
 
@@ -804,14 +804,14 @@ function NetworkStartSynchronisedScene(netScene) end
 --- 
 --- Return the local Participant ID  
 --- 
---- @returns Player
+--- @return Player
 function ParticipantId() end
 
 --- 
 --- Return the local Participant ID.  
 --- This native is exactly the same as 'PARTICIPANT_ID' native.  
 --- 
---- @returns number
+--- @return number
 function ParticipantIdToInt() end
 
 
@@ -832,7 +832,7 @@ function NetworkTransitionTrack(hash, p1, p2, state, p4) end
 --- NativeDB Added Parameter 2: int a
 --- NativeDB Added Parameter 3: int b
 --- 
---- @returns boolean
+--- @return boolean
 function RemoteCheatDetected() end
 
 
@@ -841,7 +841,7 @@ function NetworkUnregisterNetworkedEntity(entity) end
 
 
 --- @param index number
---- @returns boolean
+--- @return boolean
 function RequestCommerceItemImage(index) end
 
 --- 
@@ -849,7 +849,7 @@ function RequestCommerceItemImage(index) end
 --- int createdObject = OBJ_TO_NET(CREATE_OBJECT_NO_OFFSET(oball, pCoords.x, pCoords.y, pCoords.z, 1, 0, 0));  
 --- 
 --- @param object Object
---- @returns number
+--- @return number
 function ObjToNet(object) end
 
 --- 
@@ -872,7 +872,7 @@ function ReserveNetworkLocalVehicles(amount) end
 --- gets the network id of a ped  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function PedToNet(ped) end
 
 
@@ -881,7 +881,7 @@ function ReserveNetworkMissionPeds(amount) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function RefreshPlayerListStats(p0) end
 
 
@@ -894,7 +894,7 @@ function ReserveNetworkMissionVehicles(amount) end
 --- @param data any
 --- @param dataCount number
 --- @param contentTypeName any
---- @returns boolean
+--- @return boolean
 function SetBalanceAddMachines(data, dataCount, contentTypeName) end
 
 --- 
@@ -954,7 +954,7 @@ function SetNetworkIdCanMigrate(netId, toggle) end
 --- 
 --- @param contentId any
 --- @param contentTypeName any
---- @returns boolean
+--- @return boolean
 function SetBalanceAddMachine(contentId, contentTypeName) end
 
 --- Makes the provided entity visible for yourself for the current frame.
@@ -1030,12 +1030,12 @@ function SetPlayerInvisibleLocally(player, toggle) end
 --- You might need to DoScreenFadeIn and ShutdownLoadingScreen otherwise you probably won't end up loading into SP at all.
 --- 
 --- Somewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.
---- @returns boolean
+--- @return boolean
 function ShutdownAndLoadMostRecentSave() end
 
 
 --- @param p0 number
---- @returns string
+--- @return string
 function TextureDownloadGetName(p0) end
 
 
@@ -1054,11 +1054,11 @@ function ShutdownAndLaunchSinglePlayerGame() end
 --- @param player Player
 --- @param p1 number
 --- @param scriptHash Hash
---- @returns boolean
+--- @return boolean
 function TriggerScriptCrcCheckOnPlayer(player, p1, scriptHash) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function TextureDownloadHasFailed(p0) end
 

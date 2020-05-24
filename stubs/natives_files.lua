@@ -1,6 +1,6 @@
 
 --- @param propHash Hash
---- @returns number
+--- @return number
 function GetShopPedApparelVariantPropCount(propHash) end
 
 --- 

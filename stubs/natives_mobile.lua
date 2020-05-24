@@ -15,7 +15,7 @@ function CellCamDisableThisFrame(toggle) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function CellCamIsCharVisibleNoFaceCheck(entity) end
 
 --- 
@@ -29,7 +29,7 @@ function CellCamSetLean(toggle) end
 --- This one is weird and seems to return a TRUE state regardless of whether the phone is visible on screen or tucked away.  
 --- I can confirm the above. This function is hard-coded to always return 1.  
 --- 
---- @returns boolean
+--- @return boolean
 function CanPhoneBeSeenOnScreen() end
 
 --- 
@@ -77,7 +77,7 @@ function GetMobilePhoneRenderId(renderId) end
 --- Belongs in UNK3, hashed version of 0xBD4D7EAF8A30F637  
 --- 
 --- @param hash Hash
---- @returns boolean
+--- @return boolean
 function NetGameserverCatalogItemExistsHash(hash) end
 
 --- 
@@ -97,7 +97,7 @@ function SetMobilePhoneScale(scale) end
 --- Belongs in UNK3, non-hashed version of 0x247F0F73A182EA0B  
 --- 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function NetGameserverCatalogItemExists(name) end
 
 

@@ -1,7 +1,7 @@
 --- 
 --- Pops and calls the Scaleform movie on the stack. Returns data from the function (not sure if this is a string).  
 --- 
---- @returns number
+--- @return number
 function EndScaleformMovieMethodReturnValue() end
 
 --- 
@@ -30,7 +30,7 @@ function FadeDecalsInRange(p0, p1, p2, p3, p4) end
 
 
 --- @param b boolean
---- @returns number
+--- @return number
 function GetAspectRatio(b) end
 
 --- 
@@ -42,24 +42,24 @@ function GetActiveScreenResolution(x, y) end
 
 
 --- @param decal number
---- @returns number
+--- @return number
 function GetDecalWashLevel(decal) end
 
 --- 
 --- GET_CURRENT_*
 --- 
---- @returns number
+--- @return number
 function GetCurrentNumberOfPhotos() end
 
 --- 
 --- false = Any resolution < 1280x720  
 --- true = Any resolution >= 1280x720  
 --- 
---- @returns boolean
+--- @return boolean
 function GetIsHidef() end
 
 --- See [GetTimecycleModifierIndex](#_0xFDF3D97C674AFB66) for use, works the same just for the secondary timecycle modifier.
---- @returns number
+--- @return number
 function GetExtraTimecycleModifierIndex() end
 
 --- 
@@ -68,7 +68,7 @@ function GetExtraTimecycleModifierIndex() end
 --- true - for Wide format Aspect Ratios (5:3, 16:9, 16:10, etc. )  
 --- Setting Aspect Ratio to "Auto" in game will return "false" or "true" based on the actual set Resolution Ratio.  
 --- 
---- @returns boolean
+--- @return boolean
 function GetIsWidescreen() end
 
 --- 
@@ -78,30 +78,30 @@ function GetIsWidescreen() end
 --- @param yCoord number
 --- @param zCoord number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function GetIsPetrolDecalInRange(xCoord, yCoord, zCoord, radius) end
 
 --- 
 --- This function is hard-coded to always return 0.  
 --- Limit is 96, see _GET_MAXIMUM_NUMBER_OF_PHOTOS_2 (0xDC54A7AF8B3A14EF).  
 --- 
---- @returns number
+--- @return number
 function GetMaximumNumberOfPhotos() end
 
 --- 
 --- This is the "actual" GET_MAXIMUM_NUMBER_OF_PHOTOS native. Always returns 96.  
 --- 
---- @returns number
+--- @return number
 function GetMaximumNumberOfCloudPhotos() end
 
 
---- @returns boolean
+--- @return boolean
 function GetRequestingnightvision() end
 
 --- 
 --- Gets the scale of safe zone. if the safe zone size scale is max, it will return 1.0.  
 --- 
---- @returns number
+--- @return number
 function GetSafeZoneSize() end
 
 --- Used to get a return value from a scaleform function.
@@ -125,18 +125,18 @@ function GetSafeZoneSize() end
 --- }  
 --- 
 --- @param method_return number
---- @returns number
+--- @return number
 function GetScaleformMovieMethodReturnValueInt(method_return) end
 
 
 --- @param returnValueData number
---- @returns boolean
+--- @return boolean
 function GetScaleformMovieMethodReturnValueBool(returnValueData) end
 
 --- Used to get a return value from a scaleform function.
 --- Returns a string in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT returns an int.
 --- @param method_return number
---- @returns string
+--- @return string
 function GetScaleformMovieMethodReturnValueString(method_return) end
 
 --- 
@@ -175,7 +175,7 @@ function GetScreenResolution(x, y) end
 --- @param worldZ number
 --- @param screenX number
 --- @param screenY number
---- @returns boolean
+--- @return boolean
 function GetScreenCoordFromWorldCoord(worldX, worldY, worldZ, screenX, screenY) end
 
 --- Calculates the effective X/Y fractions when applying the values set by SET_SCRIPT_GFX_ALIGN and
@@ -192,11 +192,11 @@ function GetScriptGfxPosition(x, y, calculatedX, calculatedY) end
 --- For a full list, see here: pastebin.com/cnk7FTF2  
 --- can someone update this pastebin???  
 --- 
---- @returns number
+--- @return number
 function GetTimecycleModifierIndex() end
 
 
---- @returns boolean
+--- @return boolean
 function GetTogglePausedRenderphasesStatus() end
 
 --- 
@@ -205,36 +205,36 @@ function GetTogglePausedRenderphasesStatus() end
 --- 
 --- @param textureDict string
 --- @param textureName string
---- @returns vector3
+--- @return vector3
 function GetTextureResolution(textureDict, textureName) end
 
 
---- @returns number
+--- @return number
 function GetTvVolume() end
 
 --- 
 --- Gets whether or not NIGHTVISION is Active.  
 --- Note:  When nightvision is actually active, this native will return TRUE!  
 --- 
---- @returns boolean
+--- @return boolean
 function GetUsingnightvision() end
 
 
---- @returns number
+--- @return number
 function GetTimecycleTransitionModifierIndex() end
 
 
---- @returns number
+--- @return number
 function GolfTrailGetMaxHeight() end
 
 
---- @returns number
+--- @return number
 function GetTvChannel() end
 
 --- 
 --- Returns whether or not SEETHROUGH is active.  
 --- 
---- @returns boolean
+--- @return boolean
 function GetUsingseethrough() end
 
 --- 
@@ -257,7 +257,7 @@ function GolfTrailSetColour(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) en
 
 --- @param vehicle Vehicle
 --- @param p1 number
---- @returns number
+--- @return number
 function GetVehicleCrewEmblemRequestState(vehicle, p1) end
 
 
@@ -266,7 +266,7 @@ function GolfTrailSetEnabled(toggle) end
 
 
 --- @param p0 number
---- @returns vector3
+--- @return vector3
 function GolfTrailGetVisualControlPoint(p0) end
 
 --- 
@@ -351,33 +351,33 @@ function GrassLodShrinkScriptAreas(x, y, z, radius, p4, p5, p6) end
 --- "heist_pre"  
 --- 
 --- @param scaleformName string
---- @returns boolean
+--- @return boolean
 function HasScaleformMovieFilenameLoaded(scaleformName) end
 
 
 --- @param scaleformHandle number
---- @returns boolean
+--- @return boolean
 function HasScaleformContainerMovieLoadedIntoParent(scaleformHandle) end
 
 
 --- @param textureDict string
---- @returns boolean
+--- @return boolean
 function HasStreamedTextureDictLoaded(textureDict) end
 
 
 --- @param scaleformHandle number
---- @returns boolean
+--- @return boolean
 function HasScaleformMovieLoaded(scaleformHandle) end
 
 
---- @returns number
+--- @return number
 function IsParticleFxDelayedBlink() end
 
 --- 
 --- Check to see if hud component Scaleform has loaded?  
 --- 
 --- @param hudComponent number
---- @returns boolean
+--- @return boolean
 function HasScaleformScriptHudMovieLoaded(hudComponent) end
 
 --- 
@@ -385,23 +385,23 @@ function HasScaleformScriptHudMovieLoaded(hudComponent) end
 --- 
 --- @param tvChannel number
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function IsPlaylistUnk(tvChannel, p1) end
 
 
---- @returns boolean
+--- @return boolean
 function IsScreenblurFadeRunning() end
 
 
 --- @param decal number
---- @returns boolean
+--- @return boolean
 function IsDecalAlive(decal) end
 
 --- 
 --- IS_*
 --- 
 --- @param videoCliphash Hash
---- @returns boolean
+--- @return boolean
 function IsTvPlaylistItemPlaying(videoCliphash) end
 
 --- Returns true if the return value of a scaleform function is ready to be collected (using GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING or GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT).
@@ -423,7 +423,7 @@ function IsTvPlaylistItemPlaying(videoCliphash) end
 --- }  
 --- 
 --- @param method_return number
---- @returns boolean
+--- @return boolean
 function IsScaleformMovieMethodReturnValueReady(method_return) end
 
 
@@ -433,12 +433,12 @@ function MoveVehicleDecals(p0, p1) end
 
 
 --- @param point number
---- @returns boolean
+--- @return boolean
 function IsTrackedPointVisible(point) end
 
 
 --- @param movieMeshSetName string
---- @returns number
+--- @return number
 function LoadMovieMeshSet(movieMeshSetName) end
 
 --- 
@@ -562,19 +562,19 @@ function RemoveVehicleCrewEmblem(vehicle, p1) end
 --- 0x2F14983962462691  
 --- 
 --- @param scaleformName string
---- @returns number
+--- @return number
 function RequestScaleformMovie(scaleformName) end
 
 --- 
 --- Also used by 0x67D02A194A2FC2BD  
 --- 
 --- @param scaleformName string
---- @returns number
+--- @return number
 function RequestScaleformMovieInstance(scaleformName) end
 
 --- Another [REQUEST_SCALEFORM_MOVIE](#_0x11FE353CF9733E6F) equivalent.
 --- @param scaleformName string
---- @returns number
+--- @return number
 function RequestScaleformMovie2(scaleformName) end
 
 --- 
@@ -595,7 +595,7 @@ function RequestStreamedTextureDict(textureDict, p1) end
 --- Note: Unless this hash is out-of-order, this native is next-gen only.  
 --- 
 --- @param scaleformName string
---- @returns number
+--- @return number
 function RequestScaleformMovieInteractive(scaleformName) end
 
 --- 
@@ -642,7 +642,7 @@ function ScaleformMovieMethodAddParamInt(value) end
 --- Заебись функционал  
 --- 
 --- @param p0 number
---- @returns number
+--- @return number
 function ReturnTwo(p0) end
 
 
@@ -669,7 +669,7 @@ function ScaleformMovieMethodAddParamPlayerNameString(string) end
 --- 
 --- NativeDB Introduced: v1290
 --- 
---- @returns number
+--- @return number
 function SeethroughGetMaxThickness() end
 
 
@@ -759,7 +759,7 @@ function SetBinkMovieUnk(binkMovie, value) end
 --- NativeDB Introduced: v1290
 --- 
 --- @param name string
---- @returns number
+--- @return number
 function SetBinkMovieRequested(name) end
 
 --- 

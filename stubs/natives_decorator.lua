@@ -3,19 +3,19 @@
 --- 
 --- @param entity Entity
 --- @param propertyName string
---- @returns boolean
+--- @return boolean
 function DecorExistOn(entity, propertyName) end
 
 
 --- @param entity Entity
 --- @param propertyName string
---- @returns boolean
+--- @return boolean
 function DecorGetBool(entity, propertyName) end
 
 
 --- @param entity Entity
 --- @param propertyName string
---- @returns number
+--- @return number
 function DecorGetInt(entity, propertyName) end
 
 --- 
@@ -23,7 +23,7 @@ function DecorGetInt(entity, propertyName) end
 --- 
 --- @param entity Entity
 --- @param propertyName string
---- @returns number
+--- @return number
 function DecorGetFloat(entity, propertyName) end
 
 --- 
@@ -96,7 +96,7 @@ function DecorRegister(propertyName, type) end
 --- 
 --- @param propertyName string
 --- @param type number
---- @returns boolean
+--- @return boolean
 function DecorIsRegisteredAsType(propertyName, type) end
 
 --- 
@@ -107,7 +107,7 @@ function DecorRegisterLock() end
 
 --- @param entity Entity
 --- @param propertyName string
---- @returns boolean
+--- @return boolean
 function DecorRemove(entity, propertyName) end
 
 --- 
@@ -116,7 +116,7 @@ function DecorRemove(entity, propertyName) end
 --- @param entity Entity
 --- @param propertyName string
 --- @param value boolean
---- @returns boolean
+--- @return boolean
 function DecorSetBool(entity, propertyName, value) end
 
 --- 
@@ -125,7 +125,7 @@ function DecorSetBool(entity, propertyName, value) end
 --- @param entity Entity
 --- @param propertyName string
 --- @param value number
---- @returns boolean
+--- @return boolean
 function DecorSetFloat(entity, propertyName, value) end
 
 --- 
@@ -134,13 +134,13 @@ function DecorSetFloat(entity, propertyName, value) end
 --- @param entity Entity
 --- @param propertyName string
 --- @param value number
---- @returns boolean
+--- @return boolean
 function DecorSetInt(entity, propertyName, value) end
 
 
 --- @param entity Entity
 --- @param propertyName string
 --- @param timestamp number
---- @returns boolean
+--- @return boolean
 function DecorSetTime(entity, propertyName, timestamp) end
 

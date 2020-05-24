@@ -104,7 +104,7 @@ function ClearPopscheduleOverrideVehicleModel(scheduleId) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns string
+--- @return string
 function GetNameOfZone(x, y, z) end
 
 --- 
@@ -119,14 +119,14 @@ function GetNameOfZone(x, y, z) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns Hash
+--- @return Hash
 function GetHashOfMapAreaAtCoords(x, y, z) end
 
 
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns number
+--- @return number
 function GetZoneAtCoords(x, y, z) end
 
 --- 
@@ -222,19 +222,19 @@ function GetZoneAtCoords(x, y, z) end
 --- ZQ_UAR = Davis Quartz  
 --- 
 --- @param zoneName string
---- @returns number
+--- @return number
 function GetZoneFromNameId(zoneName) end
 
 
 --- @param zoneId number
---- @returns number
+--- @return number
 function GetZonePopschedule(zoneId) end
 
 --- 
 --- cellphone range 1- 5 used for signal bar in iFruit phone  
 --- 
 --- @param zoneId number
---- @returns number
+--- @return number
 function GetZoneScumminess(zoneId) end
 
 --- 

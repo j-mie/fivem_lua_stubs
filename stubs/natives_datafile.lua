@@ -20,13 +20,13 @@ function ArrayValueAddString(arrayData, value) end
 
 
 --- @param arrayData any
---- @returns any
+--- @return any
 function ArrayValueAddObject(arrayData) end
 
 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns boolean
+--- @return boolean
 function ArrayValueGetBoolean(arrayData, arrayIndex) end
 
 
@@ -39,30 +39,30 @@ function ArrayValueAddVector3(arrayData, valueX, valueY, valueZ) end
 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns number
+--- @return number
 function ArrayValueGetInteger(arrayData, arrayIndex) end
 
 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns number
+--- @return number
 function ArrayValueGetFloat(arrayData, arrayIndex) end
 
 
 --- @param arrayData any
---- @returns number
+--- @return number
 function ArrayValueGetSize(arrayData) end
 
 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns any
+--- @return any
 function ArrayValueGetObject(arrayData, arrayIndex) end
 
 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns string
+--- @return string
 function ArrayValueGetString(arrayData, arrayIndex) end
 
 --- 
@@ -77,7 +77,7 @@ function ArrayValueGetString(arrayData, arrayIndex) end
 --- 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns number
+--- @return number
 function ArrayValueGetType(arrayData, arrayIndex) end
 
 
@@ -86,7 +86,7 @@ function DatafileCreate() end
 
 --- @param arrayData any
 --- @param arrayIndex number
---- @returns vector3
+--- @return vector3
 function ArrayValueGetVector3(arrayData, arrayIndex) end
 
 
@@ -94,14 +94,14 @@ function DatafileClearWatchList() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function DatafileDeleteRequestedFile(p0) end
 
 
 function DatafileDelete() end
 
 
---- @returns string
+--- @return string
 function DatafileGetFileDict() end
 
 
@@ -109,12 +109,12 @@ function DatafileFlushMissionHeader() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function DatafileHasValidFileData(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function DatafileHasLoadedFileData(p0) end
 
 --- 
@@ -137,12 +137,12 @@ function DatafileHasLoadedFileData(p0) end
 ---     }  
 --- }  
 --- 
---- @returns boolean
+--- @return boolean
 function DatafileIsSavePending() end
 
 
 --- @param index number
---- @returns boolean
+--- @return boolean
 function DatafileIsValidRequestId(index) end
 
 --- 
@@ -152,33 +152,33 @@ function DatafileIsValidRequestId(index) end
 --- DATAFILE::_LOAD_UGC_FILE("RockstarPlaylists") // loads "rockstarplaylists_00.ugc"
 --- 
 --- @param filename string
---- @returns boolean
+--- @return boolean
 function DatafileLoadOfflineUgc(filename) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function DatafileSelectActiveFile(p0) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function DatafileSelectCreatorStats(p0) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function DatafileSelectUgcData(p0) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function DatafileSelectUgcPlayerData(p0) end
 
 
 --- @param p0 number
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function DatafileSelectUgcStats(p0, p1) end
 
 --- 
@@ -204,7 +204,7 @@ function DatafileSelectUgcStats(p0, p1) end
 --- DATAFILE::_83BCCE3224735F05("gta5/psych/index.json"); // saves the file?  
 --- 
 --- @param filename string
---- @returns boolean
+--- @return boolean
 function DatafileStartSaveToCloud(filename) end
 
 
@@ -212,7 +212,7 @@ function DatafileStoreMissionHeader() end
 
 
 --- @param p0 boolean
---- @returns boolean
+--- @return boolean
 function DatafileUpdateSaveToCloud(p0) end
 
 --- 
@@ -224,7 +224,7 @@ function DatafileWatchRequestId(id) end
 
 --- @param objectData any
 --- @param key string
---- @returns any
+--- @return any
 function ObjectValueAddArray(objectData, key) end
 
 
@@ -248,7 +248,7 @@ function ObjectValueAddInteger(objectData, key, value) end
 
 --- @param objectData any
 --- @param key string
---- @returns any
+--- @return any
 function ObjectValueAddObject(objectData, key) end
 
 
@@ -268,37 +268,37 @@ function ObjectValueAddVector3(objectData, key, valueX, valueY, valueZ) end
 
 --- @param objectData any
 --- @param key string
---- @returns any
+--- @return any
 function ObjectValueGetArray(objectData, key) end
 
 
 --- @param objectData any
 --- @param key string
---- @returns boolean
+--- @return boolean
 function ObjectValueGetBoolean(objectData, key) end
 
 
 --- @param objectData any
 --- @param key string
---- @returns number
+--- @return number
 function ObjectValueGetInteger(objectData, key) end
 
 
 --- @param objectData any
 --- @param key string
---- @returns number
+--- @return number
 function ObjectValueGetFloat(objectData, key) end
 
 
 --- @param objectData any
 --- @param key string
---- @returns any
+--- @return any
 function ObjectValueGetObject(objectData, key) end
 
 
 --- @param objectData any
 --- @param key string
---- @returns string
+--- @return string
 function ObjectValueGetString(objectData, key) end
 
 --- 
@@ -313,13 +313,13 @@ function ObjectValueGetString(objectData, key) end
 --- 
 --- @param objectData any
 --- @param key string
---- @returns number
+--- @return number
 function ObjectValueGetType(objectData, key) end
 
 
 --- @param objectData any
 --- @param key string
---- @returns vector3
+--- @return vector3
 function ObjectValueGetVector3(objectData, key) end
 
 --- 
@@ -332,7 +332,7 @@ function ObjectValueGetVector3(objectData, key) end
 --- @param tagsCsv string
 --- @param contentTypeName string
 --- @param publish boolean
---- @returns boolean
+--- @return boolean
 function UgcCreateContent(data, dataCount, contentName, description, tagsCsv, contentTypeName, publish) end
 
 --- 
@@ -343,14 +343,14 @@ function UgcCreateContent(data, dataCount, contentName, description, tagsCsv, co
 --- @param tagsCsv string
 --- @param contentTypeName string
 --- @param publish boolean
---- @returns boolean
+--- @return boolean
 function UgcCreateMission(contentName, description, tagsCsv, contentTypeName, publish) end
 
 
 --- @param contentId string
 --- @param rating number
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcSetPlayerData(contentId, rating, contentTypeName) end
 
 --- 
@@ -363,7 +363,7 @@ function UgcSetPlayerData(contentId, rating, contentTypeName) end
 --- @param description string
 --- @param tagsCsv string
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcUpdateContent(contentId, data, dataCount, contentName, description, tagsCsv, contentTypeName) end
 
 --- 
@@ -374,6 +374,6 @@ function UgcUpdateContent(contentId, data, dataCount, contentName, description, 
 --- @param description string
 --- @param tagsCsv string
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcUpdateMission(contentId, contentName, description, tagsCsv, contentTypeName) end
 

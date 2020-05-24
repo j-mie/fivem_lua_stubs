@@ -109,7 +109,7 @@ function AnimateGameplayCamZoom(p0, distance) end
 --- 
 --- @param minimum number
 --- @param maximum number
---- @returns any
+--- @return any
 function ClampGameplayCamPitch(minimum, maximum) end
 
 --- 
@@ -121,7 +121,7 @@ function ClampGameplayCamPitch(minimum, maximum) end
 --- 
 --- @param camName string
 --- @param p1 boolean
---- @returns Cam
+--- @return Cam
 function CreateCam(camName, p1) end
 
 --- 
@@ -138,7 +138,7 @@ function AttachCamToEntity(cam, entity, xOffset, yOffset, zOffset, isRelative) e
 
 --- @param camHash Hash
 --- @param p1 boolean
---- @returns Cam
+--- @return Cam
 function CreateCamera(camHash, p1) end
 
 --- 
@@ -175,7 +175,7 @@ function CreateCinematicShot(p0, p1, p2, entity) end
 --- 
 --- @param minimum number
 --- @param maximum number
---- @returns any
+--- @return any
 function ClampGameplayCamYaw(minimum, maximum) end
 
 --- 
@@ -205,7 +205,7 @@ function CustomMenuCoordinates(p0) end
 --- @param fov number
 --- @param p8 boolean
 --- @param p9 number
---- @returns Cam
+--- @return Cam
 function CreateCamWithParams(camName, posX, posY, posZ, rotX, rotY, rotZ, fov, p8, p9) end
 
 --- 
@@ -244,7 +244,7 @@ function DisableFirstPersonCamThisFrame() end
 --- @param fov number
 --- @param p8 boolean
 --- @param p9 any
---- @returns Cam
+--- @return Cam
 function CreateCameraWithParams(camHash, posX, posY, posZ, rotX, rotY, rotZ, fov, p8, p9) end
 
 --- 
@@ -264,7 +264,7 @@ function DestroyAllCams(thisScriptCheck) end
 --- Returns whether or not the passed camera handle exists.  
 --- 
 --- @param cam Cam
---- @returns boolean
+--- @return boolean
 function DoesCamExist(cam) end
 
 
@@ -272,7 +272,7 @@ function DisableAimCamThisUpdate() end
 
 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamAnimCurrentPhase(cam) end
 
 
@@ -280,7 +280,7 @@ function DisableVehicleFirstPersonCamThisFrame() end
 
 
 --- @param cam Cam
---- @returns vector3
+--- @return vector3
 function GetCamCoord(cam) end
 
 --- 
@@ -297,22 +297,22 @@ function EnableCrosshairThisFrame() end
 
 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamFarDof(cam) end
 
 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamNearClip(cam) end
 
 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamFarClip(cam) end
 
 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamFov(cam) end
 
 --- 
@@ -320,7 +320,7 @@ function GetCamFov(cam) end
 --- Big surprise it returns an int.  
 --- 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamSplineNodeIndex(cam) end
 
 --- 
@@ -328,7 +328,7 @@ function GetCamSplineNodeIndex(cam) end
 --- 
 --- @param cam Cam
 --- @param rotationOrder number
---- @returns vector3
+--- @return vector3
 function GetCamRot(cam, rotationOrder) end
 
 --- 
@@ -336,62 +336,62 @@ function GetCamRot(cam, rotationOrder) end
 --- (returns 1.0f when no nodes has been added, reached end of non existing spline)  
 --- 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamSplinePhase(cam) end
 
 --- 
 --- I'm pretty sure the parameter is the camera as usual, but I am not certain so I'm going to leave it as is.  
 --- 
 --- @param cam Cam
---- @returns number
+--- @return number
 function GetCamSplineNodePhase(cam) end
 
 
---- @returns vector3
+--- @return vector3
 function GetFinalRenderedCamCoord() end
 
 
---- @returns number
+--- @return number
 function GetFinalRenderedCamFarDof() end
 
 
---- @returns number
+--- @return number
 function GetFinalRenderedCamFarClip() end
 
 
---- @returns number
+--- @return number
 function GetFinalRenderedCamFov() end
 
 
---- @returns number
+--- @return number
 function GetFinalRenderedCamMotionBlurStrength() end
 
 
---- @returns number
+--- @return number
 function GetFinalRenderedCamNearDof() end
 
 
---- @returns number
+--- @return number
 function GetFinalRenderedCamNearClip() end
 
 
 --- @param rotationOrder number
---- @returns vector3
+--- @return vector3
 function GetFinalRenderedCamRot(rotationOrder) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetFinalRenderedInWhenFriendlyFov(player) end
 
 
---- @returns number
+--- @return number
 function GetFirstPersonAimCamZoomFactor() end
 
 
 --- @param player Player
 --- @param rotationOrder number
---- @returns vector3
+--- @return vector3
 function GetFinalRenderedInWhenFriendlyRot(player, rotationOrder) end
 
 --- 
@@ -401,7 +401,7 @@ function GetFinalRenderedInWhenFriendlyRot(player, rotationOrder) end
 --- 2 - Third Person Far  
 --- 4 - First Person  
 --- 
---- @returns number
+--- @return number
 function GetFollowPedCamViewMode() end
 
 
@@ -414,11 +414,11 @@ function GetFollowPedCamViewMode() end
 --- @param p6 number
 --- @param p7 number
 --- @param p8 number
---- @returns Ped
+--- @return Ped
 function GetFocusPedOnScreen(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
 
---- @returns number
+--- @return number
 function GetFollowPedCamZoomLevel() end
 
 --- 
@@ -428,27 +428,27 @@ function GetFollowPedCamZoomLevel() end
 --- 2 - Third Person Far  
 --- 4 - First Person  
 --- 
---- @returns number
+--- @return number
 function GetFollowVehicleCamViewMode() end
 
 
---- @returns number
+--- @return number
 function GetFollowVehicleCamZoomLevel() end
 
 
---- @returns vector3
+--- @return vector3
 function GetGameplayCamCoord() end
 
 
---- @returns number
+--- @return number
 function GetGameplayCamFov() end
 
 
---- @returns number
+--- @return number
 function GetGameplayCamRelativeHeading() end
 
 
---- @returns number
+--- @return number
 function GetGameplayCamRelativePitch() end
 
 --- 
@@ -464,91 +464,91 @@ function GetGameplayCamRelativePitch() end
 --- 2-Yaw(Z): -43.886467  
 --- 
 --- @param rotationOrder number
---- @returns vector3
+--- @return vector3
 function GetGameplayCamRot(rotationOrder) end
 
 
---- @returns Cam
+--- @return Cam
 function GetRenderingCam() end
 
 --- Resets the idle camera timer. Calling this in a loop will disable the idle camera.
 function InvalidateIdleCam() end
 
 
---- @returns boolean
+--- @return boolean
 function IsAimCamActive() end
 
 --- 
 --- IS_A*
 --- 
---- @returns boolean
+--- @return boolean
 function IsAimCamThirdPersonActive() end
 
 --- 
 --- Returns whether or not the passed camera handle is active.  
 --- 
 --- @param cam Cam
---- @returns boolean
+--- @return boolean
 function IsCamActive(cam) end
 
 
 --- @param cam Cam
---- @returns boolean
+--- @return boolean
 function IsCamInterpolating(cam) end
 
 
 --- @param cam Cam
---- @returns boolean
+--- @return boolean
 function IsCamRendering(cam) end
 
 --- [Animations list](https://alexguirre.github.io/animations-list/)
 --- @param cam Cam
 --- @param animName string
 --- @param animDictionary string
---- @returns boolean
+--- @return boolean
 function IsCamPlayingAnim(cam, animName, animDictionary) end
 
 
 --- @param cam Cam
---- @returns boolean
+--- @return boolean
 function IsCamShaking(cam) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function IsCamSplinePaused(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function IsCinematicCamShaking() end
 
 
---- @returns boolean
+--- @return boolean
 function IsCinematicCamRendering() end
 
 
---- @returns boolean
+--- @return boolean
 function IsFirstPersonAimCamActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsFollowPedCamActive() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function IsCinematicShotActive(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function IsGameplayCamLookingBehind() end
 
 
---- @returns boolean
+--- @return boolean
 function IsFollowVehicleCamActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsGameplayCamShaking() end
 
 --- 
@@ -557,31 +557,31 @@ function IsGameplayCamShaking() end
 --- - When player is coming out from a hospital.  
 --- - When player is coming out from a police station.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsGameplayCamRendering() end
 
 
---- @returns boolean
+--- @return boolean
 function IsInVehicleCamDisabled() end
 
 
---- @returns boolean
+--- @return boolean
 function IsGameplayHintActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsScreenFadedIn() end
 
 
---- @returns boolean
+--- @return boolean
 function IsScreenFadingIn() end
 
 
---- @returns boolean
+--- @return boolean
 function IsScreenFadedOut() end
 
 
---- @returns boolean
+--- @return boolean
 function IsScreenFadingOut() end
 
 --- 
@@ -590,7 +590,7 @@ function IsScreenFadingOut() end
 ---     CAM::_1C9D7949FA533490(0);  
 --- }  
 --- 
---- @returns boolean
+--- @return boolean
 function IsScriptGlobalShaking() end
 
 
@@ -598,7 +598,7 @@ function IsScriptGlobalShaking() end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsSphereVisible(x, y, z, radius) end
 
 --- 
@@ -635,7 +635,7 @@ function OverrideCamSplineVelocity(cam, p1, p2, p3) end
 --- @param zRot number
 --- @param p9 boolean
 --- @param p10 number
---- @returns boolean
+--- @return boolean
 function PlayCamAnim(cam, animName, animDictionary, x, y, z, xRot, yRot, zRot, p9, p10) end
 
 --- 
@@ -649,7 +649,7 @@ function PlayCamAnim(cam, animName, animDictionary, x, y, z, xRot, yRot, zRot, p
 --- @param p1 any
 --- @param animName string
 --- @param animDictionary string
---- @returns boolean
+--- @return boolean
 function PlaySynchronizedCamAnim(p0, p1, animName, animDictionary) end
 
 
@@ -705,7 +705,7 @@ function PointCamAtPedBone(cam, ped, boneIndex, x, y, z, p6) end
 function RenderFirstPersonCam(render, p1, p2) end
 
 
---- @returns number
+--- @return number
 function ReplayFreeCamGetMaxRange() end
 
 --- 
@@ -995,7 +995,7 @@ function SetFlyCamVerticalSpeedMultiplier(cam, p1, p2, p3) end
 --- 
 --- @param camName string
 --- @param p1 number
---- @returns boolean
+--- @return boolean
 function SetFollowPedCamThisUpdate(camName, p1) end
 
 --- 

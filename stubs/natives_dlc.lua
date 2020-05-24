@@ -1,9 +1,9 @@
 
---- @returns boolean
+--- @return boolean
 function GetIsLoadingScreenActive() end
 
 
---- @returns boolean
+--- @return boolean
 function GetExtraContentPackHasBeenInstalled() end
 
 --- 
@@ -21,7 +21,7 @@ function GetExtraContentPackHasBeenInstalled() end
 --- 
 --- @param variable any
 --- @param unused any
---- @returns boolean
+--- @return boolean
 function HasCloudRequestsFinished(variable, unused) end
 
 --- 
@@ -33,7 +33,7 @@ function HasCloudRequestsFinished(variable, unused) end
 --- 0x96F02EE6  
 --- 
 --- @param dlcHash Hash
---- @returns boolean
+--- @return boolean
 function IsDlcPresent(dlcHash) end
 
 --- 

@@ -16,7 +16,7 @@
 --- 13 = unsure
 --- @param vehicle Vehicle
 --- @param index number
---- @returns any
+--- @return any
 function SmashVehicleWindow(vehicle, index) end
 
 
@@ -73,7 +73,7 @@ function StopAllGarageActivity() end
 --- NativeDB Return Type: void
 --- 
 --- @param vehicle Vehicle
---- @returns any
+--- @return any
 function StartVehicleAlarm(vehicle) end
 
 --- 
@@ -107,7 +107,7 @@ function StopPlaybackRecordedVehicle(vehicle) end
 --- 
 --- @param intersectionId number
 --- @param state boolean
---- @returns any
+--- @return any
 function SwitchTrainTrack(intersectionId, state) end
 
 --- Transforms the stormberg to it's "water vehicle" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.

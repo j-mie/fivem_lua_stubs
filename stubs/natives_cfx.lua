@@ -5,22 +5,22 @@ function EnableEnhancedHostSupport(enabled) end
 
 --- @param findHandle number
 --- @param outEntity Entity
---- @returns boolean
+--- @return boolean
 function FindNextPickup(findHandle, outEntity) end
 
 
 --- @param outEntity Entity
---- @returns number
+--- @return number
 function FindFirstVehicle(outEntity) end
 
 --- Returns whether or not the specified player has enough information to start a commerce session for.
 --- @param playerSrc string
---- @returns boolean
+--- @return boolean
 function CanPlayerStartCommerceSession(playerSrc) end
 
 --- Currently it only works with peds.
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityMaxHealth(entity) end
 
 
@@ -31,13 +31,13 @@ function AddTextEntry(entryKey, entryText) end
 --- This is similar to the PushScaleformMovieFunction natives, except it calls in the TIMELINE of a minimap overlay.
 --- @param miniMap number
 --- @param fnName string
---- @returns boolean
+--- @return boolean
 function CallMinimapScaleformFunction(miniMap, fnName) end
 
 
 --- @param varName string
 --- @param default_ string
---- @returns string
+--- @return string
 function GetConvar(varName, default_) end
 
 
@@ -50,14 +50,14 @@ function EndFindVehicle(findHandle) end
 
 
 --- @param outEntity Entity
---- @returns number
+--- @return number
 function FindFirstObject(outEntity) end
 
 --- Creates a runtime texture from a DUI handle.
 --- @param txd long
 --- @param txn string
 --- @param duiHandle string
---- @returns long
+--- @return long
 function CreateRuntimeTextureFromDuiHandle(txd, txn, duiHandle) end
 
 --- Returns the world matrix of the specified camera. To turn this into a view matrix, calculate the inverse.
@@ -70,7 +70,7 @@ function GetCamMatrix(camera, rightVector, forwardVector, upVector, position) en
 
 
 --- @param entity Object
---- @returns boolean
+--- @return boolean
 function DoesEntityExist(entity) end
 
 
@@ -79,7 +79,7 @@ function EndFindPickup(findHandle) end
 
 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityVelocity(entity) end
 
 
@@ -98,7 +98,7 @@ function ExperimentalLoadCloneSync(entity, data) end
 
 --- Gets the current coordinates for a specified entity. This native is used server side when using OneSync. See <a href="#_0x3FEF770D40960D5A" >GET_ENTITY_COORDS</a> for client side.
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityCoords(entity) end
 
 --- Destroys a DUI browser.
@@ -107,11 +107,11 @@ function DestroyDui(duiObject) end
 
 --- Currently it only works with peds.
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityHealth(entity) end
 
 --- Returns the peer address of the remote game server that the user is currently connected to.
---- @returns string
+--- @return string
 function GetCurrentServerEndpoint() end
 
 --- Cancels the currently executing event.
@@ -126,11 +126,11 @@ function AddReplaceTexture(origTxd, origTxn, newTxd, newTxn) end
 
 --- Returns the NUI window handle for a specified DUI browser object.
 --- @param duiObject long
---- @returns string
+--- @return string
 function GetDuiHandle(duiObject) end
 
 --- Returns the current console output buffer.
---- @returns string
+--- @return string
 function GetConsoleBuffer() end
 
 
@@ -144,45 +144,45 @@ function AddTextEntryByHash(entryKey, entryText) end
 
 --- Loads a minimap overlay from a GFx file in the current resource.
 --- @param name string
---- @returns number
+--- @return number
 function AddMinimapOverlay(name) end
 
 
 --- @param handle number
---- @returns string
+--- @return string
 function FindKvp(handle) end
 
 
 --- @param outEntity Entity
---- @returns number
+--- @return number
 function FindFirstPed(outEntity) end
 
 --- A getter for [SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME](#_0x90B6DA738A9A25DA).
---- @returns number
+--- @return number
 function GetAmbientVehicleRangeMultiplier() end
 
 
 --- @param findHandle number
 --- @param outEntity Entity
---- @returns boolean
+--- @return boolean
 function FindNextPed(findHandle, outEntity) end
 
 --- Creates a runtime texture from the specified file in the current resource.
 --- @param txd long
 --- @param txn string
 --- @param fileName string
---- @returns long
+--- @return long
 function CreateRuntimeTextureFromImage(txd, txn, fileName) end
 
 
 --- @param outEntity Entity
---- @returns number
+--- @return number
 function FindFirstPickup(outEntity) end
 
 --- Requests whether or not the player owns the specified package.
 --- @param playerSrc string
 --- @param skuId number
---- @returns boolean
+--- @return boolean
 function DoesPlayerOwnSkuExt(playerSrc, skuId) end
 
 
@@ -195,12 +195,12 @@ function FlagServerAsPrivate(private_) end
 --- 
 --- [127, 42, 13, 37]
 --- 
---- @returns object
+--- @return object
 function GetActivePlayers() end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityPopulationType(entity) end
 
 
@@ -209,45 +209,45 @@ function ExecuteCommand(commandString) end
 
 
 --- @param entity Entity
---- @returns Hash
+--- @return Hash
 function GetEntityModel(entity) end
 
 
 --- @param varName string
 --- @param default_ number
---- @returns number
+--- @return number
 function GetConvarInt(varName, default_) end
 
 --- Creates a DUI browser. This can be used to draw on a runtime texture using CREATE_RUNTIME_TEXTURE_FROM_DUI_HANDLE.
 --- @param url string
 --- @param width number
 --- @param height number
---- @returns long
+--- @return long
 function CreateDui(url, width, height) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehiclePrimaryColourCustom(vehicle) end
 
 --- This native is not implemented.
 --- @param entity Entity
---- @returns string
+--- @return string
 function ExperimentalSaveCloneCreate(entity) end
 
 
 --- @param referenceIdentity string
---- @returns string
+--- @return string
 function DuplicateFunctionReference(referenceIdentity) end
 
 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityRotationVelocity(entity) end
 
 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityRotation(entity) end
 
 --- Commits the backing pixels to the specified runtime texture.
@@ -255,7 +255,7 @@ function GetEntityRotation(entity) end
 function CommitRuntimeTexture(tex) end
 
 --- Returns the name of the currently executing resource.
---- @returns string
+--- @return string
 function GetCurrentResourceName() end
 
 
@@ -271,35 +271,35 @@ function DeleteResourceKvp(key) end
 --- @param txn string
 --- @param width number
 --- @param height number
---- @returns long
+--- @return long
 function CreateRuntimeTexture(txd, txn, width, height) end
 
 --- Requests whether or not the player owns the specified SKU.
 --- @param playerSrc string
 --- @param skuId number
---- @returns boolean
+--- @return boolean
 function DoesPlayerOwnSku(playerSrc, skuId) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityHeading(entity) end
 
 --- This native is not implemented.
 --- @param data string
 --- @param objectId number
 --- @param tree string
---- @returns Entity
+--- @return Entity
 function ExperimentalLoadCloneCreate(data, objectId, tree) end
 
 
 --- @param findHandle number
 --- @param outEntity Entity
---- @returns boolean
+--- @return boolean
 function FindNextVehicle(findHandle, outEntity) end
 
 --- A getter for [SET_PED_DENSITY_MULTIPLIER_THIS_FRAME](#_0x95E3D6257B166CF2).
---- @returns number
+--- @return number
 function GetPedDensityMultiplier() end
 
 
@@ -308,22 +308,22 @@ function EndFindObject(findHandle) end
 
 --- This native is not implemented.
 --- @param entity Entity
---- @returns string
+--- @return string
 function ExperimentalSaveCloneSync(entity) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityType(entity) end
 
 --- A getter for [\_SET_PED_FACE_FEATURE](#_0x71A5C1DBA060049E). Returns 0.0 if fails to get.
 --- @param ped Ped
 --- @param index number
---- @returns number
+--- @return number
 function GetPedFaceFeature(ped, index) end
 
 --- A getter for [SET_AMBIENT_PED_RANGE_MULTIPLIER_THIS_FRAME](#_0x0B919E1FB47CC4E0).
---- @returns number
+--- @return number
 function GetAmbientPedRangeMultiplier() end
 
 --- Returns all vehicle handles known to the server.
@@ -332,39 +332,39 @@ function GetAmbientPedRangeMultiplier() end
 --- 
 --- [127, 42, 13, 37]
 --- 
---- @returns object
+--- @return object
 function GetAllVehicles() end
 
 
 --- @param interiorId number
 --- @param portalIndex number
---- @returns number
+--- @return number
 function GetInteriorPortalRoomTo(interiorId, portalIndex) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedDesiredHeading(ped) end
 
 
 --- @param findHandle number
 --- @param outEntity Entity
---- @returns boolean
+--- @return boolean
 function FindNextObject(findHandle, outEntity) end
 
 --- This native converts the passed string to a hash.
 --- @param model string
---- @returns Hash
+--- @return Hash
 function GetHashKey(model) end
 
 
 --- @param password string
---- @returns string
+--- @return string
 function GetPasswordHash(password) end
 
 --- A getter for [SET_PLAYER_VEHICLE_DEFENSE_MODIFIER](#_0x4C60E6EFDAFF2462).
 --- @param playerId Player
---- @returns number
+--- @return number
 function GetPlayerVehicleDefenseModifier(playerId) end
 
 --- Creates a runtime texture dictionary with the specified name.
@@ -374,7 +374,7 @@ function GetPlayerVehicleDefenseModifier(playerId) end
 --- local txd = CreateRuntimeTxd('meow')
 --- 
 --- @param name string
---- @returns long
+--- @return long
 function CreateRuntimeTxd(name) end
 
 
@@ -389,12 +389,12 @@ function GetInteriorPortalCornerPosition(interiorId, portalIndex, cornerIndex, p
 
 --- @param interiorId number
 --- @param portalIndex number
---- @returns number
+--- @return number
 function GetInteriorPortalRoomFrom(interiorId, portalIndex) end
 
 --- A getter for [SET_PLAYER_MELEE_WEAPON_DEFENSE_MODIFIER](#_0xAE540335B4ABC4E2).
 --- @param playerId Player
---- @returns number
+--- @return number
 function GetPlayerMeleeWeaponDefenseModifier(playerId) end
 
 
@@ -406,17 +406,17 @@ function GetInteriorPosition(interiorId, posX, posY, posZ) end
 
 
 --- @param playerSrc string
---- @returns number
+--- @return number
 function GetPlayerLastMsg(playerSrc) end
 
 
 --- @param playerSrc string
---- @returns string
+--- @return string
 function GetPlayerEndpoint(playerSrc) end
 
 
 --- @param index number
---- @returns string
+--- @return string
 function GetPlayerFromIndex(index) end
 
 
@@ -426,18 +426,18 @@ function GetNuiCursorPosition(x, y) end
 
 --- A getter for [\_SET_PED_HAIR_COLOR](#_0x4CFFC65454C93A49). Returns -1 if fails to get.
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedHairColor(ped) end
 
 
 --- @param interiorId number
 --- @param roomIndex number
---- @returns number
+--- @return number
 function GetInteriorRoomTimecycle(interiorId, roomIndex) end
 
 
 --- @param playerSrc string
---- @returns string
+--- @return string
 function GetPlayerGuid(playerSrc) end
 
 
@@ -455,25 +455,25 @@ function GetInteriorRotation(interiorId, rotx, rotY, rotZ, rotW) end
 --- @param scrollSpeed number
 --- @param tilesX number
 --- @param tilesY number
---- @returns boolean
+--- @return boolean
 function GetMapZoomDataLevel(index, zoomScale, zoomSpeed, scrollSpeed, tilesX, tilesY) end
 
 
---- @returns number
+--- @return number
 function GetNumResources() end
 
 --- A getter for [SET_PLAYER_VEHICLE_DAMAGE_MODIFIER](#_0xA50E117CDDF82F0C).
 --- @param playerId Player
---- @returns number
+--- @return number
 function GetPlayerVehicleDamageModifier(playerId) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDoorStatus(vehicle) end
 
 --- Gets the current game timer in milliseconds.
---- @returns long
+--- @return long
 function GetGameTimer() end
 
 --- Returns all commands that are registered in the command system.
@@ -489,22 +489,22 @@ function GetGameTimer() end
 --- }
 --- ]
 --- 
---- @returns object
+--- @return object
 function GetRegisteredCommands() end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerServerId(player) end
 
 
 --- @param ped Ped
---- @returns Hash
+--- @return Hash
 function GetPedCauseOfDeath(ped) end
 
 --- A getter for [SET_RANDOM_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME](#_0xB3B3359379FE77D3).
 --- Same as vehicle density multiplier.
---- @returns number
+--- @return number
 function GetRandomVehicleDensityMultiplier() end
 
 --- Gets the metadata value at a specified key/index from a resource's manifest.
@@ -512,55 +512,55 @@ function GetRandomVehicleDensityMultiplier() end
 --- @param resourceName string
 --- @param metadataKey string
 --- @param index number
---- @returns string
+--- @return string
 function GetResourceMetadata(resourceName, metadataKey, index) end
 
 
 --- @param playerSrc string
---- @returns number
+--- @return number
 function GetPlayerPing(playerSrc) end
 
 
 --- @param interiorId number
---- @returns number
+--- @return number
 function GetInteriorPortalCount(interiorId) end
 
 
 --- @param key string
---- @returns number
+--- @return number
 function GetResourceKvpFloat(key) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedArmour(ped) end
 
 
 --- @param playerSrc string
 --- @param identifier number
---- @returns string
+--- @return string
 function GetPlayerIdentifier(playerSrc, identifier) end
 
 
 --- @param interiorId number
 --- @param portalIndex number
---- @returns number
+--- @return number
 function GetInteriorPortalFlag(interiorId, portalIndex) end
 
 --- A getter for [SET_PARKED_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME](#_0xEAE6DCC7EEE3DB1D).
---- @returns number
+--- @return number
 function GetParkedVehicleDensityMultiplier() end
 
 
 --- @param interiorId number
 --- @param roomHash number
---- @returns number
+--- @return number
 function GetInteriorRoomIndexByHash(interiorId, roomHash) end
 
 
 --- @param interiorId number
 --- @param roomIndex number
---- @returns string
+--- @return string
 function GetInteriorRoomName(interiorId, roomIndex) end
 
 
@@ -577,88 +577,88 @@ function GetInteriorRoomExtents(interiorId, roomIndex, bbMinX, bbMinY, bbMinZ, b
 
 --- @param interiorId number
 --- @param roomIndex number
---- @returns number
+--- @return number
 function GetInteriorRoomFlag(interiorId, roomIndex) end
 
 
---- @returns string
+--- @return string
 function GetHostId() end
 
 
 --- @param entity Entity
---- @returns string
+--- @return string
 function GetEntityScript(entity) end
 
 
 --- @param findIndex number
---- @returns string
+--- @return string
 function GetResourceByFindIndex(findIndex) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedMaxHealth(ped) end
 
 
 --- @param key string
---- @returns number
+--- @return number
 function GetResourceKvpInt(key) end
 
 --- A getter for [\_SET_PED_EYE_COLOR](#_0x50B56988B170AFDF). Returns -1 if fails to get.
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedEyeColor(ped) end
 
 
---- @returns number
+--- @return number
 function GetInstanceId() end
 
 --- A getter for [SET_PLAYER_WEAPON_DEFENSE_MODIFIER](#_0x2D83BC011CA14A3C).
 --- @param playerId Player
---- @returns number
+--- @return number
 function GetPlayerWeaponDefenseModifier(playerId) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleGravityAmount(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetVehicleHandbrake(vehicle) end
 
 
 --- @param playerSrc string
---- @returns Entity
+--- @return Entity
 function GetPlayerPed(playerSrc) end
 
 --- Gets brake pressure of a wheel.
 --- Max number of wheels can be retrieved with the native GET_VEHICLE_NUMBER_OF_WHEELS.
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelBrakePressure(vehicle, wheelIndex) end
 
 --- A getter for [SET_PLAYER_WEAPON_DAMAGE_MODIFIER](#_0xCE07B9F7817AADA3).
 --- @param playerId Player
---- @returns number
+--- @return number
 function GetPlayerWeaponDamageModifier(playerId) end
 
 --- A getter for [SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME](#_0x7A556143A1C03898).
---- @returns number
+--- @return number
 function GetScenarioPedDensityMultiplier() end
 
 
 --- @param vehicle Vehicle
 --- @param lightsOn boolean
 --- @param highbeamsOn boolean
---- @returns boolean
+--- @return boolean
 function GetVehicleLightsState(vehicle, lightsOn, highbeamsOn) end
 
 
 --- @param playerSrc string
---- @returns string
+--- @return string
 function GetPlayerName(playerSrc) end
 
 
@@ -673,47 +673,47 @@ function GetInteriorEntitiesExtents(interiorId, bbMinX, bbMinY, bbMinZ, bbMaxX, 
 
 --- A getter for [SET_VEHICLE_CHEAT_POWER_INCREASE](#_0xB59E4BD37AE292DB).
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleCheatPowerIncrease(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehicleEngineRunning(vehicle) end
 
 --- A getter for [\_SET_PLAYER_WEAPON_DEFENSE_MODIFIER_2](#_0xBCFDE9EDE4CF27DC).
 --- @param playerId Player
---- @returns number
+--- @return number
 function GetPlayerWeaponDefenseModifier2(playerId) end
 
 --- Gets the amount of metadata values with the specified key existing in the specified resource's manifest.
 --- See also: [Resource manifest](https://docs.fivem.net/resources/manifest/)
 --- @param resourceName string
 --- @param metadataKey string
---- @returns number
+--- @return number
 function GetNumResourceMetadata(resourceName, metadataKey) end
 
 
---- @returns string
+--- @return string
 function GetInvokingResource() end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleRoofLivery(vehicle) end
 
 --- A getter for [SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER](#_0x4A3DC7ECCC321032).
---- @returns number
+--- @return number
 function GetPlayerMeleeWeaponDamageModifier() end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleClutch(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehicleSecondaryColourCustom(vehicle) end
 
 --- Returns the effective handling data of a vehicle as an integer value.
@@ -721,26 +721,26 @@ function GetIsVehicleSecondaryColourCustom(vehicle) end
 --- @param vehicle Vehicle
 --- @param class_ string
 --- @param fieldName string
---- @returns number
+--- @return number
 function GetVehicleHandlingInt(vehicle, class_, fieldName) end
 
 
---- @returns number
+--- @return number
 function GetNumPlayerIndices() end
 
 
 --- @param playerSrc string
---- @returns number
+--- @return number
 function GetNumPlayerIdentifiers(playerSrc) end
 
 
 --- @param serverId number
---- @returns Player
+--- @return Player
 function GetPlayerFromServerId(serverId) end
 
 
 --- @param interiorId number
---- @returns number
+--- @return number
 function GetInteriorRoomCount(interiorId) end
 
 --- A getter for [SET_PED_HEAD_OVERLAY](#_0x48F44967FA05CC1E) and [\_SET_PED_HEAD_OVERLAY_COLOR](#_0x497BF74A7B9CB952) natives.
@@ -751,52 +751,52 @@ function GetInteriorRoomCount(interiorId) end
 --- @param firstColour number
 --- @param secondColour number
 --- @param overlayOpacity number
---- @returns boolean
+--- @return boolean
 function GetPedHeadOverlayData(ped, index, overlayValue, colourType, firstColour, secondColour, overlayOpacity) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleAlarmTimeLeft(vehicle) end
 
 --- A getter for [\_SET_PED_HAIR_COLOR](#_0x4CFFC65454C93A49). Returns -1 if fails to get.
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedHairHighlightColor(ped) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleOilLevel(vehicle) end
 
 --- Returns a hash of selected ped weapon.
 --- @param ped Ped
---- @returns Hash
+--- @return Hash
 function GetSelectedPedWeapon(ped) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNextGear(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNumberOfWheels(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDashboardSpeed(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns string
+--- @return string
 function GetVehicleNumberPlateText(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleHighGear(vehicle) end
 
 
@@ -806,17 +806,17 @@ function GetVehicleDashboardColour(vehicle, color) end
 
 --- Currently it only works when set to "all players".
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDoorsLockedForPlayer(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleNeedsToBeHotwired(vehicle) end
 
 --- A getter for [MODIFY_VEHICLE_TOP_SPEED](#_0x93A3996368C94158). Returns -1.0 if a modifier is not set.
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleTopSpeedModifier(vehicle) end
 
 
@@ -828,40 +828,40 @@ function GetVehicleCustomPrimaryColour(vehicle, r, g, b) end
 
 
 --- @param key string
---- @returns string
+--- @return string
 function GetResourceKvpString(key) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleEngineHealth(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelHealth(vehicle, wheelIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleRadioStationIndex(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleEngineTemperature(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehiclePetrolTankHealth(vehicle) end
 
 --- Gets steering angle of a wheel.
 --- Max number of wheels can be retrieved with the native GET_VEHICLE_NUMBER_OF_WHEELS.
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelSteeringAngle(vehicle, wheelIndex) end
 
 --- List of known states:
@@ -872,29 +872,29 @@ function GetVehicleWheelSteeringAngle(vehicle, wheelIndex) end
 --- 129: Vehicle is doing wheelie.
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWheelieState(vehicle) end
 
 --- Gets speed of a wheel at the tyre.
 --- Max number of wheels can be retrieved with the native GET_VEHICLE_NUMBER_OF_WHEELS.
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelSpeed(vehicle, wheelIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleLivery(vehicle) end
 
 --- Gets a vehicle's multiplier used with a wheel's GET_VEHICLE_WHEEL_STEERING_ANGLE to determine the angle the wheel is rendered.
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDrawnWheelAngleMult(vehicle) end
 
 --- Gets the height of the specified runtime texture.
 --- @param tex long
---- @returns number
+--- @return number
 function GetRuntimeTextureHeight(tex) end
 
 --- Returns the effective handling data of a vehicle as a floating-point value.
@@ -902,22 +902,22 @@ function GetRuntimeTextureHeight(tex) end
 --- @param vehicle Vehicle
 --- @param class_ string
 --- @param fieldName string
---- @returns number
+--- @return number
 function GetVehicleHandlingFloat(vehicle, class_, fieldName) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleCurrentGear(vehicle) end
 
 
 --- @param train Vehicle
---- @returns number
+--- @return number
 function GetTrainCurrentTrackNode(train) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleCurrentAcceleration(vehicle) end
 
 
@@ -928,24 +928,24 @@ function GetVehicleColours(vehicle, colorPrimary, colorSecondary) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleCurrentRpm(vehicle) end
 
 --- Returns the physical on-disk path of the specified resource.
 --- @param resourceName string
---- @returns string
+--- @return string
 function GetResourcePath(resourceName) end
 
 
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelRimColliderSize(vehicle, wheelIndex) end
 
 --- Returns vehicle's wheels' size (size is the same for all the wheels, cannot get/set specific wheel of vehicle).
 --- Only works on non-default wheels (returns 0 in case of default wheels).
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWheelSize(vehicle) end
 
 --- Returns the effective handling data of a vehicle as a vector value.
@@ -953,27 +953,27 @@ function GetVehicleWheelSize(vehicle) end
 --- @param vehicle Vehicle
 --- @param class_ string
 --- @param fieldName string
---- @returns vector3
+--- @return vector3
 function GetVehicleHandlingVector(vehicle, class_, fieldName) end
 
 --- Returns the current state of the specified resource.
 --- @param resourceName string
---- @returns string
+--- @return string
 function GetResourceState(resourceName) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleSteeringAngle(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleSteeringScale(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleTurboPressure(vehicle) end
 
 --- Requests the commerce data from Tebex for the specified player, including the owned SKUs. Use IS_PLAYER_COMMERCE_INFO_LOADED to check if it has loaded.
@@ -982,18 +982,18 @@ function LoadPlayerCommerceDataExt(playerSrc) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleWheelType(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDirtLevel(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelTireColliderSize(vehicle, wheelIndex) end
 
 --- Overrides the output volume for a particular player on Mumble. This will also bypass 3D audio and distance calculations. -1.0 to reset the override.
@@ -1005,12 +1005,12 @@ function MumbleSetVolumeOverride(player, volume) end
 
 --- Gets the row pitch of the specified runtime texture, for use when creating data for SET_RUNTIME_TEXTURE_ARGB_DATA.
 --- @param tex long
---- @returns number
+--- @return number
 function GetRuntimeTexturePitch(tex) end
 
 --- Gets the width of the specified runtime texture.
 --- @param tex long
---- @returns number
+--- @return number
 function GetRuntimeTextureWidth(tex) end
 
 
@@ -1022,18 +1022,18 @@ function GetVehicleCustomSecondaryColour(vehicle, r, g, b) end
 
 --- Returns whether or not the specific minimap overlay has loaded.
 --- @param id number
---- @returns boolean
+--- @return boolean
 function HasMinimapOverlayLoaded(id) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleFuelLevel(vehicle) end
 
 --- Gets the vehicle the specified Ped is/was in depending on bool value. This native is used server side when using OneSync.
 --- @param ped Ped
 --- @param lastVehicle boolean
---- @returns Vehicle
+--- @return Vehicle
 function GetVehiclePedIsIn(ped, lastVehicle) end
 
 
@@ -1054,12 +1054,12 @@ function GetVehicleInteriorColour(vehicle, color) end
 --- }
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDoorLockStatus(vehicle) end
 
 --- Gets the vehicle indicator light state. 0 = off, 1 = left, 2 = right, 3 = both
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleIndicatorLights(vehicle) end
 
 
@@ -1070,7 +1070,7 @@ function GetVehicleExtraColours(vehicle, pearlescentColor, wheelColor) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleNumberPlateTextIndex(vehicle) end
 
 --- Registers a specified .gfx file as GFx font library.
@@ -1080,7 +1080,7 @@ function RegisterFontFile(fileName) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function HasVehicleBeenOwnedByPlayer(vehicle) end
 
 --- Clears channels from the target list for the specified Mumble voice target ID.
@@ -1094,14 +1094,14 @@ function MumbleAddVoiceTargetPlayer(targetId, player) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function NetworkGetNetworkIdFromEntity(entity) end
 
 --- <!-- Native implemented by Disquse. 0x66EE14B2 -->
 --- 
 --- Returns true if the full map is currently revealed on the minimap. 
 --- Use [IsBigmapActive](#_0xFFF65C63) to check if the minimap is currently expanded or in it's normal state.
---- @returns boolean
+--- @return boolean
 function IsBigmapFull() end
 
 --- Registered commands can be executed by entering them in the client console (this works for client side and server side registered commands). Or by entering them in the server console/through an RCON client (only works for server side registered commands). Or if you use a supported chat resource, like the default one provided in the cfx-server-data repository, then you can enter the command in chat by prefixing it with a /.
@@ -1123,7 +1123,7 @@ function RegisterCommand(commandName, handler, restricted) end
 --- @param argsSerialized string
 --- @param argsLength number
 --- @param retvalLength number
---- @returns string
+--- @return string
 function InvokeFunctionReference(referenceIdentity, argsSerialized, argsLength, retvalLength) end
 
 
@@ -1135,22 +1135,22 @@ function GetVehicleTyreSmokeColor(vehicle, r, g, b) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleHeadlightsColour(vehicle) end
 
 --- Returns the mumble voice channel from a player's server id.
 --- @param serverId number
---- @returns number
+--- @return number
 function MumbleGetVoiceChannelFromServerId(serverId) end
 
 
 --- @param vehicle Vehicle
 --- @param wheelIndex number
---- @returns number
+--- @return number
 function GetVehicleWheelTireColliderWidth(vehicle, wheelIndex) end
 
 --- A getter for [SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME](#_0x245A6883D966D537).
---- @returns number
+--- @return number
 function GetVehicleDensityMultiplier() end
 
 --- Scope entry for profiler.
@@ -1159,11 +1159,11 @@ function ProfilerEnterScope(scopeName) end
 
 --- Requests whether or not the commerce data for the specified player has loaded from Tebex.
 --- @param playerSrc string
---- @returns boolean
+--- @return boolean
 function IsPlayerCommerceInfoLoadedExt(playerSrc) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleBodyHealth(vehicle) end
 

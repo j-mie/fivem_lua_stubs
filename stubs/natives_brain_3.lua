@@ -13,13 +13,13 @@ function WaypointPlaybackUseDefaultSpeed(p0) end
 --- @param name string
 --- @param point number
 --- @param coord vector3
---- @returns boolean
+--- @return boolean
 function WaypointRecordingGetCoord(name, point, coord) end
 
 
 --- @param name string
 --- @param point number
---- @returns number
+--- @return number
 function WaypointRecordingGetSpeedAtPoint(name, point) end
 
 --- 
@@ -31,7 +31,7 @@ function WaypointRecordingGetSpeedAtPoint(name, point) end
 --- @param y number
 --- @param z number
 --- @param point number
---- @returns boolean
+--- @return boolean
 function WaypointRecordingGetClosestWaypoint(name, x, y, z, point) end
 
 --- 
@@ -40,6 +40,6 @@ function WaypointRecordingGetClosestWaypoint(name, x, y, z, point) end
 --- 
 --- @param name string
 --- @param points number
---- @returns boolean
+--- @return boolean
 function WaypointRecordingGetNumPoints(name, points) end
 

@@ -787,7 +787,7 @@ function TaskPedSlideToCoordHdgRate(ped, x, y, z, heading, p5, p6) end
 --- 
 --- @param ped Ped
 --- @param taskSequenceId number
---- @returns any
+--- @return any
 function TaskPerformSequence(ped, taskSequenceId) end
 
 

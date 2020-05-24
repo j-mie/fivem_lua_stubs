@@ -8,11 +8,11 @@
 --- @param p6 number
 --- @param p7 boolean
 --- @param p8 any
---- @returns any
+--- @return any
 function AddNavmeshBlockingObject(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
 
---- @returns boolean
+--- @return boolean
 function AreAllNavmeshRegionsLoaded() end
 
 
@@ -38,12 +38,12 @@ function DisableNavmeshInArea(p0, p1, p2, p3, p4, p5, p6) end
 --- @param y1 number
 --- @param x2 number
 --- @param y2 number
---- @returns boolean
+--- @return boolean
 function ArePathNodesLoadedInArea(x1, y1, x2, y2) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function DoesNavmeshBlockingObjectExist(p0) end
 
 --- Calculates the travel distance between a set of points.
@@ -56,7 +56,7 @@ function DoesNavmeshBlockingObjectExist(p0) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns number
+--- @return number
 function CalculateTravelDistanceBetweenPoints(x1, y1, z1, x2, y2, z2) end
 
 --- 
@@ -88,7 +88,7 @@ function CalculateTravelDistanceBetweenPoints(x1, y1, z1, x2, y2, z2) end
 --- @param direction number
 --- @param vehicle number
 --- @param distToNxJunction number
---- @returns number
+--- @return number
 function GenerateDirectionsToCoord(x, y, z, p3, direction, vehicle, distToNxJunction) end
 
 --- Clears a disabled GPS route area from a certain index previously set using [SET_GPS_DISABLED_ZONE_AT_INDEX](#_0xD0BC1C6FB18EE154).
@@ -109,7 +109,7 @@ function ClearGpsDisabledZoneAtIndex(index) end
 --- @param p8 any
 --- @param p9 number
 --- @param p10 boolean
---- @returns any
+--- @return any
 function GetClosestRoad(x, y, z, p3, p4, p5, p6, p7, p8, p9, p10) end
 
 --- 
@@ -121,7 +121,7 @@ function GetClosestRoad(x, y, z, p3, p4, p5, p6, p7, p8, p9, p10) end
 --- @param outPosition vector3
 --- @param unknown1 number
 --- @param unknown2 number
---- @returns boolean
+--- @return boolean
 function GetClosestMajorVehicleNode(x, y, z, outPosition, unknown1, unknown2) end
 
 --- 
@@ -147,7 +147,7 @@ function GetClosestMajorVehicleNode(x, y, z, outPosition, unknown1, unknown2) en
 --- @param nodeType number
 --- @param p5 number
 --- @param p6 number
---- @returns boolean
+--- @return boolean
 function GetClosestVehicleNode(x, y, z, outPosition, nodeType, p5, p6) end
 
 --- 
@@ -179,15 +179,15 @@ function GetClosestVehicleNode(x, y, z, outPosition, nodeType, p5, p6) end
 --- @param nodeType number
 --- @param p6 number
 --- @param p7 number
---- @returns boolean
+--- @return boolean
 function GetClosestVehicleNodeWithHeading(x, y, z, outPosition, outHeading, nodeType, p6, p7) end
 
 
---- @returns boolean
+--- @return boolean
 function GetGpsBlipRouteFound() end
 
 
---- @returns number
+--- @return number
 function GetGpsBlipRouteLength() end
 
 --- 
@@ -197,7 +197,7 @@ function GetGpsBlipRouteLength() end
 --- @param y1 number
 --- @param x2 number
 --- @param y2 number
---- @returns number
+--- @return number
 function GetHeightmapBottomZForArea(x1, y1, x2, y2) end
 
 --- 
@@ -205,7 +205,7 @@ function GetHeightmapBottomZForArea(x1, y1, x2, y2) end
 --- 
 --- @param x number
 --- @param y number
---- @returns number
+--- @return number
 function GetHeightmapBottomZForPosition(x, y) end
 
 --- 
@@ -215,7 +215,7 @@ function GetHeightmapBottomZForPosition(x, y) end
 --- @param y1 number
 --- @param x2 number
 --- @param y2 number
---- @returns number
+--- @return number
 function GetHeightmapTopZForArea(x1, y1, x2, y2) end
 
 --- Gets the next zone that has been disabled using SET_GPS_DISABLED_ZONE_AT_INDEX.
@@ -224,7 +224,7 @@ function GetHeightmapTopZForArea(x1, y1, x2, y2) end
 --- NativeDB Removed Parameter 1: int index
 --- 
 --- @param index number
---- @returns number
+--- @return number
 function GetNextGpsDisabledZoneIndex(index) end
 
 --- 
@@ -232,7 +232,7 @@ function GetNextGpsDisabledZoneIndex(index) end
 --- 
 --- @param x number
 --- @param y number
---- @returns number
+--- @return number
 function GetHeightmapTopZForPosition(x, y) end
 
 
@@ -244,7 +244,7 @@ function GetHeightmapTopZForPosition(x, y) end
 --- @param unknown1 any
 --- @param unknown2 any
 --- @param unknown3 any
---- @returns boolean
+--- @return boolean
 function GetNthClosestVehicleNode(x, y, z, nthClosest, outPosition, unknown1, unknown2, unknown3) end
 
 --- 
@@ -264,7 +264,7 @@ function GetNthClosestVehicleNode(x, y, z, nthClosest, outPosition, unknown1, un
 --- @param nodetype number
 --- @param p10 any
 --- @param p11 any
---- @returns boolean
+--- @return boolean
 function GetNthClosestVehicleNodeFavourDirection(x, y, z, desiredX, desiredY, desiredZ, nthClosest, outPosition, outHeading, nodetype, p10, p11) end
 
 --- 
@@ -277,7 +277,7 @@ function GetNthClosestVehicleNodeFavourDirection(x, y, z, desiredX, desiredY, de
 --- @param nodetype number
 --- @param p5 number
 --- @param p6 number
---- @returns number
+--- @return number
 function GetNthClosestVehicleNodeId(x, y, z, nth, nodetype, p5, p6) end
 
 --- 
@@ -292,7 +292,7 @@ function GetNthClosestVehicleNodeId(x, y, z, nth, nodetype, p5, p6) end
 --- @param p6 any
 --- @param p7 number
 --- @param p8 number
---- @returns any
+--- @return any
 function GetNthClosestVehicleNodeIdWithHeading(x, y, z, nthClosest, outPosition, outHeading, p6, p7, p8) end
 
 --- 
@@ -308,7 +308,7 @@ function GetNthClosestVehicleNodeIdWithHeading(x, y, z, nthClosest, outPosition,
 --- @param unknown2 number
 --- @param unknown3 number
 --- @param unknown4 number
---- @returns boolean
+--- @return boolean
 function GetNthClosestVehicleNodeWithHeading(x, y, z, nthClosest, outPosition, heading, unknown1, unknown2, unknown3, unknown4) end
 
 
@@ -317,7 +317,7 @@ function GetNthClosestVehicleNodeWithHeading(x, y, z, nthClosest, outPosition, h
 --- @param z number
 --- @param p3 number
 --- @param outPosition vector3
---- @returns boolean
+--- @return boolean
 function GetPointOnRoadSide(x, y, z, p3, outPosition) end
 
 
@@ -330,7 +330,7 @@ function GetPointOnRoadSide(x, y, z, p3, outPosition) end
 --- @param p6 boolean
 --- @param outPosition vector3
 --- @param nodeId number
---- @returns boolean
+--- @return boolean
 function GetRandomVehicleNode(x, y, z, radius, p4, p5, p6, outPosition, nodeId) end
 
 
@@ -339,7 +339,7 @@ function GetRandomVehicleNode(x, y, z, radius, p4, p5, p6, outPosition, nodeId) 
 --- @param z number
 --- @param heading number
 --- @param outPosition vector3
---- @returns boolean
+--- @return boolean
 function GetRoadSidePointWithHeading(x, y, z, heading, outPosition) end
 
 --- 
@@ -354,7 +354,7 @@ function GetRoadSidePointWithHeading(x, y, z, heading, outPosition) end
 --- @param onGround boolean
 --- @param outPosition vector3
 --- @param flags number
---- @returns boolean
+--- @return boolean
 function GetSafeCoordForPed(x, y, z, onGround, outPosition, flags) end
 
 --- 
@@ -378,7 +378,7 @@ function GetStreetNameAtCoord(x, y, z, streetName, crossingRoad) end
 --- Nodes in Fort Zancudo and LSIA are false  
 --- 
 --- @param nodeID number
---- @returns boolean
+--- @return boolean
 function GetVehicleNodeIsGpsAllowed(nodeID) end
 
 --- 
@@ -430,7 +430,7 @@ function GetVehicleNodePosition(nodeId, outPosition) end
 --- Normal roads where plenty of Peds spawn will return false  
 --- 
 --- @param nodeID number
---- @returns boolean
+--- @return boolean
 function GetVehicleNodeIsSwitchedOff(nodeID) end
 
 --- 
@@ -443,7 +443,7 @@ function GetVehicleNodeIsSwitchedOff(nodeID) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function IsNavmeshLoadedInArea(x1, y1, z1, x2, y2, z2) end
 
 --- 
@@ -456,7 +456,7 @@ function IsNavmeshLoadedInArea(x1, y1, z1, x2, y2, z2) end
 --- @param z number
 --- @param density number
 --- @param flags number
---- @returns boolean
+--- @return boolean
 function GetVehicleNodeProperties(x, y, z, density, flags) end
 
 --- 
@@ -467,7 +467,7 @@ function GetVehicleNodeProperties(x, y, z, density, flags) end
 --- @param y number
 --- @param z number
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsPointOnRoad(x, y, z, vehicle) end
 
 --- 
@@ -477,20 +477,20 @@ function IsPointOnRoad(x, y, z, vehicle) end
 --- August 29, 2017: This native has been removed in v1180.  
 --- 
 --- @param keepInMemory boolean
---- @returns boolean
+--- @return boolean
 function LoadAllPathNodes(keepInMemory) end
 
 --- 
 --- IS_*
 --- 
---- @returns boolean
+--- @return boolean
 function IsNavmeshRequiredRegionOwnedByAnyThread() end
 
 --- 
 --- Returns true if the id is non zero.  
 --- 
 --- @param vehicleNodeId number
---- @returns boolean
+--- @return boolean
 function IsVehicleNodeIdValid(vehicleNodeId) end
 
 
@@ -504,7 +504,7 @@ function RemoveNavmeshBlockingObject(p0) end
 --- @param y1 number
 --- @param x2 number
 --- @param y2 number
---- @returns boolean
+--- @return boolean
 function RequestPathsPreferAccurateBoundingstruct(x1, y1, x2, y2) end
 
 

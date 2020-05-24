@@ -5,7 +5,7 @@
 --- @param type number
 --- @param entity Entity
 --- @param duration number
---- @returns ScrHandle
+--- @return ScrHandle
 function AddShockingEventForEntity(type, entity, duration) end
 
 --- 
@@ -17,7 +17,7 @@ function AddShockingEventForEntity(type, entity, duration) end
 --- @param y number
 --- @param z number
 --- @param duration number
---- @returns ScrHandle
+--- @return ScrHandle
 function AddShockingEventAtPosition(type, x, y, z, duration) end
 
 
@@ -56,7 +56,7 @@ function BlockDecisionMakerEvent(name, type) end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsShockingEventInSphere(type, x, y, z, radius) end
 
 
@@ -68,7 +68,7 @@ function RemoveShockingEventSpawnBlockingAreas() end
 
 
 --- @param event ScrHandle
---- @returns boolean
+--- @return boolean
 function RemoveShockingEvent(event) end
 
 

@@ -357,7 +357,7 @@ function SetVehicleIsRacing(vehicle, toggle) end
 --- 
 --- @param vehicle Vehicle
 --- @param isStolen boolean
---- @returns any
+--- @return any
 function SetVehicleIsStolen(vehicle, isStolen) end
 
 --- 
@@ -625,7 +625,7 @@ function SetVehicleNumberPlateText(vehicle, plateText) end
 --- NativeDB Added Parameter 2: float p1
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function SetVehicleOnGroundProperly(vehicle) end
 
 --- 
@@ -930,7 +930,7 @@ function SetVehicleWeaponsDisabled(vehicle, weaponSlot) end
 --- @param p1 boolean
 --- @param p2 boolean
 --- @param p3 boolean
---- @returns any
+--- @return any
 function SetVehicleUseCutsceneWheelCompression(p0, p1, p2, p3) end
 
 --- 
@@ -938,7 +938,7 @@ function SetVehicleUseCutsceneWheelCompression(p0, p1, p2, p3) end
 --- 
 --- @param vehicle Vehicle
 --- @param enabled boolean
---- @returns any
+--- @return any
 function SetVehicleWheelsCanBreak(vehicle, enabled) end
 
 

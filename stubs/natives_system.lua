@@ -2,35 +2,35 @@
 --- I'm guessing this rounds a float value up to the next whole number, and FLOOR rounds it down  
 --- 
 --- @param value number
---- @returns number
+--- @return number
 function Ceil(value) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function Cos(value) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function Floor(value) end
 
 
 --- @param base number
 --- @param exponent number
---- @returns number
+--- @return number
 function Pow(base, exponent) end
 
 --- 
 --- NativeDB Introduced: v1604
 --- 
 --- @param value number
---- @returns number
+--- @return number
 function Log10(value) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function Round(value) end
 
 --- 
@@ -48,7 +48,7 @@ function Settimera(value) end
 
 --- @param value number
 --- @param bitShift number
---- @returns number
+--- @return number
 function ShiftLeft(value, bitShift) end
 
 
@@ -57,13 +57,13 @@ function Settimerb(value) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function Sin(value) end
 
 
 --- @param value number
 --- @param bitShift number
---- @returns number
+--- @return number
 function ShiftRight(value, bitShift) end
 
 --- 
@@ -98,18 +98,18 @@ function ShiftRight(value, bitShift) end
 --- 
 --- @param scriptName string
 --- @param stackSize number
---- @returns number
+--- @return number
 function StartNewScript(scriptName, stackSize) end
 
 
 --- @param scriptHash Hash
 --- @param stackSize number
---- @returns number
+--- @return number
 function StartNewScriptWithNameHash(scriptHash, stackSize) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function Sqrt(value) end
 
 --- 
@@ -120,7 +120,7 @@ function Sqrt(value) end
 --- @param args any
 --- @param argCount number
 --- @param stackSize number
---- @returns number
+--- @return number
 function StartNewScriptWithArgs(scriptName, args, argCount, stackSize) end
 
 
@@ -128,23 +128,23 @@ function StartNewScriptWithArgs(scriptName, args, argCount, stackSize) end
 --- @param args any
 --- @param argCount number
 --- @param stackSize number
---- @returns number
+--- @return number
 function StartNewScriptWithNameHashAndArgs(scriptHash, args, argCount, stackSize) end
 
 --- 
 --- Gets the current frame time.  
 --- 
---- @returns number
+--- @return number
 function Timestep() end
 
 --- 
 --- Counts up. Every 1000 is 1 real-time second. Use SETTIMERA(int value) to set the timer (e.g.: SETTIMERA(0)).  
 --- 
---- @returns number
+--- @return number
 function Timera() end
 
 
---- @returns number
+--- @return number
 function Timerb() end
 
 --- 
@@ -156,12 +156,12 @@ function Timerb() end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns number
+--- @return number
 function Vdist(x1, y1, z1, x2, y2, z2) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function ToFloat(value) end
 
 --- 
@@ -173,7 +173,7 @@ function ToFloat(value) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns number
+--- @return number
 function Vdist2(x1, y1, z1, x2, y2, z2) end
 
 --- 
@@ -182,7 +182,7 @@ function Vdist2(x1, y1, z1, x2, y2, z2) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns number
+--- @return number
 function Vmag(x, y, z) end
 
 --- 
@@ -191,7 +191,7 @@ function Vmag(x, y, z) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns number
+--- @return number
 function Vmag2(x, y, z) end
 
 --- 

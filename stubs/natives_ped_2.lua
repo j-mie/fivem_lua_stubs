@@ -3,19 +3,19 @@
 --- **Result of the example code:**
 --- <https://i.imgur.com/iHz8ztn.png>
 --- @param ped Ped
---- @returns number
+--- @return number
 function RegisterPedheadshotTransparent(ped) end
 
 --- 
 --- gtaforums.com/topic/885580-ped-headshotmugshot-txd/  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function RegisterPedheadshot(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function RegisterPedheadshot3(ped) end
 
 
@@ -90,7 +90,7 @@ function RemoveScenarioBlockingArea(p0, p1) end
 
 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function RequestPedheadshotImgUpload(id) end
 
 
@@ -155,7 +155,7 @@ function ResetPedMovementClipset(ped, p1) end
 --- NativeDB Return Type: void
 --- 
 --- @param ped Ped
---- @returns any
+--- @return any
 function ResetPedVisibleDamage(ped) end
 
 
@@ -375,7 +375,7 @@ function SetPedAlertness(ped, value) end
 --- 
 --- @param ped Ped
 --- @param accuracy number
---- @returns any
+--- @return any
 function SetPedAccuracy(ped, accuracy) end
 
 
@@ -920,7 +920,7 @@ function SetPedDiesInstantlyInWater(ped, toggle) end
 --- 
 --- @param ped Ped
 --- @param toggle boolean
---- @returns any
+--- @return any
 function SetPedDiesWhenInjured(ped, toggle) end
 
 
@@ -940,7 +940,7 @@ function SetPedDucking(ped, toggle) end
 --- 
 --- @param ped Ped
 --- @param toggle boolean
---- @returns any
+--- @return any
 function SetPedEnableWeaponBlocking(ped, toggle) end
 
 --- 

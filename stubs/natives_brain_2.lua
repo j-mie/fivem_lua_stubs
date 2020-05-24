@@ -953,7 +953,7 @@ function VehicleWaypointPlaybackResume(vehicle) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function WaypointPlaybackGetIsPaused(p0) end
 
 

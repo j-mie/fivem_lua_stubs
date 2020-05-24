@@ -10,16 +10,16 @@ function AppCloseBlock() end
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns number
+--- @return number
 function AppDataValid() end
 
 
---- @returns number
+--- @return number
 function AppGetDeletedFileStatus() end
 
 
 --- @param appName string
---- @returns boolean
+--- @return boolean
 function AppDeleteAppData(appName) end
 
 --- 
@@ -31,16 +31,16 @@ function AppGetInt(property) end
 
 
 --- @param property string
---- @returns number
+--- @return number
 function AppGetFloat(property) end
 
 
---- @returns boolean
+--- @return boolean
 function AppHasLinkedSocialClubAccount() end
 
 
 --- @param property string
---- @returns string
+--- @return string
 function AppGetString(property) end
 
 
@@ -48,7 +48,7 @@ function AppSaveData() end
 
 
 --- @param appName string
---- @returns boolean
+--- @return boolean
 function AppHasSyncedData(appName) end
 
 

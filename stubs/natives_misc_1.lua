@@ -6,11 +6,11 @@
 --- 		}  
 --- 		Used to block some of the prostitute stuff due to laws in Australia.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsAussieVersion() end
 
 
---- @returns boolean
+--- @return boolean
 function IsAutoSaveInProgress() end
 
 --- 
@@ -23,7 +23,7 @@ function IsAutoSaveInProgress() end
 --- 
 --- @param address number
 --- @param offset number
---- @returns boolean
+--- @return boolean
 function IsBitSet(address, offset) end
 
 
@@ -35,7 +35,7 @@ function IsBitSet(address, offset) end
 --- @param p5 number
 --- @param p6 number
 --- @param p7 boolean
---- @returns boolean
+--- @return boolean
 function IsBulletInAngledArea(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 
@@ -44,7 +44,7 @@ function IsBulletInAngledArea(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param p2 number
 --- @param p3 number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function IsBulletInArea(p0, p1, p2, p3, p4) end
 
 
@@ -55,26 +55,26 @@ function IsBulletInArea(p0, p1, p2, p3, p4) end
 --- @param p4 number
 --- @param p5 number
 --- @param p6 boolean
---- @returns boolean
+--- @return boolean
 function IsBulletInBox(p0, p1, p2, p3, p4, p5, p6) end
 
 --- 
 --- Returns true if command line option '-benchmark' is set.
 --- 
---- @returns boolean
+--- @return boolean
 function IsCommandLineBenchmarkValueSet() end
 
 --- 
 --- XBOX ONE  
 --- MulleDK19: This function is hard-coded to always return 0.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsDurangoVersion() end
 
 --- 
 --- This function is hard-coded to always return 0.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsFrontendFading() end
 
 --- 
@@ -85,7 +85,7 @@ function IsFrontendFading() end
 ---        (a_0) = -1;  
 ---    }  
 --- 
---- @returns boolean
+--- @return boolean
 function IsInPowerSavingMode() end
 
 --- 
@@ -96,20 +96,20 @@ function IsInPowerSavingMode() end
 --- =======================================================  
 --- 
 --- @param incidentId number
---- @returns boolean
+--- @return boolean
 function IsIncidentValid(incidentId) end
 
 
---- @returns boolean
+--- @return boolean
 function IsMinigameInProgress() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMemoryCardInUse() end
 
 
 --- @param weatherType string
---- @returns boolean
+--- @return boolean
 function IsNextWeatherType(weatherType) end
 
 --- 
@@ -118,13 +118,13 @@ function IsNextWeatherType(weatherType) end
 --- Force67: I patched return result and got this : i.imgur.com/hUn7zSj.jpg  
 --- translate please?  
 --- 
---- @returns boolean
+--- @return boolean
 function IsOrbisVersion() end
 
 --- 
 --- MulleDK19: This function is hard-coded to always return 1.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsPcVersion() end
 
 
@@ -135,19 +135,19 @@ function IsPcVersion() end
 --- @param p4 number
 --- @param p5 number
 --- @param p6 any
---- @returns boolean
+--- @return boolean
 function IsPointObscuredByAMissionEntity(p0, p1, p2, p3, p4, p5, p6) end
 
 --- 
 --- NativeDB Introduced: v1290
 --- 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function IsPopMultiplierAreaUnk(id) end
 
 
 --- @param weatherType string
---- @returns boolean
+--- @return boolean
 function IsPrevWeatherType(weatherType) end
 
 --- The BOOL parameters that are documented have not been confirmed. They are just documented from what I've found during testing. They may not work as expected in all cases.
@@ -162,7 +162,7 @@ function IsPrevWeatherType(weatherType) end
 --- @param p8 boolean
 --- @param ignoreEntity Entity
 --- @param p10 boolean
---- @returns boolean
+--- @return boolean
 function IsPositionOccupied(x, y, z, range, p4, checkVehicles, checkPeds, p7, p8, ignoreEntity, p10) end
 
 --- 
@@ -176,7 +176,7 @@ function IsPositionOccupied(x, y, z, range, p4, checkVehicles, checkPeds, p7, p8
 --- @param y2 number
 --- @param z2 number
 --- @param ownedByPlayer boolean
---- @returns boolean
+--- @return boolean
 function IsProjectileInArea(x1, y1, z1, x2, y2, z2, ownedByPlayer) end
 
 --- 
@@ -191,7 +191,7 @@ function IsProjectileInArea(x1, y1, z1, x2, y2, z2, ownedByPlayer) end
 --- @param z2 number
 --- @param type number
 --- @param p7 boolean
---- @returns boolean
+--- @return boolean
 function IsProjectileTypeInArea(x1, y1, z1, x2, y2, z2, type, p7) end
 
 
@@ -204,7 +204,7 @@ function IsProjectileTypeInArea(x1, y1, z1, x2, y2, z2, type, p7) end
 --- @param p6 number
 --- @param p7 any
 --- @param p8 boolean
---- @returns boolean
+--- @return boolean
 function IsProjectileTypeInAngledArea(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 
 --- 
@@ -218,19 +218,19 @@ function IsProjectileTypeInAngledArea(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 --- @param projHash Hash
 --- @param radius number
 --- @param ownedByPlayer boolean
---- @returns boolean
+--- @return boolean
 function IsProjectileTypeInRadius(x, y, z, projHash, radius, ownedByPlayer) end
 
 --- 
 --- MulleDK19: This function is hard-coded to always return 0.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsPs3Version() end
 
 --- 
 --- This function is hard-coded to always return 0.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsSniperInverted() end
 
 --- 
@@ -242,48 +242,48 @@ function IsSniperInverted() end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function IsSniperBulletInArea(x1, y1, z1, x2, y2, z2) end
 
 
 --- @param string string
---- @returns boolean
+--- @return boolean
 function IsStringNullOrEmpty(string) end
 
 
 --- @param string string
---- @returns boolean
+--- @return boolean
 function IsStringNull(string) end
 
 
---- @returns boolean
+--- @return boolean
 function IsStuntJumpMessageShowing() end
 
 
---- @returns boolean
+--- @return boolean
 function IsStuntJumpInProgress() end
 
 --- 
 --- Return whether tennis mode is active or not.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsTennisMode(ped) end
 
 --- 
 --- Returns true if the current frontend menu is FE_MENU_VERSION_LANDING_MENU
 --- 
---- @returns boolean
+--- @return boolean
 function LandingMenuIsActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsThisAMinigameScript() end
 
 --- 
 --- MulleDK19: This function is hard-coded to always return 0.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsXbox360Version() end
 
 --- 
@@ -322,7 +322,7 @@ function LoadCloudHat(name, transitionTime) end
 --- @param p5 boolean
 --- @param p6 number
 --- @param p7 number
---- @returns boolean
+--- @return boolean
 function OverrideSaveHouse(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 
@@ -411,7 +411,7 @@ function RegisterTextLabelToSave2(p0, name) end
 --- @param p4 any
 --- @param p5 any
 --- @param p6 any
---- @returns any
+--- @return any
 function RegisterSaveHouse(p0, p1, p2, p3, p4, p5, p6) end
 
 
@@ -538,7 +538,7 @@ function SetDispatchTimeBetweenSpawnAttempts(p0, p1) end
 --- NativeDB Return Type: void
 --- 
 --- @param player Player
---- @returns any
+--- @return any
 function SetExplosiveMeleeThisFrame(player) end
 
 
@@ -571,7 +571,7 @@ function SetFadeOutAfterDeath(toggle) end
 --- NativeDB Return Type: void
 --- 
 --- @param player Player
---- @returns any
+--- @return any
 function SetFireAmmoThisFrame(player) end
 
 --- 
@@ -690,7 +690,7 @@ function SetRainFxIntensity(intensity) end
 --- NativeDB Return Type: void
 --- 
 --- @param player Player
---- @returns number
+--- @return number
 function SetSuperJumpThisFrame(player) end
 
 
@@ -924,7 +924,7 @@ function StartBenchmarkRecording() end
 
 --- Returns true if the game is using the metric measurement system, false if imperial is used.
 --- This is what r\* uses for the different label types (either ones with miles in them or with km, as well as some other measurement related labels).
---- @returns boolean
+--- @return boolean
 function ShouldUseMetricMeasurements() end
 
 --- 
@@ -969,7 +969,7 @@ function StartSaveArrayWithSize(p0, size, arrayName) end
 --- Returns tangent value of p0.  
 --- 
 --- @param p0 number
---- @returns number
+--- @return number
 function Tan(p0) end
 
 
@@ -1010,7 +1010,7 @@ function UsingMissionCreator(toggle) end
 --- 
 --- @param string string
 --- @param outInteger number
---- @returns boolean
+--- @return boolean
 function StringToInt(string, outInteger) end
 
 --- 
@@ -1018,7 +1018,7 @@ function StringToInt(string, outInteger) end
 --- 
 --- U*
 --- 
---- @returns boolean
+--- @return boolean
 function UiIsSingleplayerPauseMenuActive() end
 
 --- 
@@ -1029,6 +1029,6 @@ function UiIsSingleplayerPauseMenuActive() end
 --- 2 - User has canceled editing  
 --- 3 - Keyboard isn't active  
 --- 
---- @returns number
+--- @return number
 function UpdateOnscreenKeyboard() end
 

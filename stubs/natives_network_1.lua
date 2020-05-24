@@ -1,17 +1,17 @@
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkDoesEntityExistWithNetworkId(entity) end
 
 
 --- @param areaHandle number
---- @returns boolean
+--- @return boolean
 function NetworkEntityAreaIsOccupied(areaHandle) end
 
 
 --- @param tunableContext Hash
 --- @param tunableName Hash
---- @returns boolean
+--- @return boolean
 function NetworkDoesTunableExistHash(tunableContext, tunableName) end
 
 --- 
@@ -29,7 +29,7 @@ function NetworkFadeInEntity(entity, state) end
 
 
 --- @param areaHandle number
---- @returns boolean
+--- @return boolean
 function NetworkEntityAreaDoesExist(areaHandle) end
 
 --- 
@@ -64,7 +64,7 @@ function NetworkFadeOutEntity(entity, normal, slow) end
 --- @param isAudible boolean
 --- @param isInvisible boolean
 --- @param p3 boolean
---- @returns any
+--- @return any
 function NetworkExplodeVehicle(vehicle, isAudible, isInvisible, p3) end
 
 
@@ -72,7 +72,7 @@ function NetworkExplodeVehicle(vehicle, isAudible, isInvisible, p3) end
 --- @param p1 number
 --- @param p2 number
 --- @param p3 number
---- @returns boolean
+--- @return boolean
 function NetworkFindMatchedGamers(p0, p1, p2, p3) end
 
 --- 
@@ -87,22 +87,22 @@ function NetworkFinishBroadcastingData() end
 function NetworkForceLocalUseOfSyncedSceneCamera(netScene, animDict, animName) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkGamertagFromHandlePending() end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkGamerHasHeadset(networkHandle) end
 
 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function NetworkGetActivityPlayerNum(p0) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkGamertagFromHandleStart(networkHandle) end
 
 --- 
@@ -112,28 +112,28 @@ function NetworkGamertagFromHandleStart(networkHandle) end
 --- 'A8M6Bz8MLEC5xngvDCzGwA' is the mission id, so the game hash this and use it as the parameter for this native.  
 --- 
 --- @param contentHash Hash
---- @returns number
+--- @return number
 function NetworkGetContentModifierListId(contentHash) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkGamertagFromHandleSucceeded() end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param weaponHash Hash
---- @returns boolean
+--- @return boolean
 function NetworkGetDestroyerOfEntity(p0, p1, weaponHash) end
 
 
---- @returns number
+--- @return number
 function NetworkGetAgeGroup() end
 
 
 --- @param netId number
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function NetworkGetDestroyerOfNetworkId(netId, weaponHash) end
 
 
@@ -141,74 +141,74 @@ function NetworkGetDestroyerOfNetworkId(netId, weaponHash) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkGetBackgroundLoadingRecipients(p0, p1, p2, p3) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkGetCurrentlySelectedGamerHandleFromInviteMenu(p0) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkGetEntityIsLocal(entity) end
 
 
 --- @param netId number
---- @returns Entity
+--- @return Entity
 function NetworkGetEntityFromNetworkId(netId) end
 
 
 --- @param player Player
 --- @param weaponHash Hash
---- @returns Entity
+--- @return Entity
 function NetworkGetEntityKillerOfPlayer(player, weaponHash) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkGetFoundGamer(p0, p1) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkGetEntityIsNetworked(entity) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function NetworkGetEntityNetScriptId(entity) end
 
 
 --- @param friendIndex number
---- @returns string
+--- @return string
 function NetworkGetFriendName(friendIndex) end
 
 
 --- @param friendIndex number
---- @returns string
+--- @return string
 function NetworkGetFriendNameFromIndex(friendIndex) end
 
 
---- @returns number
+--- @return number
 function NetworkGetFriendCount() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkGetGamerStatus(p0) end
 
 
 --- @param networkHandle number
---- @returns string
+--- @return string
 function NetworkGetGamertagFromHandle(networkHandle) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkGetGamerStatusResult(p0, p1) end
 
 --- 
@@ -221,7 +221,7 @@ function NetworkGetGamerStatusResult(p0, p1) end
 --- @param scriptName string
 --- @param p1 number
 --- @param p2 number
---- @returns Player
+--- @return Player
 function NetworkGetHostOfScript(scriptName, p1, p2) end
 
 --- 
@@ -248,44 +248,44 @@ function NetworkGetLocalHandle(networkHandle, bufferSize) end
 ---         {
 ---             var num5 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::0x98F3B274(num3));
 --- 
---- @returns number
+--- @return number
 function NetworkGetMaxNumParticipants() end
 
 
---- @returns Player
+--- @return Player
 function NetworkGetHostOfThisScript() end
 
 --- 
 --- Returns the amount of players connected in the current session. Only works when connected to a session/server.  
 --- 
---- @returns number
+--- @return number
 function NetworkGetNumConnectedPlayers() end
 
 --- 
 --- On PC this is hardcoded to 250.  
 --- 
---- @returns number
+--- @return number
 function NetworkGetMaxFriends() end
 
 
---- @returns number
+--- @return number
 function NetworkGetNumParticipants() end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function NetworkGetNetworkIdFromEntity(entity) end
 
 
---- @returns number
+--- @return number
 function NetworkGetNumPresenceInvites() end
 
 
---- @returns number
+--- @return number
 function NetworkGetNumBodyTrackers() end
 
 
---- @returns number
+--- @return number
 function NetworkGetNumFoundGamers() end
 
 --- 
@@ -294,96 +294,96 @@ function NetworkGetNumFoundGamers() end
 --- NativeDB Introduced: v323
 --- 
 --- @param player Player
---- @returns number
+--- @return number
 function NetworkGetOldestResendCountForPlayer(player) end
 
 
 --- @param p0 any
 --- @param p1 any
 --- @param p2 any
---- @returns number
+--- @return number
 function NetworkGetNumScriptParticipants(p0, p1, p2) end
 
 --- 
 --- NativeDB Introduced: v323
 --- 
 --- @param player Player
---- @returns number
+--- @return number
 function NetworkGetNumUnackedForPlayer(player) end
 
 
 --- @param index number
---- @returns number
+--- @return number
 function NetworkGetParticipantIndex(index) end
 
 
 --- @param data any
 --- @param dataSize number
---- @returns number
+--- @return number
 function NetworkGetPlatformPartyMembers(data, dataSize) end
 
 
---- @returns number
+--- @return number
 function NetworkGetPlatformPartyUnk() end
 
 
 --- @param networkHandle number
---- @returns Player
+--- @return Player
 function NetworkGetPlayerFromGamerHandle(networkHandle) end
 
 --- Returns the coordinates of another player.
 --- 
 --- Does not work if you enter your own player id as p0 (will return (0.0, 0.0, 0.0) in that case).
 --- @param player Player
---- @returns vector3
+--- @return vector3
 function NetworkGetPlayerCoords(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function NetworkGetPlayerIndex(player) end
 
 --- 
 --- Returns the Player associated to a given Ped when in an online session.  
 --- 
 --- @param ped Ped
---- @returns Player
+--- @return Player
 function NetworkGetPlayerIndexFromPed(ped) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function NetworkGetPlayerLoudness(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function NetworkGetPlayerTutorialSessionInstance(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkGetPlayerOwnsWaypoint(player) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkGetPresenceInviteHandle(p0, p1) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function NetworkGetPresenceInviteInviter(p0) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function NetworkGetPresenceInviteContentId(p0) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function NetworkGetPresenceInviteId(p0) end
 
 
@@ -391,35 +391,35 @@ function NetworkGetPrimaryClanDataCancel() end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function NetworkGetPresenceInviteSessionId(p0) end
 
 
---- @returns any
+--- @return any
 function NetworkGetPrimaryClanDataClear() end
 
 
---- @returns any
+--- @return any
 function NetworkGetPrimaryClanDataPending() end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkGetPrimaryClanDataNew(p0, p1) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkGetPrimaryClanDataStart(p0, p1) end
 
 
---- @returns any
+--- @return any
 function NetworkGetPrimaryClanDataSuccess() end
 
 
---- @returns number
+--- @return number
 function NetworkGetRandomInt() end
 
 --- 
@@ -427,7 +427,7 @@ function NetworkGetRandomInt() end
 --- 
 --- @param rangeStart number
 --- @param rangeEnd number
---- @returns number
+--- @return number
 function NetworkGetRandomIntRanged(rangeStart, rangeEnd) end
 
 --- 
@@ -440,21 +440,21 @@ function NetworkGetRespawnResult(randomInt, coordinates, heading) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function NetworkGetRespawnResultFlags(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkGetRosPrivilege24() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkGetRosPrivilege10() end
 
 --- 
 --- if(_CAN_PLAY_ONLINE() == 0) means the player is banned(Social Club or Rockstar)  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkGetRosPrivilege3() end
 
 --- 
@@ -466,52 +466,52 @@ function NetworkGetRosPrivilege3() end
 --- 	if (network::_0x91B87C55093DE351())  
 --- <..>  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkGetRosPrivilege25() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkGetRosPrivilege9() end
 
 --- 
 --- NETWORK_HAVE_*
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkGetRosPrivilege4() end
 
 
---- @returns number
+--- @return number
 function NetworkGetScriptStatus() end
 
 
---- @returns number
+--- @return number
 function NetworkGetTalkerProximity() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkGetThisScriptIsNetworkScript() end
 
 
---- @returns number
+--- @return number
 function NetworkGetTargetingMode() end
 
 
---- @returns number
+--- @return number
 function NetworkGetTotalNumPlayers() end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkGetTransitionHost(networkHandle) end
 
 --- 
 --- Returns the value of the tunable 0x9A82F2B. Usually 8000 iirc.  
 --- 
---- @returns number
+--- @return number
 function NetworkGetTimeoutTime() end
 
 
---- @returns number
+--- @return number
 function NetworkGetTunableCloudCrc() end
 
 --- 
@@ -528,7 +528,7 @@ function NetworkHandleFromMemberId(memberId, networkHandle, bufferSize) end
 --- 
 --- @param data any
 --- @param dataCount number
---- @returns number
+--- @return number
 function NetworkGetTransitionMembers(data, dataCount) end
 
 --- 
@@ -548,7 +548,7 @@ function NetworkHandleFromFriend(friendIndex, networkHandle, bufferSize) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkHasCachedPlayerHeadBlendData(player) end
 
 --- 
@@ -573,114 +573,114 @@ function NetworkHandleFromPlayer(player, networkHandle, bufferSize) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkHasControlOfEntity(entity) end
 
 
 --- @param pickup Pickup
---- @returns boolean
+--- @return boolean
 function NetworkHasControlOfPickup(pickup) end
 
 --- 
 --- Returns some kind of banned state  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkHasAgeRestrictedProfile() end
 
 --- 
 --- Returns true if dinput8.dll is present in the game directory.
 --- You will get following error message if that is true: "You are attempting to access GTA Online servers with an altered version of the game."
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkHasGameBeenAltered() end
 
 
 --- @param doorHash Hash
---- @returns boolean
+--- @return boolean
 function NetworkHasControlOfDoor(doorHash) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkHasInvitedGamer(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkHasPendingInvite() end
 
 
 --- @param netId number
---- @returns boolean
+--- @return boolean
 function NetworkHasControlOfNetworkId(netId) end
 
 --- 
 --- if(NETWORK::_IS_ROCKSTAR_BANNED() == 0) means the player is rockstar banned  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkHasPlayerBeenBanned() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkHasFollowInvite() end
 
 --- 
 --- index is always 18 in scripts
 --- 
 --- @param index number
---- @returns boolean
+--- @return boolean
 function NetworkHasRosPrivilege(index) end
 
 
 --- @param p0 number
 --- @param banType number
 --- @param timeData vector3
---- @returns boolean
+--- @return boolean
 function NetworkHasRosPrivilegeEndDate(p0, banType, timeData) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkHasHeadset() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkHasInvitedGamerToTransition(p0) end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkHasViewGamerUserContentResult(networkHandle) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkHasPlayerStartedTransition(player) end
 
 
 --- @param player Player
---- @returns Hash
+--- @return Hash
 function NetworkHashFromPlayerHandle(player) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkHaveOnlinePrivilege2() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkHaveOnlinePrivileges() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkHasSocialClubAccount() end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function NetworkHaveUserContentPrivileges(p0) end
 
 
 --- @param networkHandle number
---- @returns Hash
+--- @return Hash
 function NetworkHashFromGamerHandle(networkHandle) end
 
 --- 
@@ -693,31 +693,31 @@ function NetworkHashFromGamerHandle(networkHandle) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkInviteGamers(p0, p1, p2, p3) end
 
 --- 
 --- Returns whether the Rockstar game services are available or not
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkHaveJustUploadLater() end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function NetworkInviteGamersToTransition(p0, p1) end
 
 --- 
 --- if(_IS_SOCIALCLUB_BANNED() == 0) means the player is social club banned  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkHaveSocialClubPrivilege() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkIsActivitySpectator() end
 
 --- From what I can tell it looks like it does the following:
@@ -735,28 +735,28 @@ function NetworkIsActivitySpectator() end
 --- @param p7 number
 --- @param p8 any
 --- @param p9 number
---- @returns boolean
+--- @return boolean
 function NetworkHostTransition(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsAddingFriend() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsCableConnected() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsActivitySession() end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsActivitySpectatorFromHandle(networkHandle) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsClockTimeOverridden() end
 
 --- 
@@ -765,94 +765,94 @@ function NetworkIsClockTimeOverridden() end
 --- 2) It will never, become true unless you are in that party with said person.  
 --- 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsChattingInPlatformParty(networkHandle) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsCloudBackgroundScriptRequestPending() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsClanMembershipFinishedDownloading() end
 
 
 --- @param doorHash Hash
---- @returns boolean
+--- @return boolean
 function NetworkIsDoorNetworked(doorHash) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsCloudAvailable() end
 
 --- This only works with vehicles.
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkIsEntityConcealed(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function NetworkIsEntityFading(entity) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsFindingGamers() end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsFriend(networkHandle) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsFriendHandleOnline(networkHandle) end
 
 
 --- @param friendName string
---- @returns boolean
+--- @return boolean
 function NetworkIsFriendInMultiplayer(friendName) end
 
 --- 
 --- In scripts R* calls 'NETWORK_GET_FRIEND_NAME' in this param.  
 --- 
 --- @param friendName string
---- @returns boolean
+--- @return boolean
 function NetworkIsFriendInSameTitle(friendName) end
 
 
 --- @param friendIndex number
---- @returns boolean
+--- @return boolean
 function NetworkIsFriendIndexOnline(friendIndex) end
 
 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function NetworkIsFriendOnline(name) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsGameInProgress() end
 
 
 --- @param networkHandle any
---- @returns boolean
+--- @return boolean
 function NetworkIsGamerBlockedByMe(networkHandle) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsGamerMutedByMe(networkHandle) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsGamerInMySession(networkHandle) end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsGamerTalking(networkHandle) end
 
 --- 
@@ -860,27 +860,27 @@ function NetworkIsGamerTalking(networkHandle) end
 --- anyone know how to use this to find correct host? is possible?  
 --- go to a mission and it will set a host then search the host name using a program then find the pointer to the host name  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsHost() end
 
 
 --- @param networkHandle number
 --- @param bufferSize number
---- @returns boolean
+--- @return boolean
 function NetworkIsHandleValid(networkHandle, bufferSize) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsInMpCutscene() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsHostOfThisScript() end
 
 --- 
 --- Hardcoded to return false.
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsInPlatformParty() end
 
 --- 
@@ -891,52 +891,52 @@ function NetworkIsInPlatformParty() end
 --- h t t p ://i.imgur.com/m2ci1mF.png  
 --- h t t p://i.imgur.com/Z0Wx2B6.png  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsInParty() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsInSession() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsInPlatformPartyChat() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsInTransition() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsInSpectatorMode() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkIsInactiveProfile(p0) end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkIsInTutorialSession() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsLocalTalking() end
 
 
---- @returns any
+--- @return any
 function NetworkIsOfflineInvitePending() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsLocalPlayerInvincible() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns ScrHandle
+--- @return ScrHandle
 function NetworkIsMultiplayerDisabled() end
 
 --- 
@@ -948,51 +948,51 @@ function NetworkIsMultiplayerDisabled() end
 --- h t t p://i.imgur.com/Z0Wx2B6.png  
 --- 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsPartyMember(networkHandle) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function NetworkIsParticipantActive(p0) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerAParticipant(player) end
 
 --- 
 --- This function is hard-coded to always return 0.  
 --- 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkIsPendingFriend(p0) end
 
 
 --- @param p0 Player
 --- @param script string
 --- @param p2 Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerAParticipantOnScript(p0, script, p2) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerBlockedByMe(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerActive(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerConnected(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerConcealed(player) end
 
 --- 
@@ -1000,33 +1000,33 @@ function NetworkIsPlayerConcealed(player) end
 --- 
 --- @param player Player
 --- @param index number
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerEqualToIndex(player, index) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerFading(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerInMpCutscene(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerMutedByMe(player) end
 
 --- 
 --- returns true if someone is screaming or talking in a microphone  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkIsPlayerTalking(player) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsPsnAvailable() end
 
 
@@ -1034,125 +1034,125 @@ function NetworkIsPsnAvailable() end
 --- @param player Player
 --- @param p2 boolean
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkIsScriptActive(scriptName, player, p2, p3) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsSessionActive() end
 
 --- 
 --- This checks if player is playing on gta online or not.  
 --- Please add an if and block your mod if this is "true".  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsSessionStarted() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsSessionBusy() end
 
 --- 
 --- Returns whether the player is signed into Social Club.  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsSignedIn() end
 
 --- 
 --- Returns whether the game is not in offline mode.  
 --- seemed not to work for some ppl  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsSignedOnline() end
 
 --- 
 --- Same as _IS_TEXT_CHAT_ACTIVE, except it does not check if the text chat HUD component is initialized, and therefore may crash.  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsTextChatActive() end
 
 
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function NetworkIsThisScriptMarked(p0, p1, p2) end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkIsTransitionBusy() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionClosedCrew() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkIsTransitionHost() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionClosedFriends() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkIsTransitionMatchmaking() end
 
 
 --- @param networkHandle number
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionHostFromHandle(networkHandle) end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionOpenToMatchmaking() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionPrivate() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionSolo() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionStarted() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkIsTransitionToGame() end
 
 --- 
 --- x360 Hash: 0xF637166E  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkIsTransitionVisibilityLocked() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTunableCloudRequestPending() end
 
 
---- @returns any
+--- @return any
 function NetworkJoinGroupActivity() end
 
 
---- @returns boolean
+--- @return boolean
 function NetworkIsTutorialSessionChangePending() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkLaunchTransition() end
 
 --- 
@@ -1163,18 +1163,18 @@ function NetworkLaunchTransition() end
 --- 		nothing doin.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function NetworkJoinTransition(player) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function NetworkMarkTransitionGamerAsFullyJoined(p0) end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function NetworkLeaveTransition() end
 
 
@@ -1182,7 +1182,7 @@ function NetworkOpenTransitionMatchmaking() end
 
 
 --- @param networkHandle number
---- @returns string
+--- @return string
 function NetworkMemberIdFromGamerHandle(networkHandle) end
 
 --- 

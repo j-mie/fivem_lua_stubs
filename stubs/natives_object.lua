@@ -6,7 +6,7 @@
 --- @param p2 boolean
 --- @param p3 boolean
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function AreEntitiesEntirelyInsideGarage(garageHash, p1, p2, p3, p4) end
 
 
@@ -38,7 +38,7 @@ function AddDoorToSystem(doorHash, modelHash, x, y, z, p5, p6, p7) end
 --- @param modelHash Hash
 --- @param returnHandle boolean
 --- @param p8 boolean
---- @returns Pickup
+--- @return Pickup
 function CreateAmbientPickup(pickupHash, posX, posY, posZ, flags, value, modelHash, returnHandle, p8) end
 
 --- 
@@ -56,7 +56,7 @@ function ClearGarageArea(garageHash, isNetwork) end
 --- @param isNetwork boolean
 --- @param netMissionEntity boolean
 --- @param dynamic boolean
---- @returns Object
+--- @return Object
 function CreateObject(modelHash, x, y, z, isNetwork, netMissionEntity, dynamic) end
 
 --- 
@@ -92,7 +92,7 @@ function CreateMoneyPickups(x, y, z, value, amount, model) end
 --- @param value number
 --- @param p6 boolean
 --- @param modelHash Hash
---- @returns Pickup
+--- @return Pickup
 function CreatePickup(pickupHash, posX, posY, posZ, p4, value, p6, modelHash) end
 
 
@@ -103,7 +103,7 @@ function CreatePickup(pickupHash, posX, posY, posZ, p4, value, p6, modelHash) en
 --- @param isNetwork boolean
 --- @param netMissionEntity boolean
 --- @param dynamic boolean
---- @returns Object
+--- @return Object
 function CreateObjectNoOffset(modelHash, x, y, z, isNetwork, netMissionEntity, dynamic) end
 
 --- 
@@ -115,7 +115,7 @@ function CreateObjectNoOffset(modelHash, x, y, z, isNetwork, netMissionEntity, d
 --- @param z number
 --- @param placeOnGround boolean
 --- @param modelHash Hash
---- @returns Pickup
+--- @return Pickup
 function CreatePortablePickup(pickupHash, x, y, z, placeOnGround, modelHash) end
 
 --- 
@@ -136,7 +136,7 @@ function CreatePortablePickup(pickupHash, x, y, z, placeOnGround, modelHash) end
 --- @param p9 any
 --- @param p10 boolean
 --- @param modelHash Hash
---- @returns Pickup
+--- @return Pickup
 function CreatePickupRotate(pickupHash, posX, posY, posZ, rotX, rotY, rotZ, flag, amount, p9, p10, modelHash) end
 
 --- 
@@ -155,17 +155,17 @@ function DeleteObject(object) end
 --- @param z number
 --- @param placeOnGround boolean
 --- @param modelHash Hash
---- @returns Pickup
+--- @return Pickup
 function CreatePortablePickup2(pickupHash, x, y, z, placeOnGround, modelHash) end
 
 
 --- @param pickup Pickup
---- @returns boolean
+--- @return boolean
 function DoesPickupExist(pickup) end
 
 
 --- @param pickupObject Object
---- @returns boolean
+--- @return boolean
 function DoesPickupObjectExist(pickupObject) end
 
 
@@ -176,7 +176,7 @@ function DetachPortablePickupFromPed(ped) end
 --- Returns true if a destructible object with this handle exists, false otherwise.  
 --- 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function DoesRayfireMapObjectExist(object) end
 
 --- 
@@ -188,7 +188,7 @@ function DoesRayfireMapObjectExist(object) end
 --- @param radius number
 --- @param hash Hash
 --- @param p5 boolean
---- @returns boolean
+--- @return boolean
 function DoesObjectOfTypeExistAtCoords(x, y, z, radius, hash, p5) end
 
 --- 
@@ -199,12 +199,12 @@ function DoesObjectOfTypeExistAtCoords(x, y, z, radius, hash, p5) end
 --- @param z number
 --- @param modelHash any
 --- @param doorOutPointer any
---- @returns boolean
+--- @return boolean
 function DoorSystemFindExistingDoor(x, y, z, modelHash, doorOutPointer) end
 
 
 --- @param doorHash Hash
---- @returns number
+--- @return number
 function DoorSystemGetDoorPendingState(doorHash) end
 
 --- 
@@ -215,7 +215,7 @@ function DoorSystemGetDoorPendingState(doorHash) end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function DoesPickupOfTypeExistInArea(pickupHash, x, y, z, radius) end
 
 --- 
@@ -238,7 +238,7 @@ function DoorControl(doorHash, x, y, z, locked, xRotMult, yRotMult, zRotMult) en
 --- NativeDB Parameter 0: Hash doorHash
 --- 
 --- @param doorHash any
---- @returns boolean
+--- @return boolean
 function DoorSystemGetIsPhysicsLoaded(doorHash) end
 
 
@@ -250,7 +250,7 @@ function DoorSystemSetAutomaticDistance(doorHash, heading, p2, p3) end
 
 
 --- @param doorHash Hash
---- @returns number
+--- @return number
 function DoorSystemGetDoorState(doorHash) end
 
 
@@ -267,7 +267,7 @@ function DoorSystemSetSpringRemoved(doorHash, p1, p2, p3) end
 
 
 --- @param doorHash Hash
---- @returns number
+--- @return number
 function DoorSystemGetOpenRatio(doorHash) end
 
 
@@ -303,7 +303,7 @@ function DoorSystemSetDoorState(doorHash, limit, p2, p3) end
 --- @param outPosition vector3
 --- @param outRotation vector3
 --- @param rotationOrder number
---- @returns any
+--- @return any
 function GetCoordsAndRotationOfClosestObjectOfType(x, y, z, radius, modelHash, outPosition, outRotation, rotationOrder) end
 
 --- 
@@ -311,7 +311,7 @@ function GetCoordsAndRotationOfClosestObjectOfType(x, y, z, radius, modelHash, o
 --- 
 --- @param entity Entity
 --- @param p1 any
---- @returns any
+--- @return any
 function GetIsArenaPropPhysicsDisabled(entity, p1) end
 
 --- 
@@ -333,7 +333,7 @@ function DoorSystemSetOpenRatio(doorHash, ajar, p2, p3) end
 --- @param xOffset number
 --- @param yOffset number
 --- @param zOffset number
---- @returns vector3
+--- @return vector3
 function GetObjectOffsetFromCoords(xPos, yPos, zPos, heading, xOffset, yOffset, zOffset) end
 
 --- 
@@ -348,27 +348,27 @@ function GetObjectOffsetFromCoords(xPos, yPos, zPos, heading, xOffset, yOffset, 
 --- @param isMission boolean
 --- @param p6 boolean
 --- @param p7 boolean
---- @returns Object
+--- @return Object
 function GetClosestObjectOfType(x, y, z, radius, modelHash, isMission, p6, p7) end
 
 
 --- @param pickup Pickup
---- @returns vector3
+--- @return vector3
 function GetPickupCoords(pickup) end
 
 
 --- @param p0 any
 --- @param p1 boolean
---- @returns number
+--- @return number
 function GetObjectFragmentDamageHealth(p0, p1) end
 
 
---- @returns number
+--- @return number
 function GetPickupGenerationRangeMultiplier() end
 
 
 --- @param object Object
---- @returns number
+--- @return number
 function GetObjectTextureVariation(object) end
 
 --- 
@@ -382,17 +382,17 @@ function GetObjectTextureVariation(object) end
 --- @param z number
 --- @param radius number
 --- @param name string
---- @returns Object
+--- @return Object
 function GetRayfireMapObject(x, y, z, radius, name) end
 
 
 --- @param object Object
---- @returns number
+--- @return number
 function GetRayfireMapObjectAnimPhase(object) end
 
 
 --- @param pickup Pickup
---- @returns Object
+--- @return Object
 function GetPickupObject(pickup) end
 
 --- 
@@ -403,7 +403,7 @@ function GetPickupObject(pickup) end
 --- NativeDB Parameter 0: Hash pickupHash
 --- 
 --- @param pickupHash Pickup
---- @returns Hash
+--- @return Hash
 function GetPickupHash(pickupHash) end
 
 --- 
@@ -430,7 +430,7 @@ function GetStateOfClosestDoorOfType(type, x, y, z, locked, heading) end
 --- @param z number
 --- @param p3 any
 --- @param p4 any
---- @returns vector3
+--- @return vector3
 function GetSafePickupCoords(x, y, z, p3, p4) end
 
 --- 
@@ -440,7 +440,7 @@ function GetSafePickupCoords(x, y, z, p3, p4) end
 --- For example, if the object just spawned (state 2), the native will return 3.  
 --- 
 --- @param object Object
---- @returns number
+--- @return number
 function GetStateOfRayfireMapObject(object) end
 
 
@@ -450,7 +450,7 @@ function GetStateOfRayfireMapObject(object) end
 --- @param p3 number
 --- @param modelHash Hash
 --- @param p5 any
---- @returns boolean
+--- @return boolean
 function HasClosestObjectOfTypeBeenBroken(p0, p1, p2, p3, modelHash, p5) end
 
 --- 
@@ -461,19 +461,19 @@ function HasClosestObjectOfTypeBeenBroken(p0, p1, p2, p3, modelHash, p5) end
 --- NativeDB Parameter 0: Hash pickupHash
 --- 
 --- @param pickupHash Pickup
---- @returns Hash
+--- @return Hash
 function GetWeaponTypeFromPickupType(pickupHash) end
 
 --- 
 --- NativeDB Added Parameter 2: Any p1
 --- 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function HasObjectBeenBroken(object) end
 
 
 --- @param pickup Pickup
---- @returns boolean
+--- @return boolean
 function HasPickupBeenCollected(pickup) end
 
 
@@ -483,7 +483,7 @@ function HasPickupBeenCollected(pickup) end
 --- @param radius number
 --- @param modelHash Hash
 --- @param p5 boolean
---- @returns boolean
+--- @return boolean
 function HasClosestObjectOfTypeBeenCompletelyDestroyed(x, y, z, radius, modelHash, p5) end
 
 
@@ -499,7 +499,7 @@ function HidePickup(pickup, toggle) end
 --- @param p2 boolean
 --- @param p3 boolean
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function IsAnyEntityEntirelyInsideGarage(garageHash, p1, p2, p3, p4) end
 
 --- 
@@ -520,7 +520,7 @@ function HighlightPlacementCoords(x, y, z, colorIndex) end
 
 
 --- @param doorHash Hash
---- @returns boolean
+--- @return boolean
 function IsDoorClosed(doorHash) end
 
 
@@ -529,7 +529,7 @@ function IsDoorClosed(doorHash) end
 --- @param z number
 --- @param range number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function IsAnyObjectNearPoint(x, y, z, range, p4) end
 
 --- 
@@ -538,7 +538,7 @@ function IsAnyObjectNearPoint(x, y, z, range, p4) end
 --- @param garageHash any
 --- @param p1 boolean
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function IsGarageEmpty(garageHash, p1, p2) end
 
 --- 
@@ -549,7 +549,7 @@ function IsGarageEmpty(garageHash, p1, p2) end
 --- }  
 --- 
 --- @param doorHash Hash
---- @returns boolean
+--- @return boolean
 function IsDoorRegisteredWithSystem(doorHash) end
 
 --- 
@@ -559,7 +559,7 @@ function IsDoorRegisteredWithSystem(doorHash) end
 --- @param entity Entity
 --- @param p2 number
 --- @param p3 number
---- @returns boolean
+--- @return boolean
 function IsObjectEntirelyInsideGarage(garageHash, entity, p2, p3) end
 
 
@@ -568,7 +568,7 @@ function IsObjectEntirelyInsideGarage(garageHash, entity, p2, p3) end
 --- @param y number
 --- @param z number
 --- @param range number
---- @returns boolean
+--- @return boolean
 function IsObjectNearPoint(objectHash, x, y, z, range) end
 
 --- 
@@ -577,12 +577,12 @@ function IsObjectNearPoint(objectHash, x, y, z, range) end
 --- @param garageHash any
 --- @param entity Entity
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function IsObjectPartiallyInsideGarage(garageHash, entity, p2) end
 
 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function IsObjectVisible(object) end
 
 --- 
@@ -592,12 +592,12 @@ function IsObjectVisible(object) end
 --- @param player Player
 --- @param p2 number
 --- @param p3 number
---- @returns boolean
+--- @return boolean
 function IsPlayerEntirelyInsideGarage(garageHash, player, p2, p3) end
 
 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function IsPickupWeaponObjectValid(object) end
 
 
@@ -613,7 +613,7 @@ function IsPickupWeaponObjectValid(object) end
 --- @param p9 number
 --- @param p10 boolean
 --- @param p11 boolean
---- @returns boolean
+--- @return boolean
 function IsPointInAngledArea(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) end
 
 --- 
@@ -622,7 +622,7 @@ function IsPointInAngledArea(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) e
 --- @param garageHash any
 --- @param player Player
 --- @param p2 number
---- @returns boolean
+--- @return boolean
 function IsPlayerPartiallyInsideGarage(garageHash, player, p2) end
 
 --- 
@@ -633,7 +633,7 @@ function MarkObjectForDeletion(object) end
 
 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function PlaceObjectOnGroundProperly(object) end
 
 
@@ -661,7 +661,7 @@ function SetActivateObjectPhysicsAsSoonAsItIsUnfrozen(object, toggle) end
 
 
 --- @param object Object
---- @returns boolean
+--- @return boolean
 function PlaceObjectOnGroundProperly2(object) end
 
 --- 
@@ -744,7 +744,7 @@ function SetObjectCanClimbOn(object, toggle) end
 --- @param r number
 --- @param g number
 --- @param b number
---- @returns any
+--- @return any
 function SetObjectLightColor(object, p1, r, g, b) end
 
 --- 
@@ -809,7 +809,7 @@ function SetObjectStuntPropSpeedup(object, p1) end
 --- 
 --- @param object Object
 --- @param targettable boolean
---- @returns any
+--- @return any
 function SetObjectTargettable(object, targettable) end
 
 
@@ -914,7 +914,7 @@ function SetTeamPickupObject(object, p1, p2) end
 --- @param speedY number
 --- @param speedZ number
 --- @param collision boolean
---- @returns boolean
+--- @return boolean
 function SlideObject(object, toX, toY, toZ, speedX, speedY, speedZ, collision) end
 
 

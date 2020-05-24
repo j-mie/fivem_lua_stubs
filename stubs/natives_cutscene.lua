@@ -3,100 +3,100 @@
 --- 
 --- @param cutsceneEntName string
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function CanSetEnterStateForRegisteredEntity(cutsceneEntName, modelHash) end
 
 --- 
 --- "Can request assets for cutscene entity"? (found in decompiled scripts)  
 --- 
---- @returns boolean
+--- @return boolean
 function CanRequestAssetsForCutsceneEntity() end
 
 
 --- @param cutsceneEntName string
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function CanSetExitStateForRegisteredEntity(cutsceneEntName, modelHash) end
 
 
 --- @param p0 boolean
---- @returns boolean
+--- @return boolean
 function CanSetExitStateForCamera(p0) end
 
 
 --- @param cutsceneEntName string
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function DoesCutsceneEntityExist(cutsceneEntName, modelHash) end
 
 --- 
 --- Jenkins hash probably is 0xFD8B1AC2
 --- 
 --- @param cutsceneName string
---- @returns number
+--- @return number
 function GetCutFileNumSections(cutsceneName) end
 
 
---- @returns number
+--- @return number
 function GetCutsceneSectionPlaying() end
 
 
---- @returns number
+--- @return number
 function GetCutsceneTotalDuration() end
 
 
---- @returns number
+--- @return number
 function GetCutsceneTime() end
 
 
 --- @param cutsceneEntName string
 --- @param modelHash Hash
---- @returns Entity
+--- @return Entity
 function GetEntityIndexOfCutsceneEntity(cutsceneEntName, modelHash) end
 
 
 --- @param cutsceneEntName string
 --- @param modelHash Hash
---- @returns Entity
+--- @return Entity
 function GetEntityIndexOfRegisteredEntity(cutsceneEntName, modelHash) end
 
 
---- @returns boolean
+--- @return boolean
 function HasCutsceneCutThisFrame() end
 
 --- 
 --- Checks if the cutscene has loaded and doesn't check via CutSceneManager as opposed to HAS_[THIS]_CUTSCENE_LOADED.
 --- 
 --- @param cutsceneName string
---- @returns boolean
+--- @return boolean
 function HasCutFileLoaded(cutsceneName) end
 
 
---- @returns boolean
+--- @return boolean
 function HasCutsceneLoaded() end
 
 
---- @returns boolean
+--- @return boolean
 function HasCutsceneFinished() end
 
 
---- @returns boolean
+--- @return boolean
 function IsCutsceneActive() end
 
 
 --- @param cutsceneName string
---- @returns boolean
+--- @return boolean
 function HasThisCutsceneLoaded(cutsceneName) end
 
 
---- @returns boolean
+--- @return boolean
 function IsCutscenePlaying() end
 
 --- 
 --- It's 100% an IS_CUTSCENE_* native.  
 --- 
 --- @param flag number
---- @returns boolean
+--- @return boolean
 function IsCutscenePlaybackFlagSet(flag) end
 
 
@@ -225,7 +225,7 @@ function StopCutscene(p0) end
 function StartCutsceneAtCoords(x, y, z, flags) end
 
 
---- @returns boolean
+--- @return boolean
 function WasCutsceneSkipped() end
 
 

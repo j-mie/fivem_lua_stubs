@@ -131,7 +131,7 @@ function AddOwnedExplosion(ped, x, y, z, explosionType, damageScale, isAudible, 
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns Entity
+--- @return Entity
 function GetEntityInsideExplosionSphere(explosionType, x, y, z, radius) end
 
 --- 
@@ -141,12 +141,12 @@ function GetEntityInsideExplosionSphere(explosionType, x, y, z, radius) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns boolean
+--- @return boolean
 function GetClosestFirePos(outPosition, x, y, z) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityOnFire(entity) end
 
 --- 
@@ -160,7 +160,7 @@ function IsEntityOnFire(entity) end
 --- @param y2 number
 --- @param z2 number
 --- @param radius number
---- @returns Entity
+--- @return Entity
 function GetEntityInsideExplosionArea(explosionType, x1, y1, z1, x2, y2, z2, radius) end
 
 
@@ -168,7 +168,7 @@ function GetEntityInsideExplosionArea(explosionType, x1, y1, z1, x2, y2, z2, rad
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns number
+--- @return number
 function GetNumberOfFiresInRange(x, y, z, radius) end
 
 
@@ -179,7 +179,7 @@ function GetNumberOfFiresInRange(x, y, z, radius) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function IsExplosionInArea(explosionType, x1, y1, z1, x2, y2, z2) end
 
 
@@ -194,12 +194,12 @@ function RemoveScriptFire(fireHandle) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function IsExplosionActiveInArea(explosionType, x1, y1, z1, x2, y2, z2) end
 
 
 --- @param entity Entity
---- @returns FireId
+--- @return FireId
 function StartEntityFire(entity) end
 
 
@@ -211,7 +211,7 @@ function StartEntityFire(entity) end
 --- @param y2 number
 --- @param z2 number
 --- @param angle number
---- @returns boolean
+--- @return boolean
 function IsExplosionInAngledArea(explosionType, x1, y1, z1, x2, y2, z2, angle) end
 
 
@@ -224,7 +224,7 @@ function StopEntityFire(entity) end
 --- @param y number
 --- @param z number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsExplosionInSphere(explosionType, x, y, z, radius) end
 
 --- 
@@ -247,6 +247,6 @@ function StopFireInRange(x, y, z, radius) end
 --- @param Z number
 --- @param maxChildren number
 --- @param isGasFire boolean
---- @returns FireId
+--- @return FireId
 function StartScriptFire(X, Y, Z, maxChildren, isGasFire) end
 

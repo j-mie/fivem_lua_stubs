@@ -84,7 +84,7 @@ function NetworkSpentUpgradeHangar(p0, p1, p2, p3) end
 --- @param p0 number
 --- @param p1 number
 --- @param p2 string
---- @returns string
+--- @return string
 function ProcessCashGift(p0, p1, p2) end
 
 --- 
@@ -100,6 +100,6 @@ function NetworkSpentUpgradeTiltrotor(p0, p1, p2, p3) end
 --- Does nothing and always returns 0.
 --- 
 --- @param amount number
---- @returns number
+--- @return number
 function WithdrawVc(amount) end
 

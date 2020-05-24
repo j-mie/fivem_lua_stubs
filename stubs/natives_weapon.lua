@@ -16,7 +16,7 @@ function AddAmmoToPedByType(ped, ammoType, ammo) end
 --- this returns if you can use the weapon while using a parachute  
 --- 
 --- @param weaponHash Hash
---- @returns boolean
+--- @return boolean
 function CanUseWeaponOnParachute(weaponHash) end
 
 --- Does NOT seem to work with HasPedBeenDamagedByWeapon.
@@ -42,7 +42,7 @@ function ClearEntityLastWeaponDamage(entity) end
 --- @param p8 number
 --- @param p9 number
 --- @param weaponHash any
---- @returns number
+--- @return number
 function CreateAirDefenseArea(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, weaponHash) end
 
 --- Both coordinates are from objects in the decompiled scripts.
@@ -60,18 +60,18 @@ function CreateAirDefenseArea(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, weaponHash
 --- @param p5 number
 --- @param p6 number
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function CreateAirDefenseSphere(p0, p1, p2, radius, p4, p5, p6, weaponHash) end
 
 
 --- @param zoneId number
---- @returns boolean
+--- @return boolean
 function DoesAirDefenseZoneExist(zoneId) end
 
 
 --- @param weaponHash Hash
 --- @param componentHash Hash
---- @returns boolean
+--- @return boolean
 function DoesWeaponTakeWeaponComponent(weaponHash, componentHash) end
 
 --- 
@@ -90,7 +90,7 @@ function DoesWeaponTakeWeaponComponent(weaponHash, componentHash) end
 --- @param showWorldModel boolean
 --- @param heading number
 --- @param p7 any
---- @returns Object
+--- @return Object
 function CreateWeaponObject(weaponHash, ammoCount, x, y, z, showWorldModel, heading, p7) end
 
 --- 
@@ -116,7 +116,7 @@ function FireAirDefenseWeapon(zoneId, x, y, z) end
 --- 
 --- @param ped Ped
 --- @param weaponhash Hash
---- @returns number
+--- @return number
 function GetAmmoInPedWeapon(ped, weaponhash) end
 
 --- 
@@ -132,19 +132,19 @@ function ExplodeProjectiles(ped, weaponHash, p2) end
 --- 
 --- @param ped Ped
 --- @param p1 boolean
---- @returns Hash
+--- @return Hash
 function GetBestPedWeapon(ped, p1) end
 
 
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param ammo number
---- @returns boolean
+--- @return boolean
 function GetAmmoInClip(ped, weaponHash, ammo) end
 
 
 --- @param ped Ped
---- @returns Entity
+--- @return Entity
 function GetCurrentPedWeaponEntityIndex(ped) end
 
 --- 
@@ -160,12 +160,12 @@ function GetCurrentPedWeaponEntityIndex(ped) end
 --- 
 --- @param ped Ped
 --- @param weaponHash Hash
---- @returns boolean
+--- @return boolean
 function GetCurrentPedVehicleWeapon(ped, weaponHash) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetLockonDistanceOfCurrentPedWeapon(ped) end
 
 --- 
@@ -181,14 +181,14 @@ function GetLockonDistanceOfCurrentPedWeapon(ped) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function GetCurrentPedWeapon(ped, weaponHash, p2) end
 
 
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param ammo number
---- @returns boolean
+--- @return boolean
 function GetMaxAmmo(ped, weaponHash, ammo) end
 
 --- 
@@ -196,7 +196,7 @@ function GetMaxAmmo(ped, weaponHash, ammo) end
 --- 
 --- @param ped Ped
 --- @param gadgetHash Hash
---- @returns boolean
+--- @return boolean
 function GetIsPedGadgetEquipped(ped, gadgetHash) end
 
 --- 
@@ -205,7 +205,7 @@ function GetIsPedGadgetEquipped(ped, gadgetHash) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param p2 boolean
---- @returns number
+--- @return number
 function GetMaxAmmoInClip(ped, weaponHash, p2) end
 
 --- 
@@ -214,7 +214,7 @@ function GetMaxAmmoInClip(ped, weaponHash, p2) end
 --- @param ped Ped
 --- @param ammoType any
 --- @param ammo number
---- @returns boolean
+--- @return boolean
 function GetMaxAmmoByType(ped, ammoType, ammo) end
 
 --- 
@@ -222,12 +222,12 @@ function GetMaxAmmoByType(ped, ammoType, ammo) end
 --- 
 --- @param ped Ped
 --- @param ammoType any
---- @returns number
+--- @return number
 function GetPedAmmoByType(ped, ammoType) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetMaxRangeOfCurrentPedWeapon(ped) end
 
 --- 
@@ -237,7 +237,7 @@ function GetMaxRangeOfCurrentPedWeapon(ped) end
 --- 
 --- @param ped Ped
 --- @param weaponHash Hash
---- @returns Hash
+--- @return Hash
 function GetPedAmmoTypeFromWeapon2(ped, weaponHash) end
 
 --- 
@@ -249,7 +249,7 @@ function GetPedAmmoTypeFromWeapon2(ped, weaponHash) end
 --- 
 --- @param ped Ped
 --- @param weaponHash Hash
---- @returns Hash
+--- @return Hash
 function GetPedAmmoTypeFromWeapon(ped, weaponHash) end
 
 --- 
@@ -259,7 +259,7 @@ function GetPedAmmoTypeFromWeapon(ped, weaponHash) end
 --- 
 --- @param ped Ped
 --- @param coords vector3
---- @returns boolean
+--- @return boolean
 function GetPedLastWeaponImpactCoord(ped, coords) end
 
 --- 
@@ -269,19 +269,19 @@ function GetPedLastWeaponImpactCoord(ped, coords) end
 --- @param ped Ped
 --- @param weaponHash any
 --- @param camoComponentHash any
---- @returns number
+--- @return number
 function GetPedWeaponLiveryColor(ped, weaponHash, camoComponentHash) end
 
 
 --- @param ped Ped
 --- @param weaponSlot Hash
---- @returns Hash
+--- @return Hash
 function GetPedWeapontypeInSlot(ped, weaponSlot) end
 
 
 --- @param ped Ped
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function GetPedWeaponTintIndex(ped, weaponHash) end
 
 --- 
@@ -296,7 +296,7 @@ function GetPedWeaponTintIndex(ped, weaponHash) end
 --- 		The difference is that GET_SELECTED_PED_WEAPON simply returns the ped's current weapon hash but GET_CURRENT_PED_WEAPON also checks the weapon object and returns true if the hash of the weapon object equals the weapon hash  
 --- 
 --- @param ped Ped
---- @returns Hash
+--- @return Hash
 function GetSelectedPedWeapon(ped) end
 
 --- 
@@ -315,25 +315,25 @@ function GetSelectedPedWeapon(ped) end
 --- }  
 --- 
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function GetWeaponClipSize(weaponHash) end
 
 
 --- @param componentHash Hash
 --- @param outData number
---- @returns boolean
+--- @return boolean
 function GetWeaponComponentHudStats(componentHash, outData) end
 
 
 --- @param componentHash Hash
---- @returns Hash
+--- @return Hash
 function GetWeaponComponentTypeModel(componentHash) end
 
 --- 
 --- NativeDB Parameter 0: Hash componentHash
 --- 
 --- @param componentHash any
---- @returns number
+--- @return number
 function GetWeaponComponentVariantExtraComponentCount(componentHash) end
 
 --- 
@@ -342,7 +342,7 @@ function GetWeaponComponentVariantExtraComponentCount(componentHash) end
 --- 
 --- @param componentHash any
 --- @param extraComponentIndex number
---- @returns any
+--- @return any
 function GetWeaponComponentVariantExtraComponentModel(componentHash, extraComponentIndex) end
 
 --- This native does not return damages of weapons from the melee and explosive group.
@@ -352,7 +352,7 @@ function GetWeaponComponentVariantExtraComponentModel(componentHash, extraCompon
 --- 
 --- @param weaponHash Hash
 --- @param componentHash any
---- @returns number
+--- @return number
 function GetWeaponDamage(weaponHash, componentHash) end
 
 --- 
@@ -371,7 +371,7 @@ function GetWeaponDamage(weaponHash, componentHash) end
 --- 14=water cannon(WEAPON_HIT_BY_WATER_CANNON)  
 --- 
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function GetWeaponDamageType(weaponHash) end
 
 --- 
@@ -393,7 +393,7 @@ function GetWeaponDamageType(weaponHash) end
 --- 
 --- @param weaponHash Hash
 --- @param outData any
---- @returns boolean
+--- @return boolean
 function GetWeaponHudStats(weaponHash, outData) end
 
 --- 
@@ -402,7 +402,7 @@ function GetWeaponHudStats(weaponHash, outData) end
 --- 
 --- @param ped Ped
 --- @param p1 boolean
---- @returns Object
+--- @return Object
 function GetWeaponObjectFromPed(ped, p1) end
 
 --- 
@@ -410,27 +410,27 @@ function GetWeaponObjectFromPed(ped, p1) end
 --- 
 --- @param weaponObject Object
 --- @param camoComponentHash any
---- @returns number
+--- @return number
 function GetWeaponObjectLiveryColor(weaponObject, camoComponentHash) end
 
 
 --- @param weapon Object
---- @returns number
+--- @return number
 function GetWeaponObjectTintIndex(weapon) end
 
 --- NativeDB Introduced: v1290
 --- @param weaponHash Hash
---- @returns any
+--- @return any
 function GetWeaponTimeBetweenShots(weaponHash) end
 
 
 --- @param weaponHash Hash
---- @returns number
+--- @return number
 function GetWeaponTintCount(weaponHash) end
 
 
 --- @param weaponHash Hash
---- @returns Hash
+--- @return Hash
 function GetWeapontypeGroup(weaponHash) end
 
 --- 
@@ -439,12 +439,12 @@ function GetWeapontypeGroup(weaponHash) end
 --- sub_6663a(&l_115B, WEAPON::GET_WEAPONTYPE_MODEL(${ammo_rpg}));  
 --- 
 --- @param weaponHash Hash
---- @returns Hash
+--- @return Hash
 function GetWeapontypeModel(weaponHash) end
 
 
 --- @param weaponHash Hash
---- @returns Hash
+--- @return Hash
 function GetWeapontypeSlot(weaponHash) end
 
 --- 
@@ -529,7 +529,7 @@ function GiveWeaponToPed(ped, weaponHash, ammoCount, isHidden, equipNow) end
 --- @param entity Entity
 --- @param weaponHash Hash
 --- @param weaponType number
---- @returns boolean
+--- @return boolean
 function HasEntityBeenDamagedByWeapon(entity, weaponHash, weaponType) end
 
 --- 
@@ -541,7 +541,7 @@ function HasEntityBeenDamagedByWeapon(entity, weaponHash, weaponType) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param weaponType number
---- @returns boolean
+--- @return boolean
 function HasPedBeenDamagedByWeapon(ped, weaponHash, weaponType) end
 
 --- 
@@ -551,14 +551,14 @@ function HasPedBeenDamagedByWeapon(ped, weaponHash, weaponType) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function HasPedGotWeapon(ped, weaponHash, p2) end
 
 
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param componentHash Hash
---- @returns boolean
+--- @return boolean
 function HasPedGotWeaponComponent(ped, weaponHash, componentHash) end
 
 --- 
@@ -570,18 +570,18 @@ function HasPedGotWeaponComponent(ped, weaponHash, componentHash) end
 --- @param vehicle Vehicle
 --- @param weaponHash Hash
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function HasVehicleGotProjectileAttached(driver, vehicle, weaponHash, p3) end
 
 
 --- @param weaponHash Hash
---- @returns boolean
+--- @return boolean
 function HasWeaponAssetLoaded(weaponHash) end
 
 
 --- @param weapon Object
 --- @param addonHash Hash
---- @returns boolean
+--- @return boolean
 function HasWeaponGotWeaponComponent(weapon, addonHash) end
 
 --- 
@@ -593,7 +593,7 @@ function HidePedWeaponForScriptedCutscene(ped, toggle) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsFlashLightOn(ped) end
 
 
@@ -602,7 +602,7 @@ function IsFlashLightOn(ped) end
 --- @param z number
 --- @param radius number
 --- @param zoneId number
---- @returns boolean
+--- @return boolean
 function IsAirDefenseZoneInsideSphere(x, y, z, radius, zoneId) end
 
 --- 
@@ -620,7 +620,7 @@ function IsAirDefenseZoneInsideSphere(x, y, z, radius, zoneId) end
 --- 
 --- @param ped Ped
 --- @param p1 number
---- @returns boolean
+--- @return boolean
 function IsPedArmed(ped, p1) end
 
 --- 
@@ -628,31 +628,31 @@ function IsPedArmed(ped, p1) end
 --- Ped ped = The ped whose weapon you want to check.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedCurrentWeaponSilenced(ped) end
 
 --- 
 --- Probably checks whether the ped has finished reloading or not and if the current weapon is not being switched to another.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedWeaponReadyToShoot(ped) end
 
 
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param componentHash Hash
---- @returns boolean
+--- @return boolean
 function IsPedWeaponComponentActive(ped, weaponHash, componentHash) end
 
 
 --- @param weaponHash Hash
---- @returns boolean
+--- @return boolean
 function IsWeaponValid(weaponHash) end
 
 --- Forces a ped to reload **only** if they are able to; if they have a full magazine, they will not reload.
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function MakePedReload(ped) end
 
 --- 
@@ -661,12 +661,12 @@ function MakePedReload(ped) end
 --- This native actually disables the reloading animation and script for the specified ped. Native renamed.  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function PedSkipNextReloading(ped) end
 
 
 --- @param zoneId number
---- @returns boolean
+--- @return boolean
 function RemoveAirDefenseZone(zoneId) end
 
 --- 
@@ -728,7 +728,7 @@ function RequestWeaponAsset(weaponHash, p1, p2) end
 --- @param ped Ped
 --- @param weaponHash Hash
 --- @param ammo number
---- @returns boolean
+--- @return boolean
 function SetAmmoInClip(ped, weaponHash, ammo) end
 
 
@@ -755,12 +755,12 @@ function SetCurrentPedWeapon(ped, weaponHash, equipNow) end
 
 --- @param ped Ped
 --- @param weaponHash Hash
---- @returns boolean
+--- @return boolean
 function SetCurrentPedVehicleWeapon(ped, weaponHash) end
 
 
 --- @param distance number
---- @returns any
+--- @return any
 function SetFlashLightFadeDistance(distance) end
 
 --- 
@@ -866,7 +866,7 @@ function SetPedInfiniteAmmoClip(ped, toggle) end
 --- 
 --- @param ped Ped
 --- @param p1 number
---- @returns Object
+--- @return Object
 function SetPedShootOrdnanceWeapon(ped, p1) end
 
 --- 

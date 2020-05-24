@@ -2,7 +2,7 @@
 --- @param componentHash Hash
 --- @param restrictionTagHash Hash
 --- @param componentId number
---- @returns boolean
+--- @return boolean
 function DoesShopPedApparelHaveRestrictionTag(componentHash, restrictionTagHash, componentId) end
 
 --- 
@@ -12,12 +12,12 @@ function DoesShopPedApparelHaveRestrictionTag(componentHash, restrictionTagHash,
 --- 
 --- @param dlcVehicleIndex number
 --- @param outData number
---- @returns boolean
+--- @return boolean
 function GetDlcVehicleData(dlcVehicleIndex, outData) end
 
 
 --- @param dlcVehicleIndex number
---- @returns number
+--- @return number
 function GetDlcVehicleFlags(dlcVehicleIndex) end
 
 --- 
@@ -47,7 +47,7 @@ function GetDlcVehicleFlags(dlcVehicleIndex) end
 --- @param dlcWeaponIndex number
 --- @param dlcWeapCompIndex number
 --- @param ComponentDataPtr any
---- @returns boolean
+--- @return boolean
 function GetDlcWeaponComponentData(dlcWeaponIndex, dlcWeapCompIndex, ComponentDataPtr) end
 
 --- 
@@ -60,7 +60,7 @@ function GetDlcWeaponComponentData(dlcWeaponIndex, dlcWeapCompIndex, ComponentDa
 --- NativeDB Return Type: Hash
 --- 
 --- @param hash number
---- @returns number
+--- @return number
 function GetDlcVehicleModLockHash(hash) end
 
 --- 
@@ -89,14 +89,14 @@ function GetDlcVehicleModLockHash(hash) end
 --- 
 --- @param dlcWeaponIndex number
 --- @param outData number
---- @returns boolean
+--- @return boolean
 function GetDlcWeaponData(dlcWeaponIndex, outData) end
 
 --- 
 --- dlcVehicleIndex is 0 to GET_NUM_DLC_VEHICLS()  
 --- 
 --- @param dlcVehicleIndex number
---- @returns Hash
+--- @return Hash
 function GetDlcVehicleModel(dlcVehicleIndex) end
 
 --- 
@@ -118,7 +118,7 @@ function GetForcedProp(componentHash, forcedPropIndex, nameHash, enumValue, anch
 --- @param componentId number
 --- @param propIndex number
 --- @param propTextureIndex number
---- @returns Hash
+--- @return Hash
 function GetHashNameForProp(entity, componentId, propIndex, propTextureIndex) end
 
 --- 
@@ -138,31 +138,31 @@ function GetForcedComponent(componentHash, componentId, nameHash, enumValue, com
 --- @param componentId number
 --- @param drawableVariant number
 --- @param textureVariant number
---- @returns Hash
+--- @return Hash
 function GetHashNameForComponent(entity, componentId, drawableVariant, textureVariant) end
 
 --- 
 --- only documented to be continued...  
 --- 
 --- @param character number
---- @returns number
+--- @return number
 function GetNumDecorations(character) end
 
 
---- @returns number
+--- @return number
 function GetNumDlcVehicles() end
 
 --- 
 --- Allowed Values from 0 - DLC1::GET_NUM_DLC_WEAPONS()  
 --- 
 --- @param dlcWeaponIndex number
---- @returns number
+--- @return number
 function GetNumDlcWeaponComponents(dlcWeaponIndex) end
 
 --- 
 --- Gets the total number of DLC weapons.  
 --- 
---- @returns number
+--- @return number
 function GetNumDlcWeapons() end
 
 --- 
@@ -179,14 +179,14 @@ function GetNumDlcWeapons() end
 --- @param p3 boolean
 --- @param p4 number
 --- @param componentId number
---- @returns number
+--- @return number
 function GetNumPropsFromOutfit(character, p1, p2, p3, p4, componentId) end
 
 --- 
 --- Returns number of possible values of the forcedComponentIndex argument of GET_FORCED_COMPONENT.
 --- 
 --- @param componentHash Hash
---- @returns number
+--- @return number
 function GetShopPedApparelForcedComponentCount(componentHash) end
 
 --- 
@@ -195,7 +195,7 @@ function GetShopPedApparelForcedComponentCount(componentHash) end
 --- NativeDB Parameter 1: Hash componentHash
 --- 
 --- @param componentHash any
---- @returns number
+--- @return number
 function GetShopPedApparelForcedPropCount(componentHash) end
 
 --- 
@@ -207,7 +207,7 @@ function GetShopPedComponent(componentHash, outComponent) end
 
 
 --- @param componentHash Hash
---- @returns number
+--- @return number
 function GetShopPedApparelVariantComponentCount(componentHash) end
 
 
@@ -223,19 +223,19 @@ function GetShopPedOutfit(p0, p1) end
 --- @param outfit any
 --- @param slot number
 --- @param item any
---- @returns boolean
+--- @return boolean
 function GetShopPedOutfitComponentVariant(outfit, slot, item) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function GetShopPedOutfitLocate(p0) end
 
 
 --- @param outfit any
 --- @param slot number
 --- @param item any
---- @returns boolean
+--- @return boolean
 function GetShopPedOutfitPropVariant(outfit, slot, item) end
 
 
@@ -307,7 +307,7 @@ function GetShopPedQueryOutfit(p0, outfit) end
 --- @param characterType number
 --- @param decorationIndex number
 --- @param outComponent any
---- @returns boolean
+--- @return boolean
 function GetTattooCollectionData(characterType, decorationIndex, outComponent) end
 
 
@@ -334,7 +334,7 @@ function GetVariantComponent(componentHash, componentId, nameHash, enumValue, co
 --- NativeDB Parameter 0: Hash hash
 --- 
 --- @param hash any
---- @returns boolean
+--- @return boolean
 function IsDlcVehicleMod(hash) end
 
 
@@ -345,6 +345,6 @@ function InitShopPedComponent(outComponent) end
 --- NativeDB Parameter 0: Hash itemHash
 --- 
 --- @param itemHash any
---- @returns boolean
+--- @return boolean
 function IsContentItemLocked(itemHash) end
 

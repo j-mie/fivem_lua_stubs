@@ -34,7 +34,7 @@
 --- @param crewPackedStr string
 --- @param iconType2 number
 --- @param textColor number
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostMessagetextWithCrewTagAndAdditionalIcon(picTxd, picTxn, flash, iconType1, nameStr, subtitleStr, duration, crewPackedStr, iconType2, textColor) end
 
 --- 
@@ -42,13 +42,13 @@ function EndTextCommandThefeedPostMessagetextWithCrewTagAndAdditionalIcon(picTxd
 --- 
 --- @param isImportant boolean
 --- @param bHasTokens boolean
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostTickerForced(isImportant, bHasTokens) end
 
 
 --- @param isImportant boolean
 --- @param bHasTokens boolean
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostTickerWithTokens(isImportant, bHasTokens) end
 
 --- 
@@ -61,7 +61,7 @@ function EndTextCommandThefeedPostTickerWithTokens(isImportant, bHasTokens) end
 --- @param eType number
 --- @param iIcon number
 --- @param sTitle string
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostReplayIcon(eType, iIcon, sTitle) end
 
 
@@ -69,7 +69,7 @@ function EndTextCommandThefeedPostReplayIcon(eType, iIcon, sTitle) end
 --- @param iconType number
 --- @param chSubtitle string
 --- @param isImportant boolean
---- @returns any
+--- @return any
 function EndTextCommandThefeedPostUnlockTu(chTitle, iconType, chSubtitle, isImportant) end
 
 --- Example output preview:
@@ -77,7 +77,7 @@ function EndTextCommandThefeedPostUnlockTu(chTitle, iconType, chSubtitle, isImpo
 --- ![](https://i.imgur.com/TJvqkYq.png)
 --- @param isImportant boolean
 --- @param bHasTokens boolean
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostTicker(isImportant, bHasTokens) end
 
 --- 
@@ -90,14 +90,14 @@ function EndTextCommandThefeedPostTicker(isImportant, bHasTokens) end
 --- @param ch2TXD string
 --- @param ch2TXN string
 --- @param val2 number
---- @returns number
+--- @return number
 function EndTextCommandThefeedPostVersusTu(ch1TXD, ch1TXN, val1, ch2TXD, ch2TXN, val2) end
 
 
 --- @param chTitle string
 --- @param iconType number
 --- @param chSubtitle string
---- @returns any
+--- @return any
 function EndTextCommandThefeedPostUnlock(chTitle, iconType, chSubtitle) end
 
 --- 
@@ -121,7 +121,7 @@ function FlashMinimapDisplayWithColor(hudColorIndex) end
 --- @param isImportant boolean
 --- @param titleColor number
 --- @param p5 boolean
---- @returns any
+--- @return any
 function EndTextCommandThefeedPostUnlockTuWithColor(chTitle, iconType, chSubtitle, isImportant, titleColor, p5) end
 
 --- 
@@ -146,42 +146,42 @@ function FlashMinimapDisplay() end
 --- Returns the current AI BLIP for the specified ped  
 --- 
 --- @param ped Ped
---- @returns Blip
+--- @return Blip
 function GetAiBlip(ped) end
 
 
 --- @param blip Blip
---- @returns number
+--- @return number
 function GetBlipAlpha(blip) end
 
 --- 
 --- NativeDB Return Type: void
 --- 
 --- @param p0 boolean
---- @returns any
+--- @return any
 function FlashWantedDisplay(p0) end
 
 
 --- @param blip Blip
---- @returns vector3
+--- @return vector3
 function GetBlipCoords(blip) end
 
 --- 
 --- Doesn't actually return anything.
 --- 
---- @returns any
+--- @return any
 function ForceSonarBlipsThisFrame() end
 
 --- 
 --- Returns the Blip handle of given Entity.  
 --- 
 --- @param entity Entity
---- @returns Blip
+--- @return Blip
 function GetBlipFromEntity(entity) end
 
 
 --- @param blip Blip
---- @returns vector3
+--- @return vector3
 function GetBlipInfoIdCoord(blip) end
 
 --- 
@@ -192,12 +192,12 @@ function GetAiBlip2(ped) end
 
 
 --- @param blip Blip
---- @returns Entity
+--- @return Entity
 function GetBlipInfoIdEntityIndex(blip) end
 
 
 --- @param blip Blip
---- @returns number
+--- @return number
 function GetBlipColour(blip) end
 
 --- 
@@ -211,46 +211,46 @@ function GetBlipColour(blip) end
 --- 7  
 --- 
 --- @param blip Blip
---- @returns number
+--- @return number
 function GetBlipInfoIdType(blip) end
 
 
 --- @param blip Blip
---- @returns number
+--- @return number
 function GetBlipHudColour(blip) end
 
 --- 
 --- This function is hard-coded to always return 0.  
 --- 
 --- @param blip Blip
---- @returns Pickup
+--- @return Pickup
 function GetBlipInfoIdPickupIndex(blip) end
 
 
 --- @param blip Blip
---- @returns number
+--- @return number
 function GetBlipInfoIdDisplay(blip) end
 
 --- 
 --- if (UI::_2309595AD6145265() == ${fe_menu_version_empty_no_background})  
 --- Seems to get the current frontend menu  
 --- 
---- @returns Hash
+--- @return Hash
 function GetCurrentFrontendMenuVersion() end
 
 
---- @returns number
+--- @return number
 function GetBlipInfoIdIterator() end
 
 
---- @returns number
+--- @return number
 function GetCurrentWebsiteId() end
 
 --- 
 --- 8 = waypoint  
 --- 
 --- @param blipSprite number
---- @returns Blip
+--- @return Blip
 function GetFirstBlipInfoId(blipSprite) end
 
 --- 
@@ -258,7 +258,7 @@ function GetFirstBlipInfoId(blipSprite) end
 --- gtaxscripting.blogspot.com/2016/05/gta-v-blips-id-and-image.html  
 --- 
 --- @param blip Blip
---- @returns number
+--- @return number
 function GetBlipSprite(blip) end
 
 --- 
@@ -277,7 +277,7 @@ function GetHudColour(hudColorIndex, r, g, b, a) end
 --- Any _0xE3B05614DCE1D014(Any p0) // 0xE3B05614DCE1D014 0xD217EE7E  
 --- returns current websitePageID  
 --- 
---- @returns number
+--- @return number
 function GetCurrentWebpageId() end
 
 --- 
@@ -289,68 +289,68 @@ function GetCurrentWebpageId() end
 --- @param worldZ number
 --- @param screenX number
 --- @param screenY number
---- @returns boolean
+--- @return boolean
 function GetHudScreenPositionFromWorldPosition(worldX, worldY, worldZ, screenX, screenY) end
 
 --- 
 --- Returns the length of the string passed (much like strlen).  
 --- 
 --- @param string string
---- @returns number
+--- @return number
 function GetLengthOfLiteralString(string) end
 
 --- 
 --- This function is hard-coded to always return 1.  
 --- 
---- @returns number
+--- @return number
 function GetDefaultScriptRendertargetRenderId() end
 
 
 --- @param id number
---- @returns vector3
+--- @return vector3
 function GetHudComponentPosition(id) end
 
 --- 
 --- gets the length of a null terminated string, without checking unicode encodings  
 --- 
 --- @param string string
---- @returns number
+--- @return number
 function GetLengthOfLiteralStringInBytes(string) end
 
 --- 
 --- NativeDB Return Type: int
 --- 
---- @returns boolean
+--- @return boolean
 function GetLevelBlipSprite() end
 
 --- 
 --- Gets a string literal from a label name.  
 --- 
 --- @param labelName string
---- @returns string
+--- @return string
 function GetLabelText(labelName) end
 
 
---- @returns number
+--- @return number
 function GetMinimapRevealPercentage() end
 
 --- 
 --- Returns the string length of the string from the gxt string .  
 --- 
 --- @param gxt string
---- @returns number
+--- @return number
 function GetLengthOfStringWithThisTextLabel(gxt) end
 
 
---- @returns Blip
+--- @return Blip
 function GetNewSelectedMissionCreatorBlip() end
 
 
---- @returns number
+--- @return number
 function GetNumberOfActiveBlips() end
 
 
---- @returns Blip
+--- @return Blip
 function GetMainPlayerBlipId() end
 
 --- 
@@ -358,12 +358,12 @@ function GetMainPlayerBlipId() end
 --- For how to get the hashes, see PATHFIND::GET_STREET_NAME_AT_COORD.  
 --- 
 --- @param hash Hash
---- @returns string
+--- @return string
 function GetStreetNameFromHashKey(hash) end
 
 
 --- @param name string
---- @returns number
+--- @return number
 function GetNamedRendertargetRenderId(name) end
 
 --- 
@@ -371,7 +371,7 @@ function GetNamedRendertargetRenderId(name) end
 --- 
 --- @param size number
 --- @param font number
---- @returns number
+--- @return number
 function GetTextScaleHeight(size, font) end
 
 --- 
@@ -397,12 +397,12 @@ function GetTextScaleHeight(size, font) end
 --- @param position number
 --- @param length number
 --- @param maxLength number
---- @returns string
+--- @return string
 function GetTextSubstringSafe(text, position, length, maxLength) end
 
 
 --- @param blipSprite number
---- @returns Blip
+--- @return Blip
 function GetNextBlipInfoId(blipSprite) end
 
 --- 
@@ -415,13 +415,13 @@ function GetNextBlipInfoId(blipSprite) end
 --- 30  
 --- 35  
 --- 
---- @returns number
+--- @return number
 function GetPauseMenuState() end
 
 --- 
 --- NativeDB Introduced: v1290
 --- 
---- @returns Hash
+--- @return Hash
 function GetWarningMessageTitleHash() end
 
 --- 
@@ -438,7 +438,7 @@ function GivePedToPauseMenu(ped, p1) end
 --- 
 --- @param gxt string
 --- @param slot number
---- @returns boolean
+--- @return boolean
 function HasThisAdditionalTextLoaded(gxt, slot) end
 
 --- 
@@ -457,7 +457,7 @@ function HideAreaAndVehicleNameThisFrame() end
 --- @param text string
 --- @param position number
 --- @param length number
---- @returns string
+--- @return string
 function GetTextSubstring(text, position, length) end
 
 --- 
@@ -476,7 +476,7 @@ function HideHudAndRadarThisFrame() end
 --- @param text string
 --- @param startPosition number
 --- @param endPosition number
---- @returns string
+--- @return string
 function GetTextSubstringSlice(text, startPosition, endPosition) end
 
 
@@ -484,7 +484,7 @@ function HideLoadingOnFadeThisFrame() end
 
 
 --- @param slot number
---- @returns boolean
+--- @return boolean
 function HasAdditionalTextLoaded(slot) end
 
 
@@ -493,7 +493,7 @@ function HideMinimapExteriorMapThisFrame() end
 --- 
 --- HAS_*
 --- 
---- @returns boolean
+--- @return boolean
 function HasDirectorModeBeenTriggered() end
 
 
@@ -512,7 +512,7 @@ function HudForceWeaponWheel(show) end
 --- 
 --- Returns the weapon hash to the selected/highlighted weapon in the wheel
 --- 
---- @returns Hash
+--- @return Hash
 function HudWeaponWheelGetSelectedHash() end
 
 --- 
@@ -568,12 +568,12 @@ function HideScriptedHudComponentThisFrame(id) end
 --- Return the weapon hash active in a specific weapon wheel slotList
 --- 
 --- @param weaponTypeIndex number
---- @returns any
+--- @return any
 function HudWeaponWheelGetSlotHash(weaponTypeIndex) end
 
 
 --- @param blip Blip
---- @returns boolean
+--- @return boolean
 function IsBlipFlashing(blip) end
 
 --- 
@@ -584,52 +584,52 @@ function HudWeaponWheelIgnoreControlInput(toggle) end
 
 
 --- @param blip Blip
---- @returns boolean
+--- @return boolean
 function IsBlipOnMinimap(blip) end
 
 
 --- @param blip Blip
---- @returns boolean
+--- @return boolean
 function IsBlipShortRange(blip) end
 
 
---- @returns boolean
+--- @return boolean
 function IsFrontendReadyForControl() end
 
 
 --- @param hudIndex number
---- @returns boolean
+--- @return boolean
 function IsFloatingHelpTextOnScreen(hudIndex) end
 
 
---- @returns boolean
+--- @return boolean
 function IsHelpMessageFadingOut() end
 
 
---- @returns boolean
+--- @return boolean
 function IsHoveringOverMissionCreatorBlip() end
 
 
---- @returns boolean
+--- @return boolean
 function IsHudHidden() end
 
 
---- @returns boolean
+--- @return boolean
 function IsHelpMessageBeingDisplayed() end
 
 --- 
 --- Doesn't appear to work, use IS_HELP_MESSAGE_BEING_DISPLAYED instead  
 --- 
---- @returns boolean
+--- @return boolean
 function IsHelpMessageOnScreen() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMinimapInInterior() end
 
 
 --- @param blip Blip
---- @returns boolean
+--- @return boolean
 function IsMissionCreatorBlip(blip) end
 
 --- 
@@ -660,42 +660,42 @@ function IsMissionCreatorBlip(blip) end
 --- MAX_SCRIPTED_HUD_COMPONENTS = 141;  
 --- 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function IsHudComponentActive(id) end
 
 
 --- @param gamerTagId number
---- @returns boolean
+--- @return boolean
 function IsMpGamerTagActive(gamerTagId) end
 
 --- 
 --- _IS_MP_GAMER_TAG_ACTIVE_2  
 --- 
 --- @param gamerTagId number
---- @returns boolean
+--- @return boolean
 function IsMpGamerTagFree(gamerTagId) end
 
 
---- @returns boolean
+--- @return boolean
 function IsHudPreferenceSwitchedOn() end
 
 --- 
 --- Returns whether or not the text chat (MULTIPLAYER_CHAT Scaleform component) is active.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsMultiplayerChatActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMessageBeingDisplayed() end
 
 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function IsNamedRendertargetRegistered(name) end
 
 --- Returns the same as IS_SOCIAL_CLUB_ACTIVE.
---- @returns boolean
+--- @return boolean
 function IsOnlinePoliciesMenuActive() end
 
 --- 
@@ -704,68 +704,68 @@ function IsOnlinePoliciesMenuActive() end
 --- @param x number
 --- @param y number
 --- @param radius number
---- @returns boolean
+--- @return boolean
 function IsMinimapAreaRevealed(x, y, radius) end
 
 
---- @returns boolean
+--- @return boolean
 function IsPauseMenuRestarting() end
 
 
---- @returns boolean
+--- @return boolean
 function IsRadarHidden() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMinimapRendering() end
 
 
---- @returns boolean
+--- @return boolean
 function IsRadarPreferenceSwitchedOn() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMpGamerTagMovieActive() end
 
 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function IsScriptedHudComponentHiddenThisFrame(id) end
 
 
---- @returns boolean
+--- @return boolean
 function IsSocialClubActive() end
 
 
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function IsNamedRendertargetLinked(modelHash) end
 
 
---- @returns boolean
+--- @return boolean
 function IsSubtitlePreferenceSwitchedOn() end
 
 
---- @returns boolean
+--- @return boolean
 function IsPauseMenuActive() end
 
 --- 
 --- IS_*
 --- 
 --- @param gamerTagId number
---- @returns boolean
+--- @return boolean
 function IsValidMpGamerTagMovie(gamerTagId) end
 
 --- 
 --- IS_WARNING_MESSAGE_*
 --- 
---- @returns boolean
+--- @return boolean
 function IsWarningMessageActive2() end
 
 --- 
 --- return bool according to scripts  
 --- 
---- @returns boolean
+--- @return boolean
 function IsReportugcMenuOpen() end
 
 
@@ -781,7 +781,7 @@ function LockMinimapAngle(angle) end
 
 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function IsScriptedHudComponentActive(id) end
 
 --- 
@@ -793,15 +793,15 @@ function LogDebugInfo(p0) end
 
 
 --- @param p0 number
---- @returns boolean
+--- @return boolean
 function IsStreamingAdditionalText(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function IsWarningMessageActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsWaypointActive() end
 
 --- 
@@ -882,7 +882,7 @@ function PauseMenuActivateContext(hash) end
 
 
 --- @param contextHash Hash
---- @returns boolean
+--- @return boolean
 function PauseMenuIsContextActive(contextHash) end
 
 
@@ -905,7 +905,7 @@ function PulseBlip(blip) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns any
+--- @return any
 function RaceGalleryAddBlip(x, y, z) end
 
 --- 
@@ -919,13 +919,13 @@ function RefreshWaypoint() end
 
 
 --- @param name string
---- @returns boolean
+--- @return boolean
 function ReleaseNamedRendertarget(name) end
 
 
 --- @param name string
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function RegisterNamedRendertarget(name, p1) end
 
 --- 

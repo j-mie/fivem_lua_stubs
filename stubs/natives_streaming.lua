@@ -1,6 +1,6 @@
 
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function AddModelToCreatorBudget(modelHash) end
 
 
@@ -14,7 +14,7 @@ function ClearHdArea() end
 
 
 --- @param animDict string
---- @returns boolean
+--- @return boolean
 function DoesAnimDictExist(animDict) end
 
 
@@ -33,7 +33,7 @@ function EndSrl() end
 --- @param rad number
 --- @param p4 any
 --- @param p5 any
---- @returns any
+--- @return any
 function FormatFocusHeading(x, y, z, rad, p4, p5) end
 
 --- 
@@ -46,31 +46,31 @@ function FormatFocusHeading(x, y, z, rad, p4, p5) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns number
+--- @return number
 function GetIdealPlayerSwitchType(x1, y1, z1, x2, y2, z2) end
 
 
---- @returns number
+--- @return number
 function GetNumberOfStreamingRequests() end
 
 
---- @returns number
+--- @return number
 function GetPlayerShortSwitchState() end
 
 
---- @returns number
+--- @return number
 function GetPlayerSwitchInterpOutDuration() end
 
 
---- @returns number
+--- @return number
 function GetPlayerSwitchJumpCutIndex() end
 
 
---- @returns number
+--- @return number
 function GetPlayerSwitchType() end
 
 
---- @returns number
+--- @return number
 function GetPlayerSwitchState() end
 
 --- 
@@ -81,12 +81,12 @@ function GetPlayerSwitchState() end
 --- 
 --- GET_*
 --- 
---- @returns number
+--- @return number
 function GetUsedCreatorModelMemoryPercentage() end
 
 
 --- @param animDict string
---- @returns boolean
+--- @return boolean
 function HasAnimDictLoaded(animDict) end
 
 --- 
@@ -94,37 +94,37 @@ function HasAnimDictLoaded(animDict) end
 --- Animation set and clip set are synonymous.  
 --- 
 --- @param animSet string
---- @returns boolean
+--- @return boolean
 function HasAnimSetLoaded(animSet) end
 
 --- 
 --- Alias for HAS_ANIM_SET_LOADED.  
 --- 
 --- @param clipSet string
---- @returns boolean
+--- @return boolean
 function HasClipSetLoaded(clipSet) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function HasCollisionForModelLoaded(model) end
 
 --- 
 --- assetName = For example "core"  
 --- 
 --- @param assetName string
---- @returns boolean
+--- @return boolean
 function HasNamedPtfxAssetLoaded(assetName) end
 
 --- 
 --- Checks if the specified model has loaded into memory.  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function HasModelLoaded(model) end
 
 
---- @returns boolean
+--- @return boolean
 function HasPtfxAssetLoaded() end
 
 --- 
@@ -134,73 +134,73 @@ function InitCreatorBudget() end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityFocus(entity) end
 
 --- 
 --- List of all IPLs: pastebin.com/iNGLY32D  
 --- 
 --- @param iplName string
---- @returns boolean
+--- @return boolean
 function IsIplActive(iplName) end
 
 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsModelAPed(model) end
 
 --- 
 --- Returns whether the specified model represents a vehicle.  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsModelAVehicle(model) end
 
 --- 
 --- Check if model is in cdimage(rpf)  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsModelInCdimage(model) end
 
 --- 
 --- Returns whether the specified model exists in the game.  
 --- 
 --- @param model Hash
---- @returns boolean
+--- @return boolean
 function IsModelValid(model) end
 
 
---- @returns boolean
+--- @return boolean
 function IsNetworkLoadingScene() end
 
 
---- @returns boolean
+--- @return boolean
 function IsNewLoadSceneLoaded() end
 
 
---- @returns boolean
+--- @return boolean
 function IsNewLoadSceneActive() end
 
 --- 
 --- Returns true if the player is currently switching, false otherwise.  
 --- (When the camera is in the sky moving from Trevor to Franklin for example)  
 --- 
---- @returns boolean
+--- @return boolean
 function IsPlayerSwitchInProgress() end
 
 --- Returns true when the srl from BeginSrl is loaded.
---- @returns boolean
+--- @return boolean
 function IsSrlLoaded() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function IsSwitchSkippingDescent() end
 
 
---- @returns boolean
+--- @return boolean
 function IsSwitchReadyForDescent() end
 
 --- 
@@ -236,7 +236,7 @@ function NetworkStopLoadScene() end
 --- @param z number
 --- @param radius number
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function NewLoadSceneStartSphere(x, y, z, radius, p4) end
 
 
@@ -248,7 +248,7 @@ function NewLoadSceneStartSphere(x, y, z, radius, p4) end
 --- @param p5 number
 --- @param p6 number
 --- @param p7 any
---- @returns boolean
+--- @return boolean
 function NewLoadSceneStart(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 --- This native is used to attribute the SRL that BeginSrl is going to load. This is usually used for 'in-game' cinematics (not cutscenes but camera stuff) instead of SetFocusArea because it loads a specific area of the map which is pretty useful when the camera moves from distant areas.
@@ -328,7 +328,7 @@ function RequestClipSet(clipSet) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns any
+--- @return any
 function RequestCollisionAtCoord(x, y, z) end
 
 --- 
@@ -404,7 +404,7 @@ function SetDitchPoliceModels(toggle) end
 --- 
 --- NativeDB Return Type: void
 --- 
---- @returns any
+--- @return any
 function RequestPtfxAsset() end
 
 --- 

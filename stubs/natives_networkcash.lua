@@ -2,7 +2,7 @@
 --- Does nothing and always returns false.
 --- 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function DepositVc(amount) end
 
 --- 
@@ -102,12 +102,12 @@ function NetworkBuySmokes(p0, p1, p2) end
 --- NativeDB Introduced: v323
 --- 
 --- @param cost number
---- @returns boolean
+--- @return boolean
 function NetworkCanBuyLotteryTicket(cost) end
 
 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function NetworkCanBet(amount) end
 
 
@@ -115,13 +115,13 @@ function NetworkCanBet(amount) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function NetworkCanReceivePlayerCash(p0, p1, p2, p3) end
 
 --- 
 --- NETWORK_CAN_R??? or NETWORK_CAN_S???  
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkCanShareJobCash() end
 
 --- 
@@ -132,7 +132,7 @@ function NetworkCanShareJobCash() end
 --- @param p2 boolean
 --- @param p3 boolean
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function NetworkCanSpendMoney(p0, p1, p2, p3, p4) end
 
 --- 
@@ -148,7 +148,7 @@ function NetworkCanSpendMoney(p0, p1, p2, p3, p4) end
 --- @param p3 boolean
 --- @param p4 any
 --- @param p5 any
---- @returns boolean
+--- @return boolean
 function NetworkCanSpendMoney2(p0, p1, p2, p3, p4, p5) end
 
 
@@ -412,7 +412,7 @@ function NetworkEarnFromPersonalVehicle(p0, p1, p2, p3, p4, p5, p6, p7, p8) end
 --- NativeDB Return Type: void
 --- 
 --- @param amount number
---- @returns any
+--- @return any
 function NetworkEarnFromPickup(amount) end
 
 
@@ -486,7 +486,7 @@ function NetworkEarnFromWagePayment(amount) end
 --- 
 --- NativeDB Introduced: v323
 --- 
---- @returns number
+--- @return number
 function NetworkGetEvcBalance() end
 
 --- 
@@ -498,13 +498,13 @@ function NetworkEarnFromWagePaymentBonus(amount) end
 --- 
 --- NativeDB Introduced: v323
 --- 
---- @returns number
+--- @return number
 function NetworkGetPvcBalance() end
 
 --- 
 --- NativeDB Introduced: v323
 --- 
---- @returns boolean
+--- @return boolean
 function NetworkGetIsHighEarner() end
 
 --- 
@@ -516,7 +516,7 @@ function NetworkGetIsHighEarner() end
 --- 
 --- NativeDB Introduced: v323
 --- 
---- @returns number
+--- @return number
 function NetworkGetPvcTransferBalance() end
 
 --- 
@@ -524,34 +524,34 @@ function NetworkGetPvcTransferBalance() end
 --- 
 --- NativeDB Introduced: v323
 --- 
---- @returns number
+--- @return number
 function NetworkGetRemainingVcDailyTransfers2() end
 
 
---- @returns string
+--- @return string
 function NetworkGetStringBankBalance() end
 
 --- 
 --- NativeDB Introduced: v323
 --- 
---- @returns string
+--- @return string
 function NetworkGetStringBankWalletBalance() end
 
 --- 
 --- NativeDB Introduced: v323
 --- 
 --- @param characterSlot number
---- @returns string
+--- @return string
 function NetworkGetStringWalletBalance(characterSlot) end
 
 --- 
 --- From what I can see in ida, I believe it retrieves the players online bank balance.  
 --- 
---- @returns number
+--- @return number
 function NetworkGetVcBankBalance() end
 
 
---- @returns number
+--- @return number
 function NetworkGetVcBalance() end
 
 --- 
@@ -560,7 +560,7 @@ function NetworkGetVcBalance() end
 --- NativeDB Introduced: v323
 --- 
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function NetworkGetVcBankBalanceIsNotLessThan(amount) end
 
 --- 
@@ -568,14 +568,14 @@ function NetworkGetVcBankBalanceIsNotLessThan(amount) end
 --- 
 --- @param amount number
 --- @param characterSlot number
---- @returns boolean
+--- @return boolean
 function NetworkGetVcBankWalletBalanceIsNotLessThan(amount, characterSlot) end
 
 --- 
 --- From what I understand, it retrieves STAT_WALLET_BALANCE for the specified character (-1 means use MPPLY_LAST_MP_CHAR)  
 --- 
 --- @param characterSlot number
---- @returns number
+--- @return number
 function NetworkGetVcWalletBalance(characterSlot) end
 
 --- 
@@ -585,7 +585,7 @@ function NetworkGetVcWalletBalance(characterSlot) end
 --- 
 --- @param amount number
 --- @param characterSlot number
---- @returns boolean
+--- @return boolean
 function NetworkGetVcWalletBalanceIsNotLessThan(amount, characterSlot) end
 
 
@@ -602,7 +602,7 @@ function NetworkGivePlayerJobshareCash(amount, networkHandle) end
 --- @param amount number
 --- @param p1 boolean
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function NetworkMoneyCanBet(amount, p1, p2) end
 
 

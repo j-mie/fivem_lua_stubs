@@ -20,33 +20,33 @@ function AdvanceClockTimeTo(hour, minute, second) end
 --- 5: Friday  
 --- 6: Saturday  
 --- 
---- @returns number
+--- @return number
 function GetClockDayOfWeek() end
 
 
---- @returns number
+--- @return number
 function GetClockDayOfMonth() end
 
 --- 
 --- Gets the current ingame clock minute.  
 --- 
---- @returns number
+--- @return number
 function GetClockMinutes() end
 
 --- 
 --- Gets the current ingame hour, expressed without zeros. (09:34 will be represented as 9)  
 --- 
---- @returns number
+--- @return number
 function GetClockHours() end
 
 --- 
 --- Gets the current ingame clock second. Note that ingame clock seconds change really fast since a day in GTA is only 48 minutes in real life.  
 --- 
---- @returns number
+--- @return number
 function GetClockSeconds() end
 
 
---- @returns number
+--- @return number
 function GetClockMonth() end
 
 --- 
@@ -70,7 +70,7 @@ function GetClockMonth() end
 function GetLocalTime(year, month, day, hour, minute, second) end
 
 
---- @returns number
+--- @return number
 function GetClockYear() end
 
 --- 
@@ -94,7 +94,7 @@ function GetPosixTime(year, month, day, hour, minute, second) end
 
 --- Returns how many real ms are equal to one game minute.
 --- A getter for [SetMillisecondsPerGameMinute](#_0x36CA2554).
---- @returns number
+--- @return number
 function GetMillisecondsPerGameMinute() end
 
 

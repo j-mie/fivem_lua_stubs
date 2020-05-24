@@ -29,7 +29,7 @@ function RemoveModelHide(p0, p1, p2, p3, p4, p5) end
 --- NativeDB Return Type: void
 --- 
 --- @param entity Entity
---- @returns any
+--- @return any
 function ResetEntityAlpha(entity) end
 
 
@@ -412,7 +412,7 @@ function SetObjectAsNoLongerNeeded(object) end
 --- @param animation string
 --- @param animGroup string
 --- @param p3 number
---- @returns any
+--- @return any
 function StopEntityAnim(entity, animation, animGroup, p3) end
 
 --- 
@@ -421,7 +421,7 @@ function StopEntityAnim(entity, animation, animGroup, p3) end
 --- @param entity Entity
 --- @param p1 number
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function StopSynchronizedEntityAnim(entity, p1, p2) end
 
 --- 
@@ -432,7 +432,7 @@ function StopSynchronizedEntityAnim(entity, p1, p2) end
 --- @param y number
 --- @param z number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function WouldEntityBeOccluded(entityModelHash, x, y, z, p4) end
 
 --- 
@@ -448,6 +448,6 @@ function SetVehicleAsNoLongerNeeded(vehicle) end
 --- @param p3 number
 --- @param p4 any
 --- @param p5 number
---- @returns boolean
+--- @return boolean
 function StopSynchronizedMapEntityAnim(p0, p1, p2, p3, p4, p5) end
 

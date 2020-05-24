@@ -312,7 +312,7 @@ function SetVehicleBoostActive(vehicle, toggle) end
 --- List of all usable scene names found in b617d. Sorted alphabetically and identical names removed: pastebin.com/MtM9N9CC  
 --- 
 --- @param scene string
---- @returns boolean
+--- @return boolean
 function StartAudioScene(scene) end
 
 
@@ -403,7 +403,7 @@ function StopPedRingtone(ped) end
 
 
 --- @param p0 boolean
---- @returns number
+--- @return number
 function StopScriptedConversation(p0) end
 
 --- 
@@ -425,7 +425,7 @@ function StopCurrentPlayingAmbientSpeech(ped) end
 --- All music event names found in the b617d scripts: pastebin.com/GnYt0R3P  
 --- 
 --- @param eventName string
---- @returns boolean
+--- @return boolean
 function TriggerMusicEvent(eventName) end
 
 
@@ -459,7 +459,7 @@ function UnregisterScriptWithAudio() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function StopSynchronizedAudioEvent(p0) end
 
 --- 

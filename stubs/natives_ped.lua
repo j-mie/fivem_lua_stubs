@@ -22,7 +22,7 @@ function AddPedDecorationFromHashesInCorona(ped, collection, overlay) end
 --- @param p7 boolean
 --- @param p8 boolean
 --- @param p9 boolean
---- @returns number
+--- @return number
 function AddScenarioBlockingArea(x1, y1, z1, x2, y2, z2, p6, p7, p8, p9) end
 
 --- 
@@ -105,7 +105,7 @@ function ApplyPedDamageDecal(ped, damageZone, xOffset, yOffset, heading, scale, 
 --- 
 --- @param name string
 --- @param groupHash Hash
---- @returns any
+--- @return any
 function AddRelationshipGroup(name, groupHash) end
 
 --- 
@@ -160,7 +160,7 @@ function ApplyPedBlood(ped, boneIndex, xRot, yRot, zRot, woundType) end
 function BlockPedDeadBodyShockingEvents(ped, toggle) end
 
 
---- @returns boolean
+--- @return boolean
 function CanCreateRandomCops() end
 
 
@@ -183,20 +183,20 @@ function AttachSynchronizedSceneToEntity(sceneID, entity, boneIndex) end
 
 
 --- @param unk boolean
---- @returns boolean
+--- @return boolean
 function CanCreateRandomPed(unk) end
 
 
---- @returns boolean
+--- @return boolean
 function CanCreateRandomBikeRider() end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function CanKnockPedOffVehicle(ped) end
 
 
---- @returns boolean
+--- @return boolean
 function CanCreateRandomDriver() end
 
 --- 
@@ -204,13 +204,13 @@ function CanCreateRandomDriver() end
 --- [Example: Can prevent peds from falling when standing on moving vehicles.]  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function CanPedRagdoll(ped) end
 
 
 --- @param ped Ped
 --- @param target Ped
---- @returns boolean
+--- @return boolean
 function CanPedInCombatSeeTarget(ped, target) end
 
 --- 
@@ -225,7 +225,7 @@ function ClearAllPedProps(ped) end
 --- 
 --- @param ped1 Ped
 --- @param ped2 Ped
---- @returns boolean
+--- @return boolean
 function CanPedSeeHatedPed(ped1, ped2) end
 
 
@@ -354,7 +354,7 @@ function ClearRelationshipBetweenGroups(relationship, group1, group2) end
 --- @param heading number
 --- @param isNetwork boolean
 --- @param netMissionEntity boolean
---- @returns Ped
+--- @return Ped
 function ClonePed(ped, heading, isNetwork, netMissionEntity) end
 
 --- 
@@ -379,7 +379,7 @@ function ClonePedToTarget(ped, targetPed) end
 --- @param isNetwork any
 --- @param netMissionEntity any
 --- @param p4 any
---- @returns Ped
+--- @return Ped
 function ClonePed2(ped, heading, isNetwork, netMissionEntity, p4) end
 
 
@@ -405,7 +405,7 @@ function CreateNmMessage(startImmediately, messageId) end
 --- Returns a handle to the created group, or 0 if a group couldn't be created.  
 --- 
 --- @param unused number
---- @returns number
+--- @return number
 function CreateGroup(unused) end
 
 --- 
@@ -454,14 +454,14 @@ function CreateGroup(unused) end
 --- @param heading number
 --- @param isNetwork boolean
 --- @param netMissionEntity boolean
---- @returns Ped
+--- @return Ped
 function CreatePed(pedType, modelHash, x, y, z, heading, isNetwork, netMissionEntity) end
 
 
 --- @param ped Ped
 --- @param p1 boolean
 --- @param p2 boolean
---- @returns Object
+--- @return Object
 function CreateParachuteObject(ped, p1, p2) end
 
 --- 
@@ -493,7 +493,7 @@ function CreateParachuteObject(ped, p1, p2) end
 --- @param seat number
 --- @param isNetwork boolean
 --- @param netMissionEntity boolean
---- @returns Ped
+--- @return Ped
 function CreatePedInsideVehicle(vehicle, pedType, modelHash, seat, isNetwork, netMissionEntity) end
 
 --- 
@@ -509,13 +509,13 @@ function CreatePedInsideVehicle(vehicle, pedType, modelHash, seat, isNetwork, ne
 --- @param posX number
 --- @param posY number
 --- @param posZ number
---- @returns Ped
+--- @return Ped
 function CreateRandomPed(posX, posY, posZ) end
 
 
 --- @param vehicle Vehicle
 --- @param returnHandle boolean
---- @returns Ped
+--- @return Ped
 function CreateRandomPedAsDriver(vehicle, returnHandle) end
 
 --- 
@@ -530,7 +530,7 @@ function CreateRandomPedAsDriver(vehicle, returnHandle) end
 --- @param pitch number
 --- @param yaw number
 --- @param p6 number
---- @returns number
+--- @return number
 function CreateSynchronizedScene(x, y, z, roll, pitch, yaw, p6) end
 
 
@@ -539,7 +539,7 @@ function CreateSynchronizedScene(x, y, z, roll, pitch, yaw, p6) end
 --- @param z number
 --- @param radius number
 --- @param object Hash
---- @returns number
+--- @return number
 function CreateSynchronizedScene2(x, y, z, radius, object) end
 
 --- 
@@ -566,7 +566,7 @@ function DisablePedHeatscaleOverride(ped) end
 
 
 --- @param groupId number
---- @returns boolean
+--- @return boolean
 function DoesGroupExist(groupId) end
 
 
@@ -576,14 +576,14 @@ function DoesGroupExist(groupId) end
 --- @param x2 number
 --- @param y2 number
 --- @param z2 number
---- @returns boolean
+--- @return boolean
 function DoesScenarioBlockingAreaExist(x1, y1, z1, x2, y2, z2) end
 
 --- 
 --- NativeDB Parameter 0: Hash groupHash
 --- 
 --- @param groupHash any
---- @returns boolean
+--- @return boolean
 function DoesRelationshipGroupExist(groupHash) end
 
 
@@ -620,7 +620,7 @@ function DropAmbientProp(ped) end
 --- @param p2 boolean
 --- @param p3 boolean
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function ForcePedMotionState(ped, motionStateHash, p2, p3, p4) end
 
 --- 
@@ -650,7 +650,7 @@ function ForcePedToOpenParachute(ped) end
 --- @param zRot number
 --- @param p8 number
 --- @param p9 number
---- @returns vector3
+--- @return vector3
 function GetAnimInitialOffsetPosition(animDict, animName, x, y, z, xRot, yRot, zRot, p8, p9) end
 
 --- [Animations list](https://alexguirre.github.io/animations-list/)
@@ -664,7 +664,7 @@ function GetAnimInitialOffsetPosition(animDict, animName, x, y, z, xRot, yRot, z
 --- @param zRot number
 --- @param p8 number
 --- @param p9 number
---- @returns vector3
+--- @return vector3
 function GetAnimInitialOffsetRotation(animDict, animName, x, y, z, xRot, yRot, zRot, p8, p9) end
 
 --- 
@@ -707,7 +707,7 @@ function GetAnimInitialOffsetRotation(animDict, animName, x, y, z, xRot, yRot, z
 --- @param p7 boolean
 --- @param p8 boolean
 --- @param pedType number
---- @returns boolean
+--- @return boolean
 function GetClosestPed(x, y, z, radius, p4, p5, outPed, p7, p8, pedType) end
 
 --- 
@@ -741,14 +741,14 @@ function GetClosestPed(x, y, z, radius, p4, p5, outPed, p7, p8, pedType) end
 --- 
 --- @param ped Ped
 --- @param p1 number
---- @returns number
+--- @return number
 function GetCombatFloat(ped, p1) end
 
 
 --- @param ped Ped
 --- @param p1 number
 --- @param p2 number
---- @returns vector3
+--- @return vector3
 function GetDeadPedPickupCoords(ped, p1, p2) end
 
 --- 
@@ -761,12 +761,12 @@ function GetGroupSize(groupID, unknown, sizeInMembers) end
 
 
 --- @param ped Ped
---- @returns Ped
+--- @return Ped
 function GetJackTarget(ped) end
 
 
 --- @param ped Ped
---- @returns Ped
+--- @return Ped
 function GetMeleeTargetForPed(ped) end
 
 --- 
@@ -780,24 +780,24 @@ function GetMeleeTargetForPed(ped) end
 --- }  
 --- 
 --- @param ped Ped
---- @returns Ped
+--- @return Ped
 function GetMount(ped) end
 
 --- 
 --- Used for freemode (online) characters.  
 --- 
---- @returns number
+--- @return number
 function GetNumHairColors() end
 
 --- 
 --- Type equals 0 for male non-dlc, 1 for female non-dlc, 2 for male dlc, and 3 for female dlc.  
 --- 
 --- @param type number
---- @returns number
+--- @return number
 function GetNumParentPedsOfType(type) end
 
 
---- @returns number
+--- @return number
 function GetNumMakeupColors() end
 
 --- 
@@ -806,7 +806,7 @@ function GetNumMakeupColors() end
 --- 
 --- @param ped Ped
 --- @param componentId number
---- @returns number
+--- @return number
 function GetNumberOfPedDrawableVariations(ped, componentId) end
 
 --- 
@@ -821,7 +821,7 @@ function GetNumberOfPedDrawableVariations(ped, componentId) end
 --- @param ped Ped
 --- @param propId number
 --- @param drawableId number
---- @returns number
+--- @return number
 function GetNumberOfPedPropTextureVariations(ped, propId, drawableId) end
 
 --- 
@@ -831,7 +831,7 @@ function GetNumberOfPedPropTextureVariations(ped, propId, drawableId) end
 --- @param ped Ped
 --- @param componentId number
 --- @param drawableId number
---- @returns number
+--- @return number
 function GetNumberOfPedTextureVariations(ped, componentId, drawableId) end
 
 --- 
@@ -840,7 +840,7 @@ function GetNumberOfPedTextureVariations(ped, componentId, drawableId) end
 --- 
 --- @param ped Ped
 --- @param propId number
---- @returns number
+--- @return number
 function GetNumberOfPedPropDrawableVariations(ped, propId) end
 
 --- 
@@ -853,22 +853,22 @@ function GetNumberOfPedPropDrawableVariations(ped, propId) end
 --- If the Ped does not exist, returns -1.  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedAlertness(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedAccuracy(ped) end
 
 
 --- @param groupID number
---- @returns Ped
+--- @return Ped
 function GetPedAsGroupLeader(groupID) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedArmour(ped) end
 
 --- 
@@ -882,7 +882,7 @@ function GetPedArmour(ped) end
 --- 
 --- @param groupID number
 --- @param memberNumber number
---- @returns Ped
+--- @return Ped
 function GetPedAsGroupMember(groupID, memberNumber) end
 
 --- 
@@ -898,7 +898,7 @@ function GetPedAsGroupMember(groupID, memberNumber) end
 --- @param offsetX number
 --- @param offsetY number
 --- @param offsetZ number
---- @returns vector3
+--- @return vector3
 function GetPedBoneCoords(ped, boneId, offsetX, offsetY, offsetZ) end
 
 --- 
@@ -906,19 +906,19 @@ function GetPedBoneCoords(ped, boneId, offsetX, offsetY, offsetZ) end
 --- 
 --- @param ped Ped
 --- @param boneId number
---- @returns number
+--- @return number
 function GetPedBoneIndex(ped, boneId) end
 
 --- 
 --- Returns the hash of the weapon/model/object that killed the ped.  
 --- 
 --- @param ped Ped
---- @returns Hash
+--- @return Hash
 function GetPedCauseOfDeath(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedCombatMovement(ped) end
 
 --- 
@@ -937,17 +937,17 @@ function GetPedCombatMovement(ped) end
 --- 
 --- @param collection Hash
 --- @param overlay Hash
---- @returns number
+--- @return number
 function GetPedDecorationZoneFromHashes(collection, overlay) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedCombatRange(ped) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedDecorationsState(ped) end
 
 --- 
@@ -958,18 +958,18 @@ function GetPedDecorationsState(ped) end
 --- @param ped Ped
 --- @param flagId number
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function GetPedConfigFlag(ped, flagId, p2) end
 
 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedEnveffScale(ped) end
 
 
 --- @param ped Ped
 --- @param p1 boolean
---- @returns vector3
+--- @return vector3
 function GetPedDefensiveAreaPosition(ped, p1) end
 
 --- 
@@ -979,7 +979,7 @@ function GetPedDefensiveAreaPosition(ped, p1) end
 --- 
 --- @param ped Ped
 --- @param worldSpace boolean
---- @returns vector3
+--- @return vector3
 function GetPedExtractedDisplacement(ped, worldSpace) end
 
 --- 
@@ -994,7 +994,7 @@ function GetPedExtractedDisplacement(ped, worldSpace) end
 --- 
 --- @param ped Ped
 --- @param headBlendData any
---- @returns boolean
+--- @return boolean
 function GetPedHeadBlendData(ped, headBlendData) end
 
 --- 
@@ -1013,26 +1013,26 @@ function GetPedHeadBlendData(ped, headBlendData) end
 --- 
 --- @param ped Ped
 --- @param componentId number
---- @returns number
+--- @return number
 function GetPedDrawableVariation(ped, componentId) end
 
 --- 
 --- Returns the group id of which the specified ped is a member of.  
 --- 
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedGroupIndex(ped) end
 
 --- 
 --- Used with freemode (online) characters.
 --- 
 --- @param overlayID number
---- @returns number
+--- @return number
 function GetPedHeadOverlayNum(overlayID) end
 
 --- Use [SetPedIlluminatedClothingGlowIntensity](#_0x4E90D746056E273D) to set the illuminated clothing glow intensity for a specific ped.
 --- @param ped Ped
---- @returns number
+--- @return number
 function GetPedIlluminatedClothingGlowIntensity(ped) end
 
 --- Input: Haircolor index, value between 0 and 63 (inclusive).

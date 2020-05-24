@@ -126,7 +126,7 @@ function AttachEntityToEntityPhysically(entity1, entity2, boneIndex1, boneIndex2
 --- NativeDB Return Type: void
 --- 
 --- @param entity Entity
---- @returns any
+--- @return any
 function ClearEntityLastDamageEntity(entity) end
 
 
@@ -193,22 +193,22 @@ function DeleteEntity(entity) end
 
 --- @param entity Entity
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function DoesEntityBelongToThisScript(entity, p2) end
 
 --- Checks whether an entity exists in the game world.
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function DoesEntityExist(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function DoesEntityHavePhysics(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function DoesEntityHaveDrawable(entity) end
 
 --- 
@@ -235,7 +235,7 @@ function EnableEntityUnk(entity) end
 --- @param p2 string
 --- @param p3 any
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function FindAnimEventPhase(animDictionary, animName, p2, p3, p4) end
 
 --- 
@@ -256,13 +256,13 @@ function FreezeEntityPosition(entity, toggle) end
 
 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetCollisionNormalOfLastHitForEntity(entity) end
 
 --- [Animations list](https://alexguirre.github.io/animations-list/)
 --- @param animDict string
 --- @param animName string
---- @returns number
+--- @return number
 function GetAnimDuration(animDict, animName) end
 
 --- 
@@ -277,17 +277,17 @@ function GetAnimDuration(animDict, animName) end
 --- @param entity Entity
 --- @param animDict string
 --- @param animName string
---- @returns number
+--- @return number
 function GetEntityAnimCurrentTime(entity, animDict, animName) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityAlpha(entity) end
 
 
 --- @param entity Entity
---- @returns Entity
+--- @return Entity
 function GetEntityAttachedTo(entity) end
 
 --- 
@@ -339,7 +339,7 @@ function GetEntityAttachedTo(entity) end
 --- 
 --- @param entity Entity
 --- @param boneName string
---- @returns number
+--- @return number
 function GetEntityBoneIndexByName(entity, boneName) end
 
 --- 
@@ -353,44 +353,44 @@ function GetEntityBoneIndexByName(entity, boneName) end
 --- @param entity Entity
 --- @param animDict string
 --- @param animName string
---- @returns number
+--- @return number
 function GetEntityAnimTotalTime(entity, animDict, animName) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function GetEntityCanBeDamaged(entity) end
 
 --- Gets the current coordinates for a specified entity.
 --- @param entity Entity
 --- @param alive boolean
---- @returns vector3
+--- @return vector3
 function GetEntityCoords(entity, alive) end
 
 --- 
 --- Gets the X-component of the entity's forward vector.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityForwardX(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function GetEntityCollisionDisabled(entity) end
 
 --- 
 --- Gets the entity's forward vector.
 --- 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityForwardVector(entity) end
 
 --- 
 --- Returns the heading of the entity in degrees. Also know as the "Yaw" of an entity.
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityHeading(entity) end
 
 --- 
@@ -405,14 +405,14 @@ function GetEntityHeading(entity) end
 --- float health = *(float *)(entityAddress + 0x280);
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityHealth(entity) end
 
 --- 
 --- Gets the Y-component of the entity's forward vector.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityForwardY(entity) end
 
 --- 
@@ -422,7 +422,7 @@ function GetEntityForwardY(entity) end
 --- Everything seems to be in meters, probably this too.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityHeightAboveGround(entity) end
 
 
@@ -432,7 +432,7 @@ function GetEntityHeightAboveGround(entity) end
 --- @param Z number
 --- @param atTop boolean
 --- @param inWorldCoords boolean
---- @returns number
+--- @return number
 function GetEntityHeight(entity, X, Y, Z, atTop, inWorldCoords) end
 
 --- 
@@ -441,14 +441,14 @@ function GetEntityHeight(entity, X, Y, Z, atTop, inWorldCoords) end
 --- - Player = 200  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityMaxHealth(entity) end
 
 --- 
 --- Returns the LOD distance of an entity.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityLodDist(entity) end
 
 --- 
@@ -456,7 +456,7 @@ function GetEntityLodDist(entity) end
 --- Sometimes throws an exception, idk what causes it though.
 --- 
 --- @param entity Entity
---- @returns Hash
+--- @return Hash
 function GetEntityModel(entity) end
 
 --- 
@@ -468,7 +468,7 @@ function GetEntityModel(entity) end
 --- 
 --- @param entity Entity
 --- @param modelHash Hash
---- @returns Entity
+--- @return Entity
 function GetEntityPickup(entity, modelHash) end
 
 
@@ -500,7 +500,7 @@ function GetEntityMatrix(entity, rightVector, forwardVector, upVector, position)
 --- };
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityPopulationType(entity) end
 
 --- 
@@ -508,7 +508,7 @@ function GetEntityPopulationType(entity) end
 --- NOTE: The name and description of this native are based on independent research. If you find this native to be more suitable under a different name and/or described differently, please feel free to do so.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityPhysicsHeading(entity) end
 
 --- 
@@ -523,12 +523,12 @@ function GetEntityPhysicsHeading(entity) end
 --- @param p6 boolean
 --- @param p7 boolean
 --- @param drownProof boolean
---- @returns boolean
+--- @return boolean
 function GetEntityProofs(entity, bulletProof, fireProof, explosionProof, collisionProof, meleeProof, p6, p7, drownProof) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityPitch(entity) end
 
 --- 
@@ -549,7 +549,7 @@ function GetEntityPitch(entity) end
 --- 
 --- @param entity Entity
 --- @param rotationOrder number
---- @returns vector3
+--- @return vector3
 function GetEntityRotation(entity, rotationOrder) end
 
 --- 
@@ -564,7 +564,7 @@ function GetEntityQuaternion(entity, x, y, z, w) end
 
 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityRotationVelocity(entity) end
 
 --- 
@@ -572,7 +572,7 @@ function GetEntityRotationVelocity(entity) end
 --- 
 --- @param entity Entity
 --- @param relative boolean
---- @returns vector3
+--- @return vector3
 function GetEntitySpeedVector(entity, relative) end
 
 --- 
@@ -580,14 +580,14 @@ function GetEntitySpeedVector(entity, relative) end
 --- (Sideways Roll) such as a vehicle tipped on its side  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityRoll(entity) end
 
 --- 
 --- Get how much of the entity is submerged.  1.0f is whole entity.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntitySubmergedLevel(entity) end
 
 --- 
@@ -595,12 +595,12 @@ function GetEntitySubmergedLevel(entity) end
 --- 
 --- @param entity Entity
 --- @param script ScrHandle
---- @returns string
+--- @return string
 function GetEntityScript(entity, script) end
 
 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityUprightValue(entity) end
 
 --- 
@@ -612,7 +612,7 @@ function GetEntityUprightValue(entity) end
 --- float mph = (speed * 2.236936);  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntitySpeed(entity) end
 
 --- 
@@ -628,12 +628,12 @@ function GetEntitySpeed(entity) end
 --- The above is more then likely true for the native's return, but if you were to skip using the native it's a bit weird it returns different results.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetEntityType(entity) end
 
 
 --- @param entity Entity
---- @returns Hash
+--- @return Hash
 function GetLastMaterialHitByEntity(entity) end
 
 --- 
@@ -641,25 +641,25 @@ function GetLastMaterialHitByEntity(entity) end
 --- GET_ENTITY_VELOCITY(aEntity) is the same as GET_ENTITY_SPEED_VECTOR(aEntity,false)  
 --- 
 --- @param entity Entity
---- @returns vector3
+--- @return vector3
 function GetEntityVelocity(entity) end
 
 
 --- @param entity Entity
 --- @param team number
---- @returns Player
+--- @return Player
 function GetNearestPlayerToEntityOnTeam(entity, team) end
 
 --- 
 --- Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 --- 
 --- @param entity Entity
---- @returns Object
+--- @return Object
 function GetObjectIndexFromEntityIndex(entity) end
 
 
 --- @param entity Entity
---- @returns Player
+--- @return Player
 function GetNearestPlayerToEntity(entity) end
 
 --- 
@@ -672,7 +672,7 @@ function GetNearestPlayerToEntity(entity) end
 --- @param offsetX number
 --- @param offsetY number
 --- @param offsetZ number
---- @returns vector3
+--- @return vector3
 function GetOffsetFromEntityInWorldCoords(entity, offsetX, offsetY, offsetZ) end
 
 --- 
@@ -688,21 +688,21 @@ function GetOffsetFromEntityInWorldCoords(entity, offsetX, offsetY, offsetZ) end
 --- @param posX number
 --- @param posY number
 --- @param posZ number
---- @returns vector3
+--- @return vector3
 function GetOffsetFromEntityGivenWorldCoords(entity, posX, posY, posZ) end
 
 --- 
 --- Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 --- 
 --- @param entity Entity
---- @returns Vehicle
+--- @return Vehicle
 function GetVehicleIndexFromEntityIndex(entity) end
 
 --- 
 --- Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 --- 
 --- @param entity Entity
---- @returns Ped
+--- @return Ped
 function GetPedIndexFromEntityIndex(entity) end
 
 --- 
@@ -710,19 +710,19 @@ function GetPedIndexFromEntityIndex(entity) end
 --- 
 --- @param entity Entity
 --- @param boneIndex number
---- @returns vector3
+--- @return vector3
 function GetWorldPositionOfEntityBone(entity, boneIndex) end
 
 
 --- @param entity Entity
 --- @param boneIndex number
---- @returns vector3
+--- @return vector3
 function GetWorldPositionOfEntityBone2(entity, boneIndex) end
 
 
 --- @param entity Entity
 --- @param boneIndex number
---- @returns vector3
+--- @return vector3
 function GetWorldRotationOfEntityBone(entity, boneIndex) end
 
 --- 
@@ -730,12 +730,12 @@ function GetWorldRotationOfEntityBone(entity, boneIndex) end
 --- 
 --- @param entity Entity
 --- @param actionHash Hash
---- @returns boolean
+--- @return boolean
 function HasAnimEventFired(entity, actionHash) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function HasCollisionLoadedAroundEntity(entity) end
 
 --- 
@@ -747,22 +747,22 @@ function HasCollisionLoadedAroundEntity(entity) end
 --- @param animDict string
 --- @param animName string
 --- @param p3 number
---- @returns boolean
+--- @return boolean
 function HasEntityAnimFinished(entity, animDict, animName, p3) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function HasEntityBeenDamagedByAnyObject(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function HasEntityBeenDamagedByAnyPed(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function HasEntityBeenDamagedByAnyVehicle(entity) end
 
 --- 
@@ -773,7 +773,7 @@ function HasEntityBeenDamagedByAnyVehicle(entity) end
 --- @param entity1 Entity
 --- @param entity2 Entity
 --- @param p2 boolean
---- @returns boolean
+--- @return boolean
 function HasEntityBeenDamagedByEntity(entity1, entity2, p2) end
 
 --- 
@@ -786,7 +786,7 @@ function HasEntityBeenDamagedByEntity(entity1, entity2, p2) end
 --- @param entity1 Entity
 --- @param entity2 Entity
 --- @param traceType number
---- @returns boolean
+--- @return boolean
 function HasEntityClearLosToEntity(entity1, entity2, traceType) end
 
 --- 
@@ -795,7 +795,7 @@ function HasEntityClearLosToEntity(entity1, entity2, traceType) end
 --- 
 --- @param entity1 Entity
 --- @param entity2 Entity
---- @returns boolean
+--- @return boolean
 function HasEntityClearLosToEntityInFront(entity1, entity2) end
 
 --- 
@@ -804,32 +804,32 @@ function HasEntityClearLosToEntityInFront(entity1, entity2) end
 --- Note: for vehicles, the wheels can touch the ground and it will still return false, but if the body of the vehicle touches the ground, it will return true.  
 --- 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function HasEntityCollidedWithAnything(entity) end
 
 
 --- @param handle number
---- @returns boolean
+--- @return boolean
 function IsAnEntity(handle) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAMissionEntity(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAPed(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAnObject(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAVehicle(entity) end
 
 --- 
@@ -844,7 +844,7 @@ function IsEntityAVehicle(entity) end
 --- @param p5 boolean
 --- @param p6 boolean
 --- @param p7 number
---- @returns boolean
+--- @return boolean
 function IsEntityAtEntity(entity1, entity2, xSize, ySize, zSize, p5, p6, p7) end
 
 --- 
@@ -861,45 +861,45 @@ function IsEntityAtEntity(entity1, entity2, xSize, ySize, zSize, p5, p6, p7) end
 --- @param p7 boolean
 --- @param p8 boolean
 --- @param p9 number
---- @returns boolean
+--- @return boolean
 function IsEntityAtCoord(entity, xPos, yPos, zPos, xSize, ySize, zSize, p7, p8, p9) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAttached(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAttachedToAnyObject(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAttachedToAnyVehicle(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAttachedToAnyPed(entity) end
 
 
 --- @param from Entity
 --- @param to Entity
---- @returns boolean
+--- @return boolean
 function IsEntityAttachedToEntity(from, to) end
 
 --- 
 --- NativeDB Added Parameter 2: BOOL p1
 --- 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityDead(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityInAir(entity) end
 
 --- 
@@ -920,7 +920,7 @@ function IsEntityInAir(entity) end
 --- @param p8 boolean
 --- @param p9 boolean
 --- @param p10 any
---- @returns boolean
+--- @return boolean
 function IsEntityInAngledArea(entity, originX, originY, originZ, edgeX, edgeY, edgeZ, angle, p8, p9, p10) end
 
 
@@ -934,23 +934,23 @@ function IsEntityInAngledArea(entity, originX, originY, originZ, edgeX, edgeY, e
 --- @param p7 boolean
 --- @param p8 boolean
 --- @param p9 any
---- @returns boolean
+--- @return boolean
 function IsEntityInArea(entity, x1, y1, z1, x2, y2, z2, p7, p8, p9) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityInWater(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityOccluded(entity) end
 
 
 --- @param entity Entity
 --- @param zone string
---- @returns boolean
+--- @return boolean
 function IsEntityInZone(entity, zone) end
 
 --- 
@@ -966,7 +966,7 @@ function IsEntityInZone(entity, zone) end
 --- @param animDict string
 --- @param animName string
 --- @param taskFlag number
---- @returns boolean
+--- @return boolean
 function IsEntityPlayingAnim(entity, animDict, animName, taskFlag) end
 
 --- 
@@ -974,7 +974,7 @@ function IsEntityPlayingAnim(entity, animDict, animName, taskFlag) end
 --- ^ Attach a phCollider to the ped.  
 --- 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityStatic(entity) end
 
 --- 
@@ -983,7 +983,7 @@ function IsEntityStatic(entity) end
 --- Chipping  
 --- 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityOnScreen(entity) end
 
 --- 
@@ -1004,39 +1004,39 @@ function IsEntityOnScreen(entity) end
 --- 
 --- @param entity Entity
 --- @param angle number
---- @returns boolean
+--- @return boolean
 function IsEntityUpright(entity, angle) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityVisible(entity) end
 
 
 --- @param entity Entity
 --- @param targetEntity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityTouchingEntity(entity, targetEntity) end
 
 
 --- @param entity Entity
 --- @param modelHash Hash
---- @returns boolean
+--- @return boolean
 function IsEntityTouchingModel(entity, modelHash) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityWaitingForWorldCollision(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityUpsidedown(entity) end
 
 
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsEntityVisibleToScript(entity) end
 
 --- 
@@ -1054,7 +1054,7 @@ function IsEntityVisibleToScript(entity) end
 --- @param p6 boolean
 --- @param delta number
 --- @param bitset any
---- @returns boolean
+--- @return boolean
 function PlayEntityAnim(entity, animName, animDict, p3, loop, stayInAnim, p6, delta, bitset) end
 
 --- 
@@ -1070,7 +1070,7 @@ function PlayEntityAnim(entity, animName, animDict, p3, loop, stayInAnim, p6, de
 --- @param p5 number
 --- @param p6 any
 --- @param p7 number
---- @returns boolean
+--- @return boolean
 function PlaySynchronizedEntityAnim(entity, syncedScene, animation, propName, p4, p5, p6, p7) end
 
 --- [Animations list](https://alexguirre.github.io/animations-list/)
@@ -1086,7 +1086,7 @@ function PlaySynchronizedEntityAnim(entity, syncedScene, animation, propName, p4
 --- @param p9 number
 --- @param p10 any
 --- @param p11 number
---- @returns boolean
+--- @return boolean
 function PlaySynchronizedMapEntityAnim(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) end
 
 --- 

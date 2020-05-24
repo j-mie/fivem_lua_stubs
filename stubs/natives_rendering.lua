@@ -1,7 +1,7 @@
 --- 
 --- Returns a bool if interior rendering is disabled, if yes, all "normal" rendered interiors are invisible  
 --- 
---- @returns boolean
+--- @return boolean
 function IsInteriorRenderingDisabled() end
 
 --- 

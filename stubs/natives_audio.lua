@@ -37,7 +37,7 @@ function AddLineToConversation(index, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function AudioIsScriptedMusicPlaying() end
 
 --- 
@@ -61,14 +61,14 @@ function BlockDeathJingle(toggle) end
 --- @param ped Ped
 --- @param speechName string
 --- @param unk boolean
---- @returns boolean
+--- @return boolean
 function CanPedSpeak(ped, speechName, unk) end
 
 --- 
 --- All music event names found in the b617d scripts: pastebin.com/GnYt0R3P  
 --- 
 --- @param eventName string
---- @returns boolean
+--- @return boolean
 function CancelMusicEvent(eventName) end
 
 
@@ -162,7 +162,7 @@ function DisablePedPainAudio(ped, toggle) end
 function ForceVehicleEngineAudio(vehicle, audioName) end
 
 
---- @returns boolean
+--- @return boolean
 function DoesPlayerVehHaveRadio() end
 
 
@@ -171,29 +171,29 @@ function FreezeRadioStation(radioStation) end
 
 
 --- @param station number
---- @returns number
+--- @return number
 function FindRadioStationIndex(station) end
 
 --- 
 --- NativeDB Return Type: Hash
 --- 
 --- @param ped Ped
---- @returns any
+--- @return any
 function GetAmbientVoiceNameHash(ped) end
 
 
 function FreezeMicrophone() end
 
 
---- @returns number
+--- @return number
 function GetAudibleMusicTrackTextId() end
 
 
---- @returns number
+--- @return number
 function GetCurrentScriptedConversationLine() end
 
 
---- @returns boolean
+--- @return boolean
 function GetIsPreloadedConversationReady() end
 
 --- 
@@ -201,51 +201,51 @@ function GetIsPreloadedConversationReady() end
 --- SET_NETWORK_ID_EXISTS_ON_ALL_MACHINES or _SET_NETWORK_ID_SYNC_TO_PLAYER to make it so other players can hear the sound while online? It'd be a bit troll-fun to be able to play the Zancudo UFO creepy sounds globally.  
 --- 
 --- @param soundId number
---- @returns number
+--- @return number
 function GetNetworkIdFromSoundId(soundId) end
 
 
---- @returns number
+--- @return number
 function GetMusicPlaytime() end
 
 
---- @returns number
+--- @return number
 function GetPlayerRadioStationGenre() end
 
 
---- @returns number
+--- @return number
 function GetNumUnlockedRadioStations() end
 
 --- 
 --- Returns active radio station name  
 --- 
---- @returns string
+--- @return string
 function GetPlayerRadioStationName() end
 
 --- 
 --- Returns 255 (radio off index) if the function fails.  
 --- 
---- @returns number
+--- @return number
 function GetPlayerRadioStationIndex() end
 
 
---- @returns number
+--- @return number
 function GetSoundId() end
 
 --- 
 --- Returns String with radio station name.  
 --- 
 --- @param radioStation number
---- @returns string
+--- @return string
 function GetRadioStationName(radioStation) end
 
 
---- @returns number
+--- @return number
 function GetStreamPlayTime() end
 
 
 --- @param netId number
---- @returns number
+--- @return number
 function GetSoundIdFromNetworkId(netId) end
 
 --- 
@@ -253,36 +253,36 @@ function GetSoundIdFromNetworkId(netId) end
 --- Hash is stored in audVehicleAudioEntity  
 --- 
 --- @param vehicle Vehicle
---- @returns Hash
+--- @return Hash
 function GetVehicleDefaultHorn(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns Hash
+--- @return Hash
 function GetVehicleDefaultHornIgnoreMods(vehicle) end
 
 --- 
 --- HAS_*
 --- 
---- @returns boolean
+--- @return boolean
 function HasMultiplayerAudioDataLoaded() end
 
 --- 
 --- NativeDB Introduced: v1365
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleDefaultHornVariation(vehicle) end
 
 
 --- @param soundId number
---- @returns boolean
+--- @return boolean
 function HasSoundFinished(soundId) end
 
 --- 
 --- HAS_*
 --- 
---- @returns boolean
+--- @return boolean
 function HasMultiplayerAudioDataUnloaded() end
 
 --- 
@@ -290,7 +290,7 @@ function HasMultiplayerAudioDataUnloaded() end
 --- 
 --- @param p0 any
 --- @param p1 number
---- @returns any
+--- @return any
 function HintScriptAudioBank(p0, p1) end
 
 --- 
@@ -299,7 +299,7 @@ function HintScriptAudioBank(p0, p1) end
 --- 
 --- @param p0 any
 --- @param p1 number
---- @returns any
+--- @return any
 function HintAmbientAudioBank(p0, p1) end
 
 
@@ -322,12 +322,12 @@ function InterruptConversationAndPause(p0, p1, p2) end
 --- bool playing = AUDIO::IS_ALARM_PLAYING("PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS");  
 --- 
 --- @param alarmName string
---- @returns boolean
+--- @return boolean
 function IsAlarmPlaying(alarmName) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsAmbientSpeechPlaying(ped) end
 
 --- 
@@ -335,111 +335,111 @@ function IsAmbientSpeechPlaying(ped) end
 --- AUDIO::IS_AMBIENT_SPEECH_DISABLED(PLAYER::PLAYER_PED_ID());  
 --- 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsAmbientSpeechDisabled(ped) end
 
 
 --- @param ambientZone string
---- @returns boolean
+--- @return boolean
 function IsAmbientZoneEnabled(ambientZone) end
 
 
 --- @param pedHandle Ped
---- @returns boolean
+--- @return boolean
 function IsAnimalVocalizationPlaying(pedHandle) end
 
 
 --- @param scene string
---- @returns boolean
+--- @return boolean
 function IsAudioSceneActive(scene) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsAnySpeechPlaying(ped) end
 
 --- 
 --- Hardcoded to return 1  
 --- 
---- @returns boolean
+--- @return boolean
 function IsGameInControlOfMusic() end
 
 --- 
 --- Checks whether the horn of a vehicle is currently played.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsHornActive(vehicle) end
 
 
---- @returns boolean
+--- @return boolean
 function IsMissionCompletePlaying() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMissionCompleteReadyForUi() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
 --- @param newsStory number
---- @returns number
+--- @return number
 function IsMissionNewsStoryUnlocked(newsStory) end
 
 
---- @returns boolean
+--- @return boolean
 function IsMobilePhoneCallOngoing() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMobilePhoneRadioActive() end
 
 
---- @returns boolean
+--- @return boolean
 function IsMusicOneshotPlaying() end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedInCurrentConversation(ped) end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function IsPedRingtonePlaying(ped) end
 
 
---- @returns boolean
+--- @return boolean
 function IsPlayerVehRadioEnable() end
 
 
---- @returns boolean
+--- @return boolean
 function IsRadioFadedOut() end
 
 
---- @returns boolean
+--- @return boolean
 function IsRadioRetuning() end
 
 
---- @returns boolean
+--- @return boolean
 function IsScriptedConversationLoaded() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function IsScriptedSpeechPlaying(p0) end
 
 
---- @returns boolean
+--- @return boolean
 function IsScriptedConversationOngoing() end
 
 
---- @returns boolean
+--- @return boolean
 function IsStreamPlaying() end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function IsVehicleRadioLoud(vehicle) end
 
 --- 
@@ -451,7 +451,7 @@ function IsVehicleRadioLoud(vehicle) end
 --- 
 --- @param streamName string
 --- @param soundSet string
---- @returns boolean
+--- @return boolean
 function LoadStream(streamName, soundSet) end
 
 --- 
@@ -469,7 +469,7 @@ function LinkStaticEmitterToEntity(emitterName, entity) end
 --- @param streamName string
 --- @param startOffset number
 --- @param soundSet string
---- @returns boolean
+--- @return boolean
 function LoadStreamWithStartOffset(streamName, startOffset, soundSet) end
 
 --- 
@@ -666,7 +666,7 @@ function PlayDeferredSoundFrontend(soundName, soundsetName) end
 --- 
 --- @param name string
 --- @param p1 number
---- @returns number
+--- @return number
 function PlayPoliceReport(name, p1) end
 
 --- 
@@ -782,7 +782,7 @@ function PlayStreamFrontend() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function PlaySynchronizedAudioEvent(p0) end
 
 --- 
@@ -815,7 +815,7 @@ function PreloadScriptConversation(p0, p1, p2, p3) end
 --- All music event names found in the b617d scripts: pastebin.com/GnYt0R3P  
 --- 
 --- @param eventName string
---- @returns boolean
+--- @return boolean
 function PrepareMusicEvent(eventName) end
 
 --- 
@@ -823,13 +823,13 @@ function PrepareMusicEvent(eventName) end
 --- bool prepareAlarm = AUDIO::PREPARE_ALARM("PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS");  
 --- 
 --- @param alarmName string
---- @returns boolean
+--- @return boolean
 function PrepareAlarm(alarmName) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function PrepareSynchronizedAudioEventForScene(p0, p1) end
 
 
@@ -842,7 +842,7 @@ function RecordBrokenGlass(x, y, z, radius) end
 
 --- @param p0 string
 --- @param p1 any
---- @returns any
+--- @return any
 function PrepareSynchronizedAudioEvent(p0, p1) end
 
 
@@ -896,7 +896,7 @@ function RemoveEntityFromAudioMixGroup(entity, p1) end
 --- 
 --- @param p0 string
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function RequestAmbientAudioBank(p0, p1) end
 
 --- 
@@ -908,7 +908,7 @@ function RequestAmbientAudioBank(p0, p1) end
 --- 
 --- @param p0 string
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function RequestMissionAudioBank(p0, p1) end
 
 --- 
@@ -920,7 +920,7 @@ function RequestMissionAudioBank(p0, p1) end
 --- 
 --- @param p0 string
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function RequestScriptAudioBank(p0, p1) end
 
 

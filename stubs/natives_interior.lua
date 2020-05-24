@@ -16,7 +16,7 @@ function ActivateInteriorEntitySet(interior, entitySetName) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns boolean
+--- @return boolean
 function AreCoordsCollidingWithExterior(x, y, z) end
 
 --- 
@@ -80,7 +80,7 @@ function ForceRoomForGameViewport(interiorID, roomHashKey) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns number
+--- @return number
 function GetInteriorAtCoords(x, y, z) end
 
 --- 
@@ -93,14 +93,14 @@ function GetInteriorAtCoords(x, y, z) end
 --- @param y number
 --- @param z number
 --- @param interiorType string
---- @returns number
+--- @return number
 function GetInteriorAtCoordsWithType(x, y, z, interiorType) end
 
 
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns number
+--- @return number
 function GetInteriorFromCollision(x, y, z) end
 
 --- 
@@ -114,27 +114,27 @@ function GetInteriorFromCollision(x, y, z) end
 --- @param y number
 --- @param z number
 --- @param typeHash number
---- @returns number
+--- @return number
 function GetInteriorAtCoordsWithTypehash(x, y, z, typeHash) end
 
 --- 
 --- Returns the handle of the interior that the entity is in. Returns 0 if outside.  
 --- 
 --- @param entity Entity
---- @returns number
+--- @return number
 function GetInteriorFromEntity(entity) end
 
 --- 
 --- NativeDB Introduced: v1604
 --- 
---- @returns number
+--- @return number
 function GetInteriorFromGameplayCam() end
 
 --- 
 --- Returns the group ID of the specified interior. For example, regular interiors have group 0, subway interiors have group 1. There are a few other groups too.  
 --- 
 --- @param interior number
---- @returns number
+--- @return number
 function GetInteriorGroupId(interior) end
 
 --- 
@@ -143,14 +143,14 @@ function GetInteriorGroupId(interior) end
 --- NativeDB Introduced: v1493
 --- 
 --- @param interior number
---- @returns number
+--- @return number
 function GetInteriorHeading(interior) end
 
 --- 
 --- Seems to do the exact same as INTERIOR::GET_ROOM_KEY_FROM_ENTITY  
 --- 
 --- @param entity Entity
---- @returns Hash
+--- @return Hash
 function GetKeyForEntityInRoom(entity) end
 
 --- 
@@ -168,52 +168,52 @@ function GetInteriorInfo(interior, position, nameHash) end
 --- @param x number
 --- @param y number
 --- @param z number
---- @returns vector3
+--- @return vector3
 function GetOffsetFromInteriorInWorldCoords(interior, x, y, z) end
 
 --- 
 --- Returns the room hash key from the current gameplay cam.  
 --- 
---- @returns Hash
+--- @return Hash
 function GetRoomKeyForGameViewport() end
 
 
 --- @param interiorID number
---- @returns boolean
+--- @return boolean
 function IsInteriorCapped(interiorID) end
 
 --- 
 --- Gets the room hash key from the room that the specified entity is in. Each room in every interior has a unique key. Returns 0 if the entity is outside.  
 --- 
 --- @param entity Entity
---- @returns Hash
+--- @return Hash
 function GetRoomKeyFromEntity(entity) end
 
 
 --- @param interior number
 --- @param entitySetName string
---- @returns boolean
+--- @return boolean
 function IsInteriorEntitySetActive(interior, entitySetName) end
 
 
 --- @param interior number
---- @returns boolean
+--- @return boolean
 function IsInteriorDisabled(interior) end
 
 
---- @returns boolean
+--- @return boolean
 function IsInteriorScene() end
 
 
 --- @param interiorID number
---- @returns boolean
+--- @return boolean
 function IsInteriorReady(interiorID) end
 
 --- 
 --- Return if interior is valid.  
 --- 
 --- @param interiorID number
---- @returns boolean
+--- @return boolean
 function IsValidInterior(interiorID) end
 
 --- 

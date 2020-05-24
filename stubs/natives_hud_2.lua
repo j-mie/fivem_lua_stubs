@@ -318,7 +318,7 @@ function SetMinimapBlockWaypoint(toggle) end
 --- @param componentID number
 --- @param toggle boolean
 --- @param p2 number
---- @returns any
+--- @return any
 function SetMinimapComponent(componentID, toggle, p2) end
 
 
@@ -888,7 +888,7 @@ function SetWarningMessage(entryLine1, instructionalKey, entryLine2, p3, p4, bac
 --- @param rp number
 --- @param lvl number
 --- @param colour number
---- @returns boolean
+--- @return boolean
 function SetWarningMessageListRow(index, name, cash, rp, lvl, colour) end
 
 --- 

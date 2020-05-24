@@ -1,4 +1,4 @@
 
---- @returns number
+--- @return number
 function LocalizationGetSystemLanguage() end
 

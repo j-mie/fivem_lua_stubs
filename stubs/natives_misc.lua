@@ -1,18 +1,18 @@
 
 --- @param value number
---- @returns number
+--- @return number
 function Absi(value) end
 
 --- 
 --- Returns arccos value of p0.  
 --- 
 --- @param p0 number
---- @returns number
+--- @return number
 function Acos(p0) end
 
 
 --- @param value number
---- @returns number
+--- @return number
 function Absf(value) end
 
 
@@ -23,7 +23,7 @@ function Absf(value) end
 --- @param p4 number
 --- @param p5 number
 --- @param p6 number
---- @returns any
+--- @return any
 function AddDispatchSpawnBlockingAngledArea(p0, p1, p2, p3, p4, p5, p6) end
 
 
@@ -31,7 +31,7 @@ function AddDispatchSpawnBlockingAngledArea(p0, p1, p2, p3, p4, p5, p6) end
 --- @param p1 number
 --- @param p2 number
 --- @param p3 number
---- @returns any
+--- @return any
 function AddDispatchSpawnBlockingArea(p0, p1, p2, p3) end
 
 --- 
@@ -43,7 +43,7 @@ function AddDispatchSpawnBlockingArea(p0, p1, p2, p3) end
 --- @param z number
 --- @param p3 number
 --- @param p4 any
---- @returns number
+--- @return number
 function AddHospitalRestart(x, y, z, p3, p4) end
 
 
@@ -52,7 +52,7 @@ function AddHospitalRestart(x, y, z, p3, p4) end
 --- @param p2 number
 --- @param p3 number
 --- @param p4 any
---- @returns any
+--- @return any
 function AddPoliceRestart(p0, p1, p2, p3, p4) end
 
 --- 
@@ -67,7 +67,7 @@ function AddPoliceRestart(p0, p1, p2, p3, p4) end
 --- @param p6 number
 --- @param p7 number
 --- @param p8 boolean
---- @returns number
+--- @return number
 function AddPopMultiplierArea(x1, y1, z1, x2, y2, z2, p6, p7, p8) end
 
 
@@ -83,7 +83,7 @@ function AddReplayStatValue(value) end
 --- @param p5 number
 --- @param p6 boolean
 --- @param p7 boolean
---- @returns number
+--- @return number
 function AddPopMultiplierSphere(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 --- See description of [ADD_STUNT_JUMP_ANGLED](#_0xBBE5D803A5360CBF) for detailed info. The only difference really is this one does not have the radius (or angle, not sure) floats parameters for entry and landing zones.
@@ -105,7 +105,7 @@ function AddPopMultiplierSphere(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param unk1 number
 --- @param unk2 number
 --- @param unk3 number
---- @returns number
+--- @return number
 function AddStuntJump(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4, camX, camY, camZ, unk1, unk2, unk3) end
 
 --- Creates a new stunt jump. 
@@ -155,7 +155,7 @@ function AddStuntJump(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4, camX, camY
 --- @param unk1 number
 --- @param unk2 number
 --- @param unk3 number
---- @returns number
+--- @return number
 function AddStuntJumpAngled(x1, y1, z1, x2, y2, z2, radius1, x3, y3, z3, x4, y4, z4, radius2, camX, camY, camZ, unk1, unk2, unk3) end
 
 --- 
@@ -175,7 +175,7 @@ function AllowMissionCreatorWarp(toggle) end
 function AddTacticalAnalysisPoint(x, y, z) end
 
 
---- @returns boolean
+--- @return boolean
 function AreProfileSettingsValid() end
 
 --- 
@@ -183,21 +183,21 @@ function AreProfileSettingsValid() end
 --- 
 --- @param string1 string
 --- @param string2 string
---- @returns boolean
+--- @return boolean
 function AreStringsEqual(string1, string2) end
 
 --- 
 --- Returns arcsin value of p0.  
 --- 
 --- @param p0 number
---- @returns number
+--- @return number
 function Asin(p0) end
 
 --- 
 --- Returns arctan value of p0.  
 --- 
 --- @param p0 number
---- @returns number
+--- @return number
 function Atan(p0) end
 
 
@@ -208,7 +208,7 @@ function BeginReplayStats(p0, p1) end
 
 --- @param p0 number
 --- @param p1 number
---- @returns number
+--- @return number
 function Atan2(p0, p1) end
 
 
@@ -385,7 +385,7 @@ function ClearWeatherTypePersist() end
 --- @param str2 string
 --- @param matchCase boolean
 --- @param maxLength number
---- @returns number
+--- @return number
 function CompareStrings(str1, str2, matchCase, maxLength) end
 
 
@@ -423,7 +423,7 @@ function CopyMemory(dst, src, size) end
 --- @param numUnits number
 --- @param radius number
 --- @param outIncidentID number
---- @returns boolean
+--- @return boolean
 function CreateIncidentWithEntity(dispatchService, ped, numUnits, radius, outIncidentID) end
 
 --- 
@@ -453,7 +453,7 @@ function CreateIncidentWithEntity(dispatchService, ped, numUnits, radius, outInc
 --- @param numUnits number
 --- @param radius number
 --- @param outIncidentID number
---- @returns boolean
+--- @return boolean
 function CreateIncident(dispatchService, x, y, z, numUnits, radius, outIncidentID) end
 
 
@@ -554,12 +554,12 @@ function DoAutoSave() end
 
 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function DoesPopMultiplierSphereExist(id) end
 
 
 --- @param id number
---- @returns boolean
+--- @return boolean
 function DoesPopMultiplierAreaExist(id) end
 
 --- 
@@ -625,7 +625,7 @@ function EnableStuntJumpSet(p0) end
 --- @param z2 number
 --- @param distance number
 --- @param spawnPoint vector3
---- @returns boolean
+--- @return boolean
 function FindSpawnPointInDirection(x1, y1, z1, x2, y2, z2, distance, spawnPoint) end
 
 --- 
@@ -634,7 +634,7 @@ function FindSpawnPointInDirection(x1, y1, z1, x2, y2, z2, distance, spawnPoint)
 function ForceLightningFlash() end
 
 
---- @returns number
+--- @return number
 function GetAllocatedStackSize() end
 
 --- 
@@ -649,7 +649,7 @@ function ForceSocialClubUpdate() end
 --- @param y1 number
 --- @param x2 number
 --- @param y2 number
---- @returns number
+--- @return number
 function GetAngleBetween2dVectors(x1, y1, x2, y2) end
 
 --- 
@@ -660,30 +660,30 @@ function GetAngleBetween2dVectors(x1, y1, x2, y2) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function GetBaseElementMetadata(p1, p2, p3, p4) end
 
 --- 
 --- Returns value of the '-benchmarkIterations' command line option.
 --- 
---- @returns number
+--- @return number
 function GetBenchmarkIterationsFromCommandLine() end
 
 --- 
 --- Returns value of the '-benchmarkPass' command line option.
 --- 
---- @returns number
+--- @return number
 function GetBenchmarkPassFromCommandLine() end
 
 
---- @returns number
+--- @return number
 function GetBenchmarkTime() end
 
 
 --- @param var number
 --- @param rangeStart number
 --- @param rangeEnd number
---- @returns number
+--- @return number
 function GetBitsInRange(var, rangeStart, rangeEnd) end
 
 --- Returns the distance between two three-dimensional points, optionally ignoring the Z values.
@@ -696,27 +696,27 @@ function GetBitsInRange(var, rangeStart, rangeEnd) end
 --- @param y2 number
 --- @param z2 number
 --- @param useZ boolean
---- @returns number
+--- @return number
 function GetDistanceBetweenCoords(x1, y1, z1, x2, y2, z2, useZ) end
 
 
---- @returns number
+--- @return number
 function GetCloudHatOpacity() end
 
 
---- @returns number
+--- @return number
 function GetFakeWantedLevel() end
 
 
---- @returns number
+--- @return number
 function GetFrameCount() end
 
 
---- @returns number
+--- @return number
 function GetFrameTime() end
 
 
---- @returns number
+--- @return number
 function GetGameTimer() end
 
 
@@ -725,13 +725,13 @@ function GetGameTimer() end
 --- @param z number
 --- @param groundZ number
 --- @param normal vector3
---- @returns boolean
+--- @return boolean
 function GetGroundZAndNormalFor3dCoord(x, y, z, groundZ, normal) end
 
 --- 
 --- it returns a reference to an empty string, the same empty string that's used by 1687 internal gta functions.   if it was used in a script (and i cannot find an instance of it being used), it would be as the source for a StringCopy or somesuch.  
 --- 
---- @returns string
+--- @return string
 function GetGlobalCharBuffer() end
 
 --- 
@@ -751,7 +751,7 @@ function GetGlobalCharBuffer() end
 --- @param z number
 --- @param groundZ number
 --- @param unk boolean
---- @returns boolean
+--- @return boolean
 function GetGroundZFor3dCoord(x, y, z, groundZ, unk) end
 
 --- 
@@ -762,7 +762,7 @@ function GetGroundZFor3dCoord(x, y, z, groundZ, unk) end
 --- @param z number
 --- @param groundZ number
 --- @param p4 boolean
---- @returns boolean
+--- @return boolean
 function GetGroundZFor3dCoord2(x, y, z, groundZ, p4) end
 
 --- 
@@ -771,29 +771,29 @@ function GetGroundZFor3dCoord2(x, y, z, groundZ, p4) end
 --- 
 --- @param dx number
 --- @param dy number
---- @returns number
+--- @return number
 function GetHeadingFromVector2d(dx, dy) end
 
 --- Gets the (case-insensitive, lower-cased) hash value for the passed string. This uses the 'Jenkins one-at-a-time' hashing
 --- algorithm.
 --- @param string string
---- @returns Hash
+--- @return Hash
 function GetHashKey(string) end
 
 
---- @returns number
+--- @return number
 function GetIndexOfCurrentLevel() end
 
 --- 
 --- Returns true if profile setting 208 is equal to 0.
 --- 
---- @returns boolean
+--- @return boolean
 function GetIsAutoSaveOff() end
 
 --- 
 --- Although we don't have a jenkins hash for this one, the name is 100% confirmed.
 --- 
---- @returns boolean
+--- @return boolean
 function GetIsPlayerInAnimalForm() end
 
 --- 
@@ -811,11 +811,11 @@ function GetIsPlayerInAnimalForm() end
 --- @param projHash Hash
 --- @param projPos vector3
 --- @param ownedByPlayer boolean
---- @returns boolean
+--- @return boolean
 function GetIsProjectileTypeInArea(x1, y1, z1, x2, y2, z2, projHash, projPos, ownedByPlayer) end
 
 
---- @returns boolean
+--- @return boolean
 function GetMissionFlag() end
 
 --- 
@@ -837,46 +837,46 @@ function GetModelDimensions(modelHash, minimum, maximum) end
 --- 
 --- Returns weather name hash  
 --- 
---- @returns Hash
+--- @return Hash
 function GetNextWeatherTypeHashName() end
 
 
---- @returns number
+--- @return number
 function GetNumSuccessfulStuntJumps() end
 
 
 --- @param dispatchService number
---- @returns number
+--- @return number
 function GetNumberOfDispatchedUnitsForPlayer(dispatchService) end
 
 
 --- @param stackSize number
---- @returns number
+--- @return number
 function GetNumberOfFreeStacksOfThisSize(stackSize) end
 
 --- 
 --- Returns duration of how long the game has been in power-saving mode (aka "constrained") in milliseconds.
 --- 
---- @returns number
+--- @return number
 function GetPowerSavingModeDuration() end
 
 --- 
 --- Returns NULL unless UPDATE_ONSCREEN_KEYBOARD() returns 1 in the same tick.  
 --- 
---- @returns string
+--- @return string
 function GetOnscreenKeyboardResult() end
 
 --- 
 --- Returns current weather name hash  
 --- 
---- @returns Hash
+--- @return Hash
 function GetPrevWeatherTypeHashName() end
 
 --- 
 --- gtaforums.com/topic/799843-stats-profile-settings/  
 --- 
 --- @param profileSetting number
---- @returns number
+--- @return number
 function GetProfileSetting(profileSetting) end
 
 --- 
@@ -897,7 +897,7 @@ function GetProfileSetting(profileSetting) end
 --- @param radius number
 --- @param entity vector3
 --- @param ownedByPlayer boolean
---- @returns boolean
+--- @return boolean
 function GetProjectileNearPedCoords(ped, weaponHash, radius, entity, ownedByPlayer) end
 
 --- 
@@ -917,17 +917,17 @@ function GetProjectileNearPedCoords(ped, weaponHash, radius, entity, ownedByPlay
 --- @param projPos vector3
 --- @param projEnt Entity
 --- @param ownedByPlayer boolean
---- @returns boolean
+--- @return boolean
 function GetProjectileNearPed(ped, weaponhash, radius, projPos, projEnt, ownedByPlayer) end
 
 
---- @returns number
+--- @return number
 function GetRainLevel() end
 
 --- 
 --- NativeDB Return Type: BOOL
 --- 
---- @returns any
+--- @return any
 function GetRandomEventFlag() end
 
 --- 
@@ -937,45 +937,45 @@ function GetRandomEventFlag() end
 --- 
 --- @param startRange number
 --- @param endRange number
---- @returns number
+--- @return number
 function GetRandomIntInRange(startRange, endRange) end
 
 
 --- @param startRange number
 --- @param endRange number
---- @returns number
+--- @return number
 function GetRandomFloatInRange(startRange, endRange) end
 
 
---- @returns number
+--- @return number
 function GetReplayStatCount() end
 
 
 --- @param index number
---- @returns number
+--- @return number
 function GetReplayStatAtIndex(index) end
 
 --- 
 --- NativeDB Return Type: float
 --- 
---- @returns any
+--- @return any
 function GetSnowLevel() end
 
 
---- @returns number
+--- @return number
 function GetReplayStatMissionType() end
 
 
---- @returns number
+--- @return number
 function GetTotalSuccessfulStuntJumps() end
 
 
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function GetTennisSwingAnimComplete(ped) end
 
 
---- @returns vector3
+--- @return vector3
 function GetWindDirection() end
 
 --- 
@@ -993,11 +993,11 @@ function GetWeatherTypeTransition(weatherType1, weatherType2, percentWeather2) e
 --- 
 --- Hardcoded to always return true.
 --- 
---- @returns boolean
+--- @return boolean
 function HasAsyncInstallFinished() end
 
 
---- @returns number
+--- @return number
 function GetWindSpeed() end
 
 
@@ -1009,7 +1009,7 @@ function GetWindSpeed() end
 --- @param p5 number
 --- @param p6 boolean
 --- @param p7 boolean
---- @returns boolean
+--- @return boolean
 function HasBulletImpactedInBox(p0, p1, p2, p3, p4, p5, p6, p7) end
 
 --- 
@@ -1021,7 +1021,7 @@ function HasBulletImpactedInBox(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- @param p3 number
 --- @param p4 boolean
 --- @param p5 boolean
---- @returns boolean
+--- @return boolean
 function HasBulletImpactedInArea(x, y, z, p3, p4, p5) end
 
 --- 
@@ -1037,7 +1037,7 @@ function HasBulletImpactedInArea(x, y, z, p3, p4, p5) end
 --- Calling this will also set the last saved string hash to zero.  
 --- 
 --- @param hash Hash
---- @returns boolean
+--- @return boolean
 function HasCheatStringJustBeenEntered(hash) end
 
 --- 
@@ -1045,17 +1045,17 @@ function HasCheatStringJustBeenEntered(hash) end
 --- 
 --- @param hash Hash
 --- @param amount number
---- @returns boolean
+--- @return boolean
 function HasButtonCombinationJustBeenEntered(hash, amount) end
 
 --- 
 --- Hardcoded to return false.
 --- 
---- @returns boolean
+--- @return boolean
 function HasResumedFromSuspend() end
 
 
---- @returns boolean
+--- @return boolean
 function HaveCreditsReachedEnd() end
 
 
@@ -1076,6 +1076,6 @@ function IgnoreNextRestart(toggle) end
 --- @param p10 boolean
 --- @param p11 any
 --- @param p12 boolean
---- @returns boolean
+--- @return boolean
 function IsAreaOccupied(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12) end
 

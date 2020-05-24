@@ -35,14 +35,14 @@ function BgStartContextHash(contextHash) end
 --- Jenkins hash: 0x19EAE282  
 --- 
 --- @param scriptHash Hash
---- @returns boolean
+--- @return boolean
 function DoesScriptWithNameHashExist(scriptHash) end
 
 --- 
 --- For a full list, see here: pastebin.com/yLNWicUi  
 --- 
 --- @param scriptName string
---- @returns boolean
+--- @return boolean
 function DoesScriptExist(scriptName) end
 
 --- 
@@ -50,7 +50,7 @@ function DoesScriptExist(scriptName) end
 --- 
 --- @param eventGroup number
 --- @param eventIndex number
---- @returns number
+--- @return number
 function GetEventAtIndex(eventGroup, eventIndex) end
 
 --- 
@@ -60,7 +60,7 @@ function GetEventAtIndex(eventGroup, eventIndex) end
 --- @param eventIndex number
 --- @param argStruct number
 --- @param argStructSize number
---- @returns boolean
+--- @return boolean
 function GetEventData(eventGroup, eventIndex, argStruct, argStructSize) end
 
 --- 
@@ -68,11 +68,11 @@ function GetEventData(eventGroup, eventIndex, argStruct, argStructSize) end
 --- 
 --- @param eventGroup number
 --- @param eventIndex number
---- @returns boolean
+--- @return boolean
 function GetEventExists(eventGroup, eventIndex) end
 
 
---- @returns Hash
+--- @return Hash
 function GetHashOfThisScriptName() end
 
 --- 
@@ -96,22 +96,22 @@ function GetHashOfThisScriptName() end
 --- }  
 --- 
 --- @param threadId number
---- @returns string
+--- @return string
 function GetNameOfThread(threadId) end
 
 
---- @returns number
+--- @return number
 function GetIdOfThisThread() end
 
 --- 
 --- eventGroup: 0 = CEventGroupScriptAI, 1 = CEventGroupScriptNetwork  
 --- 
 --- @param eventGroup number
---- @returns number
+--- @return number
 function GetNumberOfEvents(eventGroup) end
 
 
---- @returns boolean
+--- @return boolean
 function GetNoLoadingScreen() end
 
 --- 
@@ -122,11 +122,11 @@ function GetNoLoadingScreen() end
 --- return v3;  
 --- 
 --- @param scriptHash Hash
---- @returns number
+--- @return number
 function GetNumberOfInstancesOfScriptWithNameHash(scriptHash) end
 
 
---- @returns string
+--- @return string
 function GetThisScriptName() end
 
 --- 
@@ -134,17 +134,17 @@ function GetThisScriptName() end
 --- For a full list, see here: pastebin.com/yLNWicUi  
 --- 
 --- @param scriptName string
---- @returns boolean
+--- @return boolean
 function HasScriptLoaded(scriptName) end
 
 
 --- @param scriptHash Hash
---- @returns boolean
+--- @return boolean
 function HasScriptWithNameHashLoaded(scriptHash) end
 
 
 --- @param threadId number
---- @returns boolean
+--- @return boolean
 function IsThreadActive(threadId) end
 
 --- 
@@ -173,7 +173,7 @@ function RequestScript(scriptName) end
 --- }  
 --- 	}  
 --- 
---- @returns number
+--- @return number
 function ScriptThreadIteratorGetNextThreadId() end
 
 --- 

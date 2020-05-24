@@ -1,11 +1,11 @@
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function ArePlayerStarsGreyedOut(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function ArePlayerFlashingStarsAboutToDrop(player) end
 
 
@@ -14,7 +14,7 @@ function AssistedMovementCloseRoute() end
 
 --- @param player Player
 --- @param ped Ped
---- @returns boolean
+--- @return boolean
 function CanPedHearPlayer(player, ped) end
 
 
@@ -31,7 +31,7 @@ function ChangePlayerPed(player, ped, b2, resetDamage) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function CanPlayerStartMission(player) end
 
 
@@ -113,7 +113,7 @@ function ForceCleanupForThreadWithThisId(id, cleanupFlags) end
 function ForceCleanup(cleanupFlags) end
 
 
---- @returns number
+--- @return number
 function GetCauseOfMostRecentForceCleanup() end
 
 --- 
@@ -129,7 +129,7 @@ function ForceCleanupForAllThreadsWithThisName(name, cleanupFlags) end
 --- This gets the progression of an achievement. Returns 0 if the achievement cannot be progressed.  
 --- 
 --- @param achievement number
---- @returns number
+--- @return number
 function GetAchievementProgression(achievement) end
 
 --- 
@@ -138,33 +138,33 @@ function GetAchievementProgression(achievement) end
 --- 
 --- @param player Player
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function GetEntityPlayerIsFreeAimingAt(player, entity) end
 
 --- 
 --- Gets the number of players in the current session.
 --- If not multiplayer, always returns 1.
 --- 
---- @returns number
+--- @return number
 function GetNumberOfPlayers() end
 
 --- 
 --- Gets the maximum wanted level the player can get.  
 --- Ranges from 0 to 5.  
 --- 
---- @returns number
+--- @return number
 function GetMaxWantedLevel() end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerCurrentStealthNoise(player) end
 
 --- 
 --- NativeDB Introduced: v1180
 --- 
 --- @param team number
---- @returns number
+--- @return number
 function GetNumberOfPlayersInTeam(team) end
 
 --- 
@@ -172,24 +172,24 @@ function GetNumberOfPlayersInTeam(team) end
 --- PLAYER::_56105E599CAB0EFA(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(ped))  
 --- 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerFakeWantedLevel(player) end
 
 --- 
 --- Returns the group ID the player is member of.  
 --- 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerGroup(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerHealthRechargeLimit(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function GetPlayerHasReserveParachute(player) end
 
 --- 
@@ -209,18 +209,18 @@ function GetPlayerHasReserveParachute(player) end
 --- This has bothered me for too long, whoever may come across this, where did anyone ever come up with this made up hash? 0x733A643B5B0C53C1 I've looked all over old hash list, and this nativedb I can not find that PC hash anywhere. What native name is it now or was it?  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function GetPlayerInvincible(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerMaxArmour(player) end
 
 --- 
 --- Returns the same as PLAYER_ID and NETWORK_PLAYER_ID_TO_INT  
 --- 
---- @returns Player
+--- @return Player
 function GetPlayerIndex() end
 
 
@@ -234,7 +234,7 @@ function GetPlayerParachuteSmokeTrailColor(player, r, g, b) end
 --- Returns the players name  
 --- 
 --- @param player Player
---- @returns string
+--- @return string
 function GetPlayerName(player) end
 
 
@@ -268,17 +268,17 @@ function GetPlayerParachuteTintIndex(player, tintIndex) end
 --- Does the same like PLAYER::GET_PLAYER_PED<br/>  
 --- 
 --- @param player Player
---- @returns Ped
+--- @return Ped
 function GetPlayerPedScriptIndex(player) end
 
 --- Gets the ped for a specified player index.
 --- @param playerId Player
---- @returns Ped
+--- @return Ped
 function GetPlayerPed(playerId) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerSprintStaminaRemaining(player) end
 
 --- 
@@ -318,7 +318,7 @@ function GetPlayerRgbColour(player, r, g, b) end
 --- 
 --- @param player Player
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function GetPlayerTargetEntity(player, entity) end
 
 --- 
@@ -326,33 +326,33 @@ function GetPlayerTargetEntity(player, entity) end
 --- Does nothing in singleplayer.  
 --- 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerTeam(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerSprintTimeRemaining(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerUnderwaterTimeRemaining(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetPlayerWantedLevel(player) end
 
 --- 
 --- Alternative: GET_VEHICLE_PED_IS_IN(PLAYER_PED_ID(), 1);  
 --- 
---- @returns Vehicle
+--- @return Vehicle
 function GetPlayersLastVehicle() end
 
 
 --- @param player Player
---- @returns vector3
+--- @return vector3
 function GetPlayerWantedCentrePosition(player) end
 
 --- 
@@ -362,7 +362,7 @@ function GetPlayerWantedCentrePosition(player) end
 --- UI.DrawSubtitle(time.ToString());  
 --- if player has not been arrested, the int returned will be -1.  
 --- 
---- @returns number
+--- @return number
 function GetTimeSinceLastArrest() end
 
 --- 
@@ -372,27 +372,27 @@ function GetTimeSinceLastArrest() end
 --- UI.DrawSubtitle(time.ToString());  
 --- if player has not died, the int returned will be -1.  
 --- 
---- @returns number
+--- @return number
 function GetTimeSinceLastDeath() end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetTimeSincePlayerDroveAgainstTraffic(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetTimeSincePlayerDroveOnPavement(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetTimeSincePlayerHitPed(player) end
 
 
 --- @param player Player
---- @returns number
+--- @return number
 function GetTimeSincePlayerHitVehicle(player) end
 
 --- 
@@ -403,14 +403,14 @@ function GetTimeSincePlayerHitVehicle(player) end
 --- NativeDB Return Type: float
 --- 
 --- @param player Player
---- @returns any
+--- @return any
 function GetWantedLevelRadius(player) end
 
 --- 
 --- Drft  
 --- 
 --- @param wantedLevel number
---- @returns number
+--- @return number
 function GetWantedLevelThreshold(wantedLevel) end
 
 --- 
@@ -422,12 +422,12 @@ function GetWantedLevelThreshold(wantedLevel) end
 --- NativeDB Return Type: BOOL
 --- 
 --- @param achievement number
---- @returns any
+--- @return any
 function GiveAchievementToPlayer(achievement) end
 
 
 --- @param achievement number
---- @returns boolean
+--- @return boolean
 function HasAchievementBeenPassed(achievement) end
 
 
@@ -437,27 +437,27 @@ function GivePlayerRagdollControl(player, toggle) end
 
 
 --- @param cleanupFlags number
---- @returns boolean
+--- @return boolean
 function HasForceCleanupOccurred(cleanupFlags) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function HasPlayerDamagedAtLeastOneNonAnimalPed(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function HasPlayerBeenSpottedInStolenVehicle(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function HasPlayerDamagedAtLeastOnePed(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function HasPlayerTeleportFinished(player) end
 
 --- 
@@ -466,7 +466,7 @@ function HasPlayerTeleportFinished(player) end
 --- if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(i)))  
 --- 
 --- @param value number
---- @returns number
+--- @return number
 function IntToParticipantindex(value) end
 
 --- 
@@ -474,26 +474,26 @@ function IntToParticipantindex(value) end
 --- Here's the decompiled function that checks the position: pastebin.com/ZdHG2E7n  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function HasPlayerLeftTheWorld(player) end
 
 --- 
 --- Simply returns whatever is passed to it (Regardless of whether the handle is valid or not).  
 --- 
 --- @param value number
---- @returns Player
+--- @return Player
 function IntToPlayerindex(value) end
 
 --- 
 --- Returns true if an unk value is greater than 0.0f  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerBattleAware(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerBluetoothEnable(player) end
 
 --- 
@@ -503,14 +503,14 @@ function IsPlayerBluetoothEnable(player) end
 --- 
 --- @param player Player
 --- @param atArresting boolean
---- @returns boolean
+--- @return boolean
 function IsPlayerBeingArrested(player, atArresting) end
 
 --- 
 --- Returns true when the player is not able to control the cam i.e. when running a benchmark test, switching the player or viewing a cutscene.  
 --- Note: I am not 100% sure if the native actually checks if the cam control is disabled but it seems promising.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsPlayerCamControlDisabled() end
 
 --- 
@@ -519,19 +519,19 @@ function IsPlayerCamControlDisabled() end
 --- You can't disable controls with this, use SET_PLAYER_CONTROL(...) for this.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerControlOn(player) end
 
 --- 
 --- Returns TRUE if the player ('s ped) is climbing at the moment.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerClimbing(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerDead(player) end
 
 --- 
@@ -539,106 +539,106 @@ function IsPlayerDead(player) end
 --- 
 --- @param player Player
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsPlayerFreeAimingAtEntity(player, entity) end
 
 --- 
 --- Gets a value indicating whether the specified player is currently aiming freely.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerFreeAiming(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerFreeForAmbientTask(player) end
 
 --- 
 --- this function is hard-coded to always return 0.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsPlayerLoggingInNp() end
 
 --- 
 --- Returns TRUE if the game is in online mode and FALSE if in offline mode.  
 --- This is an alias for NETWORK_IS_SIGNED_ONLINE.  
 --- 
---- @returns boolean
+--- @return boolean
 function IsPlayerOnline() end
 
 --- 
 --- Checks whether the specified player has a Ped, the Ped is not dead, is not injured and is not arrested.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerPlaying(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerPressingHorn(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerReadyForCutscene(player) end
 
 --- 
 --- Returns true if the player is riding a train.  
 --- 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerRidingTrain(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerScriptControlOn(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsPlayerTargettingAnything(player) end
 
 
 --- @param player Player
 --- @param entity Entity
---- @returns boolean
+--- @return boolean
 function IsPlayerTargettingEntity(player, entity) end
 
 
---- @returns boolean
+--- @return boolean
 function IsPlayerTeleportActive() end
 
 
 --- @param player Player
 --- @param wantedLevel number
---- @returns boolean
+--- @return boolean
 function IsPlayerWantedLevelGreater(player, wantedLevel) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsSpecialAbilityActive(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsSpecialAbilityEnabled(player) end
 
 
 --- @param player Player
---- @returns boolean
+--- @return boolean
 function IsSpecialAbilityMeterFull(player) end
 
 
 --- @param playerModel Hash
---- @returns boolean
+--- @return boolean
 function IsSpecialAbilityUnlocked(playerModel) end
 
 
---- @returns boolean
+--- @return boolean
 function IsSystemUiBeingDisplayed() end
 
 --- 
@@ -658,14 +658,14 @@ function PlayerAttachVirtualBound(p0, p1, p2, p3, p4, p5, p6, p7) end
 --- 
 --- Does exactly the same thing as PLAYER_ID()  
 --- 
---- @returns number
+--- @return number
 function NetworkPlayerIdToInt() end
 
 --- 
 --- This returns YOUR 'identity' as a Player type.  
 --- Always returns 0 in story mode.  
 --- 
---- @returns Player
+--- @return Player
 function PlayerId() end
 
 --- 
@@ -676,7 +676,7 @@ function PlayerDetachVirtualBound() end
 --- 
 --- Returns current player ped  
 --- 
---- @returns Ped
+--- @return Ped
 function PlayerPedId() end
 
 --- 
@@ -684,7 +684,7 @@ function PlayerPedId() end
 --- 
 --- @param player Player
 --- @param p2 boolean
---- @returns any
+--- @return any
 function RemovePlayerHelmet(player, p2) end
 
 --- 
@@ -780,7 +780,7 @@ function ResetWorldBoundaryForPlayer() end
 --- 
 --- @param achievement number
 --- @param progress number
---- @returns boolean
+--- @return boolean
 function SetAchievementProgression(achievement, progress) end
 
 
@@ -885,7 +885,7 @@ function SetPlayerClothLockCounter(value) end
 --- 
 --- @param player Player
 --- @param toggle boolean
---- @returns any
+--- @return any
 function SetPlayerCanUseCover(player, toggle) end
 
 --- 

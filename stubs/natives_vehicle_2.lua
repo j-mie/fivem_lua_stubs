@@ -130,7 +130,7 @@ function ResetVehicleWheels(vehicle, toggle) end
 --- 
 --- @param vehicle Vehicle
 --- @param windowIndex number
---- @returns any
+--- @return any
 function RollDownWindow(vehicle, windowIndex) end
 
 --- 
@@ -147,7 +147,7 @@ function RollDownWindows(vehicle) end
 --- NativeDB Return Type: void
 --- @param vehicle Vehicle
 --- @param windowIndex number
---- @returns any
+--- @return any
 function RollUpWindow(vehicle, windowIndex) end
 
 
@@ -404,7 +404,7 @@ function SetForcedBoatLocationWhenAnchored(vehicle, toggle) end
 --- NativeDB Return Type: void
 --- 
 --- @param toggle boolean
---- @returns any
+--- @return any
 function SetGarbageTrucks(toggle) end
 
 --- 
@@ -433,7 +433,7 @@ function SetHeliBladesFullSpeed(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param p1 boolean
---- @returns boolean
+--- @return boolean
 function SetHeliTailExplodeThrowDashboard(vehicle, p1) end
 
 
@@ -509,7 +509,7 @@ function SetParkedVehicleDensityMultiplierThisFrame(multiplier) end
 --- NativeDB Return Type: void
 --- 
 --- @param value number
---- @returns any
+--- @return any
 function SetNumberOfParkedVehicles(value) end
 
 --- 
@@ -549,14 +549,14 @@ function SetPlaybackSpeed(vehicle, speed) end
 --- NativeDB Return Type: void
 --- 
 --- @param vehicle Vehicle
---- @returns any
+--- @return any
 function SetPlayersLastVehicle(vehicle) end
 
 --- 
 --- NativeDB Return Type: void
 --- 
 --- @param toggle boolean
---- @returns any
+--- @return any
 function SetRandomBoats(toggle) end
 
 
@@ -642,7 +642,7 @@ function SetTrailerLegsRaised(vehicle) end
 --- 
 --- @param train Vehicle
 --- @param speed number
---- @returns any
+--- @return any
 function SetTrainCruiseSpeed(train, speed) end
 
 --- 
@@ -650,7 +650,7 @@ function SetTrainCruiseSpeed(train, speed) end
 --- 
 --- @param train Vehicle
 --- @param speed number
---- @returns any
+--- @return any
 function SetTrainSpeed(train, speed) end
 
 --- 
@@ -702,7 +702,7 @@ function SetVehicleAllowNoPassengersLockon(veh, toggle) end
 --- @param vehicle Vehicle
 --- @param p1 boolean
 --- @param p2 any
---- @returns any
+--- @return any
 function SetVehicleAutomaticallyAttaches(vehicle, p1, p2) end
 
 --- 
@@ -880,7 +880,7 @@ function SetVehicleCountermeasureCount(aircraft, count) end
 --- 
 --- @param vehicle Vehicle
 --- @param p1 number
---- @returns any
+--- @return any
 function SetVehicleDamageModifier(vehicle, p1) end
 
 --- 

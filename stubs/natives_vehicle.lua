@@ -8,7 +8,7 @@
 --- @param p4 number
 --- @param p5 number
 --- @param p6 number
---- @returns any
+--- @return any
 function AddVehicleCombatAngledAvoidanceArea(p0, p1, p2, p3, p4, p5, p6) end
 
 --- 
@@ -25,7 +25,7 @@ function AddVehicleCombatAngledAvoidanceArea(p0, p1, p2, p3, p4, p5, p6) end
 --- @param radius number
 --- @param speed number
 --- @param p5 boolean
---- @returns number
+--- @return number
 function AddSpeedZoneForCoord(x, y, z, radius, speed, p5) end
 
 
@@ -46,7 +46,7 @@ function AddVehiclePhoneExplosiveDevice(vehicle) end
 --- Appears to return false if any window is broken.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function AreAllVehicleWindowsIntact(vehicle) end
 
 
@@ -57,12 +57,12 @@ function AddVehicleUpsidedownCheck(vehicle) end
 --- Returns false if every seat is occupied.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function AreAnyVehicleSeatsFree(vehicle) end
 
 --- Returns true when the bomb bay doors of this plane are open. False if they're closed.
 --- @param aircraft Vehicle
---- @returns boolean
+--- @return boolean
 function AreBombBayDoorsOpen(aircraft) end
 
 --- 
@@ -75,14 +75,14 @@ function AreBombBayDoorsOpen(aircraft) end
 --- }  
 --- 
 --- @param plane Vehicle
---- @returns boolean
+--- @return boolean
 function ArePlanePropellersIntact(plane) end
 
 --- 
 --- Can be used for planes only!  
 --- 
 --- @param plane Vehicle
---- @returns boolean
+--- @return boolean
 function ArePlaneWingsIntact(plane) end
 
 
@@ -149,7 +149,7 @@ function BringVehicleToHalt(vehicle, distance, duration, unknown) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function CanAnchorBoatHere(vehicle) end
 
 --- 
@@ -158,13 +158,13 @@ function CanAnchorBoatHere(vehicle) end
 --- NativeDB Introduced: v678
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function CanBoatBeAnchored2(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function CanShuffleSeat(vehicle, p1) end
 
 
@@ -172,21 +172,21 @@ function ClearLastDrivenVehicle() end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function CanVehicleParachuteBeActivated(vehicle) end
 
 --- 
 --- NativeDB Return Type: void
 --- 
 --- @param vehicle Vehicle
---- @returns any
+--- @return any
 function ClearVehicleCustomSecondaryColour(vehicle) end
 
 --- 
 --- NativeDB Return Type: void
 --- 
 --- @param vehicle Vehicle
---- @returns any
+--- @return any
 function ClearVehicleCustomPrimaryColour(vehicle) end
 
 
@@ -227,7 +227,7 @@ function CloseBombBayDoors(vehicle) end
 --- @param y number
 --- @param z number
 --- @param direction boolean
---- @returns Vehicle
+--- @return Vehicle
 function CreateMissionTrain(variation, x, y, z, direction) end
 
 --- Copy the damage like broken bumpers and broken lights from a vehicle and paste them on another vehicle.
@@ -281,7 +281,7 @@ function CreatePickUpRopeForCargobob(cargobob, state) end
 --- @param p14 boolean
 --- @param p15 boolean
 --- @param p16 number
---- @returns number
+--- @return number
 function CreateScriptVehicleGenerator(x, y, z, heading, p4, p5, modelHash, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16) end
 
 
@@ -297,7 +297,7 @@ function DeleteAllTrains() end
 --- @param heading number
 --- @param isNetwork boolean
 --- @param netMissionEntity boolean
---- @returns Vehicle
+--- @return Vehicle
 function CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity) end
 
 
@@ -326,17 +326,17 @@ function DetachContainerFromHandlerFrame(vehicle) end
 
 --- @param vehicle Vehicle
 --- @param entity Entity
---- @returns any
+--- @return any
 function DetachEntityFromCargobob(vehicle, entity) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DetachVehicleFromAnyCargobob(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DetachVehicleFromAnyTowTruck(vehicle) end
 
 
@@ -408,7 +408,7 @@ function DisableVehicleWeapon(disabled, weaponHash, vehicle, owner) end
 --- Returns true only when the hook is active, will return false if the magnet is active  
 --- 
 --- @param cargobob Vehicle
---- @returns boolean
+--- @return boolean
 function DoesCargobobHavePickUpRope(cargobob) end
 
 --- 
@@ -416,59 +416,59 @@ function DoesCargobobHavePickUpRope(cargobob) end
 --- 
 --- @param vehicle Vehicle
 --- @param extraId number
---- @returns boolean
+--- @return boolean
 function DoesExtraExist(vehicle, extraId) end
 
 --- 
 --- Returns true only when the magnet is active, will return false if the hook is active  
 --- 
 --- @param cargobob Vehicle
---- @returns boolean
+--- @return boolean
 function DoesCargobobHavePickupMagnet(cargobob) end
 
 
 --- @param vehicleGenerator number
---- @returns boolean
+--- @return boolean
 function DoesScriptVehicleGeneratorExist(vehicleGenerator) end
 
 
 --- @param decorator string
---- @returns boolean
+--- @return boolean
 function DoesVehicleExistWithDecorator(decorator) end
 
 --- 
 --- Returns true if the vehicle has the FLAG_ALLOWS_RAPPEL flag set.
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleAllowRappel(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveParachute(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param doorIndex number
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveDoor(vehicle, doorIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveRocketBoost(vehicle) end
 
 --- 
 --- Returns true if the vehicle has the FLAG_JUMPING_CAR flag set.
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveJumpingAbility(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveWeapons(vehicle) end
 
 
@@ -480,7 +480,7 @@ function EjectJb700Roof(vehicle, x, y, z) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveRetractableWheels(vehicle) end
 
 
@@ -490,7 +490,7 @@ function ExplodeVehicleInCutscene(vehicle, p1) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveRoof(vehicle) end
 
 
@@ -502,21 +502,21 @@ function ForceSubmarineSurfaceMode(vehicle, toggle) end
 --- NativeDB Parameter 0: int* vehArray
 --- 
 --- @param vehArray any
---- @returns number
+--- @return number
 function GetAllVehicles(vehArray) end
 
 --- 
 --- Maximum amount of vehicles with vehicle stuck check appears to be 16.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveStuckVehicleCheck(vehicle) end
 
 --- 
 --- Gets the position of the cargobob hook, in world coords.  
 --- 
 --- @param cargobob Vehicle
---- @returns vector3
+--- @return vector3
 function GetCargobobHookPosition(cargobob) end
 
 --- 
@@ -545,12 +545,12 @@ function ExplodeVehicle(vehicle, isAudible, isInvisible) end
 --- };  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetConvertibleRoofState(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetCurrentPlaybackForVehicle(vehicle) end
 
 --- int index = 0 to 13
@@ -575,24 +575,24 @@ function GetCurrentPlaybackForVehicle(vehicle) end
 --- Also, this function is coded to not work on vehicles of type: CBike, Bmx, CBoat, CTrain, and CSubmarine.
 --- @param vehicle Vehicle
 --- @param index number
---- @returns any
+--- @return any
 function FixVehicleWindow(vehicle, index) end
 
 --- 
 --- NativeDB Introduced: v1604
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetDoesVehicleHaveTombstone(vehicle) end
 
 
 --- @param towTruck Vehicle
---- @returns Entity
+--- @return Entity
 function GetEntityAttachedToTowTruck(towTruck) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetBoatBoomPositionRatio(vehicle) end
 
 --- 
@@ -600,7 +600,7 @@ function GetBoatBoomPositionRatio(vehicle) end
 --- At 0 the main rotor will stall.  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetHeliMainRotorHealth(vehicle) end
 
 --- 
@@ -608,7 +608,7 @@ function GetHeliMainRotorHealth(vehicle) end
 --- At -100 both helicopter rotors will stall.
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetHeliTailBoomHealth(vehicle) end
 
 --- 
@@ -635,14 +635,14 @@ function GetHeliTailBoomHealth(vehicle) end
 --- @param radius number
 --- @param modelHash Hash
 --- @param flags number
---- @returns Vehicle
+--- @return Vehicle
 function GetClosestVehicle(x, y, z, radius, modelHash, flags) end
 
 --- 
 --- From the driver's perspective, is the left headlight broken.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsLeftVehicleHeadlightDamaged(vehicle) end
 
 --- 
@@ -655,14 +655,14 @@ function GetIsLeftVehicleHeadlightDamaged(vehicle) end
 --- For a full list, see here: pastebin.com/wvpyS4kS (pastebin.com/dA3TbkZw)  
 --- 
 --- @param modelHash Hash
---- @returns string
+--- @return string
 function GetDisplayNameFromVehicleModel(modelHash) end
 
 --- 
 --- NativeDB Introduced: v1290
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsSubmarineVehicleTransformed(vehicle) end
 
 --- 
@@ -671,35 +671,35 @@ function GetIsSubmarineVehicleTransformed(vehicle) end
 --- NativeDB Introduced: v1604
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehicleEmpDisabled(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns Entity
+--- @return Entity
 function GetEntityAttachedToCargobob(vehicle) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehiclePrimaryColourCustom(vehicle) end
 
 --- 
 --- NativeDB Introduced: v1604
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehicleShuntBoostActive(vehicle) end
 
 
 --- @param vehicle Vehicle
 --- @param doorIndex number
---- @returns vector3
+--- @return vector3
 function GetEntryPositionOfDoor(vehicle, doorIndex) end
 
 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsWheelsLoweredStateActive(vehicle) end
 
 --- 
@@ -707,7 +707,7 @@ function GetIsWheelsLoweredStateActive(vehicle) end
 --- At 0 the tail rotor will stall.  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetHeliTailRotorHealth(vehicle) end
 
 --- 
@@ -718,20 +718,20 @@ function GetHeliTailRotorHealth(vehicle) end
 ---     v_2 = VEHICLE::_B2D06FAEDE65B577();  
 --- }  
 --- 
---- @returns Vehicle
+--- @return Vehicle
 function GetLastDrivenVehicle() end
 
 
 --- @param vehicle Vehicle
 --- @param seatIndex number
---- @returns Ped
+--- @return Ped
 function GetLastPedInVehicleSeat(vehicle, seatIndex) end
 
 --- 
 --- From the driver's perspective, is the right headlight broken.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsRightVehicleHeadlightDamaged(vehicle) end
 
 --- 
@@ -756,7 +756,7 @@ function GetIsRightVehicleHeadlightDamaged(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param liveryIndex number
---- @returns string
+--- @return string
 function GetLiveryName(vehicle, liveryIndex) end
 
 --- 
@@ -766,27 +766,27 @@ function GetLiveryName(vehicle, liveryIndex) end
 --- 
 --- @param vehicle Vehicle
 --- @param modType number
---- @returns string
+--- @return string
 function GetModSlotName(vehicle, modType) end
 
 --- 
 --- Returns true when in a vehicle, false whilst entering/exiting.  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehicleEngineRunning(vehicle) end
 
 
 --- @param p0 number
 --- @param p1 boolean
---- @returns number
+--- @return number
 function GetNumModColors(p0, p1) end
 
 --- 
 --- Check if Vehicle Secondary is avaliable for customize  
 --- 
 --- @param vehicle Vehicle
---- @returns boolean
+--- @return boolean
 function GetIsVehicleSecondaryColourCustom(vehicle) end
 
 --- 
@@ -794,7 +794,7 @@ function GetIsVehicleSecondaryColourCustom(vehicle) end
 --- 
 --- @param vehicle Vehicle
 --- @param modType number
---- @returns number
+--- @return number
 function GetNumVehicleMods(vehicle, modType) end
 
 --- 
@@ -807,16 +807,16 @@ function GetNumVehicleMods(vehicle, modType) end
 --- 
 --- Landing gear state 2 is never used.
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetLandingGearState(vehicle) end
 
 
---- @returns number
+--- @return number
 function GetNumVehicleWindowTints() end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetNumberOfVehicleDoors(vehicle) end
 
 --- 
@@ -825,13 +825,13 @@ function GetNumberOfVehicleDoors(vehicle) end
 --- NativeDB Introduced: v1604
 --- 
 --- @param vehicle Vehicle
---- @returns Vehicle
+--- @return Vehicle
 function GetLastRammedVehicle(vehicle) end
 
 --- 
 --- Returns the number of *types* of licence plates, enumerated below in SET_VEHICLE_NUMBER_PLATE_TEXT_INDEX.  
 --- 
---- @returns number
+--- @return number
 function GetNumberOfVehicleNumberPlates() end
 
 --- 
@@ -839,7 +839,7 @@ function GetNumberOfVehicleNumberPlates() end
 --- 
 --- @param vehicle Vehicle
 --- @param doorIndex number
---- @returns Ped
+--- @return Ped
 function GetPedUsingVehicleDoor(vehicle, doorIndex) end
 
 --- 
@@ -849,17 +849,17 @@ function GetPedUsingVehicleDoor(vehicle, doorIndex) end
 --- @param vehicle Vehicle
 --- @param modType number
 --- @param modValue number
---- @returns string
+--- @return string
 function GetModTextLabel(vehicle, modType, modValue) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function GetPositionInRecording(p0) end
 
 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetNumModKits(vehicle) end
 
 --- 
@@ -868,7 +868,7 @@ function GetNumModKits(vehicle) end
 --- @param p0 number
 --- @param p1 number
 --- @param p2 string
---- @returns vector3
+--- @return vector3
 function GetPositionOfVehicleRecordingAtTime(p0, p1, p2) end
 
 
@@ -879,14 +879,14 @@ function GetPositionOfVehicleRecordingAtTime(p0, p1, p2) end
 --- @param p4 number
 --- @param p5 number
 --- @param p6 number
---- @returns Vehicle
+--- @return Vehicle
 function GetRandomVehicleBackBumperInSphere(p0, p1, p2, p3, p4, p5, p6) end
 
 --- 
 --- Actually number of color combinations  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetNumberOfVehicleColours(vehicle) end
 
 
@@ -897,7 +897,7 @@ function GetNumberOfVehicleColours(vehicle) end
 --- @param p4 number
 --- @param p5 number
 --- @param p6 number
---- @returns Vehicle
+--- @return Vehicle
 function GetRandomVehicleFrontBumperInSphere(p0, p1, p2, p3, p4, p5, p6) end
 
 --- 
@@ -917,7 +917,7 @@ function GetRandomVehicleFrontBumperInSphere(p0, p1, p2, p3, p4, p5, p6) end
 --- 
 --- @param vehicle Vehicle
 --- @param index number
---- @returns Ped
+--- @return Ped
 function GetPedInVehicleSeat(vehicle, index) end
 
 --- 
@@ -934,12 +934,12 @@ function GetRandomVehicleModelInMemory(p0, modelHash, p2) end
 
 --- @param id number
 --- @param time number
---- @returns vector3
+--- @return vector3
 function GetRotationOfVehicleRecordingIdAtTime(id, time) end
 
 --- A float indicating the percentage of the hover mode. 1.0 = in VTOL mode, 0.0 = in normal flying mode.
 --- @param aircraft Vehicle
---- @returns number
+--- @return number
 function GetPlaneVtolDirection(aircraft) end
 
 --- 
@@ -947,7 +947,7 @@ function GetPlaneVtolDirection(aircraft) end
 --- 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function GetTotalDurationOfVehicleRecording(p0, p1) end
 
 --- 
@@ -955,7 +955,7 @@ function GetTotalDurationOfVehicleRecording(p0, p1) end
 --- 
 --- @param id number
 --- @param time number
---- @returns number
+--- @return number
 function GetPositionOfVehicleRecordingIdAtTime(id, time) end
 
 --- 
@@ -973,12 +973,12 @@ function GetPositionOfVehicleRecordingIdAtTime(id, time) end
 --- @param radius number
 --- @param modelHash Hash
 --- @param flags number
---- @returns Vehicle
+--- @return Vehicle
 function GetRandomVehicleInSphere(x, y, z, radius, modelHash, flags) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function GetTotalDurationOfVehicleRecordingId(p0) end
 
 --- 
@@ -987,26 +987,26 @@ function GetTotalDurationOfVehicleRecordingId(p0) end
 --- @param p0 any
 --- @param p1 number
 --- @param p2 any
---- @returns number
+--- @return number
 function GetRotationOfVehicleRecordingAtTime(p0, p1, p2) end
 
 --- 
 --- static - max acceleration  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleAcceleration(vehicle) end
 
 --- 
 --- Returns attached vehicle (Vehicle in parameter must be cargobob)  
 --- 
 --- @param cargobob Vehicle
---- @returns Vehicle
+--- @return Vehicle
 function GetVehicleAttachedToCargobob(cargobob) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function GetTimePositionInRecording(p0) end
 
 --- 
@@ -1015,7 +1015,7 @@ function GetTimePositionInRecording(p0) end
 --- Vehicle does not necessarily explode or become undrivable at 0.  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleBodyHealth(vehicle) end
 
 --- 
@@ -1023,7 +1023,7 @@ function GetVehicleBodyHealth(vehicle) end
 --- 
 --- @param train Vehicle
 --- @param trailerNumber number
---- @returns Entity
+--- @return Entity
 function GetTrainCarriage(train, trailerNumber) end
 
 --- Gets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane. 
@@ -1032,14 +1032,14 @@ function GetTrainCarriage(train, trailerNumber) end
 --- 
 --- Use [_SET_AIRCRAFT_BOMB_COUNT](#_0xF4B2ED59DEB5D774) to set the amount of bombs on that vehicle.
 --- @param aircraft Vehicle
---- @returns number
+--- @return number
 function GetVehicleBombCount(aircraft) end
 
 --- 
 --- Get the vehicle attached to the object/entity? May also just convert it to a vehicle, but I'm not sure.  
 --- 
 --- @param entity Entity
---- @returns Vehicle
+--- @return Vehicle
 function GetVehicleAttachedToEntity(entity) end
 
 --- 
@@ -1051,7 +1051,7 @@ function GetVehicleAttachedToEntity(entity) end
 --- }  
 --- 
 --- @param vehicle Vehicle
---- @returns Hash
+--- @return Hash
 function GetVehicleCauseOfDestruction(vehicle) end
 
 --- 
@@ -1082,12 +1082,12 @@ function GetVehicleCauseOfDestruction(vehicle) end
 --- NativeDB Added Parameter 7: Any p6
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleBodyHealth2(vehicle) end
 
 
 --- @param vehicleClass number
---- @returns number
+--- @return number
 function GetVehicleClassEstimatedMaxSpeed(vehicleClass) end
 
 --- 
@@ -1120,6 +1120,6 @@ function GetVehicleClassEstimatedMaxSpeed(vehicleClass) end
 --- char* className = UI::_GET_LABEL_TEXT(buffer);  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function GetVehicleClass(vehicle) end
 

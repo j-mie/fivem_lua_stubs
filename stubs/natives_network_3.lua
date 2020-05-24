@@ -6,7 +6,7 @@ function UgcCancelQuery() end
 --- @param FilePath string
 --- @param Name string
 --- @param p3 boolean
---- @returns number
+--- @return number
 function TextureDownloadRequest(PlayerHandle, FilePath, Name, p3) end
 
 
@@ -21,7 +21,7 @@ function UgcClearCreateResult() end
 
 --- @param p0 any
 --- @param p1 any
---- @returns boolean
+--- @return boolean
 function UgcCopyContent(p0, p1) end
 
 
@@ -30,7 +30,7 @@ function UgcClearModifyResult() end
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function UgcGetCachedDescription(p0, p1) end
 
 
@@ -38,74 +38,74 @@ function UgcGetCachedDescription(p0, p1) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function UgcGetBookmarkedContent(p0, p1, p2, p3) end
 
 
 --- @param p0 any
---- @returns number
+--- @return number
 function UgcGetContentDescriptionHash(p0) end
 
 
 --- @param p0 number
---- @returns number
+--- @return number
 function UgcGetContentCategory(p0) end
 
 
---- @returns any
+--- @return any
 function UgcGetContentHash() end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function UgcGetContentFileVersion(p0, p1) end
 
 --- 
 --- Return the mission id of a job.
 --- 
 --- @param p0 number
---- @returns string
+--- @return string
 function UgcGetContentId(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function UgcGetContentHasPlayerBookmarked(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function UgcGetContentHasPlayerRecord(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function UgcGetContentIsPublished(p0) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function UgcGetContentLanguage(p0) end
 
 
---- @returns any
+--- @return any
 function UgcGetContentNum() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function UgcGetContentIsVerified(p0) end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function UgcGetContentName(p0) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function UgcGetContentRating(p0, p1) end
 
 --- 
@@ -113,29 +113,29 @@ function UgcGetContentRating(p0, p1) end
 --- 
 --- @param p0 number
 --- @param p1 any
---- @returns string
+--- @return string
 function UgcGetContentPath(p0, p1) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function UgcGetContentRatingCount(p0, p1) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function UgcGetContentRatingPositiveCount(p0, p1) end
 
 
 --- @param p0 any
 --- @param p1 any
---- @returns any
+--- @return any
 function UgcGetContentRatingNegativeCount(p0, p1) end
 
 
---- @returns any
+--- @return any
 function UgcGetContentTotal() end
 
 
@@ -144,20 +144,20 @@ function UgcGetContentTotal() end
 function UgcGetContentUpdatedDate(p0, p1) end
 
 
---- @returns any
+--- @return any
 function UgcGetCreateContentId() end
 
 
 --- @param p0 any
---- @returns any
+--- @return any
 function UgcGetContentUserName(p0) end
 
 
---- @returns any
+--- @return any
 function UgcGetCreateResult() end
 
 
---- @returns any
+--- @return any
 function UgcGetCreatorNum() end
 
 
@@ -165,7 +165,7 @@ function UgcGetCreatorNum() end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function UgcGetFriendContent(p0, p1, p2, p3) end
 
 
@@ -174,7 +174,7 @@ function UgcGetFriendContent(p0, p1, p2, p3) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function UgcGetCrewContent(p0, p1, p2, p3, p4) end
 
 
@@ -183,7 +183,7 @@ function UgcGetCrewContent(p0, p1, p2, p3, p4) end
 --- @param p2 any
 --- @param p3 any
 --- @param p4 any
---- @returns boolean
+--- @return boolean
 function UgcGetGetByCategory(p0, p1, p2, p3, p4) end
 
 
@@ -191,62 +191,62 @@ function UgcGetGetByCategory(p0, p1, p2, p3, p4) end
 --- @param p1 any
 --- @param p2 any
 --- @param p3 any
---- @returns boolean
+--- @return boolean
 function UgcGetMyContent(p0, p1, p2, p3) end
 
 
---- @returns any
+--- @return any
 function UgcGetModifyResult() end
 
 
---- @returns any
+--- @return any
 function UgcGetQueryResult() end
 
 --- 
 --- Return the root content id of a job.
 --- 
 --- @param p0 number
---- @returns string
+--- @return string
 function UgcGetRootContentId(p0) end
 
 
---- @returns any
+--- @return any
 function UgcHasCreateFinished() end
 
 
---- @returns any
+--- @return any
 function UgcHasModifyFinished() end
 
 
---- @returns any
+--- @return any
 function UgcHasGetFinished() end
 
 
---- @returns any
+--- @return any
 function UgcIsGetting() end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function UgcIsLanguageSupported(p0) end
 
 
 --- @param p0 any
---- @returns boolean
+--- @return boolean
 function UgcPoliciesMakePrivate(p0) end
 
 
 --- @param contentId string
 --- @param baseContentId string
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcPublish(contentId, baseContentId, contentTypeName) end
 
 
 --- @param contentId string
 --- @param latestVersion boolean
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcQueryByContentId(contentId, latestVersion, contentTypeName) end
 
 
@@ -254,7 +254,7 @@ function UgcQueryByContentId(contentId, latestVersion, contentTypeName) end
 --- @param count number
 --- @param latestVersion boolean
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcQueryByContentIds(data, count, latestVersion, contentTypeName) end
 
 --- 
@@ -266,7 +266,7 @@ function UgcQueryByContentIds(data, count, latestVersion, contentTypeName) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 any
---- @returns boolean
+--- @return boolean
 function UgcQueryMyContent(p0, p1, p2, p3, p4, p5) end
 
 
@@ -274,18 +274,18 @@ function UgcQueryMyContent(p0, p1, p2, p3, p4, p5) end
 --- @param count number
 --- @param contentTypeName string
 --- @param p3 number
---- @returns boolean
+--- @return boolean
 function UgcQueryRecentlyCreatedContent(offset, count, contentTypeName, p3) end
 
 
 --- @param p0 number
---- @returns number
+--- @return number
 function UgcRequestCachedDescription(p0) end
 
 
 --- @param p0 number
 --- @param p1 number
---- @returns number
+--- @return number
 function UgcRequestContentDataFromIndex(p0, p1) end
 
 
@@ -294,21 +294,21 @@ function UgcRequestContentDataFromIndex(p0, p1) end
 --- @param p2 number
 --- @param p3 number
 --- @param p4 number
---- @returns number
+--- @return number
 function UgcRequestContentDataFromParams(contentTypeName, contentId, p2, p3, p4) end
 
 
 --- @param contentId string
 --- @param bookmarked boolean
 --- @param contentTypeName string
---- @returns boolean
+--- @return boolean
 function UgcSetBookmarked(contentId, bookmarked, contentTypeName) end
 
 
 --- @param p0 any
 --- @param p1 boolean
 --- @param p2 any
---- @returns boolean
+--- @return boolean
 function UgcSetDeleted(p0, p1, p2) end
 
 
@@ -318,7 +318,7 @@ function UgcSetDeleted(p0, p1, p2) end
 --- @param p3 any
 --- @param p4 any
 --- @param p5 boolean
---- @returns any
+--- @return any
 function UgcTextureDownloadRequest(p0, p1, p2, p3, p4, p5) end
 
 --- 
@@ -331,6 +331,6 @@ function UsePlayerColourInsteadOfTeamColour(toggle) end
 --- calls from vehicle to net.  
 --- 
 --- @param vehicle Vehicle
---- @returns number
+--- @return number
 function VehToNet(vehicle) end
 

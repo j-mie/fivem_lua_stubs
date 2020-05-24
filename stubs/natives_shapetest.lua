@@ -17,7 +17,7 @@
 --- @param endCoords vector3
 --- @param surfaceNormal vector3
 --- @param entityHit Entity
---- @returns number
+--- @return number
 function GetShapeTestResult(rayHandle, hit, endCoords, surfaceNormal, entityHit) end
 
 --- 
@@ -32,14 +32,14 @@ function GetShapeTestResult(rayHandle, hit, endCoords, surfaceNormal, entityHit)
 --- @param surfaceNormal vector3
 --- @param materialHash Hash
 --- @param entityHit Entity
---- @returns number
+--- @return number
 function GetShapeTestResultIncludingMaterial(rayHandle, hit, endCoords, surfaceNormal, materialHash, entityHit) end
 
 
 --- @param entity Entity
 --- @param flags1 number
 --- @param flags2 number
---- @returns number
+--- @return number
 function StartShapeTestBound(entity, flags1, flags2) end
 
 
@@ -50,7 +50,7 @@ function ShapeTestResultEntity(entityHit) end
 --- @param entity Entity
 --- @param flags1 number
 --- @param flags2 number
---- @returns number
+--- @return number
 function StartShapeTestBoundingBox(entity, flags1, flags2) end
 
 --- 
@@ -72,7 +72,7 @@ function StartShapeTestBoundingBox(entity, flags1, flags2) end
 --- @param flags number
 --- @param entity Entity
 --- @param p9 number
---- @returns number
+--- @return number
 function StartShapeTestCapsule(x1, y1, z1, x2, y2, z2, radius, flags, entity, p9) end
 
 
@@ -89,7 +89,7 @@ function StartShapeTestCapsule(x1, y1, z1, x2, y2, z2, radius, flags, entity, p9
 --- @param p10 any
 --- @param entity any
 --- @param p12 any
---- @returns number
+--- @return number
 function StartShapeTestBox(x, y, z, x1, y2, z2, rotX, rotY, rotZ, p9, p10, entity, p12) end
 
 --- 
@@ -107,7 +107,7 @@ function StartShapeTestBox(x, y, z, x1, y2, z2, rotX, rotY, rotZ, p9, p10, entit
 --- @param flags number
 --- @param ent Entity
 --- @param p8 number
---- @returns number
+--- @return number
 function StartShapeTestLosProbe(x1, y1, z1, x2, y2, z2, flags, ent, p8) end
 
 --- 
@@ -137,7 +137,7 @@ function StartShapeTestLosProbe(x1, y1, z1, x2, y2, z2, flags, ent, p8) end
 --- @param flags number
 --- @param entity Entity
 --- @param p8 number
---- @returns number
+--- @return number
 function StartShapeTestRay(x1, y1, z1, x2, y2, z2, flags, entity, p8) end
 
 --- 
@@ -149,7 +149,7 @@ function StartShapeTestRay(x1, y1, z1, x2, y2, z2, flags, entity, p8) end
 --- @param flag number
 --- @param entity Entity
 --- @param flag2 number
---- @returns number
+--- @return number
 function StartShapeTestSurroundingCoords(pVec1, pVec2, flag, entity, flag2) end
 
 --- 
@@ -165,6 +165,6 @@ function StartShapeTestSurroundingCoords(pVec1, pVec2, flag, entity, flag2) end
 --- @param flags number
 --- @param entity Entity
 --- @param p9 any
---- @returns number
+--- @return number
 function StartShapeTestSweptSphere(x1, y1, z1, x2, y2, z2, radius, flags, entity, p9) end
 

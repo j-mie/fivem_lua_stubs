@@ -5,7 +5,7 @@
 --- 
 --- @param entity Entity
 --- @param icon string
---- @returns any
+--- @return any
 function AddEntityIcon(entity, icon) end
 
 
@@ -93,7 +93,7 @@ function AddPetrolTrailDecalInfo(x, y, z, p3) end
 --- @param p17 boolean
 --- @param p18 boolean
 --- @param p19 boolean
---- @returns number
+--- @return number
 function AddDecal(decalType, posX, posY, posZ, p4, p5, p6, p7, p8, p9, width, height, rCoef, gCoef, bCoef, opacity, timeout, p17, p18, p19) end
 
 
@@ -103,7 +103,7 @@ function AddDecal(decalType, posX, posY, posZ, p4, p5, p6, p7, p8, p9, width, he
 --- @param groundLvl number
 --- @param width number
 --- @param transparency number
---- @returns any
+--- @return any
 function AddPetrolDecal(x, y, z, groundLvl, width, transparency) end
 
 --- 
@@ -129,7 +129,7 @@ function AddPetrolDecal(x, y, z, groundLvl, width, transparency) end
 --- @param scale number
 --- @param p13 any
 --- @param alpha number
---- @returns boolean
+--- @return boolean
 function AddVehicleCrewEmblem(vehicle, ped, boneIndex, x1, x2, x3, y1, y2, y3, z1, z2, z3, scale, p13, alpha) end
 
 
@@ -139,7 +139,7 @@ function AddTcmodifierOverride(modifierName1, modifierName2) end
 
 
 --- @param effectName string
---- @returns number
+--- @return number
 function AnimpostfxGetUnk(effectName) end
 
 --- 
@@ -158,7 +158,7 @@ function AnimpostfxPlay(effectName, duration, looped) end
 --- Example and list of screen FX: www.pastebin.com/dafBAjs0  
 --- 
 --- @param effectName string
---- @returns boolean
+--- @return boolean
 function AnimpostfxIsRunning(effectName) end
 
 --- 
@@ -193,7 +193,7 @@ function AttachTvAudioToEntity(entity) end
 --- 
 --- @param scaleform number
 --- @param methodName string
---- @returns boolean
+--- @return boolean
 function BeginScaleformMovieMethod(scaleform, methodName) end
 
 --- Starts frontend (pause menu) scaleform movie methods.
@@ -201,14 +201,14 @@ function BeginScaleformMovieMethod(scaleform, methodName) end
 --- 
 --- Use [BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER](#_0xB9449845F73F5E9C) for header scaleform functions.
 --- @param functionName string
---- @returns boolean
+--- @return boolean
 function BeginScaleformMovieMethodOnFrontend(functionName) end
 
 --- Starts frontend (pause menu) scaleform movie methods for header options.
 --- 
 --- Use [BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND](#_0xAB58C27C2E6123C6) to customize the content inside the frontend menus.
 --- @param functionName string
---- @returns boolean
+--- @return boolean
 function BeginScaleformMovieMethodOnFrontendHeader(functionName) end
 
 --- 
@@ -220,7 +220,7 @@ function BeginScaleformMovieMethodOnFrontendHeader(functionName) end
 --- 
 --- @param hudComponent number
 --- @param methodName string
---- @returns boolean
+--- @return boolean
 function BeginScaleformScriptHudMovieMethod(hudComponent, methodName) end
 
 --- 
@@ -370,7 +370,7 @@ function ClearDrawOrigin() end
 --- @param blue number
 --- @param alpha number
 --- @param reserved number
---- @returns number
+--- @return number
 function CreateCheckpoint(type, posX1, posY1, posZ1, posX2, posY2, posZ2, radius, red, green, blue, alpha, reserved) end
 
 
@@ -379,7 +379,7 @@ function ClearTimecycleModifier() end
 --- 
 --- Creates a tracked point, useful for checking the visibility of a 3D point on screen.  
 --- 
---- @returns number
+--- @return number
 function CreateTrackedPoint() end
 
 
@@ -409,7 +409,7 @@ function DisableVehicleDistantlights(toggle) end
 --- 
 --- @param vehicle Vehicle
 --- @param p1 number
---- @returns boolean
+--- @return boolean
 function DoesVehicleHaveCrewEmblem(vehicle, p1) end
 
 
@@ -418,7 +418,7 @@ function DisableScriptAmbientEffects(p0) end
 
 
 --- @param ptfxHandle number
---- @returns boolean
+--- @return boolean
 function DoesParticleFxLoopedExist(ptfxHandle) end
 
 --- 
@@ -851,7 +851,7 @@ function DrawScaleformMovie3dSolid(scaleform, posX, posY, posZ, rotX, rotY, rotZ
 --- @param posX number
 --- @param posY number
 --- @param posZ number
---- @returns boolean
+--- @return boolean
 function DrawShowroom(p0, ped, p2, posX, posY, posZ) end
 
 --- 
