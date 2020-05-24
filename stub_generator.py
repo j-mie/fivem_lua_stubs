@@ -100,7 +100,7 @@ for doc in docs:
                 if nativeReturnType in typeTranslationTable:
                     nativeReturnType = typeTranslationTable[nativeReturnType]
 
-                output.write("--- @returns {}\n".format(nativeReturnType))
+                output.write("--- @return {}\n".format(nativeReturnType))
             output.write("function {}({}) end\n\n".format(nativeName, functionDefParams))
             
             linesWritten += (3 + len(nativeParams) + nativeDesc.count('\n'))
