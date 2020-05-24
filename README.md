@@ -7,7 +7,7 @@ This repo contains Lua stubs which can be used by [sumneko's Lua language server
 When updating the stubs, make sure you're using Python 3 and have `requests` installed.
 
 ## Downloading
-Download the latest release from GitHub releases
+Download the latest release from [GitHub releases](https://github.com/jamie-34254/fivem_lua_stubs/releases/)
 
 ## How to use?
 These docs are only for Visual Studio Code and sumneko's Lua language server, for other editors/servers your mileage may vary.
