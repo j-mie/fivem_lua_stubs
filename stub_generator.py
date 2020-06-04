@@ -38,8 +38,12 @@ TYPE_TRANSLATION_TABLE = {
     "BOOL": "boolean",
     "Any": "any",
     "char": "string",
-    "Vector3": "vector3"
+    "Vector3": "vector3",
+    "Vector2": "vector2",
+    "object": "table",
+    "func": "function"
 }
+
 LINES_WRITTEN_CAP = 1000
 PREFIX = "stubs/natives"
 
@@ -49,11 +53,11 @@ def _open_file(filename):
 
 
 def _format_name(name_data):
+    print(name_data)
     return string.capwords(
         name_data.lower()
-        .replace("0x", "N_0x")
         .replace("_", " ")
-    ).replace(" ", "")
+    ).replace(" ", "").replace("0x", "N_0x")
 
 
 def _format_parameters(parameters_data):
@@ -102,8 +106,8 @@ class Data:
         self.examples = None
         self.return_type = None
 
-    def __call__(self, raw_data):
-        self.name = _format_name(raw_data['name'])
+    def __call__(self, raw_data, native_name):
+        self.name = _format_name(native_name)
         self.parameters = _format_parameters(raw_data['params'])
         self.description = _format_description(raw_data['description'])
         self.examples = raw_data['examples']
@@ -176,14 +180,18 @@ def main():
         for native_namespace, native_hash in json_response.items():
             file_manager = FileManager(native_namespace.lower())
             for _, native_function in native_hash.items():
-
-                if "name" not in native_function:
-                    continue
-
                 file_manager.set_data(
-                    Data()(native_function)
+                    Data()(native_function, 'name' in native_function and native_function['name'] or native_function['hash'])
                 )
                 file_manager.write()
+
+                if 'aliases' in native_function:
+                    for aliase in native_function['aliases']:
+                        print(aliase)
+                        file_manager.set_data(
+                            Data()(native_function, aliase)
+                        )
+                        file_manager.write()
 
 
 if __name__ == "__main__":
